@@ -1,0 +1,1 @@
+All of the sector times csv files from practices, qualifying, and race. Used to create sector heatmaps.
