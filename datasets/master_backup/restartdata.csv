@@ -1,0 +1,88 @@
+track,year,type,caution,driver,restartPM
+St. Pete,2019,street,1,   Josef Newgarden,0
+St. Pete,2019,street,1,   Scott Dixon,0
+St. Pete,2019,street,1,   Will Power,-1
+St. Pete,2019,street,1,   Felix Rosenqvist,1
+St. Pete,2019,street,1,   Alexander Rossi,0
+St. Pete,2019,street,1,   James Hinchcliffe,0
+St. Pete,2019,street,1,   Simon Pagenaud,0
+St. Pete,2019,street,1,   Colton Herta,-2
+St. Pete,2019,street,1,   Santino Ferrucci,0
+St. Pete,2019,street,1,   Jack Harvey,0
+St. Pete,2019,street,1,   Spencer Pigot,1
+St. Pete,2019,street,1,   Graham Rahal,0
+St. Pete,2019,street,1,   Marco Andretti,0
+St. Pete,2019,street,1,   Zach Veach,0
+St. Pete,2019,street,1,   Tony Kanaan,0
+St. Pete,2019,street,1,   Max Chilton,1
+St. Pete,2019,street,1,   Charlie Kimball,0
+St. Pete,2019,street,1,   Ben Hanley,-2
+St. Pete,2019,street,1,   Takuma Sato,0
+St. Pete,2019,street,1,   Marcus Ericsson,1
+St. Pete,2019,street,1,   Ed Jones,0
+St. Pete,2019,street,1,   Matheus Leist,1
+St. Pete,2019,street,2,   Josef Newgarden,0
+St. Pete,2019,street,2,   Scott Dixon,0
+St. Pete,2019,street,2,   Will Power,0
+St. Pete,2019,street,2,   Felix Rosenqvist,0
+St. Pete,2019,street,2,   Alexander Rossi,0
+St. Pete,2019,street,2,   James Hinchcliffe,0
+St. Pete,2019,street,2,   Simon Pagenaud,0
+St. Pete,2019,street,2,   Colton Herta,0
+St. Pete,2019,street,2,   Santino Ferrucci,0
+St. Pete,2019,street,2,   Jack Harvey,0
+St. Pete,2019,street,2,   Spencer Pigot,0
+St. Pete,2019,street,2,   Graham Rahal,0
+St. Pete,2019,street,2,   Marco Andretti,1
+St. Pete,2019,street,2,   Zach Veach,0
+St. Pete,2019,street,2,   Tony Kanaan,0
+St. Pete,2019,street,2,   Max Chilton,-1
+St. Pete,2019,street,2,   Charlie Kimball,0
+St. Pete,2019,street,2,   Ben Hanley,0
+St. Pete,2019,street,2,   Takuma Sato,0
+St. Pete,2019,street,2,   Marcus Ericsson,0
+COTA,2019,road,1,   Josef Newgarden,0
+COTA,2019,road,1,   Matheus Leist,0
+COTA,2019,road,1,   James Hinchcliffe,0
+COTA,2019,road,1,   Marcus Ericsson,0
+COTA,2019,road,1,   Scott Dixon,1
+COTA,2019,road,1,   Felix Rosenqvist,0
+COTA,2019,road,1,   Tony Kanaan,0
+COTA,2019,road,1,   Graham Rahal,0
+COTA,2019,road,1,   Sebastien Bourdais,1
+COTA,2019,road,1,   Santino Ferrucci,0
+COTA,2019,road,1,   Ed Jones,-1
+COTA,2019,road,1,   Spencer Pigot,0
+COTA,2019,road,1,   Simon Pagenaud,0
+COTA,2019,road,1,   Zach Veach,0
+COTA,2019,road,1,   Alexander Rossi,-1
+COTA,2019,road,1,   Ryan Hunter-Reay,0
+COTA,2019,road,1,   Takuma Sato,1
+COTA,2019,road,1,   Patricio O'Ward,-1
+COTA,2019,road,1,   Kyle Kaiser,0
+COTA,2019,road,1,   Max Chilton,0
+COTA,2019,road,1,   Jack Harvey,0
+COTA,2019,road,1,   Colton Herta,0
+COTA,2019,road,1,   Marco Andretti,0
+Barber,2019,road,1,   Takuma Sato,0
+Barber,2019,road,1,   Scott Dixon,0
+Barber,2019,road,1,   Sebastien Bourdais,0
+Barber,2019,road,1,   Josef Newgarden,2
+Barber,2019,road,1,   Alexander Rossi,1
+Barber,2019,road,1,   James Hinchcliffe,-1
+Barber,2019,road,1,   Marcus Ericsson,-1
+Barber,2019,road,1,   Ryan Hunter-Reay,-1
+Barber,2019,road,1,   Simon Pagenaud,0
+Barber,2019,road,1,   Felix Rosenqvist,0
+Barber,2019,road,1,   Will Power,0
+Barber,2019,road,1,   Zach Veach,0
+Barber,2019,road,1,   Jack Harvey,0
+Barber,2019,road,1,   Marco Andretti,0
+Barber,2019,road,1,   Santino Ferrucci,0
+Barber,2019,road,1,   Patricio O'Ward,0
+Barber,2019,road,1,   Spencer Pigot,0
+Barber,2019,road,1,   Tony Kanaan,0
+Barber,2019,road,1,   Ed Jones,0
+Barber,2019,road,1,   Matheus Leist,0
+Barber,2019,road,1,   Ben Hanley,0
+Barber,2019,road,1,   Max Chilton,0
