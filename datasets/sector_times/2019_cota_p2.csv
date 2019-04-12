@@ -1,0 +1,484 @@
+Section,Rank,Car,Driver,C/E/T,Time,Speed,Lap
+Full Lap,1,12,"Power, Will",D/C/F,01:47.4401,114.259,7
+Full Lap,2,10,"Rosenqvist, Felix (R)",D/H/F,01:47.6150,114.073,7
+Full Lap,3,27,"Rossi, Alexander",D/H/F,01:47.9311,113.739,10
+Full Lap,4,28,"Hunter-Reay, Ryan",D/H/F,01:48.1209,113.540,9
+Full Lap,5,20,"Jones, Ed",D/C/F,01:48.1597,113.499,10
+Full Lap,6,26,"Veach, Zach",D/H/F,01:48.1988,113.458,8
+Full Lap,7,22,"Pagenaud, Simon",D/C/F,01:48.2728,113.380,10
+Full Lap,8,30,"Sato, Takuma",D/H/F,01:48.3484,113.301,10
+Full Lap,9,2,"Newgarden, Josef",D/C/F,01:48.4497,113.195,9
+Full Lap,10,18,"Bourdais, Sebastien",D/H/F,01:48.4585,113.186,9
+Full Lap,11,31,"O'Ward, Patricio (R)",D/C/F,01:48.5212,113.121,10
+Full Lap,12,5,"Hinchcliffe, James",D/H/F,01:48.5311,113.110,10
+Full Lap,13,15,"Rahal, Graham",D/H/F,01:48.5328,113.109,10
+Full Lap,14,60,"Harvey, Jack",D/H/F,01:48.5541,113.086,11
+Full Lap,15,59,"Chilton, Max",D/C/F,01:48.5643,113.076,10
+Full Lap,16,9,"Dixon, Scott",D/H/F,01:48.5735,113.066,8
+Full Lap,17,7,"Ericsson, Marcus (R)",D/H/F,01:48.9461,112.680,10
+Full Lap,18,4,"Leist, Matheus",D/C/F,01:49.0534,112.569,9
+Full Lap,19,98,"Andretti, Marco",D/H/F,01:49.1639,112.455,9
+Full Lap,20,21,"Pigot, Spencer",D/C/F,01:49.2359,112.381,7
+Full Lap,21,19,"Ferrucci, Santino (R)",D/H/F,01:49.2512,112.365,9
+Full Lap,22,32,"Kaiser, Kyle (R)",D/C/F,01:50.5787,111.016,10
+Full Lap,23,14,"Kanaan, Tony",D/C/F,01:51.6903,109.911,0
+Sector 1,1,60,"Harvey, Jack",D/H/F,00:01.6522,164.244,1
+Sector 1,2,4,"Leist, Matheus",D/C/F,00:01.6548,163.986,4
+Sector 1,3,20,"Jones, Ed",D/C/F,00:01.6550,163.966,5
+Sector 1,4,30,"Sato, Takuma",D/H/F,00:01.6555,163.916,3
+Sector 1,5,98,"Andretti, Marco",D/H/F,00:01.6568,163.788,9
+Sector 1,6,12,"Power, Will",D/C/F,00:01.6580,163.669,10
+Sector 1,7,5,"Hinchcliffe, James",D/H/F,00:01.6580,163.669,11
+Sector 1,8,21,"Pigot, Spencer",D/C/F,00:01.6588,163.590,7
+Sector 1,9,22,"Pagenaud, Simon",D/C/F,00:01.6594,163.531,1
+Sector 1,10,27,"Rossi, Alexander",D/H/F,00:01.6601,163.462,2
+Sector 1,11,28,"Hunter-Reay, Ryan",D/H/F,00:01.6601,163.462,10
+Sector 1,12,7,"Ericsson, Marcus (R)",D/H/F,00:01.6612,163.354,2
+Sector 1,13,32,"Kaiser, Kyle (R)",D/C/F,00:01.6617,163.305,2
+Sector 1,14,2,"Newgarden, Josef",D/C/F,00:01.6622,163.256,1
+Sector 1,15,59,"Chilton, Max",D/C/F,00:01.6625,163.226,3
+Sector 1,16,26,"Veach, Zach",D/H/F,00:01.6627,163.207,4
+Sector 1,17,18,"Bourdais, Sebastien",D/H/F,00:01.6645,163.030,2
+Sector 1,18,10,"Rosenqvist, Felix (R)",D/H/F,00:01.6662,162.864,11
+Sector 1,19,15,"Rahal, Graham",D/H/F,00:01.6715,162.347,0
+Sector 1,20,19,"Ferrucci, Santino (R)",D/H/F,00:01.6742,162.086,6
+Sector 1,21,31,"O'Ward, Patricio (R)",D/C/F,00:01.6779,161.728,6
+Sector 1,22,14,"Kanaan, Tony",D/C/F,00:01.6788,161.641,1
+Sector 1,23,9,"Dixon, Scott",D/H/F,00:01.6837,161.171,8
+Sector 2,1,12,"Power, Will",D/C/F,00:01.9968,161.508,2
+Sector 2,2,31,"O'Ward, Patricio (R)",D/C/F,00:01.9999,161.258,11
+Sector 2,3,5,"Hinchcliffe, James",D/H/F,00:02.0027,161.033,11
+Sector 2,4,21,"Pigot, Spencer",D/C/F,00:02.0078,160.624,7
+Sector 2,5,60,"Harvey, Jack",D/H/F,00:02.0097,160.472,6
+Sector 2,6,30,"Sato, Takuma",D/H/F,00:02.0110,160.368,3
+Sector 2,7,27,"Rossi, Alexander",D/H/F,00:02.0116,160.320,11
+Sector 2,8,10,"Rosenqvist, Felix (R)",D/H/F,00:02.0124,160.256,11
+Sector 2,9,20,"Jones, Ed",D/C/F,00:02.0137,160.153,11
+Sector 2,10,26,"Veach, Zach",D/H/F,00:02.0139,160.137,8
+Sector 2,11,18,"Bourdais, Sebastien",D/H/F,00:02.0159,159.978,9
+Sector 2,12,28,"Hunter-Reay, Ryan",D/H/F,00:02.0162,159.954,10
+Sector 2,13,7,"Ericsson, Marcus (R)",D/H/F,00:02.0181,159.804,11
+Sector 2,14,22,"Pagenaud, Simon",D/C/F,00:02.0187,159.756,7
+Sector 2,15,15,"Rahal, Graham",D/H/F,00:02.0205,159.614,10
+Sector 2,16,9,"Dixon, Scott",D/H/F,00:02.0239,159.346,8
+Sector 2,17,98,"Andretti, Marco",D/H/F,00:02.0269,159.110,9
+Sector 2,18,32,"Kaiser, Kyle (R)",D/C/F,00:02.0269,159.110,6
+Sector 2,19,4,"Leist, Matheus",D/C/F,00:02.0373,158.298,4
+Sector 2,20,19,"Ferrucci, Santino (R)",D/H/F,00:02.0428,157.872,9
+Sector 2,21,59,"Chilton, Max",D/C/F,00:02.0437,157.802,11
+Sector 2,22,2,"Newgarden, Josef",D/C/F,00:02.0504,157.286,1
+Sector 2,23,14,"Kanaan, Tony",D/C/F,00:02.0872,154.513,0
+Sector 3,1,9,"Dixon, Scott",D/H/F,00:07.0125,75.839,8
+Sector 3,2,15,"Rahal, Graham",D/H/F,00:07.0231,75.724,10
+Sector 3,3,22,"Pagenaud, Simon",D/C/F,00:07.0556,75.375,10
+Sector 3,4,2,"Newgarden, Josef",D/C/F,00:07.0653,75.272,7
+Sector 3,5,10,"Rosenqvist, Felix (R)",D/H/F,00:07.0669,75.255,1
+Sector 3,6,28,"Hunter-Reay, Ryan",D/H/F,00:07.0733,75.187,9
+Sector 3,7,20,"Jones, Ed",D/C/F,00:07.0790,75.126,11
+Sector 3,8,21,"Pigot, Spencer",D/C/F,00:07.0813,75.102,7
+Sector 3,9,26,"Veach, Zach",D/H/F,00:07.0880,75.031,8
+Sector 3,10,12,"Power, Will",D/C/F,00:07.0926,74.982,7
+Sector 3,11,31,"O'Ward, Patricio (R)",D/C/F,00:07.1005,74.899,10
+Sector 3,12,59,"Chilton, Max",D/C/F,00:07.1010,74.893,10
+Sector 3,13,27,"Rossi, Alexander",D/H/F,00:07.1186,74.708,2
+Sector 3,14,7,"Ericsson, Marcus (R)",D/H/F,00:07.1283,74.607,10
+Sector 3,15,5,"Hinchcliffe, James",D/H/F,00:07.1300,74.589,10
+Sector 3,16,30,"Sato, Takuma",D/H/F,00:07.1371,74.515,10
+Sector 3,17,98,"Andretti, Marco",D/H/F,00:07.1484,74.397,9
+Sector 3,18,60,"Harvey, Jack",D/H/F,00:07.1953,73.912,12
+Sector 3,19,32,"Kaiser, Kyle (R)",D/C/F,00:07.2198,73.661,1
+Sector 3,20,19,"Ferrucci, Santino (R)",D/H/F,00:07.2282,73.575,8
+Sector 3,21,4,"Leist, Matheus",D/C/F,00:07.2463,73.392,9
+Sector 3,22,18,"Bourdais, Sebastien",D/H/F,00:07.3009,72.843,10
+Sector 3,23,14,"Kanaan, Tony",D/C/F,00:07.3669,72.190,4
+Sector 4,1,18,"Bourdais, Sebastien",D/H/F,00:03.6190,138.851,9
+Sector 4,2,60,"Harvey, Jack",D/H/F,00:03.6500,137.671,1
+Sector 4,3,5,"Hinchcliffe, James",D/H/F,00:03.6714,136.869,11
+Sector 4,4,30,"Sato, Takuma",D/H/F,00:03.6746,136.750,4
+Sector 4,5,19,"Ferrucci, Santino (R)",D/H/F,00:03.6765,136.679,3
+Sector 4,6,12,"Power, Will",D/C/F,00:03.6788,136.593,2
+Sector 4,7,4,"Leist, Matheus",D/C/F,00:03.6802,136.541,9
+Sector 4,8,27,"Rossi, Alexander",D/H/F,00:03.6806,136.527,3
+Sector 4,9,7,"Ericsson, Marcus (R)",D/H/F,00:03.6806,136.527,2
+Sector 4,10,22,"Pagenaud, Simon",D/C/F,00:03.6807,136.523,2
+Sector 4,11,9,"Dixon, Scott",D/H/F,00:03.6826,136.453,8
+Sector 4,12,20,"Jones, Ed",D/C/F,00:03.6835,136.419,10
+Sector 4,13,21,"Pigot, Spencer",D/C/F,00:03.6862,136.319,7
+Sector 4,14,10,"Rosenqvist, Felix (R)",D/H/F,00:03.6920,136.105,7
+Sector 4,15,98,"Andretti, Marco",D/H/F,00:03.7002,135.803,0
+Sector 4,16,2,"Newgarden, Josef",D/C/F,00:03.7027,135.712,3
+Sector 4,17,26,"Veach, Zach",D/H/F,00:03.7032,135.693,9
+Sector 4,18,15,"Rahal, Graham",D/H/F,00:03.7043,135.653,3
+Sector 4,19,59,"Chilton, Max",D/C/F,00:03.7053,135.617,9
+Sector 4,20,14,"Kanaan, Tony",D/C/F,00:03.7149,135.266,4
+Sector 4,21,28,"Hunter-Reay, Ryan",D/H/F,00:03.7152,135.255,10
+Sector 4,22,32,"Kaiser, Kyle (R)",D/C/F,00:03.7191,135.113,11
+Sector 4,23,31,"O'Ward, Patricio (R)",D/C/F,00:03.7387,134.405,5
+Sector 5,1,12,"Power, Will",D/C/F,00:03.9495,156.406,4
+Sector 5,2,31,"O'Ward, Patricio (R)",D/C/F,00:03.9883,154.885,10
+Sector 5,3,19,"Ferrucci, Santino (R)",D/H/F,00:03.9960,154.586,8
+Sector 5,4,27,"Rossi, Alexander",D/H/F,00:04.0017,154.366,10
+Sector 5,5,2,"Newgarden, Josef",D/C/F,00:04.0063,154.189,7
+Sector 5,6,7,"Ericsson, Marcus (R)",D/H/F,00:04.0109,154.012,5
+Sector 5,7,26,"Veach, Zach",D/H/F,00:04.0109,154.012,9
+Sector 5,8,5,"Hinchcliffe, James",D/H/F,00:04.0156,153.832,10
+Sector 5,9,4,"Leist, Matheus",D/C/F,00:04.0224,153.572,9
+Sector 5,10,18,"Bourdais, Sebastien",D/H/F,00:04.0247,153.484,10
+Sector 5,11,22,"Pagenaud, Simon",D/C/F,00:04.0293,153.309,10
+Sector 5,12,98,"Andretti, Marco",D/H/F,00:04.0370,153.016,9
+Sector 5,13,28,"Hunter-Reay, Ryan",D/H/F,00:04.0381,152.975,10
+Sector 5,14,21,"Pigot, Spencer",D/C/F,00:04.0432,152.782,7
+Sector 5,15,20,"Jones, Ed",D/C/F,00:04.0504,152.510,10
+Sector 5,16,59,"Chilton, Max",D/C/F,00:04.0547,152.348,11
+Sector 5,17,15,"Rahal, Graham",D/H/F,00:04.0687,151.824,10
+Sector 5,18,60,"Harvey, Jack",D/H/F,00:04.0712,151.731,11
+Sector 5,19,30,"Sato, Takuma",D/H/F,00:04.0724,151.686,10
+Sector 5,20,10,"Rosenqvist, Felix (R)",D/H/F,00:04.0798,151.411,11
+Sector 5,21,9,"Dixon, Scott",D/H/F,00:04.0910,150.997,8
+Sector 5,22,32,"Kaiser, Kyle (R)",D/C/F,00:04.1008,150.636,10
+Sector 5,23,14,"Kanaan, Tony",D/C/F,00:04.1249,149.756,3
+Sector 6,1,4,"Leist, Matheus",D/C/F,00:05.6549,124.791,9
+Sector 6,2,2,"Newgarden, Josef",D/C/F,00:05.6569,124.747,1
+Sector 6,3,22,"Pagenaud, Simon",D/C/F,00:05.6584,124.714,2
+Sector 6,4,12,"Power, Will",D/C/F,00:05.6612,124.652,7
+Sector 6,5,31,"O'Ward, Patricio (R)",D/C/F,00:05.6671,124.523,1
+Sector 6,6,10,"Rosenqvist, Felix (R)",D/H/F,00:05.6786,124.270,7
+Sector 6,7,15,"Rahal, Graham",D/H/F,00:05.6939,123.936,3
+Sector 6,8,27,"Rossi, Alexander",D/H/F,00:05.7089,123.611,3
+Sector 6,9,18,"Bourdais, Sebastien",D/H/F,00:05.7103,123.581,10
+Sector 6,10,19,"Ferrucci, Santino (R)",D/H/F,00:05.7126,123.531,9
+Sector 6,11,26,"Veach, Zach",D/H/F,00:05.7314,123.126,8
+Sector 6,12,59,"Chilton, Max",D/C/F,00:05.7493,122.742,11
+Sector 6,13,28,"Hunter-Reay, Ryan",D/H/F,00:05.7593,122.529,10
+Sector 6,14,5,"Hinchcliffe, James",D/H/F,00:05.7827,122.033,2
+Sector 6,15,21,"Pigot, Spencer",D/C/F,00:05.7951,121.772,6
+Sector 6,16,20,"Jones, Ed",D/C/F,00:05.8039,121.588,10
+Sector 6,17,60,"Harvey, Jack",D/H/F,00:05.8116,121.426,11
+Sector 6,18,7,"Ericsson, Marcus (R)",D/H/F,00:05.8330,120.981,11
+Sector 6,19,98,"Andretti, Marco",D/H/F,00:05.8366,120.906,9
+Sector 6,20,30,"Sato, Takuma",D/H/F,00:05.8560,120.506,3
+Sector 6,21,9,"Dixon, Scott",D/H/F,00:05.8799,120.016,8
+Sector 6,22,32,"Kaiser, Kyle (R)",D/C/F,00:05.9668,118.268,1
+Sector 6,23,14,"Kanaan, Tony",D/C/F,00:05.9771,118.064,4
+Sector 7,1,4,"Leist, Matheus",D/C/F,00:03.6708,118.131,9
+Sector 7,2,10,"Rosenqvist, Felix (R)",D/H/F,00:03.6734,118.048,7
+Sector 7,3,19,"Ferrucci, Santino (R)",D/H/F,00:03.6917,117.463,10
+Sector 7,4,12,"Power, Will",D/C/F,00:03.7495,115.652,9
+Sector 7,5,60,"Harvey, Jack",D/H/F,00:03.7497,115.646,11
+Sector 7,6,31,"O'Ward, Patricio (R)",D/C/F,00:03.7525,115.559,10
+Sector 7,7,26,"Veach, Zach",D/H/F,00:03.7527,115.553,8
+Sector 7,8,27,"Rossi, Alexander",D/H/F,00:03.7823,114.649,10
+Sector 7,9,2,"Newgarden, Josef",D/C/F,00:03.7829,114.631,7
+Sector 7,10,18,"Bourdais, Sebastien",D/H/F,00:03.7898,114.422,9
+Sector 7,11,7,"Ericsson, Marcus (R)",D/H/F,00:03.7970,114.205,10
+Sector 7,12,9,"Dixon, Scott",D/H/F,00:03.8056,113.947,8
+Sector 7,13,98,"Andretti, Marco",D/H/F,00:03.8102,113.809,9
+Sector 7,14,28,"Hunter-Reay, Ryan",D/H/F,00:03.8120,113.756,9
+Sector 7,15,5,"Hinchcliffe, James",D/H/F,00:03.8160,113.636,10
+Sector 7,16,30,"Sato, Takuma",D/H/F,00:03.8292,113.245,10
+Sector 7,17,15,"Rahal, Graham",D/H/F,00:03.8360,113.044,10
+Sector 7,18,21,"Pigot, Spencer",D/C/F,00:03.8508,112.609,7
+Sector 7,19,20,"Jones, Ed",D/C/F,00:03.8586,112.382,10
+Sector 7,20,22,"Pagenaud, Simon",D/C/F,00:03.8682,112.103,2
+Sector 7,21,32,"Kaiser, Kyle (R)",D/C/F,00:03.8752,111.900,10
+Sector 7,22,14,"Kanaan, Tony",D/C/F,00:03.8894,111.492,3
+Sector 7,23,59,"Chilton, Max",D/C/F,00:03.9362,110.166,10
+Sector 8,1,10,"Rosenqvist, Felix (R)",D/H/F,00:05.3143,90.066,7
+Sector 8,2,59,"Chilton, Max",D/C/F,00:05.3493,89.476,11
+Sector 8,3,12,"Power, Will",D/C/F,00:05.3804,88.959,7
+Sector 8,4,28,"Hunter-Reay, Ryan",D/H/F,00:05.4471,87.870,1
+Sector 8,5,2,"Newgarden, Josef",D/C/F,00:05.4521,87.789,7
+Sector 8,6,9,"Dixon, Scott",D/H/F,00:05.4887,87.204,8
+Sector 8,7,27,"Rossi, Alexander",D/H/F,00:05.4962,87.085,3
+Sector 8,8,22,"Pagenaud, Simon",D/C/F,00:05.5105,86.859,0
+Sector 8,9,15,"Rahal, Graham",D/H/F,00:05.5483,86.267,10
+Sector 8,10,20,"Jones, Ed",D/C/F,00:05.5566,86.138,10
+Sector 8,11,18,"Bourdais, Sebastien",D/H/F,00:05.5644,86.018,9
+Sector 8,12,26,"Veach, Zach",D/H/F,00:05.5700,85.931,8
+Sector 8,13,98,"Andretti, Marco",D/H/F,00:05.5817,85.751,5
+Sector 8,14,21,"Pigot, Spencer",D/C/F,00:05.5878,85.657,6
+Sector 8,15,60,"Harvey, Jack",D/H/F,00:05.5975,85.509,12
+Sector 8,16,5,"Hinchcliffe, James",D/H/F,00:05.6044,85.404,4
+Sector 8,17,30,"Sato, Takuma",D/H/F,00:05.6086,85.340,1
+Sector 8,18,31,"O'Ward, Patricio (R)",D/C/F,00:05.6321,84.984,10
+Sector 8,19,7,"Ericsson, Marcus (R)",D/H/F,00:05.6555,84.632,2
+Sector 8,20,4,"Leist, Matheus",D/C/F,00:05.6744,84.350,9
+Sector 8,21,14,"Kanaan, Tony",D/C/F,00:05.6870,84.163,0
+Sector 8,22,32,"Kaiser, Kyle (R)",D/C/F,00:05.7012,83.954,1
+Sector 8,23,19,"Ferrucci, Santino (R)",D/H/F,00:05.7625,83.061,9
+Sector 9,1,2,"Newgarden, Josef",D/C/F,00:04.9089,138.755,9
+Sector 9,2,10,"Rosenqvist, Felix (R)",D/H/F,00:04.9230,138.358,8
+Sector 9,3,26,"Veach, Zach",D/H/F,00:04.9276,138.229,8
+Sector 9,4,18,"Bourdais, Sebastien",D/H/F,00:04.9310,138.134,10
+Sector 9,5,7,"Ericsson, Marcus (R)",D/H/F,00:04.9335,138.064,1
+Sector 9,6,22,"Pagenaud, Simon",D/C/F,00:04.9353,138.013,11
+Sector 9,7,4,"Leist, Matheus",D/C/F,00:04.9399,137.885,9
+Sector 9,8,28,"Hunter-Reay, Ryan",D/H/F,00:04.9446,137.754,10
+Sector 9,9,30,"Sato, Takuma",D/H/F,00:04.9450,137.742,7
+Sector 9,10,5,"Hinchcliffe, James",D/H/F,00:04.9479,137.662,11
+Sector 9,11,15,"Rahal, Graham",D/H/F,00:04.9502,137.598,2
+Sector 9,12,32,"Kaiser, Kyle (R)",D/C/F,00:04.9536,137.503,10
+Sector 9,13,59,"Chilton, Max",D/C/F,00:04.9551,137.462,11
+Sector 9,14,9,"Dixon, Scott",D/H/F,00:04.9558,137.442,8
+Sector 9,15,27,"Rossi, Alexander",D/H/F,00:04.9594,137.342,3
+Sector 9,16,19,"Ferrucci, Santino (R)",D/H/F,00:04.9680,137.105,9
+Sector 9,17,12,"Power, Will",D/C/F,00:04.9701,137.047,7
+Sector 9,18,60,"Harvey, Jack",D/H/F,00:04.9755,136.898,12
+Sector 9,19,20,"Jones, Ed",D/C/F,00:04.9799,136.777,10
+Sector 9,20,21,"Pigot, Spencer",D/C/F,00:04.9999,136.230,7
+Sector 9,21,31,"O'Ward, Patricio (R)",D/C/F,00:05.0078,136.015,1
+Sector 9,22,14,"Kanaan, Tony",D/C/F,00:05.0097,135.964,3
+Sector 9,23,98,"Andretti, Marco",D/H/F,00:05.0282,135.463,3
+Sector 10,1,12,"Power, Will",D/C/F,00:08.0713,90.050,7
+Sector 10,2,20,"Jones, Ed",D/C/F,00:08.0842,89.906,10
+Sector 10,3,2,"Newgarden, Josef",D/C/F,00:08.0917,89.823,7
+Sector 10,4,27,"Rossi, Alexander",D/H/F,00:08.0974,89.759,10
+Sector 10,5,26,"Veach, Zach",D/H/F,00:08.1040,89.686,9
+Sector 10,6,30,"Sato, Takuma",D/H/F,00:08.1106,89.613,10
+Sector 10,7,31,"O'Ward, Patricio (R)",D/C/F,00:08.1165,89.548,10
+Sector 10,8,10,"Rosenqvist, Felix (R)",D/H/F,00:08.1243,89.462,7
+Sector 10,9,21,"Pigot, Spencer",D/C/F,00:08.1253,89.451,6
+Sector 10,10,22,"Pagenaud, Simon",D/C/F,00:08.1258,89.446,10
+Sector 10,11,15,"Rahal, Graham",D/H/F,00:08.1351,89.343,1
+Sector 10,12,59,"Chilton, Max",D/C/F,00:08.1601,89.070,9
+Sector 10,13,5,"Hinchcliffe, James",D/H/F,00:08.1709,88.952,10
+Sector 10,14,28,"Hunter-Reay, Ryan",D/H/F,00:08.1957,88.683,9
+Sector 10,15,9,"Dixon, Scott",D/H/F,00:08.1983,88.655,1
+Sector 10,16,18,"Bourdais, Sebastien",D/H/F,00:08.2186,88.436,9
+Sector 10,17,32,"Kaiser, Kyle (R)",D/C/F,00:08.2209,88.411,0
+Sector 10,18,60,"Harvey, Jack",D/H/F,00:08.2268,88.348,11
+Sector 10,19,7,"Ericsson, Marcus (R)",D/H/F,00:08.2422,88.183,10
+Sector 10,20,98,"Andretti, Marco",D/H/F,00:08.2497,88.102,0
+Sector 10,21,19,"Ferrucci, Santino (R)",D/H/F,00:08.2507,88.092,9
+Sector 10,22,4,"Leist, Matheus",D/C/F,00:08.2666,87.922,9
+Sector 10,23,14,"Kanaan, Tony",D/C/F,00:08.4205,86.315,0
+Sector 11,1,22,"Pagenaud, Simon",D/C/F,00:04.9886,131.345,0
+Sector 11,2,18,"Bourdais, Sebastien",D/H/F,00:05.0024,130.983,9
+Sector 11,3,21,"Pigot, Spencer",D/C/F,00:05.0057,130.896,0
+Sector 11,4,19,"Ferrucci, Santino (R)",D/H/F,00:05.0110,130.758,3
+Sector 11,5,12,"Power, Will",D/C/F,00:05.0183,130.568,7
+Sector 11,6,7,"Ericsson, Marcus (R)",D/H/F,00:05.0215,130.484,1
+Sector 11,7,15,"Rahal, Graham",D/H/F,00:05.0216,130.482,0
+Sector 11,8,59,"Chilton, Max",D/C/F,00:05.0241,130.417,10
+Sector 11,9,10,"Rosenqvist, Felix (R)",D/H/F,00:05.0266,130.352,8
+Sector 11,10,9,"Dixon, Scott",D/H/F,00:05.0283,130.308,8
+Sector 11,11,20,"Jones, Ed",D/C/F,00:05.0288,130.295,10
+Sector 11,12,5,"Hinchcliffe, James",D/H/F,00:05.0334,130.176,4
+Sector 11,13,60,"Harvey, Jack",D/H/F,00:05.0340,130.160,11
+Sector 11,14,30,"Sato, Takuma",D/H/F,00:05.0395,130.018,3
+Sector 11,15,2,"Newgarden, Josef",D/C/F,00:05.0404,129.995,0
+Sector 11,16,27,"Rossi, Alexander",D/H/F,00:05.0405,129.993,1
+Sector 11,17,98,"Andretti, Marco",D/H/F,00:05.0407,129.987,1
+Sector 11,18,32,"Kaiser, Kyle (R)",D/C/F,00:05.0525,129.684,0
+Sector 11,19,26,"Veach, Zach",D/H/F,00:05.0593,129.509,8
+Sector 11,20,28,"Hunter-Reay, Ryan",D/H/F,00:05.0702,129.231,9
+Sector 11,21,4,"Leist, Matheus",D/C/F,00:05.0856,128.840,4
+Sector 11,22,31,"O'Ward, Patricio (R)",D/C/F,00:05.0906,128.713,1
+Sector 11,23,14,"Kanaan, Tony",D/C/F,00:05.1003,128.468,1
+Sector 12,1,20,"Jones, Ed",D/C/F,00:08.0254,173.143,1
+Sector 12,2,60,"Harvey, Jack",D/H/F,00:08.0491,172.634,1
+Sector 12,3,98,"Andretti, Marco",D/H/F,00:08.0504,172.606,1
+Sector 12,4,4,"Leist, Matheus",D/C/F,00:08.0537,172.535,4
+Sector 12,5,21,"Pigot, Spencer",D/C/F,00:08.0562,172.481,3
+Sector 12,6,26,"Veach, Zach",D/H/F,00:08.0608,172.383,4
+Sector 12,7,22,"Pagenaud, Simon",D/C/F,00:08.0608,172.383,4
+Sector 12,8,19,"Ferrucci, Santino (R)",D/H/F,00:08.0659,172.274,3
+Sector 12,9,14,"Kanaan, Tony",D/C/F,00:08.0680,172.229,1
+Sector 12,10,15,"Rahal, Graham",D/H/F,00:08.0807,171.959,0
+Sector 12,11,32,"Kaiser, Kyle (R)",D/C/F,00:08.0809,171.954,0
+Sector 12,12,5,"Hinchcliffe, James",D/H/F,00:08.0918,171.723,6
+Sector 12,13,30,"Sato, Takuma",D/H/F,00:08.0990,171.570,3
+Sector 12,14,27,"Rossi, Alexander",D/H/F,00:08.1042,171.460,2
+Sector 12,15,28,"Hunter-Reay, Ryan",D/H/F,00:08.1102,171.333,4
+Sector 12,16,12,"Power, Will",D/C/F,00:08.1104,171.329,2
+Sector 12,17,59,"Chilton, Max",D/C/F,00:08.1229,171.065,0
+Sector 12,18,2,"Newgarden, Josef",D/C/F,00:08.1290,170.937,0
+Sector 12,19,7,"Ericsson, Marcus (R)",D/H/F,00:08.1302,170.912,1
+Sector 12,20,18,"Bourdais, Sebastien",D/H/F,00:08.1394,170.718,1
+Sector 12,21,10,"Rosenqvist, Felix (R)",D/H/F,00:08.1395,170.716,4
+Sector 12,22,9,"Dixon, Scott",D/H/F,00:08.1475,170.549,0
+Sector 12,23,31,"O'Ward, Patricio (R)",D/C/F,00:08.1743,169.990,0
+Sector 13,1,12,"Power, Will",D/C/F,00:07.9177,94.983,9
+Sector 13,2,10,"Rosenqvist, Felix (R)",D/H/F,00:07.9301,94.834,7
+Sector 13,3,30,"Sato, Takuma",D/H/F,00:07.9307,94.827,10
+Sector 13,4,27,"Rossi, Alexander",D/H/F,00:07.9893,94.132,10
+Sector 13,5,28,"Hunter-Reay, Ryan",D/H/F,00:07.9896,94.128,9
+Sector 13,6,9,"Dixon, Scott",D/H/F,00:07.9961,94.052,8
+Sector 13,7,2,"Newgarden, Josef",D/C/F,00:08.0285,93.672,9
+Sector 13,8,20,"Jones, Ed",D/C/F,00:08.0392,93.547,0
+Sector 13,9,22,"Pagenaud, Simon",D/C/F,00:08.0404,93.533,11
+Sector 13,10,59,"Chilton, Max",D/C/F,00:08.0458,93.471,9
+Sector 13,11,7,"Ericsson, Marcus (R)",D/H/F,00:08.0469,93.458,10
+Sector 13,12,15,"Rahal, Graham",D/H/F,00:08.0497,93.425,9
+Sector 13,13,21,"Pigot, Spencer",D/C/F,00:08.0602,93.304,1
+Sector 13,14,18,"Bourdais, Sebastien",D/H/F,00:08.0647,93.252,9
+Sector 13,15,5,"Hinchcliffe, James",D/H/F,00:08.0772,93.107,10
+Sector 13,16,26,"Veach, Zach",D/H/F,00:08.0851,93.016,4
+Sector 13,17,98,"Andretti, Marco",D/H/F,00:08.1124,92.703,1
+Sector 13,18,19,"Ferrucci, Santino (R)",D/H/F,00:08.1168,92.653,9
+Sector 13,19,60,"Harvey, Jack",D/H/F,00:08.1550,92.219,11
+Sector 13,20,32,"Kaiser, Kyle (R)",D/C/F,00:08.2605,91.041,10
+Sector 13,21,31,"O'Ward, Patricio (R)",D/C/F,00:08.2617,91.028,10
+Sector 13,22,14,"Kanaan, Tony",D/C/F,00:08.3005,90.602,4
+Sector 13,23,4,"Leist, Matheus",D/C/F,00:08.3037,90.568,9
+Sector 14,1,10,"Rosenqvist, Felix (R)",D/H/F,00:04.0786,72.719,7
+Sector 14,2,98,"Andretti, Marco",D/H/F,00:04.0884,72.544,9
+Sector 14,3,12,"Power, Will",D/C/F,00:04.1160,72.058,7
+Sector 14,4,28,"Hunter-Reay, Ryan",D/H/F,00:04.1240,71.918,10
+Sector 14,5,20,"Jones, Ed",D/C/F,00:04.1253,71.896,10
+Sector 14,6,9,"Dixon, Scott",D/H/F,00:04.1306,71.803,8
+Sector 14,7,26,"Veach, Zach",D/H/F,00:04.1398,71.644,8
+Sector 14,8,30,"Sato, Takuma",D/H/F,00:04.1620,71.262,10
+Sector 14,9,27,"Rossi, Alexander",D/H/F,00:04.1621,71.260,10
+Sector 14,10,59,"Chilton, Max",D/C/F,00:04.1632,71.241,13
+Sector 14,11,5,"Hinchcliffe, James",D/H/F,00:04.1640,71.227,10
+Sector 14,12,22,"Pagenaud, Simon",D/C/F,00:04.1772,71.002,10
+Sector 14,13,15,"Rahal, Graham",D/H/F,00:04.1811,70.936,10
+Sector 14,14,60,"Harvey, Jack",D/H/F,00:04.1826,70.911,11
+Sector 14,15,19,"Ferrucci, Santino (R)",D/H/F,00:04.1855,70.862,9
+Sector 14,16,2,"Newgarden, Josef",D/C/F,00:04.1876,70.826,9
+Sector 14,17,31,"O'Ward, Patricio (R)",D/C/F,00:04.2021,70.582,10
+Sector 14,18,21,"Pigot, Spencer",D/C/F,00:04.2102,70.446,7
+Sector 14,19,14,"Kanaan, Tony",D/C/F,00:04.2385,69.975,3
+Sector 14,20,7,"Ericsson, Marcus (R)",D/H/F,00:04.2528,69.740,11
+Sector 14,21,4,"Leist, Matheus",D/C/F,00:04.2563,69.683,9
+Sector 14,22,18,"Bourdais, Sebastien",D/H/F,00:04.3170,68.703,9
+Sector 14,23,32,"Kaiser, Kyle (R)",D/C/F,00:04.3719,67.840,11
+Sector 15,1,27,"Rossi, Alexander",D/H/F,00:08.1257,78.455,10
+Sector 15,2,15,"Rahal, Graham",D/H/F,00:08.2149,77.603,9
+Sector 15,3,31,"O'Ward, Patricio (R)",D/C/F,00:08.2328,77.434,10
+Sector 15,4,4,"Leist, Matheus",D/C/F,00:08.2514,77.260,9
+Sector 15,5,2,"Newgarden, Josef",D/C/F,00:08.2526,77.248,9
+Sector 15,6,30,"Sato, Takuma",D/H/F,00:08.2691,77.094,10
+Sector 15,7,12,"Power, Will",D/C/F,00:08.2770,77.021,9
+Sector 15,8,10,"Rosenqvist, Felix (R)",D/H/F,00:08.2995,76.812,7
+Sector 15,9,22,"Pagenaud, Simon",D/C/F,00:08.3015,76.793,10
+Sector 15,10,5,"Hinchcliffe, James",D/H/F,00:08.3045,76.766,10
+Sector 15,11,9,"Dixon, Scott",D/H/F,00:08.3206,76.617,1
+Sector 15,12,20,"Jones, Ed",D/C/F,00:08.3233,76.592,10
+Sector 15,13,60,"Harvey, Jack",D/H/F,00:08.3349,76.486,11
+Sector 15,14,28,"Hunter-Reay, Ryan",D/H/F,00:08.3534,76.316,9
+Sector 15,15,59,"Chilton, Max",D/C/F,00:08.3619,76.239,9
+Sector 15,16,32,"Kaiser, Kyle (R)",D/C/F,00:08.3677,76.186,0
+Sector 15,17,26,"Veach, Zach",D/H/F,00:08.3684,76.179,8
+Sector 15,18,18,"Bourdais, Sebastien",D/H/F,00:08.3727,76.140,10
+Sector 15,19,98,"Andretti, Marco",D/H/F,00:08.4443,75.495,1
+Sector 15,20,19,"Ferrucci, Santino (R)",D/H/F,00:08.4490,75.453,8
+Sector 15,21,7,"Ericsson, Marcus (R)",D/H/F,00:08.4593,75.361,10
+Sector 15,22,21,"Pigot, Spencer",D/C/F,00:08.4758,75.214,0
+Sector 15,23,14,"Kanaan, Tony",D/C/F,00:08.5880,74.231,0
+Sector 16,1,18,"Bourdais, Sebastien",D/H/F,00:05.9675,115.626,9
+Sector 16,2,21,"Pigot, Spencer",D/C/F,00:06.0291,114.445,7
+Sector 16,3,12,"Power, Will",D/C/F,00:06.0409,114.221,10
+Sector 16,4,7,"Ericsson, Marcus (R)",D/H/F,00:06.0417,114.206,4
+Sector 16,5,10,"Rosenqvist, Felix (R)",D/H/F,00:06.0481,114.085,1
+Sector 16,6,60,"Harvey, Jack",D/H/F,00:06.0868,113.360,12
+Sector 16,7,22,"Pagenaud, Simon",D/C/F,00:06.1042,113.037,10
+Sector 16,8,20,"Jones, Ed",D/C/F,00:06.1151,112.835,10
+Sector 16,9,9,"Dixon, Scott",D/H/F,00:06.1250,112.653,1
+Sector 16,10,59,"Chilton, Max",D/C/F,00:06.1277,112.603,0
+Sector 16,11,15,"Rahal, Graham",D/H/F,00:06.1283,112.592,0
+Sector 16,12,28,"Hunter-Reay, Ryan",D/H/F,00:06.1357,112.457,10
+Sector 16,13,5,"Hinchcliffe, James",D/H/F,00:06.1446,112.294,9
+Sector 16,14,98,"Andretti, Marco",D/H/F,00:06.1519,112.160,9
+Sector 16,15,2,"Newgarden, Josef",D/C/F,00:06.1653,111.917,9
+Sector 16,16,27,"Rossi, Alexander",D/H/F,00:06.1674,111.879,1
+Sector 16,17,26,"Veach, Zach",D/H/F,00:06.1841,111.576,9
+Sector 16,18,30,"Sato, Takuma",D/H/F,00:06.1894,111.481,10
+Sector 16,19,19,"Ferrucci, Santino (R)",D/H/F,00:06.2045,111.210,3
+Sector 16,20,31,"O'Ward, Patricio (R)",D/C/F,00:06.2210,110.915,2
+Sector 16,21,4,"Leist, Matheus",D/C/F,00:06.3139,109.283,9
+Sector 16,22,32,"Kaiser, Kyle (R)",D/C/F,00:06.3368,108.888,1
+Sector 16,23,14,"Kanaan, Tony",D/C/F,00:06.3414,108.809,0
+Sector 17,1,31,"O'Ward, Patricio (R)",D/C/F,00:03.8797,147.094,10
+Sector 17,2,18,"Bourdais, Sebastien",D/H/F,00:03.8892,146.735,9
+Sector 17,3,5,"Hinchcliffe, James",D/H/F,00:03.9094,145.977,10
+Sector 17,4,27,"Rossi, Alexander",D/H/F,00:03.9117,145.891,10
+Sector 17,5,12,"Power, Will",D/C/F,00:03.9136,145.820,7
+Sector 17,6,60,"Harvey, Jack",D/H/F,00:03.9167,145.705,11
+Sector 17,7,2,"Newgarden, Josef",D/C/F,00:03.9247,145.408,9
+Sector 17,8,22,"Pagenaud, Simon",D/C/F,00:03.9479,144.553,11
+Sector 17,9,19,"Ferrucci, Santino (R)",D/H/F,00:03.9546,144.308,10
+Sector 17,10,7,"Ericsson, Marcus (R)",D/H/F,00:03.9592,144.141,10
+Sector 17,11,4,"Leist, Matheus",D/C/F,00:03.9787,143.434,9
+Sector 17,12,28,"Hunter-Reay, Ryan",D/H/F,00:03.9793,143.413,9
+Sector 17,13,98,"Andretti, Marco",D/H/F,00:03.9942,142.878,9
+Sector 17,14,59,"Chilton, Max",D/C/F,00:03.9970,142.778,10
+Sector 17,15,30,"Sato, Takuma",D/H/F,00:04.0051,142.489,10
+Sector 17,16,10,"Rosenqvist, Felix (R)",D/H/F,00:04.0061,142.453,7
+Sector 17,17,15,"Rahal, Graham",D/H/F,00:04.0102,142.308,10
+Sector 17,18,26,"Veach, Zach",D/H/F,00:04.0183,142.021,11
+Sector 17,19,20,"Jones, Ed",D/C/F,00:04.0283,141.668,10
+Sector 17,20,32,"Kaiser, Kyle (R)",D/C/F,00:04.0432,141.146,11
+Sector 17,21,21,"Pigot, Spencer",D/C/F,00:04.0449,141.087,6
+Sector 17,22,9,"Dixon, Scott",D/H/F,00:04.0518,140.846,3
+Sector 17,23,14,"Kanaan, Tony",D/C/F,00:04.1017,139.133,3
+Sector 18,1,31,"O'Ward, Patricio (R)",D/C/F,00:06.5146,128.836,11
+Sector 18,2,5,"Hinchcliffe, James",D/H/F,00:06.5298,128.537,11
+Sector 18,3,19,"Ferrucci, Santino (R)",D/H/F,00:06.5468,128.203,10
+Sector 18,4,28,"Hunter-Reay, Ryan",D/H/F,00:06.5866,127.428,10
+Sector 18,5,2,"Newgarden, Josef",D/C/F,00:06.6111,126.956,7
+Sector 18,6,12,"Power, Will",D/C/F,00:06.6347,126.504,9
+Sector 18,7,27,"Rossi, Alexander",D/H/F,00:06.6409,126.386,11
+Sector 18,8,10,"Rosenqvist, Felix (R)",D/H/F,00:06.6483,126.246,2
+Sector 18,9,59,"Chilton, Max",D/C/F,00:06.6747,125.746,9
+Sector 18,10,26,"Veach, Zach",D/H/F,00:06.6768,125.707,8
+Sector 18,11,9,"Dixon, Scott",D/H/F,00:06.6860,125.534,8
+Sector 18,12,15,"Rahal, Graham",D/H/F,00:06.6955,125.356,10
+Sector 18,13,22,"Pagenaud, Simon",D/C/F,00:06.7319,124.678,11
+Sector 18,14,18,"Bourdais, Sebastien",D/H/F,00:06.7455,124.426,9
+Sector 18,15,7,"Ericsson, Marcus (R)",D/H/F,00:06.7536,124.277,10
+Sector 18,16,20,"Jones, Ed",D/C/F,00:06.8130,123.194,10
+Sector 18,17,60,"Harvey, Jack",D/H/F,00:06.8140,123.176,2
+Sector 18,18,21,"Pigot, Spencer",D/C/F,00:06.8281,122.921,7
+Sector 18,19,30,"Sato, Takuma",D/H/F,00:06.8522,122.489,10
+Sector 18,20,98,"Andretti, Marco",D/H/F,00:06.8560,122.421,9
+Sector 18,21,4,"Leist, Matheus",D/C/F,00:06.9010,121.623,9
+Sector 18,22,32,"Kaiser, Kyle (R)",D/C/F,00:06.9772,120.294,11
+Sector 18,23,14,"Kanaan, Tony",D/C/F,00:07.0646,118.806,6
+Sector 19,1,28,"Hunter-Reay, Ryan",D/H/F,00:05.4180,80.540,10
+Sector 19,2,30,"Sato, Takuma",D/H/F,00:05.4488,80.084,10
+Sector 19,3,22,"Pagenaud, Simon",D/C/F,00:05.4644,79.856,11
+Sector 19,4,31,"O'Ward, Patricio (R)",D/C/F,00:05.4710,79.759,10
+Sector 19,5,5,"Hinchcliffe, James",D/H/F,00:05.4828,79.588,10
+Sector 19,6,60,"Harvey, Jack",D/H/F,00:05.4837,79.575,11
+Sector 19,7,10,"Rosenqvist, Felix (R)",D/H/F,00:05.4848,79.559,7
+Sector 19,8,20,"Jones, Ed",D/C/F,00:05.4946,79.417,10
+Sector 19,9,15,"Rahal, Graham",D/H/F,00:05.4985,79.360,10
+Sector 19,10,27,"Rossi, Alexander",D/H/F,00:05.4988,79.356,10
+Sector 19,11,18,"Bourdais, Sebastien",D/H/F,00:05.5056,79.258,9
+Sector 19,12,9,"Dixon, Scott",D/H/F,00:05.5155,79.116,8
+Sector 19,13,12,"Power, Will",D/C/F,00:05.5162,79.106,10
+Sector 19,14,2,"Newgarden, Josef",D/C/F,00:05.5342,78.849,7
+Sector 19,15,59,"Chilton, Max",D/C/F,00:05.5442,78.706,13
+Sector 19,16,21,"Pigot, Spencer",D/C/F,00:05.5633,78.436,6
+Sector 19,17,19,"Ferrucci, Santino (R)",D/H/F,00:05.5687,78.360,9
+Sector 19,18,98,"Andretti, Marco",D/H/F,00:05.5877,78.094,9
+Sector 19,19,7,"Ericsson, Marcus (R)",D/H/F,00:05.5896,78.067,10
+Sector 19,20,4,"Leist, Matheus",D/C/F,00:05.6057,77.843,9
+Sector 19,21,26,"Veach, Zach",D/H/F,00:05.6228,77.606,8
+Sector 19,22,32,"Kaiser, Kyle (R)",D/C/F,00:05.7016,76.534,10
+Sector 19,23,14,"Kanaan, Tony",D/C/F,00:05.7320,76.128,0
+Sector 20,1,60,"Harvey, Jack",D/H/F,00:05.1995,141.097,11
+Sector 20,2,20,"Jones, Ed",D/C/F,00:05.2131,140.729,10
+Sector 20,3,5,"Hinchcliffe, James",D/H/F,00:05.2152,140.673,11
+Sector 20,4,18,"Bourdais, Sebastien",D/H/F,00:05.2226,140.473,10
+Sector 20,5,28,"Hunter-Reay, Ryan",D/H/F,00:05.2245,140.422,10
+Sector 20,6,7,"Ericsson, Marcus (R)",D/H/F,00:05.2334,140.184,1
+Sector 20,7,21,"Pigot, Spencer",D/C/F,00:05.2343,140.159,7
+Sector 20,8,27,"Rossi, Alexander",D/H/F,00:05.2397,140.015,2
+Sector 20,9,10,"Rosenqvist, Felix (R)",D/H/F,00:05.2403,139.999,11
+Sector 20,10,12,"Power, Will",D/C/F,00:05.2414,139.970,10
+Sector 20,11,9,"Dixon, Scott",D/H/F,00:05.2531,139.658,8
+Sector 20,12,22,"Pagenaud, Simon",D/C/F,00:05.2535,139.647,1
+Sector 20,13,59,"Chilton, Max",D/C/F,00:05.2543,139.626,10
+Sector 20,14,30,"Sato, Takuma",D/H/F,00:05.2557,139.589,3
+Sector 20,15,2,"Newgarden, Josef",D/C/F,00:05.2576,139.538,1
+Sector 20,16,19,"Ferrucci, Santino (R)",D/H/F,00:05.2577,139.536,1
+Sector 20,17,98,"Andretti, Marco",D/H/F,00:05.2585,139.514,0
+Sector 20,18,26,"Veach, Zach",D/H/F,00:05.2764,139.041,4
+Sector 20,19,15,"Rahal, Graham",D/H/F,00:05.2769,139.028,1
+Sector 20,20,32,"Kaiser, Kyle (R)",D/C/F,00:05.2788,138.978,2
+Sector 20,21,14,"Kanaan, Tony",D/C/F,00:05.2816,138.904,1
+Sector 20,22,4,"Leist, Matheus",D/C/F,00:05.2828,138.873,4
+Sector 20,23,31,"O'Ward, Patricio (R)",D/C/F,00:05.2941,138.576,10
