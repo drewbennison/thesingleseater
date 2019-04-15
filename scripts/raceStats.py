@@ -8,6 +8,7 @@ import numpy as np
 import os
 
 print("Function raceStats(lapchart_link='lapcart_location.csv', race_length=integer, points_system='single' OR 'double')")
+print("Function cautionStats(laochart_link='lapchart_location.csv', list_of_cautions=[x,y]")
 
 #Calculates all of the race stats for a given race
 def raceStats(lapchart_link, race_length, point_system="single"):
@@ -312,3 +313,86 @@ def cautionStats(lapchart_link, list_of_cautions):
 		caution += 1
 
 	return caution_df
+
+def greenFlagStats(lapchart_link, list_window):
+	names = ["leist", "kanaan", "veach", "rossi", "rhr", "andretti", "hinchcliffe", "ericsson", "chilton", "dixon", "rosenqvist", "ferrucci", "bourdais", "pigot", "herta", "rahal", "sato", "newgarden", "power", "pagenaud", "castroneves", "harvey", "hanley", "carpjones", "kimballoward", "oward", "karam", "daly", "kaiser", "mann", "king", "alonso", "jonesindy"]
+	data = pd.read_csv(lapchart_link)
+	window_laps = list_window
+
+	def racePosition(start=0, finish=1):
+
+		#Full time drivers
+		leist = []
+		kanaan = []
+		veach = []
+		rossi = []
+		rhr = []
+		andretti = []
+		hinchcliffe = []
+		ericsson = []
+		chilton = []
+		dixon = []
+		rosenqvist = []
+		ferrucci = []
+		bourdais = []
+		pigot = []
+		herta = []
+		rahal = []
+		sato = []
+		newgarden = []
+		power = []
+		pagenaud = []
+		#Part time drivers
+		castroneves = [] #5,6
+		harvey = [] #1–6, 10, 13, 16, 17
+		hanley = [] # 1, 3, 6, 10, 13
+		carpjones = [] #alternate road and oval
+		kimballoward = [] #not positive yet
+		oward = []
+		karam = [] #6
+		daly = [] #6
+		kaiser = [] #2
+		mann = [] #6
+		king = [] #6
+		alonso = [] #6
+		jonesindy = [] #indy number only
+
+
+
+		#Driver numbers in order they are listed above
+		nums = [4.0, 14.0, 26.0, 27.0, 28.0, 98.0, 5.0, 7.0, 59.0, 9.0, 10.0, 19.0, 18.0, 21.0, 88.0, 15.0, 30.0, 2.0, 12.0, 22.0, 3.0, 60.0, 81.0, 20.0, 23.0, 31.0, 24.0, 25.0, 32.0, 39.0, 42.0, 66.0, 64.0]
+		#List of all driver lists in order of numbers above
+		drivers = [leist, kanaan, veach, rossi, rhr, andretti, hinchcliffe, ericsson, chilton, dixon, rosenqvist, ferrucci, bourdais, pigot, herta, rahal, sato, newgarden, power, pagenaud, castroneves, harvey, hanley, carpjones, kimballoward, oward, karam, daly, kaiser, mann, king, alonso, jonesindy]
+		#Driver names in order
+		names = ["leist", "kanaan", "veach", "rossi", "rhr", "andretti", "hinchcliffe", "ericsson", "chilton", "dixon", "rosenqvist", "ferrucci", "bourdais", "pigot", "herta", "rahal", "sato", "newgarden", "power", "pagenaud", "castroneves", "harvey", "hanley", "carpjones", "kimballoward", "oward", "karam", "daly", "kaiser", "mann", "king", "alonso", "jonesindy"]
+
+		#Range of 0 (start) to (last lap+1) of race
+		for lap in range(start,finish):
+		    #Take column of current lap into a list
+		    place_list = list(data[str(lap)])
+		    
+		    count = 0
+		    #For each number in nums
+		    for num in nums:
+		        #If the number was on the track for that lap
+		        if num in place_list:
+		            #Find it's index in the list, and append it to the correct driver
+		            driver = drivers[count]
+		            place = place_list.index(num)
+		            driver.append(place+1)
+		        else:
+		            pass
+		        count += 1
+		return drivers
+
+	greenFlag_df = pd.DataFrame({"driver":[], "greenFlagPM":[]})
+
+	drivers=racePosition(window_laps[0],window_laps[1]+1)
+
+	count = 0
+	for driver in drivers:
+		if len(driver)>(window_laps[1]-window_laps[0]-1):
+			df2 = pd.DataFrame({"driver":[names[count]], "greenFlagPM":[-1*(driver[-1]-driver[0])]})
+			greenFlag_df = greenFlag_df.append(df2, ignore_index=True)
+		count+=1
+	return greenFlag_df
