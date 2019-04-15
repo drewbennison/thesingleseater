@@ -4650,3 +4650,26 @@ Barber,2019,road,21,24,81,   Ben Hanley,10 Star   (DragonSpeed),D/C/F,88,,runnin
 Barber,2019,road,22,22,59,   Max Chilton,Gallagher Insurance   (Trevor Carlin),D/C/F,88,,running,0,8,0,0,,20.93,22,9,8,8.7,16,16,0,0,22
 Barber,2019,road,23,2,15,   Graham Rahal,One Cure / United Rentals / Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,55,,electrical,1,8,1,0,,9.8,23,20,7,17.1,14,23,0,17,6
 Barber,2019,road,24,9,88,   Colton Herta,Harding Steinbrenner Racing,D/H/F,51,,fuel pressure,0,6,0,0,,19.77,24,10,6,8.8,2,17,1,0,12
+Long Beach,2019,street,1,1,27,   Alexander Rossi,NAPA Auto Parts   (Andretti Autosport),D/H/F,85,,running,80,54,1,2,1,1.209302326,1,50,50,54,8,8,0,83,2
+Long Beach,2019,street,2,4,2,   Josef Newgarden,Hitachi / Verizon   (Roger Penske),D/C/F,85,,running,2,41,1,0,0,2.593023256,2,35,40,37.25,4,2,0,85,4
+Long Beach,2019,street,3,2,9,   Scott Dixon,PNC Bank   (Chip Ganassi),D/H/F,85,,running,0,35,0,0,0,3.593023256,4.818181818,32,30,31.5,9,11,0,80,5
+Long Beach,2019,street,4,6,15,   Graham Rahal,Total / United Rentals / Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,85,,running,0,32,0,0,0,4.093023256,3,32,35,32.75,9,6,1,82,10
+Long Beach,2019,street,5,7,28,   Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,85,,running,0,30,0,0,0,5.465116279,4.181818182,30,32,30.5,16,14,1,49,1
+Long Beach,2019,street,6,5,22,   Simon Pagenaud,DXC Technology / Verizon   (Roger Penske),D/C/F,85,,running,0,28,0,0,0,6.302325581,6,28,28,28,8,9,-2,4,9
+Long Beach,2019,street,7,3,12,   Will Power,Verizon   (Roger Penske),D/C/F,85,,running,2,27,1,0,0,5.534883721,7,28,26,28.5,9,13,0,35,7
+Long Beach,2019,street,8,8,30,   Takuma Sato,Mi-Jack / Panasonic   (Rahal Letterman Lanigan Racing),D/H/F,85,,running,1,25,1,0,0,7.569767442,8,24,24,25,9,9,0,2,12
+Long Beach,2019,street,9,15,5,   James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,85,,running,0,22,0,0,0,10.84883721,9,19,22,19.75,13,7,0,0,8
+Long Beach,2019,street,10,12,10,   Felix Rosenqvist,NTT Data   (Chip Ganassi),D/H/F,85,,running,0,20,0,0,0,10.05813953,10,20,20,20,10,8,1,0,6
+Long Beach,2019,street,11,14,18,   Sebastien Bourdais,SealMaster / Sport Clips   (Dale Coyne w/Vasser-Sullivan),D/H/F,85,,running,0,19,0,0,0,11.46511628,11,19,19,19,12,9,0,0,14
+Long Beach,2019,street,12,9,31,   Patricio O'Ward,Chevrolet Accessories   (Trevor Carlin),D/C/F,84,,running,0,18,0,0,0,13.11764706,12,17,18,17.25,15,18,0,0,17
+Long Beach,2019,street,13,11,98,   Marco Andretti,U.S. Concrete / Curb / King Taco   (AHA / Marco & Curb-Agajanian),D/H/F,84,,running,0,17,0,0,0,13.11764706,13,17,17,17,12,14,-1,0,22
+Long Beach,2019,street,14,16,59,   Max Chilton,Gallagher Insurance   (Trevor Carlin),D/C/F,84,,running,0,16,0,0,0,15.64705882,14.85714286,14,15,14.25,20,18,0,0,23
+Long Beach,2019,street,15,20,4,   Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,84,,running,0,15,0,0,0,16.90588235,15.85714286,13,14,13.25,20,15,0,0,21
+Long Beach,2019,street,16,17,20,   Ed Jones,Autogeek   (Ed Carpenter Racing),D/C/F,84,,running,0,14,0,0,0,17.07058824,16.85714286,13,13,13,18,17,0,0,13
+Long Beach,2019,street,17,22,26,   Zach Veach,Gainbridge   (Andretti Autosport),D/H/F,84,,running,0,13,0,0,0,15.76470588,14.42857143,14,16,14.5,14,9,3,0,19
+Long Beach,2019,street,18,23,21,   Spencer Pigot,Autogeek / Direct Supply   (Ed Carpenter Racing),D/C/F,84,,running,0,12,0,0,0,19.57647059,18,10,12,10.5,7,2,1,0,11
+Long Beach,2019,street,19,21,14,   Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,83,,running,0,11,0,0,0,18.85714286,19,11,11,11,10,8,3,0,20
+Long Beach,2019,street,20,19,7,   Marcus Ericsson,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,83,,running,0,10,0,0,0,20.89285714,20,9,10,9.25,4,5,-2,0,16
+Long Beach,2019,street,21,13,19,   Santino Ferrucci,David Yurman / Cly-Del   (Dale Coyne),D/H/F,83,,running,0,9,0,0,0,18.44047619,21,12,9,11.25,7,15,0,0,15
+Long Beach,2019,street,22,18,60,   Jack Harvey,AutoNation / SiriusXM   (Meyer Shank Racing / Arrow SPM),D/H/F,82,,running,0,8,0,0,0,22.54216867,22,7,8,7.25,1,5,-5,0,18
+Long Beach,2019,street,23,10,88,   Colton Herta,King Taco   (Harding Steinbrenner Racing),D/H/F,50,,crash,0,7,0,0,0,10.15686275,23,20,7,16.75,8,12,0,1,3
