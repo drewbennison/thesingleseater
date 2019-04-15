@@ -1,2 +1,2 @@
 # thesingleseater
-The data and code behind The Single Seater
+The data and code behind The Single Seater, www.thesingleseater.com.
