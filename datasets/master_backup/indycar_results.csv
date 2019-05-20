@@ -4673,3 +4673,27 @@ Long Beach,2019,street,20,19,7,   Marcus Ericsson,Arrow / Lucas Oil   (Schmidt P
 Long Beach,2019,street,21,13,19,   Santino Ferrucci,David Yurman / Cly-Del   (Dale Coyne),D/H/F,83,,running,0,9,0,0,0,18.44047619,21,12,9,11.25,7,15,0,0,15
 Long Beach,2019,street,22,18,60,   Jack Harvey,AutoNation / SiriusXM   (Meyer Shank Racing / Arrow SPM),D/H/F,82,,running,0,8,0,0,0,22.54216867,22,7,8,7.25,1,5,-5,0,18
 Long Beach,2019,street,23,10,88,   Colton Herta,King Taco   (Harding Steinbrenner Racing),D/H/F,50,,crash,0,7,0,0,0,10.15686275,23,20,7,16.75,8,12,0,1,3
+Indy GP,2019,road,1,8,22,   Simon Pagenaud,Menards / Verizon   (Roger Penske),D/C/F,85,,running,5,51,1,0,0,6.651162791,3.636363636,26,32,28.5,32,25,0,35,2
+Indy GP,2019,road,2,2,9,   Scott Dixon,PNC Bank   (Chip Ganassi),D/H/F,85,,running,39,43,1,2,0,2.88372093,1.090909091,35,50,41.75,21,21,-1,69,8
+Indy GP,2019,road,3,3,60,   Jack Harvey,AutoNation / SiriusXM   (Meyer Shank Racing / Arrow SPM),D/H/F,85,,running,0,35,0,0,0,4.61627907,2.272727273,30,40,32.5,28,28,1,55,4
+Indy GP,2019,road,4,21,4,   Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,85,,running,0,32,0,0,0,11.91860465,3.727272727,18,32,21.5,43,26,2,31,23
+Indy GP,2019,road,5,12,21,   Spencer Pigot,Autogeek / Direct Supply   (Ed Carpenter Racing),D/C/F,85,,running,0,30,0,0,0,7.5,5.181818182,24,30,25.5,36,29,3,20,5
+Indy GP,2019,road,6,5,20,   Ed Jones,Preferred Freezer Services   (Ed Carpenter Racing),D/C/F,85,,running,0,28,0,0,0,7.930232558,5.090909091,24,30,25.5,36,37,0,47,13
+Indy GP,2019,road,7,6,12,   Will Power,Verizon 5G   (Roger Penske),D/C/F,85,,running,0,26,0,0,0,11.54651163,8.636363636,18,22,19,26,27,-1,2,9
+Indy GP,2019,road,8,1,10,   Felix Rosenqvist,NTT Data   (Chip Ganassi),D/H/F,85,,running,15,26,1,0,1,8.546511628,10.18181818,22,20,23.5,28,35,0,26,6
+Indy GP,2019,road,9,7,15,   Graham Rahal,Mi-Jack / United Rentals   (Rahal Letterman Lanigan Racing),D/H/F,85,,running,4,23,1,0,0,6.697674419,7.090909091,26,26,27,28,30,1,21,14
+Indy GP,2019,road,10,14,19,   Santino Ferrucci,Cly-Del Manufacturing   (Dale Coyne),D/H/F,85,,running,0,20,0,0,0,10.72093023,8.954545455,19,22,19.75,43,39,2,6,18
+Indy GP,2019,road,11,10,18,   Sebastien Bourdais,GEICO / Sport Clips   (Dale Coyne w/Vasser-Sullivan),D/H/F,85,,running,2,20,1,0,0,9.906976744,11.95454545,20,18,20.5,31,32,-1,8,17
+Indy GP,2019,road,12,20,26,   Zach Veach,Gainbridge   (Andretti Autosport),D/H/F,85,,running,0,18,0,0,0,15.55813953,13.5,14,16,14.5,28,20,-2,0,19
+Indy GP,2019,road,13,23,98,   Marco Andretti,U.S. Concrete / Curb   (AHA / Marco & Curb-Agajanian),D/H/F,85,,running,0,17,0,0,0,16.54651163,14.31818182,13,16,13.75,30,20,3,0,21
+Indy GP,2019,road,14,11,30,   Takuma Sato,Mi-Jack / Panasonic   (Rahal Letterman Lanigan Racing),D/H/F,85,,running,0,16,0,0,0,11.87209302,15.18181818,18,15,17.25,33,36,-5,7,15
+Indy GP,2019,road,15,13,2,   Josef Newgarden,Fitzgerald USA / Verizon   (Roger Penske),D/C/F,85,,running,20,16,1,0,0,9.813953488,16.18181818,20,14,19.5,35,37,0,26,12
+Indy GP,2019,road,16,18,5,   James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,85,,running,0,14,0,0,0,11.89534884,11.5,18,18,18,40,38,1,17,7
+Indy GP,2019,road,17,16,28,   Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,85,,running,0,13,0,0,0,18.74418605,16.90909091,11,13,11.5,14,15,2,0,16
+Indy GP,2019,road,18,22,59,   Max Chilton,Gallagher Insurance   (Trevor Carlin),D/C/F,85,,running,0,12,0,0,0,15.09302326,18.04545455,15,12,14.25,35,31,1,8,22
+Indy GP,2019,road,19,19,31,   Patricio O'Ward,Trevor Carlin,D/C/F,85,,running,0,11,0,0,0,12.84883721,16.54545455,17,13,16,36,36,-4,20,1
+Indy GP,2019,road,20,24,14,   Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,83,,running,0,10,0,0,0,19.02380952,20,11,10,10.75,16,12,6,0,24
+Indy GP,2019,road,21,15,3,   Helio Castroneves,Pennzoil / Verizon   (Roger Penske),D/C/F,83,,running,0,9,0,0,0,15.5,21,14,9,12.75,25,31,0,0,3
+Indy GP,2019,road,22,17,27,   Alexander Rossi,NAPA Auto Parts   (Andretti Autosport),D/H/F,81,,running,0,8,0,0,0,22.25609756,22,8,8,8,2,7,-7,0,10
+Indy GP,2019,road,23,4,88,   Colton Herta,GESS RNG Biogas   (Harding Steinbrenner Racing),D/H/F,15,,crash,0,7,0,0,0,4,23,32,7,25.75,0,0,0,15,11
+Indy GP,2019,road,24,9,7,   Marcus Ericsson,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,11,,crash,0,6,0,0,0,12,24,18,6,22.5,0,14,-1,0,20
