@@ -16,7 +16,7 @@ data = pd.read_csv(user_input)
 
 ##################################################################################################
 #Finds every drivers' position on every lap in the given interval
-names = ["leist", "kanaan", "veach", "rossi", "rhr", "andretti", "hinchcliffe", "ericsson", "chilton", "dixon", "rosenqvist", "ferrucci", "bourdais", "pigot", "herta", "rahal", "sato", "newgarden", "power", "pagenaud", "castroneves", "harvey", "hanley", "carpjones", "kimballoward", "oward", "karam", "daly", "kaiser", "mann", "king", "alonso", "jonesindy"]
+names = ["leist", "kanaan", "veach", "rossi", "rhr", "andretti", "hinchcliffe", "ericsson", "chilton", "dixon", "rosenqvist", "ferrucci", "bourdais", "pigot", "herta", "rahal", "sato", "newgarden", "power", "pagenaud", "castroneves", "harvey", "hanley", "carpjones", "kimballoward", "oward", "karam", "daly", "kaiser", "mann", "king", "alonso", "jonesindy", "servia", "davison", "hildebrand"]
 
 def racePosition(start=0, finish=1):
 
@@ -55,13 +55,16 @@ def racePosition(start=0, finish=1):
 		king = [] #6
 		alonso = [] #6
 		jonesindy = [] #indy number only
+		servia = []
+		davison = []
+		hildebrand = []
 
 		#Driver numbers in order they are listed above
-		nums = [4.0, 14.0, 26.0, 27.0, 28.0, 98.0, 5.0, 7.0, 59.0, 9.0, 10.0, 19.0, 18.0, 21.0, 88.0, 15.0, 30.0, 2.0, 12.0, 22.0, 3.0, 60.0, 81.0, 20.0, 23.0, 31.0, 24.0, 25.0, 32.0, 39.0, 42.0, 66.0, 64.0]
+		nums = [4.0, 14.0, 26.0, 27.0, 28.0, 98.0, 5.0, 7.0, 59.0, 9.0, 10.0, 19.0, 18.0, 21.0, 88.0, 15.0, 30.0, 2.0, 12.0, 22.0, 3.0, 60.0, 81.0, 20.0, 23.0, 31.0, 24.0, 25.0, 32.0, 39.0, 42.0, 66.0, 63.0, 77.0, 33.0, 48.0]
 		#List of all driver lists in order of numbers above
-		drivers = [leist, kanaan, veach, rossi, rhr, andretti, hinchcliffe, ericsson, chilton, dixon, rosenqvist, ferrucci, bourdais, pigot, herta, rahal, sato, newgarden, power, pagenaud, castroneves, harvey, hanley, carpjones, kimballoward, oward, karam, daly, kaiser, mann, king, alonso, jonesindy]
+		drivers = [leist, kanaan, veach, rossi, rhr, andretti, hinchcliffe, ericsson, chilton, dixon, rosenqvist, ferrucci, bourdais, pigot, herta, rahal, sato, newgarden, power, pagenaud, castroneves, harvey, hanley, carpjones, kimballoward, oward, karam, daly, kaiser, mann, king, alonso, jonesindy, servia, davison, hildebrand]
 		#Driver names in order
-		names = ["leist", "kanaan", "veach", "rossi", "rhr", "andretti", "hinchcliffe", "ericsson", "chilton", "dixon", "rosenqvist", "ferrucci", "bourdais", "pigot", "herta", "rahal", "sato", "newgarden", "power", "pagenaud", "castroneves", "harvey", "hanley", "carpjones", "kimballoward", "oward", "karam", "daly", "kaiser", "mann", "king", "alonso", "jonesindy"]
+		names = ["leist", "kanaan", "veach", "rossi", "rhr", "andretti", "hinchcliffe", "ericsson", "chilton", "dixon", "rosenqvist", "ferrucci", "bourdais", "pigot", "herta", "rahal", "sato", "newgarden", "power", "pagenaud", "castroneves", "harvey", "hanley", "carpjones", "kimballoward", "oward", "karam", "daly", "kaiser", "mann", "king", "alonso", "jonesindy", "servia", "davison", "hildebrand"]
 
 		#Range of 0 (start) to (last lap+1) of race
 		for lap in range(start,finish):
@@ -80,7 +83,7 @@ def racePosition(start=0, finish=1):
 		        else:
 		            pass
 		        count += 1
-		return drivers
+		return drivers 
 
 ##################################################################################################
 #Calculates all of the race stats for a given race

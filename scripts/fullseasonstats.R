@@ -2,8 +2,8 @@ library(data.table)
 library(tidyverse)
 library(ggplot2)
 
-data<-fread("C:/Users/drewb/Desktop/indycar_results.csv")
-cautions<-fread("C:/Users/drewb/Desktop/restartdata.csv")
+data<-fread("C:/Users/drewb/Desktop/thesingleseater/datasets/master_backup/indycar_results.csv")
+cautions<-fread("C:/Users/drewb/Desktop/thesingleseater/datasets/master_backup/restartdata.csv")
 green_flag<-fread("C:/Users/drewb/Desktop/green_flag_stops.csv")
 strategists<-fread("C:/Users/drewb/Desktop/race_strategists.csv")
 
@@ -18,7 +18,6 @@ data <- data %>%
   filter(year==2019) %>% 
   left_join(afp, by=c("st" = "st")) %>% 
   mutate(xFPDifference=xFP-fin)
-
 
 driver_season_stats <- data %>%
   filter(year==2019) %>%
@@ -44,7 +43,7 @@ driver_season_stats <- data %>%
          #Average Surplus Position
          ASPos = mean(xFPDifference)) %>% 
   #SELECT DRIVER AND ANY VARIBLES BEFORE YOU SELECT DISTINCT
-  distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, ASP, ATP, ATP25, PassEff, RunPerc, AvgFastSpeed, Top5Perc, ASPos)
+  distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, ASP, ATP, ATP25, PassEff, RunPerc, Top5Perc, ASPos)
 
 
 #Process caution data for season stats
@@ -61,15 +60,17 @@ caution_stats <- cautions %>%
 
 
 #Combine tables
-combined<-left_join(driver_season_stats, caution_stats, by="driver")
+combined<-left_join(driver_season_stats, caution_stats, by="driverTrim")
 
 #One table for driver, races, points, xpoints, Difference, avgFin, avgSt, ATP, ATP25, PassEff
-season1<- combined %>%
+season1<- driver_season_stats %>%
   mutate(Difference = Pts-xPoints) %>% 
-  select(driver, Races, Pts, xPoints, Difference, AFP, ASP, ATP, ATP25, PassEff, RunPerc, AvgFastSpeed, Top5Perc, ASPos)
+  select(driver, Races, Pts, xPoints, Difference, AFP, ASP, ATP, ATP25, PassEff, RunPerc, Top5Perc, ASPos)
 
 season1<-data.table(season1)  
 fwrite(season1, "season1.csv")
+
+#### After this isn't currently used.
 
 season2<- combined %>% 
   select(driver, Races, StartRetention, StartPM, PMperStart, RestartRetention, RestartPM, PMperRestart, Attempts)

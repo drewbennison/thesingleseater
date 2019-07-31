@@ -1,16 +1,12 @@
 # No bonus points included yet
 
-# UPDATE 4/24/2019
-# BASE DRIVER DISTRIBUTIONS ONLY ON RACES IN WHICH
-# THEY DID NOT DNF.
-
 library(data.table)
 library(tidyverse)
 
 ##########################################################################
 #CHANGE THIS AFTER EACH RACE OBVIOUSLY
 total_races<-17
-numracesleft<-13
+numracesleft<-4
 ##########################################################################
 # Read in the data, calculate the current points standings
 data<-fread("C:/Users/drewb/Desktop/thesingleseater/datasets/master_backup/indycar_results.csv")
@@ -25,17 +21,18 @@ current_points <- data %>%
 #FILTER FOR NUMBER OF RACES AS SEASON PROGRESSES TO PREVENT ONE-OFF DRIVERS
 current_drivers <- data %>% 
   filter(year==2019) %>% 
+  group_by(driver) %>% 
+  summarise(x = sum(pts)) %>% 
+  arrange(-x) %>% 
+  top_n(23) %>% 
   select(driver) %>% 
   distinct()
 ##########################################################################
 #Identify each driver's unique distribution based on their performances
 driver_distributions <- data %>%
-  filter(year==2019) %>% 
-  select(driver, track, status, fin, atp) %>% 
-  melt(idvars=c("driver", "track", "status")) %>%
-  filter(status =="running" & variable=="fin" | status == "running" & variable=="atp" |
-         status!= "running" & variable=="atp") %>% 
-  select(driver, value) %>% 
+  filter(year %in% c(2019)) %>% 
+  select(driver, fin, atp) %>% 
+  melt("driver") %>% 
   group_by(driver) %>%
   summarise(mean=mean(value, na.rm = TRUE),
             sd=sd(value, na.rm = TRUE))
@@ -56,6 +53,7 @@ for (i in 1:50000) {
   season <- tibble()
   #Create all combinations of races and drivers
   season <- crossing(Race, Drivers)
+  season$Drivers <- as.character(season$Drivers)
   #Season winner
   season_winner <- season %>% 
     #Join with driver distributions, take a random draw, order draws by race for a result
@@ -69,13 +67,15 @@ for (i in 1:50000) {
     left_join(points, by=c("RaceResult"="fin")) %>%
     ########################################################################################
     #Double points (Race==last race)
-    mutate(DoublePoints = if_else(Race==numracesleft | Race==1, points+points, points)) %>% 
+    mutate(DoublePoints = if_else(Race==numracesleft, points+points, points)) %>% 
     group_by(Drivers) %>% 
     #Sum total points over the season
     summarise(SumPointsEarned = sum(points)) %>% 
     left_join(current_points, by=c("Drivers"="driver")) %>% 
+    #Take the top driver of the season and add him to the results table
     mutate(Total = SumPointsEarned+CurrentPoints,
            ChampPos = order(order(-Total))) %>% 
+    #top_n(1, Total) %>% 
     mutate(season = i) %>% 
     arrange(-Total)
   results<-rbind(results, season_winner)
@@ -96,7 +96,6 @@ y<- results %>%
 
 master_results<-data.table(y)
 
-#Aggregating probability by position and driver
 for (i in 2:26) {
   x<-results %>% 
     filter(ChampPos==i) 
@@ -111,19 +110,18 @@ for (i in 2:26) {
   master_results <- rbindlist(l)
 }
   
-#Export a CSV of predictions
+
 final<-dcast(master_results, Drivers~ChampPos, sum, value.var = "prob")
 fwrite(final, "champredictions.csv")
 
-#Heatmap of the above information
-final2<-melt(final, "Drivers")
-ggplot(data=final2, aes(x=variable, y=Drivers)) + 
-  geom_tile(aes(fill=value)) + 
-  scale_fill_gradient2(low = "red", mid = "white", high = "blue", midpoint = 0.1, limits=c(0,1))
-
-master_results %>% 
-  ggplot(aes(x=ChampPos, y=prob, color=Drivers)) + geom_col() +
-  facet_wrap(~Drivers) +
-  theme(legend.position = "false") +
-  labs(x="Championship Position", y="Probability")
+final2 %>% 
+  ggplot() + geom_col(aes(x=variable, y=value, fill=Drivers)) + facet_wrap(~Drivers) +
+  theme(legend.position = "none") +
+  scale_x_discrete(breaks=c("1","5", "10", "15", "20","23")) +
+  scale_y_continuous(breaks=c(0,.25,.5,.75,1)) +
+  labs(y="Probability of finishing season in position",
+       x="Championship finishing position",
+       title="2019 IndyCar Championship Predictions",
+       subtitle = "After simulating the remaining races 50,000 times",
+       caption = "www.thesingleseater.com")
 
