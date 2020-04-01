@@ -1,9 +1,6 @@
 library(data.table)
-library(ggplot2)
 library(tidyverse)
 library(here)
-library(magrittr)
-library(magick)
 library(lubridate)
 
 source("./thesingleseater/thesingleseater_theme.R")
@@ -12,7 +9,7 @@ source("./thesingleseater/thesingleseater_theme.R")
 data<-fread("./datasets/2019_barber_p3.csv")
 drivers<-fread("./datasets/drivers.csv")
 
-#Clean the driver's names to remove anything after the comma
+#Clean the driver's names to remove anything after the comma in IndyCar data
 data$Driver<-gsub(",.*", "", data$Driver)
 
 #Clean C/E/T column
@@ -20,16 +17,6 @@ data$`C/E/T`<-gsub("D", "", data$`C/E/T`)
 data$`C/E/T`<-gsub("/", "", data$`C/E/T`)
 data$`C/E/T`<-gsub("F", "", data$`C/E/T`)
 setnames(data, "C/E/T", "Manufacturer")
-
-#Calculate the averages for the "Technical" category (slow_turn, straight, etc.)
-#avg_per_technical<-dcast(data,Technical~., mean, value.var = "Speed")
-#setnames(avg_per_technical, ".", "avgTechSpeed")
-#setkey(avg_per_technical, Technical)
-#setkey(data, Technical)
-#data<-merge(data,avg_per_technical)
-
-#data$percRelativeTechnical<- ((data$Speed-data$avgTechSpeed)/data$avgTechSpeed)*100
-
 
 #Calculate the averages for each sector
 avg_per_section<-dcast(data, Section~., mean, value.var = "Speed")
@@ -40,12 +27,10 @@ data<-merge(data, avg_per_section)
 
 data$percRelativeSection<-((data$Speed-data$avgSecSpeed)/data$avgSecSpeed)*100
 
-
-#Merge in driver results for that session (last name's only)
+#Merge in driver results for that session (last names only)
 setkey(drivers, "Driver")
 setkey(data, "Driver")
 data<-merge(data, drivers, all.x = TRUE)
-
 
 #Tile plot. Adjust limits depending on the number of sectors at that track
 plot<-ggplot(data=data, aes(x=Section, y=reorder(Driver, -Fin))) + 
@@ -61,13 +46,10 @@ plot<-ggplot(data=data, aes(x=Section, y=reorder(Driver, -Fin))) +
 
 plot
 
-
-
-
 sectors<-c("Sector 1","Sector 2","Sector 3","Sector 4","Sector 5","Sector 6", "Sector 7",
            "Sector 8", "Sector 9","Full Lap")
 
-#Natural language output of who was quickest in each sector.
+#  Natural language output of who was quickest in each sector. ############################
 for (i in sectors) {
   d <- data %>%
     filter(Section==i) %>% 
@@ -75,8 +57,7 @@ for (i in sectors) {
   message(paste0(d[,1]," was quickest through ",d[,2], " and was ", round(d[,10],2), "% faster than the average car."))
 }
 
-
-#Get the "ultimate lap" in seconds:
+#  Get the "ultimate lap" in seconds:  ###################################################
 top_times<-data %>% 
   group_by(Section) %>% 
   summarise(val=min(Time)) %>% 
@@ -92,9 +73,7 @@ x<-sum(top_times[,3])
 
 ggplot(top_times, aes(x=Section, y=clean)) + geom_point()
 
-
-#########################################################################
-# R^2 between each sector and the full lap time
+#  R^2 between each sector and the full lap time  ###################################
 
 non_lap<-data %>% 
   filter(Section!="Full Lap")
@@ -112,8 +91,3 @@ for (i in sectors) {
   cor<-cor(test[,1], test[,2])
   message(i, " ", cor)
 }
-
-#########################################################################
-
-
-  
