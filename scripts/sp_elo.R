@@ -1,6 +1,6 @@
 library(data.table)
 library(tidyverse)
-#Elo for starting positions - same as elo.R except all instances of driver are replaced with st
+#Elo for starting positions - same as elo.R except all instances of $driver are replaced with $st
 dt <-fread("C:/Users/drewb/Desktop/thesingleseater/datasets/master_backup/indycar_results.csv")
 
 #Initialize elo ratings, k
