@@ -59,12 +59,14 @@ for(i in 1:max(current_year$raceNumber)) {
 #k_optimization %>% mutate(error=(errorXWin-errorXWin2)^2) %>% 
 #  summarise(e=mean(error))
 
-#  elo rating by races since 2008  ###############################################
+#############################  GRAPHS  ##########################################
+
+#  elo rating by date since 2008  #
 tracker %>% filter(date!="2021-01-01", driver %in% c("Josef Newgarden", "Simon Pagenaud","Scott Dixon",
-                                 "Marco Andretti", "Alexander Rossi")) %>%
+                                 "Marco Andretti")) %>%
   ggplot(aes(x=date, y=EloRating, color=driver)) + geom_line()
 
-#  elo rating by race number in career  #########################################
+#  elo rating by race number in career since 2008  #
 tracker %>%
   filter(date!="2021-01-01") %>% 
   group_by(driver) %>%
@@ -74,21 +76,6 @@ tracker %>%
   ggplot(aes(x=my_ranks, y=EloRating, color=driver)) + geom_line() +
   labs(x="Race number in career starting in 2008")
 
-##################################################################
-#  Probability of finishing in first place in a single race ######
-r<-tibble(driver="test",winprob=0)
-hypothetical_race <- elo_ratings %>% filter(EloRating>1570)
-for(i in (1:nrow(hypothetical_race))) {
-  current_driver <- hypothetical_race$driver[i]
-  
-  current_q <- 10^(hypothetical_race$EloRating[i]/400)
-  sum_opponents_q <- 0
-  for(j in (1:nrow(hypothetical_race))) {
-   if(hypothetical_race$driver[j]!=current_driver) {
-     opponent_q <- 10^(hypothetical_race$EloRating[j]/400)
-     sum_opponents_q <- sum_opponents_q+opponent_q
-   }
-  }
-  r <- add_row(r, driver=hypothetical_race$driver[i], winprob=current_q/(current_q+sum_opponents_q))
-}
 
+y <- tracker %>% group_by(year) %>% 
+  summarise(x = max(EloRating))
