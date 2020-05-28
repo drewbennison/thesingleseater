@@ -4673,30 +4673,30 @@ Long Beach,4,2019,street,20,19,7,Marcus Ericsson,Arrow / Lucas Oil   (Schmidt Pe
 Long Beach,4,2019,street,21,13,19,Santino Ferrucci,David Yurman / Cly-Del   (Dale Coyne),D/H/F,83,,running,0,9,0,0,0,18.44047619,21,12,9,11.25,7,15,0,0,15,4/14/2019
 Long Beach,4,2019,street,22,18,60,Jack Harvey,AutoNation / SiriusXM   (Meyer Shank Racing / Arrow SPM),D/H/F,82,,running,0,8,0,0,0,22.54216867,22,7,8,7.25,1,5,-5,0,18,4/14/2019
 Long Beach,4,2019,street,23,10,88,Colton Herta,King Taco   (Harding Steinbrenner Racing),D/H/F,50,,crash,0,7,0,0,0,10.15686275,23,20,7,16.75,8,12,0,1,3,4/14/2019
-Indy GP,5,2019,road,1,8,22,Simon Pagenaud,Menards / Verizon   (Roger Penske),D/C/F,85,,running,5,51,1,0,0,6.651162791,3.636363636,26,32,28.5,32,25,0,35,2,5/11/2019
-Indy GP,5,2019,road,2,2,9,Scott Dixon,PNC Bank   (Chip Ganassi),D/H/F,85,,running,39,43,1,2,0,2.88372093,1.090909091,35,50,41.75,21,21,-1,69,8,5/11/2019
-Indy GP,5,2019,road,3,3,60,Jack Harvey,AutoNation / SiriusXM   (Meyer Shank Racing / Arrow SPM),D/H/F,85,,running,0,35,0,0,0,4.61627907,2.272727273,30,40,32.5,28,28,1,55,4,5/11/2019
-Indy GP,5,2019,road,4,21,4,Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,85,,running,0,32,0,0,0,11.91860465,3.727272727,18,32,21.5,43,26,2,31,23,5/11/2019
-Indy GP,5,2019,road,5,12,21,Spencer Pigot,Autogeek / Direct Supply   (Ed Carpenter Racing),D/C/F,85,,running,0,30,0,0,0,7.5,5.181818182,24,30,25.5,36,29,3,20,5,5/11/2019
-Indy GP,5,2019,road,6,5,20,Ed Jones,Preferred Freezer Services   (Ed Carpenter Racing),D/C/F,85,,running,0,28,0,0,0,7.930232558,5.090909091,24,30,25.5,36,37,0,47,13,5/11/2019
-Indy GP,5,2019,road,7,6,12,Will Power,Verizon 5G   (Roger Penske),D/C/F,85,,running,0,26,0,0,0,11.54651163,8.636363636,18,22,19,26,27,-1,2,9,5/11/2019
-Indy GP,5,2019,road,8,1,10,Felix Rosenqvist,NTT Data   (Chip Ganassi),D/H/F,85,,running,15,26,1,0,1,8.546511628,10.18181818,22,20,23.5,28,35,0,26,6,5/11/2019
-Indy GP,5,2019,road,9,7,15,Graham Rahal,Mi-Jack / United Rentals   (Rahal Letterman Lanigan Racing),D/H/F,85,,running,4,23,1,0,0,6.697674419,7.090909091,26,26,27,28,30,1,21,14,5/11/2019
-Indy GP,5,2019,road,10,14,19,Santino Ferrucci,Cly-Del Manufacturing   (Dale Coyne),D/H/F,85,,running,0,20,0,0,0,10.72093023,8.954545455,19,22,19.75,43,39,2,6,18,5/11/2019
-Indy GP,5,2019,road,11,10,18,Sebastien Bourdais,GEICO / Sport Clips   (Dale Coyne w/Vasser-Sullivan),D/H/F,85,,running,2,20,1,0,0,9.906976744,11.95454545,20,18,20.5,31,32,-1,8,17,5/11/2019
-Indy GP,5,2019,road,12,20,26,Zach Veach,Gainbridge   (Andretti Autosport),D/H/F,85,,running,0,18,0,0,0,15.55813953,13.5,14,16,14.5,28,20,-2,0,19,5/11/2019
-Indy GP,5,2019,road,13,23,98,Marco Andretti,U.S. Concrete / Curb   (AHA / Marco & Curb-Agajanian),D/H/F,85,,running,0,17,0,0,0,16.54651163,14.31818182,13,16,13.75,30,20,3,0,21,5/11/2019
-Indy GP,5,2019,road,14,11,30,Takuma Sato,Mi-Jack / Panasonic   (Rahal Letterman Lanigan Racing),D/H/F,85,,running,0,16,0,0,0,11.87209302,15.18181818,18,15,17.25,33,36,-5,7,15,5/11/2019
-Indy GP,5,2019,road,15,13,2,Josef Newgarden,Fitzgerald USA / Verizon   (Roger Penske),D/C/F,85,,running,20,16,1,0,0,9.813953488,16.18181818,20,14,19.5,35,37,0,26,12,5/11/2019
-Indy GP,5,2019,road,16,18,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,85,,running,0,14,0,0,0,11.89534884,11.5,18,18,18,40,38,1,17,7,5/11/2019
-Indy GP,5,2019,road,17,16,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,85,,running,0,13,0,0,0,18.74418605,16.90909091,11,13,11.5,14,15,2,0,16,5/11/2019
-Indy GP,5,2019,road,18,22,59,Max Chilton,Gallagher Insurance   (Trevor Carlin),D/C/F,85,,running,0,12,0,0,0,15.09302326,18.04545455,15,12,14.25,35,31,1,8,22,5/11/2019
-Indy GP,5,2019,road,19,19,31,Patricio O'Ward,Trevor Carlin,D/C/F,85,,running,0,11,0,0,0,12.84883721,16.54545455,17,13,16,36,36,-4,20,1,5/11/2019
-Indy GP,5,2019,road,20,24,14,Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,83,,running,0,10,0,0,0,19.02380952,20,11,10,10.75,16,12,6,0,24,5/11/2019
-Indy GP,5,2019,road,21,15,3,Helio Castroneves,Pennzoil / Verizon   (Roger Penske),D/C/F,83,,running,0,9,0,0,0,15.5,21,14,9,12.75,25,31,0,0,3,5/11/2019
-Indy GP,5,2019,road,22,17,27,Alexander Rossi,NAPA Auto Parts   (Andretti Autosport),D/H/F,81,,running,0,8,0,0,0,22.25609756,22,8,8,8,2,7,-7,0,10,5/11/2019
-Indy GP,5,2019,road,23,4,88,Colton Herta,GESS RNG Biogas   (Harding Steinbrenner Racing),D/H/F,15,,crash,0,7,0,0,0,4,23,32,7,25.75,0,0,0,15,11,5/11/2019
-Indy GP,5,2019,road,24,9,7,Marcus Ericsson,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,11,,crash,0,6,0,0,0,12,24,18,6,22.5,0,14,-1,0,20,5/11/2019
+Indianapolis GP,5,2019,road,1,8,22,Simon Pagenaud,Menards / Verizon   (Roger Penske),D/C/F,85,,running,5,51,1,0,0,6.651162791,3.636363636,26,32,28.5,32,25,0,35,2,5/11/2019
+Indianapolis GP,5,2019,road,2,2,9,Scott Dixon,PNC Bank   (Chip Ganassi),D/H/F,85,,running,39,43,1,2,0,2.88372093,1.090909091,35,50,41.75,21,21,-1,69,8,5/11/2019
+Indianapolis GP,5,2019,road,3,3,60,Jack Harvey,AutoNation / SiriusXM   (Meyer Shank Racing / Arrow SPM),D/H/F,85,,running,0,35,0,0,0,4.61627907,2.272727273,30,40,32.5,28,28,1,55,4,5/11/2019
+Indianapolis GP,5,2019,road,4,21,4,Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,85,,running,0,32,0,0,0,11.91860465,3.727272727,18,32,21.5,43,26,2,31,23,5/11/2019
+Indianapolis GP,5,2019,road,5,12,21,Spencer Pigot,Autogeek / Direct Supply   (Ed Carpenter Racing),D/C/F,85,,running,0,30,0,0,0,7.5,5.181818182,24,30,25.5,36,29,3,20,5,5/11/2019
+Indianapolis GP,5,2019,road,6,5,20,Ed Jones,Preferred Freezer Services   (Ed Carpenter Racing),D/C/F,85,,running,0,28,0,0,0,7.930232558,5.090909091,24,30,25.5,36,37,0,47,13,5/11/2019
+Indianapolis GP,5,2019,road,7,6,12,Will Power,Verizon 5G   (Roger Penske),D/C/F,85,,running,0,26,0,0,0,11.54651163,8.636363636,18,22,19,26,27,-1,2,9,5/11/2019
+Indianapolis GP,5,2019,road,8,1,10,Felix Rosenqvist,NTT Data   (Chip Ganassi),D/H/F,85,,running,15,26,1,0,1,8.546511628,10.18181818,22,20,23.5,28,35,0,26,6,5/11/2019
+Indianapolis GP,5,2019,road,9,7,15,Graham Rahal,Mi-Jack / United Rentals   (Rahal Letterman Lanigan Racing),D/H/F,85,,running,4,23,1,0,0,6.697674419,7.090909091,26,26,27,28,30,1,21,14,5/11/2019
+Indianapolis GP,5,2019,road,10,14,19,Santino Ferrucci,Cly-Del Manufacturing   (Dale Coyne),D/H/F,85,,running,0,20,0,0,0,10.72093023,8.954545455,19,22,19.75,43,39,2,6,18,5/11/2019
+Indianapolis GP,5,2019,road,11,10,18,Sebastien Bourdais,GEICO / Sport Clips   (Dale Coyne w/Vasser-Sullivan),D/H/F,85,,running,2,20,1,0,0,9.906976744,11.95454545,20,18,20.5,31,32,-1,8,17,5/11/2019
+Indianapolis GP,5,2019,road,12,20,26,Zach Veach,Gainbridge   (Andretti Autosport),D/H/F,85,,running,0,18,0,0,0,15.55813953,13.5,14,16,14.5,28,20,-2,0,19,5/11/2019
+Indianapolis GP,5,2019,road,13,23,98,Marco Andretti,U.S. Concrete / Curb   (AHA / Marco & Curb-Agajanian),D/H/F,85,,running,0,17,0,0,0,16.54651163,14.31818182,13,16,13.75,30,20,3,0,21,5/11/2019
+Indianapolis GP,5,2019,road,14,11,30,Takuma Sato,Mi-Jack / Panasonic   (Rahal Letterman Lanigan Racing),D/H/F,85,,running,0,16,0,0,0,11.87209302,15.18181818,18,15,17.25,33,36,-5,7,15,5/11/2019
+Indianapolis GP,5,2019,road,15,13,2,Josef Newgarden,Fitzgerald USA / Verizon   (Roger Penske),D/C/F,85,,running,20,16,1,0,0,9.813953488,16.18181818,20,14,19.5,35,37,0,26,12,5/11/2019
+Indianapolis GP,5,2019,road,16,18,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,85,,running,0,14,0,0,0,11.89534884,11.5,18,18,18,40,38,1,17,7,5/11/2019
+Indianapolis GP,5,2019,road,17,16,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,85,,running,0,13,0,0,0,18.74418605,16.90909091,11,13,11.5,14,15,2,0,16,5/11/2019
+Indianapolis GP,5,2019,road,18,22,59,Max Chilton,Gallagher Insurance   (Trevor Carlin),D/C/F,85,,running,0,12,0,0,0,15.09302326,18.04545455,15,12,14.25,35,31,1,8,22,5/11/2019
+Indianapolis GP,5,2019,road,19,19,31,Patricio O'Ward,Trevor Carlin,D/C/F,85,,running,0,11,0,0,0,12.84883721,16.54545455,17,13,16,36,36,-4,20,1,5/11/2019
+Indianapolis GP,5,2019,road,20,24,14,Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,83,,running,0,10,0,0,0,19.02380952,20,11,10,10.75,16,12,6,0,24,5/11/2019
+Indianapolis GP,5,2019,road,21,15,3,Helio Castroneves,Pennzoil / Verizon   (Roger Penske),D/C/F,83,,running,0,9,0,0,0,15.5,21,14,9,12.75,25,31,0,0,3,5/11/2019
+Indianapolis GP,5,2019,road,22,17,27,Alexander Rossi,NAPA Auto Parts   (Andretti Autosport),D/H/F,81,,running,0,8,0,0,0,22.25609756,22,8,8,8,2,7,-7,0,10,5/11/2019
+Indianapolis GP,5,2019,road,23,4,88,Colton Herta,GESS RNG Biogas   (Harding Steinbrenner Racing),D/H/F,15,,crash,0,7,0,0,0,4,23,32,7,25.75,0,0,0,15,11,5/11/2019
+Indianapolis GP,5,2019,road,24,9,7,Marcus Ericsson,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,11,,crash,0,6,0,0,0,12,24,18,6,22.5,0,14,-1,0,20,5/11/2019
 Indianapolis,6,2019,oval,1,1,22,Simon Pagenaud,Menards / Verizon�� (Roger Penske),D/C/F,200,,running,116,112,1,2,1,4.064676617,3.235294118,64,70,69.5,112,112,0,161,,5/26/2019
 Indianapolis,6,2019,oval,2,9,27,Alexander Rossi,NAPA Auto Parts�� (Andretti Autosport),D/H/F,200,,running,22,82,1,0,0,4.651741294,4.215686275,60,64,62,58,51,2,133,,5/26/2019
 Indianapolis,6,2019,oval,3,14,30,Takuma Sato,Mi-Jack / Panasonic�� (Rahal Letterman Lanigan Racing),D/H/F,200,,running,3,71,1,0,0,18.44776119,9.156862745,24,44,30,55,44,1,27,,5/26/2019
@@ -4730,50 +4730,50 @@ Indianapolis,6,2019,oval,30,7,18,Sebastien Bourdais,SealMaster / Sport Clips / G
 Indianapolis,6,2019,oval,31,33,32,Kyle Kaiser,250ok / NFP�� (Juncos Racing),D/C/F,71,,crash,0,10,0,0,0,26.80555556,31,10,10,10,21,14,1,0,,5/26/2019
 Indianapolis,6,2019,oval,32,27,81,Ben Hanley,10 Star�� (DragonSpeed),D/C/F,54,,driveshaft,0,10,0,0,0,28.69090909,32,10,10,10,8,13,1,0,,5/26/2019
 Indianapolis,6,2019,oval,33,5,88,Colton Herta,GESS RNG Biogas�� (Harding Steinbrenner Racing),D/H/F,3,,gearbox,0,15,0,0,0,5.75,33,56,10,44.5,0,1,-1,0,,5/26/2019
-Detroit,7,2019,street,1,2,2,Josef Newgarden,Hitachi / Verzon�� (Roger Penske),D/C/F,43,,running,25,54,1,2,0,2.090909091,1,40,50,45.5,7,6,-1,42,,6/1/2019
-Detroit,7,2019,street,2,1,27,Alexander Rossi,NAPA Auto Parts�� (Andretti Autosport),D/H/F,43,,running,18,42,1,0,1,1.772727273,2,40,40,42,9,10,0,42,,6/1/2019
-Detroit,7,2019,street,3,9,30,Takuma Sato,Mi-Jack / Panasonic�� (Rahal Letterman Lanigan Racing),D/H/F,43,,running,0,35,0,0,0,4.977272727,3,30,35,31.25,8,2,2,24,,6/1/2019
-Detroit,7,2019,street,4,4,10,Felix Rosenqvist,NTT Data�� (Chip Ganassi),D/H/F,43,,running,0,32,0,0,0,3.818181818,4,32,32,32,4,4,0,43,,6/1/2019
-Detroit,7,2019,street,5,6,28,Ryan Hunter-Reay,DHL�� (Andretti Autosport),D/H/F,43,,running,0,30,0,0,0,7.659090909,5,24,30,25.5,15,14,0,23,,6/1/2019
-Detroit,7,2019,street,6,13,22,Simon Pagenaud,DXC Technology / Verizon�� (Roger Penske),D/C/F,43,,running,0,28,0,0,0,7.454545455,6,26,28,26.5,8,1,1,0,,6/1/2019
-Detroit,7,2019,street,7,11,15,Graham Rahal,Fifth Third Bank / United Rentals�� (Rahal Letterman Lanigan Racing),D/H/F,43,,running,0,26,0,0,0,9.136363636,7,22,26,23,11,7,0,0,,6/1/2019
-Detroit,7,2019,street,8,8,26,Zach Veach,Gainbridge�� (Andretti Autosport),D/H/F,43,,running,0,24,0,0,0,13.84090909,8.333333333,16,24,18,21,21,-12,0,,6/1/2019
-Detroit,7,2019,street,9,10,5,James Hinchcliffe,Arrow / Lucas Oil�� (Schmidt Peterson Motorsports),D/H/F,43,,running,0,22,0,0,0,8.636363636,8.666666667,22,22,22,9,8,2,0,,6/1/2019
-Detroit,7,2019,street,10,17,21,Spencer Pigot,Autogeek / Direct Supply�� (Ed Carpenter Racing),D/C/F,43,,running,0,20,0,0,0,12.84090909,10,17,20,17.75,13,6,0,0,,6/1/2019
-Detroit,7,2019,street,11,16,18,Sebastien Bourdais,SealMaster / Sport Clips / GEICO�� (Dale Coyne w/Vasser-Sullivan),D/H/F,43,,running,0,19,0,0,0,12.25,11,18,19,18.25,11,6,2,0,,6/1/2019
-Detroit,7,2019,street,12,5,88,Colton Herta,GESS Capstone�� (Harding Steinbrenner Racing),D/H/F,43,,running,0,18,0,0,0,9.636363636,12,20,18,19.5,4,11,0,5,,6/1/2019
-Detroit,7,2019,street,13,15,7,Marcus Ericsson,Arrow / Lucas Oil�� (Schmidt Peterson Motorsports),D/H/F,43,,running,0,17,0,0,0,13.86363636,13.16666667,16,17,16.25,11,9,2,0,,6/1/2019
-Detroit,7,2019,street,14,7,31,Patricio O'Ward,Gallagher Insurance�� (Trevor Carlin),D/C/F,43,,running,0,16,0,0,0,12.97727273,13.83333333,17,16,16.75,9,16,-8,0,,6/1/2019
-Detroit,7,2019,street,15,21,14,Tony Kanaan,ABC Supply Co.�� (A.J. Foyt),D/C/F,43,,running,0,15,0,0,0,16.65909091,15.16666667,13,15,13.5,9,3,2,0,,6/1/2019
-Detroit,7,2019,street,16,18,98,Marco Andretti,AutoNation / U.S. Concrete / Curb�� (AHA / Marco & Curb-Agajanian),D/H/F,43,,running,0,14,0,0,0,17.90909091,16.58333333,12,13,12.25,9,7,2,0,,6/1/2019
-Detroit,7,2019,street,17,19,59,Max Chilton,Gallagher Insurance�� (Trevor Carlin),D/C/F,43,,running,0,13,0,0,0,17.97727273,17.58333333,12,12,12,11,9,1,0,,6/1/2019
-Detroit,7,2019,street,18,12,12,Will Power,Verizon�� (Roger Penske),D/C/F,43,,running,0,12,0,0,0,13.34090909,18.75,17,11,15.5,12,18,3,10,,6/1/2019
-Detroit,7,2019,street,19,22,19,Santino Ferrucci,Cly-Del Manufacturing�� (Dale Coyne),D/H/F,43,,running,0,11,0,0,0,17.52272727,16.91666667,12,13,12.25,14,11,1,0,,6/1/2019
-Detroit,7,2019,street,20,14,20,Ed Jones,Autogeek�� (Ed Carpenter Racing),D/C/F,42,,running,0,10,0,0,0,16.9047619,20,13,10,12.25,6,13,3,0,,6/1/2019
-Detroit,7,2019,street,21,20,4,Matheus Leist,ABC Supply Co.�� (A.J. Foyt),D/C/F,30,,crash,0,9,0,0,0,20.29032258,21,10,9,9.75,9,10,-2,0,,6/1/2019
-Detroit,7,2019,street,22,3,9,Scott Dixon,PNC Bank�� (Chip Ganassi),D/H/F,23,,crash,0,8,0,0,0,2.25,22,40,8,32,1,1,1,23,,6/1/2019
-Detroit,8,2019,street,1,6,9,Scott Dixon,PNC Bank�� (Chip Ganassi),D/H/F,70,,running,44,53,1,2,0,3.112676056,1,35,50,41.75,21,16,5,54,,6/2/2019
-Detroit,8,2019,street,2,12,7,Marcus Ericsson,Arrow / Lucas Oil�� (Schmidt Peterson Motorsports),D/H/F,70,,running,2,41,1,0,0,5.464788732,2,30,40,33.5,20,10,3,41,,6/2/2019
-Detroit,8,2019,street,3,11,12,Will Power,Verizon�� (Roger Penske),D/C/F,70,,running,3,36,1,0,0,10.05633803,3.052631579,20,35,24.75,34,26,8,27,,6/2/2019
-Detroit,8,2019,street,4,15,28,Ryan Hunter-Reay,DHL�� (Andretti Autosport),D/H/F,70,,running,0,32,0,0,0,8.295774648,4.105263158,24,32,26,26,15,-2,33,,6/2/2019
-Detroit,8,2019,street,5,2,27,Alexander Rossi,NAPA Auto Parts�� (Andretti Autosport),D/H/F,70,,running,0,31,0,0,0,6.577464789,5.105263158,26,30,27,21,24,-12,32,,6/2/2019
-Detroit,8,2019,street,6,19,98,Marco Andretti,AutoNation / U.S. Concrete / Curb�� (AHA / Marco & Curb-Agajanian),D/H/F,70,,running,0,28,0,0,0,9.450704225,6.789473684,22,26,23,27,14,1,11,,6/2/2019
-Detroit,8,2019,street,7,22,15,Graham Rahal,Fifth Third Bank / United Rentals�� (Rahal Letterman Lanigan Racing),D/H/F,70,,running,0,26,0,0,0,6.098591549,8.210526316,28,24,27,26,11,17,29,,6/2/2019
-Detroit,8,2019,street,8,3,26,Zach Veach,Gainbridge�� (Andretti Autosport),D/H/F,70,,running,0,24,0,0,0,11,9.210526316,19,22,19.75,21,26,-13,1,,6/2/2019
-Detroit,8,2019,street,9,9,18,Sebastien Bourdais,SealMaster / Sport Clips / GEICO�� (Dale Coyne w/Vasser-Sullivan),D/H/F,70,,running,0,22,0,0,0,10.90140845,10.21052632,19,20,19.25,18,18,1,0,,6/2/2019
-Detroit,8,2019,street,10,17,19,Santino Ferrucci,Cly-Del Manufacturing�� (Dale Coyne),D/H/F,70,,running,20,21,1,0,0,8.126760563,12.21052632,24,18,23.5,24,17,13,31,,6/2/2019
-Detroit,8,2019,street,11,8,31,Patricio O'Ward,Gallagher Insurance�� (Trevor Carlin),D/C/F,70,,running,0,19,0,0,0,16.54929577,13.84210526,13,16,13.75,9,12,-12,0,,6/2/2019
-Detroit,8,2019,street,12,4,88,Colton Herta,GESS Capstone�� (Harding Steinbrenner Racing),D/H/F,70,,running,0,18,0,0,0,10.36619718,11.47368421,20,19,19.75,14,22,-2,2,,6/2/2019
-Detroit,8,2019,street,13,16,30,Takuma Sato,Mi-Jack / Panasonic�� (Rahal Letterman Lanigan Racing),D/H/F,70,,running,0,17,0,0,0,8.957746479,11.36842105,22,19,21.25,28,25,6,18,,6/2/2019
-Detroit,8,2019,street,14,13,20,Ed Jones,Autogeek�� (Ed Carpenter Racing),D/C/F,70,,running,0,16,0,0,0,13.07042254,12.63157895,17,17,17,35,36,0,6,,6/2/2019
-Detroit,8,2019,street,15,20,59,Max Chilton,Gallagher Insurance�� (Trevor Carlin),D/C/F,70,,running,0,15,0,0,0,12.74647887,14.68421053,17,15,16.5,33,28,13,2,,6/2/2019
-Detroit,8,2019,street,16,7,10,Felix Rosenqvist,NTT Data�� (Chip Ganassi),D/H/F,64,,crash,0,14,0,0,0,9.2,7.384615385,22,26,23,23,23,-4,0,,6/2/2019
-Detroit,8,2019,street,17,14,22,Simon Pagenaud,DXC Technology / Verizon�� (Roger Penske),D/C/F,58,,running,0,13,0,0,0,18.98305085,17.14285714,11,13,11.5,4,7,-7,0,,6/2/2019
-Detroit,8,2019,street,18,5,5,James Hinchcliffe,Arrow / Lucas Oil�� (Schmidt Peterson Motorsports),D/H/F,52,,lost power,0,12,0,0,0,10.20754717,17,20,13,18.25,13,25,-10,19,,6/2/2019
-Detroit,8,2019,street,19,1,2,Josef Newgarden,Hitachi / Verzon�� (Roger Penske),D/C/F,49,,running,1,13,1,0,1,9.92,20,20,13,18.25,11,29,-11,21,,6/2/2019
-Detroit,8,2019,street,20,21,4,Matheus Leist,ABC Supply Co.�� (A.J. Foyt),D/C/F,23,,steering,0,10,0,0,0,18.70833333,20,11,9,10.5,5,3,2,0,,6/2/2019
-Detroit,8,2019,street,21,10,21,Spencer Pigot,Autogeek / Direct Supply�� (Ed Carpenter Racing),D/C/F,13,,crash,0,9,0,0,0,3.285714286,21,35,10,28.75,8,2,8,11,,6/2/2019
-Detroit,8,2019,street,22,18,14,Tony Kanaan,ABC Supply Co.�� (A.J. Foyt),D/C/F,0,,crash,0,8,0,0,0,18,22,12,8,11,0,0,-6,0,,6/2/2019
+Belle Isle,7,2019,street,1,2,2,Josef Newgarden,Hitachi / Verzon�� (Roger Penske),D/C/F,43,,running,25,54,1,2,0,2.090909091,1,40,50,45.5,7,6,-1,42,,6/1/2019
+Belle Isle,7,2019,street,2,1,27,Alexander Rossi,NAPA Auto Parts�� (Andretti Autosport),D/H/F,43,,running,18,42,1,0,1,1.772727273,2,40,40,42,9,10,0,42,,6/1/2019
+Belle Isle,7,2019,street,3,9,30,Takuma Sato,Mi-Jack / Panasonic�� (Rahal Letterman Lanigan Racing),D/H/F,43,,running,0,35,0,0,0,4.977272727,3,30,35,31.25,8,2,2,24,,6/1/2019
+Belle Isle,7,2019,street,4,4,10,Felix Rosenqvist,NTT Data�� (Chip Ganassi),D/H/F,43,,running,0,32,0,0,0,3.818181818,4,32,32,32,4,4,0,43,,6/1/2019
+Belle Isle,7,2019,street,5,6,28,Ryan Hunter-Reay,DHL�� (Andretti Autosport),D/H/F,43,,running,0,30,0,0,0,7.659090909,5,24,30,25.5,15,14,0,23,,6/1/2019
+Belle Isle,7,2019,street,6,13,22,Simon Pagenaud,DXC Technology / Verizon�� (Roger Penske),D/C/F,43,,running,0,28,0,0,0,7.454545455,6,26,28,26.5,8,1,1,0,,6/1/2019
+Belle Isle,7,2019,street,7,11,15,Graham Rahal,Fifth Third Bank / United Rentals�� (Rahal Letterman Lanigan Racing),D/H/F,43,,running,0,26,0,0,0,9.136363636,7,22,26,23,11,7,0,0,,6/1/2019
+Belle Isle,7,2019,street,8,8,26,Zach Veach,Gainbridge�� (Andretti Autosport),D/H/F,43,,running,0,24,0,0,0,13.84090909,8.333333333,16,24,18,21,21,-12,0,,6/1/2019
+Belle Isle,7,2019,street,9,10,5,James Hinchcliffe,Arrow / Lucas Oil�� (Schmidt Peterson Motorsports),D/H/F,43,,running,0,22,0,0,0,8.636363636,8.666666667,22,22,22,9,8,2,0,,6/1/2019
+Belle Isle,7,2019,street,10,17,21,Spencer Pigot,Autogeek / Direct Supply�� (Ed Carpenter Racing),D/C/F,43,,running,0,20,0,0,0,12.84090909,10,17,20,17.75,13,6,0,0,,6/1/2019
+Belle Isle,7,2019,street,11,16,18,Sebastien Bourdais,SealMaster / Sport Clips / GEICO�� (Dale Coyne w/Vasser-Sullivan),D/H/F,43,,running,0,19,0,0,0,12.25,11,18,19,18.25,11,6,2,0,,6/1/2019
+Belle Isle,7,2019,street,12,5,88,Colton Herta,GESS Capstone�� (Harding Steinbrenner Racing),D/H/F,43,,running,0,18,0,0,0,9.636363636,12,20,18,19.5,4,11,0,5,,6/1/2019
+Belle Isle,7,2019,street,13,15,7,Marcus Ericsson,Arrow / Lucas Oil�� (Schmidt Peterson Motorsports),D/H/F,43,,running,0,17,0,0,0,13.86363636,13.16666667,16,17,16.25,11,9,2,0,,6/1/2019
+Belle Isle,7,2019,street,14,7,31,Patricio O'Ward,Gallagher Insurance�� (Trevor Carlin),D/C/F,43,,running,0,16,0,0,0,12.97727273,13.83333333,17,16,16.75,9,16,-8,0,,6/1/2019
+Belle Isle,7,2019,street,15,21,14,Tony Kanaan,ABC Supply Co.�� (A.J. Foyt),D/C/F,43,,running,0,15,0,0,0,16.65909091,15.16666667,13,15,13.5,9,3,2,0,,6/1/2019
+Belle Isle,7,2019,street,16,18,98,Marco Andretti,AutoNation / U.S. Concrete / Curb�� (AHA / Marco & Curb-Agajanian),D/H/F,43,,running,0,14,0,0,0,17.90909091,16.58333333,12,13,12.25,9,7,2,0,,6/1/2019
+Belle Isle,7,2019,street,17,19,59,Max Chilton,Gallagher Insurance�� (Trevor Carlin),D/C/F,43,,running,0,13,0,0,0,17.97727273,17.58333333,12,12,12,11,9,1,0,,6/1/2019
+Belle Isle,7,2019,street,18,12,12,Will Power,Verizon�� (Roger Penske),D/C/F,43,,running,0,12,0,0,0,13.34090909,18.75,17,11,15.5,12,18,3,10,,6/1/2019
+Belle Isle,7,2019,street,19,22,19,Santino Ferrucci,Cly-Del Manufacturing�� (Dale Coyne),D/H/F,43,,running,0,11,0,0,0,17.52272727,16.91666667,12,13,12.25,14,11,1,0,,6/1/2019
+Belle Isle,7,2019,street,20,14,20,Ed Jones,Autogeek�� (Ed Carpenter Racing),D/C/F,42,,running,0,10,0,0,0,16.9047619,20,13,10,12.25,6,13,3,0,,6/1/2019
+Belle Isle,7,2019,street,21,20,4,Matheus Leist,ABC Supply Co.�� (A.J. Foyt),D/C/F,30,,crash,0,9,0,0,0,20.29032258,21,10,9,9.75,9,10,-2,0,,6/1/2019
+Belle Isle,7,2019,street,22,3,9,Scott Dixon,PNC Bank�� (Chip Ganassi),D/H/F,23,,crash,0,8,0,0,0,2.25,22,40,8,32,1,1,1,23,,6/1/2019
+Belle Isle,8,2019,street,1,6,9,Scott Dixon,PNC Bank�� (Chip Ganassi),D/H/F,70,,running,44,53,1,2,0,3.112676056,1,35,50,41.75,21,16,5,54,,6/2/2019
+Belle Isle,8,2019,street,2,12,7,Marcus Ericsson,Arrow / Lucas Oil�� (Schmidt Peterson Motorsports),D/H/F,70,,running,2,41,1,0,0,5.464788732,2,30,40,33.5,20,10,3,41,,6/2/2019
+Belle Isle,8,2019,street,3,11,12,Will Power,Verizon�� (Roger Penske),D/C/F,70,,running,3,36,1,0,0,10.05633803,3.052631579,20,35,24.75,34,26,8,27,,6/2/2019
+Belle Isle,8,2019,street,4,15,28,Ryan Hunter-Reay,DHL�� (Andretti Autosport),D/H/F,70,,running,0,32,0,0,0,8.295774648,4.105263158,24,32,26,26,15,-2,33,,6/2/2019
+Belle Isle,8,2019,street,5,2,27,Alexander Rossi,NAPA Auto Parts�� (Andretti Autosport),D/H/F,70,,running,0,31,0,0,0,6.577464789,5.105263158,26,30,27,21,24,-12,32,,6/2/2019
+Belle Isle,8,2019,street,6,19,98,Marco Andretti,AutoNation / U.S. Concrete / Curb�� (AHA / Marco & Curb-Agajanian),D/H/F,70,,running,0,28,0,0,0,9.450704225,6.789473684,22,26,23,27,14,1,11,,6/2/2019
+Belle Isle,8,2019,street,7,22,15,Graham Rahal,Fifth Third Bank / United Rentals�� (Rahal Letterman Lanigan Racing),D/H/F,70,,running,0,26,0,0,0,6.098591549,8.210526316,28,24,27,26,11,17,29,,6/2/2019
+Belle Isle,8,2019,street,8,3,26,Zach Veach,Gainbridge�� (Andretti Autosport),D/H/F,70,,running,0,24,0,0,0,11,9.210526316,19,22,19.75,21,26,-13,1,,6/2/2019
+Belle Isle,8,2019,street,9,9,18,Sebastien Bourdais,SealMaster / Sport Clips / GEICO�� (Dale Coyne w/Vasser-Sullivan),D/H/F,70,,running,0,22,0,0,0,10.90140845,10.21052632,19,20,19.25,18,18,1,0,,6/2/2019
+Belle Isle,8,2019,street,10,17,19,Santino Ferrucci,Cly-Del Manufacturing�� (Dale Coyne),D/H/F,70,,running,20,21,1,0,0,8.126760563,12.21052632,24,18,23.5,24,17,13,31,,6/2/2019
+Belle Isle,8,2019,street,11,8,31,Patricio O'Ward,Gallagher Insurance�� (Trevor Carlin),D/C/F,70,,running,0,19,0,0,0,16.54929577,13.84210526,13,16,13.75,9,12,-12,0,,6/2/2019
+Belle Isle,8,2019,street,12,4,88,Colton Herta,GESS Capstone�� (Harding Steinbrenner Racing),D/H/F,70,,running,0,18,0,0,0,10.36619718,11.47368421,20,19,19.75,14,22,-2,2,,6/2/2019
+Belle Isle,8,2019,street,13,16,30,Takuma Sato,Mi-Jack / Panasonic�� (Rahal Letterman Lanigan Racing),D/H/F,70,,running,0,17,0,0,0,8.957746479,11.36842105,22,19,21.25,28,25,6,18,,6/2/2019
+Belle Isle,8,2019,street,14,13,20,Ed Jones,Autogeek�� (Ed Carpenter Racing),D/C/F,70,,running,0,16,0,0,0,13.07042254,12.63157895,17,17,17,35,36,0,6,,6/2/2019
+Belle Isle,8,2019,street,15,20,59,Max Chilton,Gallagher Insurance�� (Trevor Carlin),D/C/F,70,,running,0,15,0,0,0,12.74647887,14.68421053,17,15,16.5,33,28,13,2,,6/2/2019
+Belle Isle,8,2019,street,16,7,10,Felix Rosenqvist,NTT Data�� (Chip Ganassi),D/H/F,64,,crash,0,14,0,0,0,9.2,7.384615385,22,26,23,23,23,-4,0,,6/2/2019
+Belle Isle,8,2019,street,17,14,22,Simon Pagenaud,DXC Technology / Verizon�� (Roger Penske),D/C/F,58,,running,0,13,0,0,0,18.98305085,17.14285714,11,13,11.5,4,7,-7,0,,6/2/2019
+Belle Isle,8,2019,street,18,5,5,James Hinchcliffe,Arrow / Lucas Oil�� (Schmidt Peterson Motorsports),D/H/F,52,,lost power,0,12,0,0,0,10.20754717,17,20,13,18.25,13,25,-10,19,,6/2/2019
+Belle Isle,8,2019,street,19,1,2,Josef Newgarden,Hitachi / Verzon�� (Roger Penske),D/C/F,49,,running,1,13,1,0,1,9.92,20,20,13,18.25,11,29,-11,21,,6/2/2019
+Belle Isle,8,2019,street,20,21,4,Matheus Leist,ABC Supply Co.�� (A.J. Foyt),D/C/F,23,,steering,0,10,0,0,0,18.70833333,20,11,9,10.5,5,3,2,0,,6/2/2019
+Belle Isle,8,2019,street,21,10,21,Spencer Pigot,Autogeek / Direct Supply�� (Ed Carpenter Racing),D/C/F,13,,crash,0,9,0,0,0,3.285714286,21,35,10,28.75,8,2,8,11,,6/2/2019
+Belle Isle,8,2019,street,22,18,14,Tony Kanaan,ABC Supply Co.�� (A.J. Foyt),D/C/F,0,,crash,0,8,0,0,0,18,22,12,8,11,0,0,-6,0,,6/2/2019
 Texas,9,2019,oval,1,7,2,Josef Newgarden,Fitzgerald USA / Verizon�� (Roger Penske),D/C/F,248,,running,54,51,1,0,0,6.385542169,1.317460317,28,50,34.5,20,14,-1,61,,6/8/2019
 Texas,9,2019,oval,2,11,27,Alexander Rossi,GESS / Capstone�� (Andretti Autosport),D/H/F,248,,running,3,41,1,0,0,4.646586345,4.047619048,30,32,31.5,28,19,1,172,,6/8/2019
 Texas,9,2019,oval,3,9,15,Graham Rahal,Fleet Cost & Care / United Rentals�� (Rahal Letterman Lanigan Racing),D/H/F,248,,running,3,36,1,0,0,8.148594378,6.746031746,24,26,25.5,29,23,-2,32,,6/8/2019
