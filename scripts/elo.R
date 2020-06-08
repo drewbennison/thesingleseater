@@ -5,21 +5,22 @@ library(lubridate)
 dt <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
 sp_elo <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/starting_position_elo.csv")
 
+
 #Initialize elo ratings, k
 elo_ratings_initial <- dt %>% select(driver) %>% unique() %>% mutate(EloRating=1500)
 k <- 2.5
 
 elo_ratings <- elo_ratings_initial
-tracker <- tibble(driver=elo_ratings_initial$driver, date=ymd("2021-01-01"), year=2018, EloRating=1500)
+tracker <- tibble(driver=elo_ratings_initial$driver, date=ymd("2021-01-01"), year=2000, EloRating=1500)
 k_optimization <- tibble(errorXWin=0, errorXWin2=0) 
 
 #Select variables we want
 dt <- dt %>% select(year, raceNumber, driver, fin, st, date) %>% 
-  mutate(date=ymd(date))
+  mutate(date=mdy(date))
 
 #Starting and ending year range
-yr <- c(2008:2019)
-for(a in c(2008:2019)) {
+yr <- c(2008:2020)
+for(a in c(2008:2020)) {
   current_year <- dt %>% filter(year==a) %>% select(raceNumber, driver, fin, st, date)
   
 for(i in 1:max(current_year$raceNumber)) {
@@ -62,20 +63,40 @@ for(i in 1:max(current_year$raceNumber)) {
 #############################  GRAPHS  ##########################################
 
 #  elo rating by date since 2008  #
-tracker %>% filter(date!="2021-01-01", driver %in% c("Josef Newgarden", "Simon Pagenaud","Scott Dixon",
-                                 "Marco Andretti")) %>%
-  ggplot(aes(x=date, y=EloRating, color=driver)) + geom_line()
+tracker %>% filter(date!="2021-01-01", driver %in% c("Scott Dixon", "Dario Franchitti", "Simon Pagenaud", "Josef Newgarden",
+                                                      "Alexander Rossi")) %>%
+  ggplot(aes(x=date, y=EloRating, color=driver)) + geom_line() +
+  labs(x="Date", title = "Elo Rating Over Time", subtitle = "Minimum 10 starts",
+       color="Driver", y="EloRating") +
+  theme_bw()
 
 #  elo rating by race number in career since 2008  #
 tracker %>%
   filter(date!="2021-01-01") %>% 
   group_by(driver) %>%
   mutate(my_ranks = order(order(date, decreasing=FALSE))) %>% 
-  filter(driver %in% c("Josef Newgarden", "Simon Pagenaud","Scott Dixon",
-                                      "Colton Herta")) %>%
+  filter(driver %in% c("Scott Dixon", "Dario Franchitti", "Simon Pagenaud", "Josef Newgarden",
+                       "Alexander Rossi")) %>%
   ggplot(aes(x=my_ranks, y=EloRating, color=driver)) + geom_line() +
-  labs(x="Race number in career starting in 2008")
+  labs(x="Race number in career",
+       title = "Elo Rating by Race Number in Career", subtitle = "Minimum 10 starts, starting in 2008",
+       color="Driver") +
+  theme_bw()
 
 
 y <- tracker %>% group_by(year) %>% 
   summarise(x = max(EloRating))
+
+##################################################################
+num_races <- dt %>% group_by(driver) %>% count()
+
+#Final elo ratings, min 10 races
+article_elo_ratings <- elo_ratings %>% left_join(num_races) %>% filter(n>10)
+fwrite(article_elo_ratings, "article_elo_ratings.csv")
+
+#Peak elo ratings
+article_max_elo_ratings <- tracker %>% left_join(num_races) %>% filter(n>10) %>% group_by(driver) %>% 
+  top_n(wt=EloRating,n=1)
+fwrite(article_max_elo_ratings, "article_max_elo_ratings.csv")
+
+
