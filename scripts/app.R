@@ -36,19 +36,23 @@ ui <- fluidPage(
     title = "The Single Seater: IndyCar Stats",
     # Application title
     titlePanel("The Single Seater: IndyCar Stats"),
+    tags$h3(tags$a(href="https://thesingleseater.com/", "Visit the blog")),
     
     conditionalPanel(
         condition = "input.tabpan == 'Season Stats'",
         fluidRow(column(
             width = 2,
             offset = 0,
+            tags$h3("Driver season stats"),
             radioButtons("trackb", "Sort by track type:",
                          c("All Tracks" = "all",
                            "Oval" = "oval",
                            "Road and Street" = "road and street")),
             
             selectInput("selectyear", "Select a season:",
-                        c("2019" = "2019")),
+                        c("2020" = "2020",
+                          "2019" = "2019")),
+            tags$h5(tags$em(tags$a(href="https://thesingleseater.com/glossary/", "View the stat glossary")))
             ))),
     
     conditionalPanel(
@@ -56,32 +60,29 @@ ui <- fluidPage(
         fluidRow(column(
             width = 2,
             offset = 0,
-            h3("Track historical results from 2008-2019"),
+            h3("Track historical results (2008-2020)"),
             selectInput("selecttrack", "Select a track:", 
                         choices = NULL, 
-                        selected = 1)))),
+                        selected = 1),
+            tags$h5(tags$em(tags$a(href="https://thesingleseater.com/glossary/", "View the stat glossary")))
+            ))),
     
     conditionalPanel(
         condition = "input.tabpan == 'Current Elo Ratings'",
         fluidRow(column(
             width = 2,
             offset = 0,
-            h3("Elo Ratings for current drivers")))),
+            h3("Current Elo Ratings")))),
     
     conditionalPanel(
-        condition = "input.tabpan == 'Historical Elo Ratings and Graph'",
+        condition = "input.tabpan == 'Historical Elo Ratings'",
         fluidRow(column(
             width = 12,
             offset = 0,
-            h3("Compare drivers' Elo Ratings over time"),
+            h3("Historical Elo Ratings"),
             wellPanel(
                 
-                tags$div(class = "multicol", checkboxGroupInput("selectedDrivers", choices = NULL, label = "Selected drivers to show", selected = NULL))
-                
-            )
-            #checkboxGroupInput("selectedDrivers", "Select drivers to show",
-                        #       choices=NULL,
-                          #     inline = TRUE),
+                tags$div(class = "multicol", checkboxGroupInput("selectedDrivers", choices = NULL, label = "Select drivers to show", selected = NULL)))
             ))),
     
     
@@ -90,7 +91,7 @@ ui <- fluidPage(
                     tabPanel("Season Stats", DT::dataTableOutput("seasonTable")),
                     tabPanel("Track Stats", DT::dataTableOutput("trackTable")),
                     tabPanel("Current Elo Ratings", DT::dataTableOutput("eloTable")),
-                    tabPanel("Historical Elo Ratings and Graph", plotOutput("eloGraph"))
+                    tabPanel("Historical Elo Ratings", plotOutput("eloGraph"))
                     ),
     )
 )
@@ -137,13 +138,13 @@ server <- function(input, output,session) {
         
         if(input$trackb=="all") {
             driver_season_stats <- data %>%
-                filter(year==2019) 
+                filter(year==input$selectyear) 
         } else if (input$trackb=="oval") {
             driver_season_stats <- data %>%
-                filter(year==2019, type=="oval") 
+                filter(year==input$selectyear, type=="oval") 
         } else if (input$trackb=="road and street") {
             driver_season_stats <- data %>%
-                filter(year==2019, type %in% c("road", "street")) 
+                filter(year==input$selectyear, type %in% c("road", "street")) 
         }
         
         driver_season_stats <- driver_season_stats %>% 
@@ -169,15 +170,15 @@ server <- function(input, output,session) {
                    AvgFastSpeed = mean(fastLapRank),
                    Top5Perc = 100*(sum(inTopFive)/sum(laps)),
                    #Average Surplus Position
-                   ASPos = mean(xFPDifference)) %>% 
+                   AEP = mean(xFPDifference)) %>% 
             #SELECT DRIVER AND ANY VARIBLES BEFORE YOU SELECT DISTINCT
-            distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, ASPos)
+            distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, AEP)
         
         season1<- driver_season_stats %>%
             mutate(Difference = Pts-xPoints) %>% 
-            select(driver, Races, Pts, xPoints, Difference, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, ASPos,StartRetention, StartPM, PMperStart) %>% 
+            select(driver, Races, Pts, xPoints, Difference, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, AEP,StartRetention, StartPM, PMperStart) %>% 
             rename(Driver=c("Driver"="driver")) %>% 
-            mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, ASPos, StartRetention, PMperStart), list(~ round(.,1))) %>% 
+            mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart), list(~ round(.,1))) %>% 
             mutate_at(vars(xPoints, Difference), list(~ round(.,0))) %>% 
             arrange(-Pts)
         
@@ -221,20 +222,20 @@ server <- function(input, output,session) {
                    AvgFastSpeed = mean(fastLapRank),
                    Top5Perc = 100*(sum(inTopFive)/sum(laps)),
                    #Average Surplus Position
-                   ASPos = mean(xFPDifference),
+                   AEP = mean(xFPDifference),
                    #new additions
                    Wins = sum(ifelse(fin==1,1,0)),
                    Poles = sum(ifelse(st==1,1,0)),
                    TopFives = sum(ifelse(fin<6,1,0)),
                    LapsLed = sum(led)) %>% 
             #SELECT DRIVER AND ANY VARIBLES BEFORE YOU SELECT DISTINCT
-            distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, ASPos, Wins, Poles, TopFives, LapsLed)
+            distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, AEP, Wins, Poles, TopFives, LapsLed)
         
         season1<- driver_season_stats %>%
             mutate(Difference = Pts-xPoints) %>% 
-            select(driver, Races, Wins, Poles, TopFives, Pts, AFP, DevFP, ASP, DevSP, RunPerc,ASPos, LapsLed) %>% 
+            select(driver, Races, Wins, Poles, TopFives, Pts, AFP, DevFP, ASP, DevSP, RunPerc,AEP, LapsLed) %>% 
             rename(Driver=c("Driver"="driver")) %>% 
-            mutate_at(vars(AFP, DevFP, ASP, DevSP, RunPerc,ASPos), list(~ round(.,1))) %>% 
+            mutate_at(vars(AFP, DevFP, ASP, DevSP, RunPerc,AEP), list(~ round(.,1))) %>% 
             arrange(-Pts)
         
     }, options=list(pageLength=50))
@@ -242,7 +243,7 @@ server <- function(input, output,session) {
     
     
     output$eloTable <- DT::renderDataTable({
-        elo_ratings %>% filter(year==2019) %>% 
+        elo_ratings %>% filter(year==2020) %>% 
            group_by(driver) %>%
             slice(which.max(as.Date(date, '%m/%d/%Y'))) %>% 
             mutate(EloRating = round(EloRating)) %>% 
@@ -260,7 +261,7 @@ server <- function(input, output,session) {
             ggplot(aes(x=date, y=EloRating, color=driver)) + geom_line() +
             labs(x="Date", title = "Elo Rating Over Time", subtitle = "Minimum 10 starts",
                  color="Driver", y="EloRating") +
-            theme_bw()
+            theme_bw() + theme(plot.title = element_text(size=22))
     }, height="auto", width="auto")
     
 }
