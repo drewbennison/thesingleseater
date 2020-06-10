@@ -163,22 +163,24 @@ server <- function(input, output,session) {
                    ASP = mean(st),
                    DevSP = sd(st),
                    ATP = mean(atp),
+                   DevATP = sd(atp),
                    ATP25 = mean(atp25),
+                   DevATP25 = sd(atp25),
                    PassEff = 100*(sum(passesFor)/ (sum(passesFor)+sum(passesAgainst))),
                    RunningCheck = ifelse(status=="running",1,0),
                    RunPerc = 100*mean(RunningCheck),
-                   AvgFastSpeed = mean(fastLapRank),
+                   AFS = mean(fastLapRank),
                    Top5Perc = 100*(sum(inTopFive)/sum(laps)),
                    #Average Surplus Position
                    AEP = mean(xFPDifference)) %>% 
             #SELECT DRIVER AND ANY VARIBLES BEFORE YOU SELECT DISTINCT
-            distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, AEP)
+            distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, AFS)
         
         season1<- driver_season_stats %>%
             mutate(Difference = Pts-xPoints) %>% 
-            select(driver, Races, Pts, xPoints, Difference, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, AEP,StartRetention, StartPM, PMperStart) %>% 
+            select(driver, Races, Pts, xPoints, Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, AFS, StartRetention, StartPM, PMperStart) %>% 
             rename(Driver=c("Driver"="driver")) %>% 
-            mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart), list(~ round(.,1))) %>% 
+            mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart), list(~ round(.,1))) %>% 
             mutate_at(vars(xPoints, Difference), list(~ round(.,0))) %>% 
             arrange(-Pts)
         
