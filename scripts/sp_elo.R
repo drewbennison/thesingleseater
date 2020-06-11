@@ -1,25 +1,25 @@
 library(data.table)
 library(tidyverse)
+library(lubridate)
 #Elo for starting positions - same as elo.R except all instances of $driver are replaced with $st
-dt <-fread("C:/Users/drewb/Desktop/thesingleseater/datasets/master_backup/indycar_results.csv")
+dt <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
 
 #Initialize elo ratings, k
 elo_ratings_initial <- dt %>% select(st) %>% unique() %>% mutate(EloRating=1500)
+#k = 2.5 previously
 k <- 2.5
 
 elo_ratings <- elo_ratings_initial
-tracker <- tibble(st=elo_ratings_initial$st, raceNumber=0, year=2018, EloRating=1500)
-#k_optimization <- tibble(errorXWin=0, errorXWin2=0) 
+tracker <- tibble(st=elo_ratings_initial$st, date=ymd("2021-01-01"), year=2000, EloRating=1500)
+k_optimization <- tibble(errorXWin=0, errorXWin2=0) 
 
 #Only years we want
-dt2 <- dt %>% filter(year %in% c(2008:2019)) %>% select(year, raceNumber, st, fin)
+dt2 <- dt %>% filter(year %in% c(2008:2020)) %>% select(year, raceNumber, st, fin, date)
 
-yr <- c(2008:2019)
+yr <- c(2008:2020)
 #needed for xaxis plotting since i dont have race dates
-bb <- c(0,18,35,52,69,84,103,121,137,153,170,187,204)
-for(a in 1:length(yr)) {
-  b <- bb[a]
-  current_year <- dt2 %>% filter(year==yr[a]) %>% select(raceNumber, st, fin)
+for(a in yr) {
+  current_year <- dt2 %>% filter(year==a) %>% select(year, raceNumber, st, fin, date)
   
   for(i in 1:max(current_year$raceNumber)) {
     current_race <- current_year %>% filter(raceNumber==i, )
@@ -38,11 +38,12 @@ for(a in 1:length(yr)) {
       summarise("oldRating" = mean(EloRating.x),
                 "actualScore" = sum(xWin),
                 "expectedScore" = sum(XexpectedWin),
-                "newRating"= oldRating+k*(actualScore-expectedScore))
+                "newRating"= oldRating+k*(actualScore-expectedScore),
+                "date" = max(mdy(date.x)))
     
     for(j in 1:nrow(elo)) {
       elo_ratings[elo_ratings$st==elo$x[j],2] <- elo$newRating[j]
-      tracker <- add_row(tracker, st=elo$x[j], raceNumber=b+i, year=a, EloRating=elo$newRating[j])
+      tracker <- add_row(tracker, st=elo$x[j], date=elo$date[j], year=a, EloRating=elo$newRating[j])
     }
     k_optimization <- add_row(k_optimization, errorXWin = current_race_cross$xWin, errorXWin2=current_race_cross$XexpectedWin)
   }
@@ -50,16 +51,4 @@ for(a in 1:length(yr)) {
 
 k_optimization %>% mutate(error=(errorXWin-errorXWin2)^2) %>% 
   summarise(e=mean(error))
-
-
-
-
-
-
-#elo rating by time
-tracker %>% mutate(st=as.factor(st)) %>%  filter(raceNumber!=0, st %in% c(1,2,3,4,5)) %>%
-  ggplot(aes(x=raceNumber, y=EloRating, color=st)) + geom_line()
-
-#elo rating by race number in career
-elo_ratings %>% ggplot(aes(x=st,y=EloRating)) + geom_col()
 
