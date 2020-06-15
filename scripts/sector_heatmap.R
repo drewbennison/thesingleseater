@@ -3,11 +3,11 @@ library(tidyverse)
 library(here)
 library(lubridate)
 
-source("./thesingleseater/thesingleseater_theme.R")
+source("C:/Users/drewb/Desktop/thesingleseater/scripts/thesingleseater_theme.R")
 
 #Read in data and driver results for that session
-data<-fread("./datasets/2019_barber_p3.csv")
-drivers<-fread("./datasets/drivers.csv")
+data<-fread("C:/Users/drewb/Desktop/thesingleseater/datasets/sector_times/2020_texas_race.csv")
+drivers<-fread("C:/Users/drewb/Desktop/thesingleseater/datasets/sector_times/drivers.csv")
 
 #Clean the driver's names to remove anything after the comma in IndyCar data
 data$Driver<-gsub(",.*", "", data$Driver)
@@ -32,22 +32,22 @@ setkey(drivers, "Driver")
 setkey(data, "Driver")
 data<-merge(data, drivers, all.x = TRUE)
 
+sectors<-c("SF to T1","T1 to T2","T2 to T3","T3 to T4","T4 to SF","Full Lap")
+
 #Tile plot. Adjust limits depending on the number of sectors at that track
 plot<-ggplot(data=data, aes(x=Section, y=reorder(Driver, -Fin))) + 
   geom_tile(aes(fill=percRelativeSection)) + 
   scale_fill_gradient2(low = "red", mid = "white", high = "blue", midpoint = 0, limits=c(-6,6)) +
-  labs(fill = "% Difference\nFrom Average\nSector Speed", title="2019 GP of Alabama P3",
-       subtitle = "Drivers compared to the top sector times: Above average (purple) means faster",
+  labs(fill = "% Faster\nThan Average\nSector Speed", title="2020 Genesys 300",
+       subtitle = "Drivers' top sector times: Above average (purple) means faster",
        caption = "thesingleseater.com") + ylab("Driver") + xlab("Sector") + 
-  scale_x_discrete(limits=c("Sector 1","Sector 2","Sector 3","Sector 4","Sector 5","Sector 6", "Sector 7",
-                            "Sector 8", "Sector 9","Full Lap")) +
+  scale_x_discrete(limits=sectors) +
   thesingleseater_theme() + 
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 plot
 
-sectors<-c("Sector 1","Sector 2","Sector 3","Sector 4","Sector 5","Sector 6", "Sector 7",
-           "Sector 8", "Sector 9","Full Lap")
+
 
 #  Natural language output of who was quickest in each sector. ############################
 for (i in sectors) {
