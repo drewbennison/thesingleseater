@@ -101,6 +101,8 @@ server <- function(input, output,session) {
     #global data source
     data<- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
     
+    caution_stats <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/restartdata.csv")
+    
     elo_ratings <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv") %>% 
         mutate(date=ymd(date))
     
@@ -123,7 +125,7 @@ server <- function(input, output,session) {
     
     output$seasonTable = DT::renderDataTable({
         
-        #data<- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
+        
         
         #Calculate AFP from every starting position
         afp <- data %>%
@@ -180,7 +182,7 @@ server <- function(input, output,session) {
             mutate(Difference = Pts-xPoints) %>% 
             select(driver, Races, Pts, xPoints, Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, AFS, StartRetention, StartPM, PMperStart) %>% 
             rename(Driver=c("Driver"="driver")) %>% 
-            mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart), list(~ round(.,1))) %>% 
+            mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart, AFS), list(~ round(.,1))) %>% 
             mutate_at(vars(xPoints, Difference), list(~ round(.,0))) %>% 
             arrange(-Pts)
         

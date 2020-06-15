@@ -2,19 +2,16 @@ library(data.table)
 library(tidyverse)
 library(ggplot2)
 library(gganimate)
-library(magick)
 
-data<-fread("C:/Users/drewb/Desktop/indycar_results.csv")
+data<- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
 
 #Calculate AFP from every starting position
 afp <- data %>%
-  filter(year!=2019) %>% 
   group_by(st) %>% 
   summarise(xFP = mean(fin))
 
 #Left join data with xFP for every driver's results
 data <- data %>%
-  filter(year==2019) %>% 
   left_join(afp, by=c("st" = "st")) %>% 
   mutate(xFPDifference=xFP-fin)
 
@@ -31,50 +28,43 @@ working <- data %>%
          Pts=sum(pts),
          xPoints = sum(xPts),
          AFP = mean(fin),
+         DevFP = sd(fin),
          ASP = mean(st),
+         DevSP = sd(st),
          ATP = mean(atp),
+         DevATP = sd(atp),
          ATP25 = mean(atp25),
+         DevATP25 = sd(atp25),
          PassEff = 100*(sum(passesFor)/ (sum(passesFor)+sum(passesAgainst))),
          RunningCheck = ifelse(status=="running",1,0),
          RunPerc = 100*mean(RunningCheck),
-         AvgFastSpeed = mean(fastLapRank),
+         AFS = mean(fastLapRank),
          Top5Perc = 100*(sum(inTopFive)/sum(laps)),
-         ASPos = mean(xFPDifference)) %>% 
+         #Average Surplus Position
+         AEP = mean(xFPDifference)) %>% 
   #SELECT DRIVER AND ANY VARIBLES BEFORE YOU SELECT DISTINCT
-  distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, ASP, ATP, ATP25, PassEff, RunPerc, AvgFastSpeed, Top5Perc, ASPos)
+  distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, AFS)
 
+#Normalize points and xpoints to a per race level
+working$Pts = working$Pts/working$Races
+working$xPoints = working$xPoints/working$Races
 
 #Get ranks
-working$ATP_Rank=25-(rank(working$ATP))
-working$ATP25_Rank=25-(rank(working$ATP25))
+working$ATP_Rank=37-(rank(working$ATP))
+working$ATP25_Rank=37-(rank(working$ATP25))
+working$ASP_Rank = 37-(rank(working$ASP))
 working$PassEff_Rank=rank(working$PassEff)
-working$Speed_Rank=25-(rank(working$AvgFastSpeed))
+working$Top_5_Perc_Rank=rank(working$Top5Perc)
 working$Pts_Rank=rank(working$Pts)
 working$xPts_Rank=rank(working$xPoints)
-working$AEP_Rank=rank(working$ASPos)
+working$AEP_Rank=rank(working$AEP)
+working$AFS_Rank=37-(rank(working$AFS))
 
 
 working <- working %>% 
-  select(driver, ATP_Rank, AEP_Rank, PassEff_Rank, Speed_Rank, Pts_Rank, xPts_Rank)
+  select(driver, ATP_Rank, AEP_Rank, PassEff_Rank, Top_5_Perc_Rank, Pts_Rank, xPts_Rank, ASP_Rank, AFS_Rank)
 
-working<-melt(working, id="driver")
+setnames(working, c("ATP_Rank", "AEP_Rank", "PassEff_Rank", "Top_5_Perc_Rank", "Pts_Rank", "xPts_Rank", "ASP_Rank", "AFS_Rank"),
+         c("ATP", "AEP", "Pass Eff.", "Top5 %", "Points/Race", "xPts/Race", "ASP", "AFS"))
 
-working<-data.table(working)
-driver<-working[driver=="Simon Pagenaud",]
-  
-ggplot(working, aes(variable, value, fill=variable)) +
-  geom_col(width = 1, position = "identity") +
-  theme(axis.ticks = element_blank(),
-        axis.text = element_blank(),
-        axis.title = element_blank(),
-        axis.line = element_blank()) +
-  scale_y_continuous(breaks = 0:nlevels(working$variable)) +
-  facet_wrap(~driver) + 
-  #transition_states(driver, transition_length = 8) + 
-  labs(fill="Category", title = "Driver Performance") +
-  ylab("") + xlab("") + coord_polar() + theme_grey() +
-  theme(plot.title = element_text(size=22))
-
-ggsave("radar.png", width=10, height = 10, units = "in")
-
-a<-animate(a, duration = 30, fps = 25)
+fwrite(working, "working.csv")
