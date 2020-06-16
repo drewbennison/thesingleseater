@@ -1,0 +1,139 @@
+Section,Rank,Car,Driver,C/E/T,Time,Speed,Lap
+Full Lap,1,10,"Rosenqvist, Felix",D/H/F,00:24.1088,215.025,188
+Full Lap,2,4,"Kimball, Charlie",D/C/F,00:24.1660,214.516,188
+Full Lap,3,26,"Veach, Zach",D/H/F,00:24.1850,214.348,185
+Full Lap,4,9,"Dixon, Scott",D/H/F,00:24.2122,214.107,199
+Full Lap,5,20,"Carpenter, Ed",D/C/F,00:24.2924,213.400,185
+Full Lap,6,15,"Rahal, Graham",D/H/F,00:24.3285,213.083,125
+Full Lap,7,29,"Hinchcliffe, James",D/H/F,00:24.3962,212.492,161
+Full Lap,8,22,"Pagenaud, Simon",D/C/F,00:24.4117,212.357,184
+Full Lap,9,88,"Herta, Colton",D/H/F,00:24.4209,212.277,188
+Full Lap,10,59,"Daly, Conor",D/C/F,00:24.4252,212.240,155
+Full Lap,11,8,"Ericsson, Marcus",D/H/F,00:24.4362,212.144,126
+Full Lap,12,7,"Askew, Oliver (R)",D/C/F,00:24.4638,211.905,126
+Full Lap,13,28,"Hunter-Reay, Ryan",D/H/F,00:24.4830,211.739,185
+Full Lap,14,1,"Newgarden, Josef",D/C/F,00:24.5181,211.436,154
+Full Lap,15,5,"O'Ward, Pato",D/C/F,00:24.5299,211.334,153
+Full Lap,16,12,"Power, Will",D/C/F,00:24.5388,211.257,197
+Full Lap,17,14,"Kanaan, Tony",D/C/F,00:24.5809,210.895,161
+Full Lap,18,98,"Andretti, Marco",D/H/F,00:24.5933,210.789,187
+Full Lap,19,27,"Rossi, Alexander",D/H/F,00:24.6725,210.112,157
+Full Lap,20,18,"Ferrucci, Santino",D/H/F,00:24.7686,209.297,124
+Full Lap,21,21,"VeeKay, Rinus (R)",D/C/F,00:24.7726,209.263,10
+Full Lap,22,60,"Harvey, Jack",D/H/F,00:24.9079,208.127,57
+Full Lap,23,55,"Palou, Alex (R)",D/H/F,00:24.9991,207.367,22
+SF to T1,1,26,"Veach, Zach",D/H/F,00:02.0578,222.987,127
+SF to T1,2,7,"Askew, Oliver (R)",D/C/F,00:02.0702,221.652,161
+SF to T1,3,28,"Hunter-Reay, Ryan",D/H/F,00:02.0736,221.288,188
+SF to T1,4,15,"Rahal, Graham",D/H/F,00:02.0744,221.203,131
+SF to T1,5,20,"Carpenter, Ed",D/C/F,00:02.0748,221.160,128
+SF to T1,6,14,"Kanaan, Tony",D/C/F,00:02.0759,221.043,96
+SF to T1,7,59,"Daly, Conor",D/C/F,00:02.0769,220.937,93
+SF to T1,8,4,"Kimball, Charlie",D/C/F,00:02.0807,220.533,188
+SF to T1,9,5,"O'Ward, Pato",D/C/F,00:02.0814,220.459,185
+SF to T1,10,22,"Pagenaud, Simon",D/C/F,00:02.0821,220.385,185
+SF to T1,11,88,"Herta, Colton",D/H/F,00:02.0835,220.237,90
+SF to T1,12,29,"Hinchcliffe, James",D/H/F,00:02.0839,220.195,197
+SF to T1,13,21,"VeeKay, Rinus (R)",D/C/F,00:02.0875,219.815,10
+SF to T1,14,27,"Rossi, Alexander",D/H/F,00:02.0918,219.363,160
+SF to T1,15,18,"Ferrucci, Santino",D/H/F,00:02.0925,219.290,91
+SF to T1,16,98,"Andretti, Marco",D/H/F,00:02.0950,219.028,159
+SF to T1,17,10,"Rosenqvist, Felix",D/H/F,00:02.0954,218.986,50
+SF to T1,18,12,"Power, Will",D/C/F,00:02.0981,218.704,159
+SF to T1,19,8,"Ericsson, Marcus",D/H/F,00:02.0984,218.673,5
+SF to T1,20,9,"Dixon, Scott",D/H/F,00:02.0997,218.538,90
+SF to T1,21,60,"Harvey, Jack",D/H/F,00:02.1123,217.234,89
+SF to T1,22,1,"Newgarden, Josef",D/C/F,00:02.1129,217.172,129
+SF to T1,23,55,"Palou, Alex (R)",D/H/F,00:02.1155,216.906,16
+T4 to SF,1,4,"Kimball, Charlie",D/C/F,00:02.0560,224.509,188
+T4 to SF,2,59,"Daly, Conor",D/C/F,00:02.0612,223.943,184
+T4 to SF,3,29,"Hinchcliffe, James",D/H/F,00:02.0631,223.737,1
+T4 to SF,4,10,"Rosenqvist, Felix",D/H/F,00:02.0653,223.498,3
+T4 to SF,5,26,"Veach, Zach",D/H/F,00:02.0655,223.477,89
+T4 to SF,6,9,"Dixon, Scott",D/H/F,00:02.0663,223.390,124
+T4 to SF,7,27,"Rossi, Alexander",D/H/F,00:02.0706,222.926,159
+T4 to SF,8,8,"Ericsson, Marcus",D/H/F,00:02.0716,222.819,187
+T4 to SF,9,20,"Carpenter, Ed",D/C/F,00:02.0741,222.550,187
+T4 to SF,10,7,"Askew, Oliver (R)",D/C/F,00:02.0776,222.175,160
+T4 to SF,11,22,"Pagenaud, Simon",D/C/F,00:02.0818,221.727,184
+T4 to SF,12,88,"Herta, Colton",D/H/F,00:02.0819,221.716,198
+T4 to SF,13,5,"O'Ward, Pato",D/C/F,00:02.0835,221.546,184
+T4 to SF,14,28,"Hunter-Reay, Ryan",D/H/F,00:02.0844,221.450,185
+T4 to SF,15,15,"Rahal, Graham",D/H/F,00:02.0851,221.376,130
+T4 to SF,16,18,"Ferrucci, Santino",D/H/F,00:02.0853,221.355,124
+T4 to SF,17,21,"VeeKay, Rinus (R)",D/C/F,00:02.0875,221.121,9
+T4 to SF,18,12,"Power, Will",D/C/F,00:02.0901,220.846,159
+T4 to SF,19,14,"Kanaan, Tony",D/C/F,00:02.0902,220.836,95
+T4 to SF,20,98,"Andretti, Marco",D/H/F,00:02.0948,220.351,186
+T4 to SF,21,1,"Newgarden, Josef",D/C/F,00:02.0981,220.004,155
+T4 to SF,22,55,"Palou, Alex (R)",D/H/F,00:02.1073,219.044,15
+T4 to SF,23,60,"Harvey, Jack",D/H/F,00:02.1177,217.968,62
+T1 to T2,1,9,"Dixon, Scott",D/H/F,00:07.9140,211.937,199
+T1 to T2,2,10,"Rosenqvist, Felix",D/H/F,00:07.9726,210.380,158
+T1 to T2,3,15,"Rahal, Graham",D/H/F,00:08.0284,208.917,125
+T1 to T2,4,98,"Andretti, Marco",D/H/F,00:08.0676,207.902,185
+T1 to T2,5,4,"Kimball, Charlie",D/C/F,00:08.0695,207.853,188
+T1 to T2,6,88,"Herta, Colton",D/H/F,00:08.0867,207.411,188
+T1 to T2,7,29,"Hinchcliffe, James",D/H/F,00:08.0869,207.406,158
+T1 to T2,8,5,"O'Ward, Pato",D/C/F,00:08.0927,207.257,154
+T1 to T2,9,28,"Hunter-Reay, Ryan",D/H/F,00:08.0930,207.250,185
+T1 to T2,10,8,"Ericsson, Marcus",D/H/F,00:08.0940,207.224,125
+T1 to T2,11,26,"Veach, Zach",D/H/F,00:08.0963,207.165,156
+T1 to T2,12,20,"Carpenter, Ed",D/C/F,00:08.1052,206.938,158
+T1 to T2,13,12,"Power, Will",D/C/F,00:08.1113,206.782,198
+T1 to T2,14,1,"Newgarden, Josef",D/C/F,00:08.1156,206.673,2
+T1 to T2,15,14,"Kanaan, Tony",D/C/F,00:08.1189,206.589,157
+T1 to T2,16,59,"Daly, Conor",D/C/F,00:08.1532,205.720,155
+T1 to T2,17,7,"Askew, Oliver (R)",D/C/F,00:08.1752,205.166,126
+T1 to T2,18,22,"Pagenaud, Simon",D/C/F,00:08.1762,205.141,47
+T1 to T2,19,21,"VeeKay, Rinus (R)",D/C/F,00:08.2872,202.393,10
+T1 to T2,20,27,"Rossi, Alexander",D/H/F,00:08.3077,201.894,13
+T1 to T2,21,60,"Harvey, Jack",D/H/F,00:08.3842,200.052,57
+T1 to T2,22,18,"Ferrucci, Santino",D/H/F,00:08.3949,199.797,129
+T1 to T2,23,55,"Palou, Alex (R)",D/H/F,00:08.4874,197.619,22
+T2 to T3,1,10,"Rosenqvist, Felix",D/H/F,00:04.0847,215.160,188
+T2 to T3,2,4,"Kimball, Charlie",D/C/F,00:04.0856,215.113,188
+T2 to T3,3,26,"Veach, Zach",D/H/F,00:04.1026,214.221,185
+T2 to T3,4,9,"Dixon, Scott",D/H/F,00:04.1096,213.856,160
+T2 to T3,5,20,"Carpenter, Ed",D/C/F,00:04.1168,213.482,88
+T2 to T3,6,28,"Hunter-Reay, Ryan",D/H/F,00:04.1218,213.223,184
+T2 to T3,7,98,"Andretti, Marco",D/H/F,00:04.1302,212.790,185
+T2 to T3,8,5,"O'Ward, Pato",D/C/F,00:04.1322,212.687,184
+T2 to T3,9,88,"Herta, Colton",D/H/F,00:04.1348,212.553,187
+T2 to T3,10,29,"Hinchcliffe, James",D/H/F,00:04.1365,212.466,161
+T2 to T3,11,22,"Pagenaud, Simon",D/C/F,00:04.1366,212.460,50
+T2 to T3,12,8,"Ericsson, Marcus",D/H/F,00:04.1375,212.414,157
+T2 to T3,13,12,"Power, Will",D/C/F,00:04.1453,212.014,198
+T2 to T3,14,1,"Newgarden, Josef",D/C/F,00:04.1464,211.958,182
+T2 to T3,15,27,"Rossi, Alexander",D/H/F,00:04.1574,211.397,121
+T2 to T3,16,59,"Daly, Conor",D/C/F,00:04.1583,211.352,184
+T2 to T3,17,15,"Rahal, Graham",D/H/F,00:04.1591,211.311,125
+T2 to T3,18,14,"Kanaan, Tony",D/C/F,00:04.1701,210.754,157
+T2 to T3,19,21,"VeeKay, Rinus (R)",D/C/F,00:04.1757,210.471,10
+T2 to T3,20,7,"Askew, Oliver (R)",D/C/F,00:04.1842,210.043,127
+T2 to T3,21,18,"Ferrucci, Santino",D/H/F,00:04.1985,209.328,124
+T2 to T3,22,60,"Harvey, Jack",D/H/F,00:04.2310,207.720,157
+T2 to T3,23,55,"Palou, Alex (R)",D/H/F,00:04.2545,206.573,5
+T3 to T4,1,26,"Veach, Zach",D/H/F,00:07.8042,218.763,185
+T3 to T4,2,10,"Rosenqvist, Felix",D/H/F,00:07.8196,218.332,188
+T3 to T4,3,4,"Kimball, Charlie",D/C/F,00:07.8197,218.330,187
+T3 to T4,4,59,"Daly, Conor",D/C/F,00:07.8302,218.037,184
+T3 to T4,5,9,"Dixon, Scott",D/H/F,00:07.8338,217.937,159
+T3 to T4,6,20,"Carpenter, Ed",D/C/F,00:07.8445,217.639,185
+T3 to T4,7,22,"Pagenaud, Simon",D/C/F,00:07.8466,217.581,184
+T3 to T4,8,18,"Ferrucci, Santino",D/H/F,00:07.8494,217.504,124
+T3 to T4,9,5,"O'Ward, Pato",D/C/F,00:07.8532,217.398,184
+T3 to T4,10,14,"Kanaan, Tony",D/C/F,00:07.8853,216.513,93
+T3 to T4,11,8,"Ericsson, Marcus",D/H/F,00:07.8864,216.483,157
+T3 to T4,12,7,"Askew, Oliver (R)",D/C/F,00:07.8877,216.447,128
+T3 to T4,13,27,"Rossi, Alexander",D/H/F,00:07.8949,216.250,159
+T3 to T4,14,29,"Hinchcliffe, James",D/H/F,00:07.9014,216.072,161
+T3 to T4,15,15,"Rahal, Graham",D/H/F,00:07.9015,216.069,126
+T3 to T4,16,98,"Andretti, Marco",D/H/F,00:07.9028,216.034,187
+T3 to T4,17,12,"Power, Will",D/C/F,00:07.9106,215.821,159
+T3 to T4,18,28,"Hunter-Reay, Ryan",D/H/F,00:07.9262,215.396,160
+T3 to T4,19,88,"Herta, Colton",D/H/F,00:07.9319,215.241,187
+T3 to T4,20,1,"Newgarden, Josef",D/C/F,00:07.9694,214.229,154
+T3 to T4,21,21,"VeeKay, Rinus (R)",D/C/F,00:07.9894,213.692,9
+T3 to T4,22,60,"Harvey, Jack",D/H/F,00:07.9950,213.543,158
+T3 to T4,23,55,"Palou, Alex (R)",D/H/F,00:07.9965,213.502,22
