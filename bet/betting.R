@@ -7,7 +7,7 @@ race <- fread("C:/Users/drewb/desktop/elo_drivers.csv")
 draftkings <- fread("C:/Users/drewb/desktop/draftkings_odds.csv")
 matchups <- fread("C:/Users/drewb/desktop/draftkings_matchup.csv")
 elo_ratings <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv")
-sp_elo <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/starting_position_elo.csv")
+sp_elo <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/4_1_2020_start_pos_elo_ratings.csv")
 
 
 matchups <- matchups %>% left_join(race, by=c("Driver1"="driver")) %>% 
