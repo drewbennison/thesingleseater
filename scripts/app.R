@@ -9,6 +9,7 @@
 
 library(shiny)
 library(DT)
+library(data.table)
 library(tidyverse)
 library(lubridate)
 
@@ -41,9 +42,9 @@ ui <- fluidPage(
     conditionalPanel(
         condition = "input.tabpan == 'Season Stats'",
         fluidRow(column(
-            width = 2,
+            width = 10,
             offset = 0,
-            tags$h3("Driver season stats"),
+            tags$h4("Driver season stats"),
             radioButtons("trackb", "Sort by track type:",
                          c("All Tracks" = "all",
                            "Oval" = "oval",
@@ -58,9 +59,9 @@ ui <- fluidPage(
     conditionalPanel(
         condition = "input.tabpan == 'Track Stats'",
         fluidRow(column(
-            width = 2,
+            width = 10,
             offset = 0,
-            h3("Track historical results (2008-2020)"),
+            h4("Track historical results (2008-2020)"),
             selectInput("selecttrack", "Select a track:", 
                         choices = NULL, 
                         selected = 1),
@@ -70,29 +71,39 @@ ui <- fluidPage(
     conditionalPanel(
         condition = "input.tabpan == 'Current Elo Ratings'",
         fluidRow(column(
-            width = 2,
+            width = 10,
             offset = 0,
-            h3("Current Elo Ratings")))),
+            h4("Current Elo Ratings")))),
     
     conditionalPanel(
         condition = "input.tabpan == 'Historical Elo Ratings'",
         fluidRow(column(
-            width = 12,
+            width = 10,
             offset = 0,
-            h3("Historical Elo Ratings"),
+            h4("Historical Elo Ratings"),
             wellPanel(
                 
                 tags$div(class = "multicol", checkboxGroupInput("selectedDrivers", choices = NULL, label = "Select drivers to show", selected = NULL)))
             ))),
     
+    conditionalPanel(
+        condition = "input.tabpan == 'Championship Projections'",
+        fluidRow(column(
+            width = 10,
+            offset = 0,
+            h4("Championship Projections"),
+            h5("Last updated: 6/16/2020"),
+            selectInput("selectchampdriver", "Select a driver to view their championship projection:", 
+                        choices = NULL, 
+                        selected = 1),))),
     
     mainPanel(
             tabsetPanel(id="tabpan", type="tabs",
                     tabPanel("Season Stats", DT::dataTableOutput("seasonTable")),
                     tabPanel("Track Stats", DT::dataTableOutput("trackTable")),
                     tabPanel("Current Elo Ratings", DT::dataTableOutput("eloTable")),
-                    tabPanel("Historical Elo Ratings", plotOutput("eloGraph"))
-                    ),
+                    tabPanel("Historical Elo Ratings", plotOutput("eloGraph")),
+                    tabPanel("Championship Projections", DT::dataTableOutput("champTable"), plotOutput("champGraph"))),
     )
 )
 
@@ -105,6 +116,23 @@ server <- function(input, output,session) {
     
     elo_ratings <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv") %>% 
         mutate(date=ymd(date))
+    
+    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/6_15_2020_champ.csv")
+    
+    champ_projections <- champ_projections %>% 
+        filter(season!=0) %>% 
+        select(driver, totalPoints, chamPos, season) %>% 
+        group_by(driver, chamPos) %>% 
+        add_count() %>% 
+        mutate(prob = round((n/max(season)),2)) %>% 
+        select(driver, chamPos, n, prob) %>% 
+        distinct()
+    
+    choices_champ_projections <- champ_projections %>% 
+        select(driver) %>% 
+        distinct()
+    
+    updateSelectInput(session=session, inputId="selectchampdriver", choices=choices_champ_projections$driver)
     
     #dynamically populate choices for track selection
     choices_tracks <- data %>%
@@ -247,12 +275,15 @@ server <- function(input, output,session) {
     
     
     output$eloTable <- DT::renderDataTable({
-        elo_ratings %>% filter(year==2020) %>% 
+        elo_ratings %>% filter(year>2019) %>% 
            group_by(driver) %>%
             slice(which.max(as.Date(date, '%m/%d/%Y'))) %>% 
-            mutate(EloRating = round(EloRating)) %>% 
+            mutate(EloRating = round(EloRating),
+                   PreviousEloRating = round(PreviousEloRating),
+                   `1 Race Change` = EloRating-PreviousEloRating) %>% 
             arrange(-EloRating) %>% 
             select(-year) %>% 
+            select(-PreviousEloRating) %>% 
             rename(Driver = driver) %>% 
             rename(LastUpdated = date)
 
@@ -267,7 +298,29 @@ server <- function(input, output,session) {
                  color="Driver", y="EloRating") +
             theme_bw() + theme(plot.title = element_text(size=22))
     }, height="auto", width="auto")
+ 
+    #### championship projections table ####
+    output$champTable <- DT::renderDataTable({
+        
+        
+        champ_projections_final <-dcast(champ_projections, driver~chamPos, sum, value.var = "prob")
+        champ_projections_final <- champ_projections_final %>% arrange_at(2:32, desc)
+        
+    }, options=list(pageLength=50))   
     
+    output$champGraph <- renderPlot({
+        champ_projections %>%
+            filter(driver == input$selectchampdriver) %>% 
+            ggplot() + geom_col(aes(x=chamPos, y=prob, fill=driver)) + 
+            theme(legend.position = "none")+
+            scale_x_discrete(limits = c(1, 5, 10, 15, 20, 25, 31)) +
+            scale_y_continuous(breaks=c(0,.25,.50,.75,1), limits = c(0,1)) +
+            labs(y="Probability of finishing the season in position",
+                 x="Championship finishing position",
+                 title=paste0("2020 IndyCar Championship Projection for ", input$selectchampdriver),
+                 subtitle = "After simulating the remaining races 4,000 times",
+                 caption = "www.thesingleseater.com")
+    }, width = 600, height = 600)
 }
 
 shinyApp(ui, server)
