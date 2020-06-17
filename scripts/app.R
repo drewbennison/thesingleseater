@@ -153,7 +153,15 @@ server <- function(input, output,session) {
     
     output$seasonTable = DT::renderDataTable({
         
+        #Calculate adjusted pass effeciency
         
+        avgPE <- data %>% filter(!is.na(passesFor)) %>% 
+            select(driver, st, passesFor, passesAgainst) %>% 
+            group_by(st) %>% 
+            summarise(pF = sum(passesFor),
+                      pA = sum(passesAgainst)) %>% 
+            mutate(avgPE = pF/(pF+pA)) %>% 
+            select(st, avgPE)
         
         #Calculate AFP from every starting position
         afp <- data %>%
@@ -165,6 +173,12 @@ server <- function(input, output,session) {
             filter(year==input$selectyear) %>% 
             left_join(afp, by=c("st" = "st")) %>% 
             mutate(xFPDifference=xFP-fin)
+        
+        data <- data %>% 
+            mutate(passEff = passesFor/(passesFor+passesAgainst),
+                   passEff = ifelse(is.na(passEff), .5, passEff)) %>% 
+            left_join(avgPE, by="st") %>% 
+            mutate(AdjPassEff = passEff-avgPE)
         
         if(input$trackb=="all") {
             driver_season_stats <- data %>%
@@ -196,7 +210,8 @@ server <- function(input, output,session) {
                    DevATP = sd(atp),
                    ATP25 = mean(atp25),
                    DevATP25 = sd(atp25),
-                   PassEff = 100*(sum(passesFor)/ (sum(passesFor)+sum(passesAgainst))),
+                   PassEff = 100*mean(passEff),
+                   AdjPassEff = 100*mean(AdjPassEff),
                    RunningCheck = ifelse(status=="running",1,0),
                    RunPerc = 100*mean(RunningCheck),
                    AFS = mean(fastLapRank),
@@ -204,13 +219,13 @@ server <- function(input, output,session) {
                    #Average Surplus Position
                    AEP = mean(xFPDifference)) %>% 
             #SELECT DRIVER AND ANY VARIBLES BEFORE YOU SELECT DISTINCT
-            distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, AFS)
+            distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, AFS)
         
         season1<- driver_season_stats %>%
             mutate(Difference = Pts-xPoints) %>% 
-            select(driver, Races, Pts, xPoints, Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, AFS, StartRetention, StartPM, PMperStart) %>% 
+            select(driver, Races, Pts, xPoints, Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, AFS, StartRetention, StartPM, PMperStart) %>% 
             rename(Driver=c("Driver"="driver")) %>% 
-            mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart, AFS), list(~ round(.,1))) %>% 
+            mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart, AFS), list(~ round(.,1))) %>% 
             mutate_at(vars(xPoints, Difference), list(~ round(.,0))) %>% 
             arrange(-Pts)
         
