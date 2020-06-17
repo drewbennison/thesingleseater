@@ -10,10 +10,26 @@ afp <- data %>%
   group_by(st) %>% 
   summarise(xFP = mean(fin))
 
+avgPE <- data %>% filter(!is.na(passesFor)) %>% 
+  select(driver, st, passesFor, passesAgainst) %>% 
+  group_by(st) %>% 
+  summarise(pF = sum(passesFor),
+            pA = sum(passesAgainst)) %>% 
+  mutate(avgPE = pF/(pF+pA)) %>% 
+  select(st, avgPE)
+
+
+
 #Left join data with xFP for every driver's results
 data <- data %>%
   left_join(afp, by=c("st" = "st")) %>% 
   mutate(xFPDifference=xFP-fin)
+
+data <- data %>% 
+  mutate(passEff = passesFor/(passesFor+passesAgainst),
+         passEff = ifelse(is.na(passEff), .5, passEff)) %>% 
+  left_join(avgPE, by="st") %>% 
+  mutate(AdjPassEff = passEff-avgPE)
 
 working <- data %>%
   filter(year==2019) %>%
@@ -35,7 +51,8 @@ working <- data %>%
          DevATP = sd(atp),
          ATP25 = mean(atp25),
          DevATP25 = sd(atp25),
-         PassEff = 100*(sum(passesFor)/ (sum(passesFor)+sum(passesAgainst))),
+         PassEff = 100*mean(passEff),
+         AdjPassEff = 100*mean(AdjPassEff),
          RunningCheck = ifelse(status=="running",1,0),
          RunPerc = 100*mean(RunningCheck),
          AFS = mean(fastLapRank),
@@ -43,7 +60,7 @@ working <- data %>%
          #Average Surplus Position
          AEP = mean(xFPDifference)) %>% 
   #SELECT DRIVER AND ANY VARIBLES BEFORE YOU SELECT DISTINCT
-  distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, RunPerc, Top5Perc, AEP, AFS)
+  distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, AFS)
 
 #Normalize points and xpoints to a per race level
 working$Pts = working$Pts/working$Races
@@ -59,12 +76,13 @@ working$Pts_Rank=rank(working$Pts)
 working$xPts_Rank=rank(working$xPoints)
 working$AEP_Rank=rank(working$AEP)
 working$AFS_Rank=37-(rank(working$AFS))
+working$AdjPassEff_Rank <- rank(working$AdjPassEff)
 
 
 working <- working %>% 
-  select(driver, ATP_Rank, AEP_Rank, PassEff_Rank, Top_5_Perc_Rank, Pts_Rank, xPts_Rank, ASP_Rank, AFS_Rank)
+  select(driver, ATP_Rank, AEP_Rank, AdjPassEff_Rank, Top_5_Perc_Rank, Pts_Rank, xPts_Rank, ASP_Rank, AFS_Rank)
 
-setnames(working, c("ATP_Rank", "AEP_Rank", "PassEff_Rank", "Top_5_Perc_Rank", "Pts_Rank", "xPts_Rank", "ASP_Rank", "AFS_Rank"),
-         c("ATP", "AEP", "Pass Eff.", "Top5 %", "Points/Race", "xPts/Race", "ASP", "AFS"))
+setnames(working, c("ATP_Rank", "AEP_Rank", "AdjPassEff_Rank", "Top_5_Perc_Rank", "Pts_Rank", "xPts_Rank", "ASP_Rank", "AFS_Rank"),
+         c("ATP", "AEP", "Adj. Pass Eff.", "Top5 %", "Points/Race", "xPts/Race", "ASP", "AFS"))
 
 fwrite(working, "working.csv")
