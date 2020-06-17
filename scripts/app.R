@@ -109,6 +109,7 @@ ui <- fluidPage(
 
 server <- function(input, output,session) {
     
+    #### load in data sources ####
     #global data source
     data<- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
     
@@ -132,6 +133,7 @@ server <- function(input, output,session) {
         select(driver) %>% 
         distinct()
     
+    #### dynamically populate selections ####
     updateSelectInput(session=session, inputId="selectchampdriver", choices=choices_champ_projections$driver)
     
     #dynamically populate choices for track selection
@@ -150,7 +152,7 @@ server <- function(input, output,session) {
     
     updateCheckboxGroupInput(session = session, inputId = "selectedDrivers", choices=choices_drivers$driver)
     
-    
+    #### season table ####
     output$seasonTable = DT::renderDataTable({
         
         #Calculate adjusted pass effeciency
@@ -232,7 +234,7 @@ server <- function(input, output,session) {
         
     }, options=list(pageLength=50))
     
-    
+    #### track history table ####
     output$trackTable = DT::renderDataTable({
         
         #Calculate AFP from every starting position
@@ -288,7 +290,7 @@ server <- function(input, output,session) {
     }, options=list(pageLength=50))
         
     
-    
+    #### current elo ratings table ####
     output$eloTable <- DT::renderDataTable({
         elo_ratings %>% filter(year>2019) %>% 
            group_by(driver) %>%
@@ -305,6 +307,7 @@ server <- function(input, output,session) {
         
     }, options=list(pageLength=50))
     
+    #### historical elo ratings graph ####
     output$eloGraph <- renderPlot({
         
         elo_ratings %>% filter(year!=2000, driver %in% input$selectedDrivers) %>%
@@ -323,6 +326,7 @@ server <- function(input, output,session) {
         
     }, options=list(pageLength=50))   
     
+    #### championship projections graph
     output$champGraph <- renderPlot({
         champ_projections %>%
             filter(driver == input$selectchampdriver) %>% 
