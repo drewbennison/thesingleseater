@@ -12,10 +12,10 @@ afp <- data %>%
 
 avgPE <- data %>% filter(!is.na(passesFor)) %>% 
   select(driver, st, passesFor, passesAgainst) %>% 
+  mutate(passEff = passesFor/(passesFor+passesAgainst),
+         passEff = ifelse(is.na(passEff),.5,passEff)) %>% 
   group_by(st) %>% 
-  summarise(pF = sum(passesFor),
-            pA = sum(passesAgainst)) %>% 
-  mutate(avgPE = pF/(pF+pA)) %>% 
+  summarise(avgPE = mean(passEff)) %>% 
   select(st, avgPE)
 
 
