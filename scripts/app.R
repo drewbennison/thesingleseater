@@ -12,6 +12,7 @@ library(DT)
 library(data.table)
 library(tidyverse)
 library(lubridate)
+library(plotly)
 
 ui <- fluidPage(
     
@@ -102,7 +103,7 @@ ui <- fluidPage(
                     tabPanel("Season Stats", DT::dataTableOutput("seasonTable")),
                     tabPanel("Track Stats", DT::dataTableOutput("trackTable")),
                     tabPanel("Current Elo Ratings", DT::dataTableOutput("eloTable")),
-                    tabPanel("Historical Elo Ratings", plotOutput("eloGraph")),
+                    tabPanel("Historical Elo Ratings", plotlyOutput("eloGraph")),
                     tabPanel("Championship Projections", DT::dataTableOutput("champTable"), plotOutput("champGraph"))),
     )
 )
@@ -150,7 +151,7 @@ server <- function(input, output,session) {
         select(driver) %>% 
         distinct()
     
-    updateCheckboxGroupInput(session = session, inputId = "selectedDrivers", choices=choices_drivers$driver)
+    updateCheckboxGroupInput(session = session, inputId = "selectedDrivers", choices=choices_drivers$driver, selected = "Josef Newgarden")
     
     #### season table ####
     output$seasonTable = DT::renderDataTable({
@@ -159,10 +160,10 @@ server <- function(input, output,session) {
         
         avgPE <- data %>% filter(!is.na(passesFor)) %>% 
             select(driver, st, passesFor, passesAgainst) %>% 
+            mutate(passEff = passesFor/(passesFor+passesAgainst),
+                   passEff = ifelse(is.na(passEff),.5,passEff)) %>% 
             group_by(st) %>% 
-            summarise(pF = sum(passesFor),
-                      pA = sum(passesAgainst)) %>% 
-            mutate(avgPE = pF/(pF+pA)) %>% 
+            summarise(avgPE = mean(passEff)) %>% 
             select(st, avgPE)
         
         #Calculate AFP from every starting position
@@ -232,7 +233,7 @@ server <- function(input, output,session) {
             arrange(-Pts)
         
         
-    }, options=list(pageLength=50))
+    }, options=list(pageLength=50, scrollX = TRUE))
     
     #### track history table ####
     output$trackTable = DT::renderDataTable({
@@ -287,7 +288,7 @@ server <- function(input, output,session) {
             mutate_at(vars(AFP, DevFP, ASP, DevSP, RunPerc,AEP), list(~ round(.,1))) %>% 
             arrange(-Pts)
         
-    }, options=list(pageLength=50))
+    }, options=list(pageLength=50, scrollX = TRUE))
         
     
     #### current elo ratings table ####
@@ -305,17 +306,17 @@ server <- function(input, output,session) {
             rename(LastUpdated = date)
 
         
-    }, options=list(pageLength=50))
+    }, options=list(pageLength=50, scrollX = TRUE))
     
     #### historical elo ratings graph ####
-    output$eloGraph <- renderPlot({
-        
-        elo_ratings %>% filter(year!=2000, driver %in% input$selectedDrivers) %>%
-            ggplot(aes(x=date, y=EloRating, color=driver)) + geom_line() +
+    output$eloGraph <- renderPlotly({
+        dg <- elo_ratings %>% filter(year!=2000, driver %in% input$selectedDrivers)
+        g <- ggplot(data = dg, aes(x=date, y=EloRating, color=driver)) + geom_line() +
             labs(x="Date", title = "Elo Rating Over Time", subtitle = "Minimum 10 starts",
                  color="Driver", y="EloRating") +
-            theme_bw() + theme(plot.title = element_text(size=22))
-    }, height="auto", width="auto")
+            theme_bw() #+ theme(plot.title = element_text(size=22))
+        ggplotly(g)
+    })
  
     #### championship projections table ####
     output$champTable <- DT::renderDataTable({
@@ -324,7 +325,7 @@ server <- function(input, output,session) {
         champ_projections_final <-dcast(champ_projections, driver~chamPos, sum, value.var = "prob")
         champ_projections_final <- champ_projections_final %>% arrange_at(2:32, desc)
         
-    }, options=list(pageLength=50))   
+    }, options=list(pageLength=50, scrollX = TRUE))   
     
     #### championship projections graph
     output$champGraph <- renderPlot({
