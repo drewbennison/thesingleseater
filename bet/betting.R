@@ -17,7 +17,8 @@ matchups <- matchups %>% left_join(race, by=c("Driver1"="driver")) %>%
 elo <- elo_ratings %>% filter(year !=2000) %>% 
   group_by(driver) %>%
   slice(which.max(ymd(date))) %>% 
-  mutate(EloRating = round(EloRating))
+  mutate(EloRating = round(EloRating)) %>% 
+  select(-PreviousEloRating)
 
 if(race[1,2] == 0){
   print("Pre-qualifying")
@@ -40,7 +41,7 @@ if(race[1,2] == 0){
       }
     }
     
-    r <- r %>% add_row(driver=current_driver, WinTSSProb=(current_q/(current_q+sum_opponents_q)))
+    r <- r %>% add_row(driver=current_driver$driver, WinTSSProb=(current_q$EloRating/(current_q$EloRating+sum_opponents_q$EloRating)))
   }
   
   
