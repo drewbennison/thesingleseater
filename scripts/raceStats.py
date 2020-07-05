@@ -153,7 +153,7 @@ def raceStats(race_length, point_system="single"):
 	        for lap in drivers[key]:
 	            if lap <6:
 	                inT5+=1
-	    df2 = pd.DataFrame({"driver":[key], "lapsT5":[inT5]})
+	    df2 = pd.DataFrame({"driver":[key], "lapsT5":[inT5-1]})
 	    in_top_five_df = in_top_five_df.append(df2, ignore_index=True)
 
 	##################################################################################################
@@ -203,38 +203,55 @@ def raceStats(race_length, point_system="single"):
 	return final
 
 
-'''
+
 def cautionStats(list_of_cautions):
 	#Takes a list as an input for cautions
+
+	#read in drivers names
+	cautions_names = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/indycar_2020_drivers_races.csv")
+	cautions_names.loc[cautions_names['Driver'].str.split().str.len() == 2, 'lastName'] = cautions_names['Driver'].str.split().str[-1]
+	cautions_names = cautions_names[['Driver', 'lastName']]
+	print(cautions_names)
 
 	caution_laps = list_of_cautions
 	caution_df = pd.DataFrame({"caution":[], "driver":[], "restartPM":[]})
 
 	caution = 1
 	for i in caution_laps:
+		# i = last lap of caution periods
 		drivers = racePosition(i,i+3)
-		count = 0
-		for driver in drivers:
-			if len(driver)>2:
-				df2 = pd.DataFrame({"caution":[caution], "driver":[names[count]], "restartPM":[-1*(driver[2]-driver[0])]})
+		for key in drivers:
+			if len(drivers[key])>2:
+				df2 = pd.DataFrame({"caution":[caution], "driver":[key], "restartPM":[-1*(drivers[key][2]-drivers[key][0])]})
 				caution_df = caution_df.append(df2, ignore_index=True)
-			count += 1
 		caution += 1
 
+	caution_df = caution_df.merge(cautions_names, how='left', left_on='driver', right_on='lastName')
+
+	caution_df.to_csv("caution_stats.csv")
 	return caution_df
 
-def greenFlagStats(list_window):
+def greenFlagStats(start_window, end_window):
 
-	window_laps = list_window
-	greenFlag_df = pd.DataFrame({"driver":[], "greenFlagPM":[]})
-	drivers = racePosition(window_laps[0],window_laps[1]+1)
+	#laps before any pits, lap after all pits
+	#merge in driver names next 
+	greenflag_names = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/indycar_2020_drivers_races.csv")
+	greenflag_names.loc[greenflag_names['Driver'].str.split().str.len() == 2, 'lastName'] = greenflag_names['Driver'].str.split().str[-1]
+	greenflag_names = greenflag_names[['Driver', 'lastName']]
 
-	count = 0
-	for driver in drivers:
-		if len(driver)>(window_laps[1]-window_laps[0]-1):
-			df2 = pd.DataFrame({"driver":[names[count]], "greenFlagPM":[-1*(driver[-1]-driver[0])]})
-			greenFlag_df = greenFlag_df.append(df2, ignore_index=True)
-		count+=1
+	#window_laps = list_window
+	greenFlag_df = pd.DataFrame({"window_start": [], "driver":[], "greenFlagPM":[]})
+	
+	for i in range(0,len(start_window)):
+		drivers = racePosition(start_window[i], (end_window[i])+1)
+
+		for key in drivers:
+			if len(drivers[key])>(end_window[i]-start_window[i]):
+				per = str(start_window[i]) + "_" + str(end_window[i])
+				df2 = pd.DataFrame({"window_start": [per],"driver":[key], "greenFlagPM":[-1*(drivers[key][-1]-drivers[key][0])]})
+				greenFlag_df = greenFlag_df.append(df2, ignore_index=True)
+
+	greenFlag_df = greenFlag_df.merge(greenflag_names, how='left', left_on='driver', right_on='lastName')
 	return greenFlag_df
 
-'''
+
