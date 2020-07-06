@@ -13,6 +13,7 @@ library(data.table)
 library(tidyverse)
 library(lubridate)
 library(plotly)
+library(scales)
 
 ui <- fluidPage(
     
@@ -30,6 +31,11 @@ ui <- fluidPage(
      }
 
    "))),
+    
+    tagList(
+        singleton(tags$head(tags$script(src='//cdn.datatables.net/fixedheader/2.1.2/js/dataTables.fixedHeader.min.js',type='text/javascript'))),
+        singleton(tags$head(tags$link(href='//cdn.datatables.net/fixedheader/2.1.2/css/dataTables.fixedHeader.css',rel='stylesheet',type='text/css')))
+    ),
     
     
     
@@ -93,7 +99,7 @@ ui <- fluidPage(
             width = 10,
             offset = 0,
             h4("Championship Projections"),
-            h5("Last updated: 6/16/2020"),
+            h5("Last updated: 7/5/2020"),
             selectInput("selectchampdriver", "Select a driver to view their championship projection:", 
                         choices = NULL, 
                         selected = 1),))),
@@ -119,16 +125,22 @@ server <- function(input, output,session) {
     elo_ratings <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv") %>% 
         mutate(date=ymd(date))
     
-    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/6_15_2020_champ.csv")
+    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/7_5_2020_champ.csv")
     
     champ_projections <- champ_projections %>% 
         filter(season!=0) %>% 
         select(driver, totalPoints, chamPos, season) %>% 
         group_by(driver, chamPos) %>% 
         add_count() %>% 
-        mutate(prob = round((n/max(season)),2)) %>% 
-        select(driver, chamPos, n, prob) %>% 
+        mutate(prob = 100*(round((n/max(season)),3)),
+               exp = chamPos*.01*prob) %>% 
+        select(driver, chamPos, n, prob, exp) %>% 
         distinct()
+    
+    champ_projections_exp <- champ_projections %>% 
+        group_by(driver) %>% summarise(x=sum(exp))
+    
+    champ_projections <- champ_projections %>% select(-exp)
     
     choices_champ_projections <- champ_projections %>% 
         select(driver) %>% 
@@ -230,7 +242,8 @@ server <- function(input, output,session) {
             rename(Driver=c("Driver"="driver")) %>% 
             mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart, AFS), list(~ round(.,1))) %>% 
             mutate_at(vars(xPoints, Difference), list(~ round(.,0))) %>% 
-            arrange(-Pts)
+            arrange(-Pts) %>% 
+            rename("Driver" = "Driver...Driver")
         
         
     }, options=list(pageLength=50, scrollX = TRUE))
@@ -286,7 +299,8 @@ server <- function(input, output,session) {
             select(driver, Races, Wins, Poles, TopFives, Pts, AFP, DevFP, ASP, DevSP, RunPerc,AEP, LapsLed) %>% 
             rename(Driver=c("Driver"="driver")) %>% 
             mutate_at(vars(AFP, DevFP, ASP, DevSP, RunPerc,AEP), list(~ round(.,1))) %>% 
-            arrange(-Pts)
+            arrange(-Pts)  %>% 
+            rename("Driver" = "Driver...Driver")
         
     }, options=list(pageLength=50, scrollX = TRUE))
         
@@ -323,7 +337,9 @@ server <- function(input, output,session) {
         
         
         champ_projections_final <-dcast(champ_projections, driver~chamPos, sum, value.var = "prob")
-        champ_projections_final <- champ_projections_final %>% arrange_at(2:32, desc)
+        champ_projections_final <- champ_projections_final %>% left_join(champ_projections_exp) %>% 
+            rename("Expected Champ Pos" = "x") %>% arrange(`Expected Champ Pos`)
+        #champ_projections_final <- champ_projections_final %>% arrange_at(2:33, desc)
         
     }, options=list(pageLength=50, scrollX = TRUE))   
     
@@ -333,14 +349,14 @@ server <- function(input, output,session) {
             filter(driver == input$selectchampdriver) %>% 
             ggplot() + geom_col(aes(x=chamPos, y=prob, fill=driver)) + 
             theme(legend.position = "none")+
-            scale_x_discrete(limits = c(1, 5, 10, 15, 20, 25, 31)) +
-            scale_y_continuous(breaks=c(0,.25,.50,.75,1), limits = c(0,1)) +
-            labs(y="Probability of finishing the season in position",
+            #scale_x_discrete(limits = c(1, 5, 10, 15, 20, 25, 33)) +
+            scale_y_continuous(breaks=c(0,25,50,75,100), limits = c(0,100)) +
+            labs(y="% probability of finishing the season in this position",
                  x="Championship finishing position",
                  title=paste0("2020 IndyCar Championship Projection for ", input$selectchampdriver),
-                 subtitle = "After simulating the remaining races 4,000 times",
+                 subtitle = "After simulating the remaining races 5,000 times",
                  caption = "www.thesingleseater.com")
-    }, width = 600, height = 600)
+    }, width = 800, height = 800)
 }
 
 shinyApp(ui, server)
