@@ -73,7 +73,7 @@ if(race[1,2] == 0){
       }
     }
     
-    r <- r %>% add_row(driver=current_driver, WinTSSProb=(current_q/(current_q+sum_opponents_q)))
+    r <- r %>% add_row(driver=current_driver$driver, WinTSSProb=(current_q$EloRating.x/(current_q$EloRating.x+sum_opponents_q$EloRating.x)))
   }
   
   # matchups
@@ -93,12 +93,13 @@ if(race[1,2] == 0){
 
 x <- draftkings %>% left_join(r, by=c("Driver"="driver")) %>% 
   mutate(WinDKProb = 100/(WinDK+100),
-         Top3DKProb = 100/(Top3DK+100),
-         EV10DollarBet = WinTSSProb*10*(WinDK/100)+(1-WinTSSProb)*-10)
+         Top3DKProb = ifelse(Top3DK<0, (Top3DK*-1/(Top3DK*-1+100)), 100/(Top3DK+100)),
+         EV10DollarBetWin = WinTSSProb*10*(WinDK/100)+(1-WinTSSProb)*-10,
+         EV10DollarBetPodium = 3*WinTSSProb*10*(ifelse(Top3DK>0, Top3DK/100, 100/(-1*Top3DK))) + (1-3*WinTSSProb)*-10)
 
 y <- matchups %>% mutate(Driver1DKProb = ifelse(Driver1DK<0, (Driver1DK*-1/(Driver1DK*-1+100)), (100/(Driver1DK+100)) ),
                     Driver2DKProb = ifelse(Driver2DK<0, (Driver2DK*-1/(Driver2DK*-1+100)), (100/(Driver2DK+100))),
-                    EV10DollarBetOnDriver1 =  Driver1TSSProb*10*(ifelse(Driver1DK>0,Driver1DK/100,100/(-1*Driver1DK))) + (1-Driver1TSSProb)*-10,
+                    EV10DollarBetOnDriver1 =  Driver1TSSProb*10*(ifelse(Driver1DK>0, Driver1DK/100, 100/(-1*Driver1DK))) + (1-Driver1TSSProb)*-10,
                     EV10DollarBetOnDriver2 = Driver2TSSProb*10*(ifelse(Driver2DK>0,Driver2DK/100,100/(-1*Driver2DK)))+ (1-Driver2TSSProb)*-10)
 
 
