@@ -1,1 +1,0 @@
-The main scripts used for the bigger projects at TSS.
