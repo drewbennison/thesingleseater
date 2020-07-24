@@ -14,6 +14,7 @@ library(tidyverse)
 library(lubridate)
 library(plotly)
 library(scales)
+library(reshape2)
 
 ui <- fluidPage(
     
@@ -99,7 +100,7 @@ ui <- fluidPage(
             width = 10,
             offset = 0,
             h4("Championship Projections"),
-            h5("Last updated: 7/5/2020"),
+            h5("Last updated: 7/22/2020"),
             selectInput("selectchampdriver", "Select a driver to view their championship projection:", 
                         choices = NULL, 
                         selected = 1),))),
@@ -125,7 +126,7 @@ server <- function(input, output,session) {
     elo_ratings <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv") %>% 
         mutate(date=ymd(date))
     
-    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/7_5_2020_champ.csv")
+    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/7_22_2020_champ.csv")
     
     champ_projections <- champ_projections %>% 
         filter(season!=0) %>% 
@@ -223,8 +224,8 @@ server <- function(input, output,session) {
                    DevSP = sd(st),
                    ATP = mean(atp),
                    DevATP = sd(atp),
-                   ATP25 = mean(atp25),
-                   DevATP25 = sd(atp25),
+                   ATP25 = mean(atp25, na.rm = TRUE),
+                   DevATP25 = sd(atp25, na.rm = TRUE),
                    PassEff = 100*mean(passEff),
                    AdjPassEff = 100*mean(AdjPassEff),
                    RunningCheck = ifelse(status=="running",1,0),
@@ -278,7 +279,7 @@ server <- function(input, output,session) {
                    ASP = mean(st),
                    DevSP = sd(st),
                    ATP = mean(atp),
-                   ATP25 = mean(atp25),
+                   ATP25 = mean(atp25, na.rm = TRUE),
                    PassEff = 100*(sum(passesFor)/ (sum(passesFor)+sum(passesAgainst))),
                    RunningCheck = ifelse(status=="running",1,0),
                    RunPerc = 100*mean(RunningCheck),
@@ -336,7 +337,7 @@ server <- function(input, output,session) {
     output$champTable <- DT::renderDataTable({
         
         
-        champ_projections_final <-dcast(champ_projections, driver~chamPos, sum, value.var = "prob")
+        champ_projections_final <-reshape2::dcast(champ_projections, driver~chamPos, sum, value.var = "prob")
         champ_projections_final <- champ_projections_final %>% left_join(champ_projections_exp) %>% 
             rename("Expected Champ Pos" = "x") %>% arrange(`Expected Champ Pos`)
         #champ_projections_final <- champ_projections_final %>% arrange_at(2:33, desc)
@@ -354,7 +355,7 @@ server <- function(input, output,session) {
             labs(y="% probability of finishing the season in this position",
                  x="Championship finishing position",
                  title=paste0("2020 IndyCar Championship Projection for ", input$selectchampdriver),
-                 subtitle = "After simulating the remaining races 5,000 times",
+                 subtitle = "After simulating the remaining races 10,000 times",
                  caption = "www.thesingleseater.com")
     }, width = 800, height = 800)
 }
