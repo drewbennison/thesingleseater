@@ -15,8 +15,9 @@ library(lubridate)
 library(plotly)
 library(scales)
 library(reshape2)
+library(shinythemes)
 
-ui <- fluidPage(
+ui <- fluidPage(theme = shinytheme("sandstone"),
     
     tags$head(
         tags$style(HTML("
@@ -162,7 +163,8 @@ server <- function(input, output,session) {
         group_by(driver) %>% 
         filter(n()>10) %>% 
         select(driver) %>% 
-        distinct()
+        distinct() %>% 
+        arrange(driver)
     
     updateCheckboxGroupInput(session = session, inputId = "selectedDrivers", choices=choices_drivers$driver, selected = "Josef Newgarden")
     
