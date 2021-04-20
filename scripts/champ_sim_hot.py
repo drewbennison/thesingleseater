@@ -15,23 +15,26 @@ final_results = pd.DataFrame(data={'driver': ['test'], 'totalPoints': [0], 'cham
 
 # read in master stats for driver points
 season_drivers_file = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv", encoding = "ISO-8859-1")
-season_drivers_file = season_drivers_file[season_drivers_file.year == 2020]
+season_drivers_file = season_drivers_file[season_drivers_file.year == 2021]
 season_drivers_file = season_drivers_file.groupby('driver')['pts'].agg(points='sum')
 season_drivers_file = season_drivers_file.reset_index(level=['driver'])
 
 # read in drivers and the races they are competing in this season
-drivers_and_races = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/indycar_2020_drivers_races.csv", encoding = "ISO-8859-1")
+drivers_and_races = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/indycar_2021_drivers_races.csv", encoding = "ISO-8859-1")
 drivers_and_races = drivers_and_races.merge(season_drivers_file, how='left', left_on="Driver", right_on="driver")
 drivers_and_races = drivers_and_races.fillna(0)
 drivers_and_races['driver'] = drivers_and_races['Driver']
-drivers_and_races = drivers_and_races[['driver', 'Rounds', 'points']]
+drivers_and_races = drivers_and_races[['driver', 'round_1', 'round_2', 'round_3', 'round_4', 'round_5', 'round_6', 'round_7', 'round_8',
+                                       'round_9', 'round_10', 'round_11', 'round_12', 'round_13', 'round_14', 'round_15', 'round_16', 'round_7','points']]
 
 # elo ratings table file
 elo_ratings_file = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv")
 
+
 # for each season, create a season race results table
-for season in range(1, 4001):
+for season in range(1, 1001):
     print(season)
+
     startTime = datetime.now()
     race_results = pd.DataFrame(data={'season': [0], 'race': [0], 'driver': ["test"], 'fin': [0]})
     # Must be in form driver, points
@@ -44,18 +47,17 @@ for season in range(1, 4001):
     elo_ratings_table = elo_ratings_table[['driver', 'EloRating']]
 
     # for each race of that season
-    for race in range(2, 15):
+    for race in range(2, 18):
         # season_drivers_file keep rows where race is in their list of races they will compete in
         season_drivers = drivers_and_races
-        season_drivers['inRace'] = 0
-        for d in range(0, len(season_drivers)):
-            e = season_drivers.iloc[d]
-            if str(race) in season_drivers.iloc[d].Rounds:
-                season_drivers.iloc[d,3] = 1
-        season_drivers = season_drivers[season_drivers.inRace == 1]
+
+        season_drivers = season_drivers.iloc[:,[0,race, len(drivers_and_races.columns)-1]]
+        season_drivers = season_drivers.rename(columns={season_drivers.columns[1]:'round'})
+        season_drivers = season_drivers[season_drivers['round'] == "y"]
 
         race_drivers_elo = season_drivers.merge(elo_ratings_table, on='driver', how='left')
         race_drivers_elo = race_drivers_elo.fillna(1500)
+
         drivers_who_won = []
         # simulate that actual race
         for subRace in range(0, len(race_drivers_elo)):
@@ -64,13 +66,13 @@ for season in range(1, 4001):
             # go through every driver left in the race and keep track of their Elo ratings
             for i in range(0, len(race_drivers_elo)):
                 current_driver = race_drivers_elo.iloc[i, 0]
-                current_q = 10**((race_drivers_elo.iloc[i, 4])/400)
+                current_q = 10**((race_drivers_elo.iloc[i, 3])/400)
                 sum_opponents_q = 0
 
                 # go through all of the other drivers that aren't the above driver and keep track of their Elo ratings
                 for j in range(0, len(race_drivers_elo)):
                     if race_drivers_elo.iloc[j, 0] != current_driver:
-                        opponent_q = 10**((race_drivers_elo.iloc[j, 4])/400)
+                        opponent_q = 10**((race_drivers_elo.iloc[j, 3])/400)
                         sum_opponents_q += opponent_q
                 r_temp = pd.DataFrame(data={'driver': [current_driver],
                                             'winprob': [(current_q/(current_q+sum_opponents_q))]})
@@ -131,15 +133,21 @@ for season in range(1, 4001):
 
     season_results = race_results[race_results.fin != 0]
     season_results = season_results.merge(points_table, on='fin', how='left')
-    season_results['points'] = [x*2 if y == 8 or y == 14 else x for x,y in zip(season_results['points'], season_results['race'])]
+    season_results['points'] = [x*2 if y == 6 else x for x,y in zip(season_results['points'], season_results['race'])]
     season_results = season_results.groupby('driver').agg({'points': 'sum'})
-    print(season_results)
     season_results = season_results.merge(drivers_and_races, on='driver', how='left')
     season_results['totalPoints'] = season_results['points_x']+season_results['points_y']
     season_results['chamPos'] = season_results['totalPoints'].rank(method='first', ascending=False)
     season_results['season'] = season
     season_results = season_results[['driver', 'totalPoints', 'chamPos', 'season']]
+    #print(season_results)
     final_results = final_results.append(season_results)
+    final_results = final_results[final_results['driver'] != "test"]
+    live_results = final_results[final_results.chamPos == 1]
+    live_results = live_results.groupby(['driver'])['chamPos'].sum().rename("count")
+    live_results = live_results / live_results.groupby(level=0).sum()
+    print(live_results)
 
-final_results.to_csv("6_15_2020_champ.csv")
+
+final_results.to_csv("4_19_2021_champ.csv")
 
