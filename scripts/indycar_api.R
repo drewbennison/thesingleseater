@@ -1,9 +1,19 @@
 library(jsonlite)
+library(tidyverse)
+library(data.table)
+library(lubridate)
 
 master_dt <- tibble()
 
-for(i in c(1:40)) {
-tmp <- tempfile()
+# difftime(now(), lubridate::as_datetime("2021-04-26 12:42:00 EDT", tz = "US/Eastern"), units = "secs")
+
+#wait until race time
+Sys.sleep(7260)
+
+#two hours
+for(i in c(1:120)) {
+  message(i)
+tmp <- "C:/Users/drewb/Desktop/temp_test"
 url <- "http://racecontrol.indycar.com/xml/timingscoring.json"
 download.file(url, destfile = tmp,quiet = FALSE, mode = "wb")
 
@@ -18,8 +28,8 @@ new_dt <- wb[["timing_results"]][["Item"]]
 current_time <- Sys.time()
 new_dt$time_stamp <- current_time
 
-master_dt <- rbind(master_dt, new_dt)
-Sys.sleep(30)
+master_dt <- rbindlist(list(master_dt, new_dt), use.names = TRUE, fill = TRUE)
+Sys.sleep(60)
 }
 
 
