@@ -32,7 +32,7 @@ elo_ratings_file = pd.read_csv("https://raw.githubusercontent.com/drewbennison/t
 
 
 # for each season, create a season race results table
-for season in range(1, 1001):
+for season in range(1, 501):
     print(season)
 
     startTime = datetime.now()
@@ -47,7 +47,7 @@ for season in range(1, 1001):
     elo_ratings_table = elo_ratings_table[['driver', 'EloRating']]
 
     # for each race of that season
-    for race in range(2, 18):
+    for race in range(11, 17):
         # season_drivers_file keep rows where race is in their list of races they will compete in
         season_drivers = drivers_and_races
 
@@ -143,11 +143,13 @@ for season in range(1, 1001):
     #print(season_results)
     final_results = final_results.append(season_results)
     final_results = final_results[final_results['driver'] != "test"]
+
     live_results = final_results[final_results.chamPos == 1]
-    live_results = live_results.groupby(['driver'])['chamPos'].sum().rename("count")
-    live_results = live_results / live_results.groupby(level=0).sum()
+    live_results = live_results.groupby(['driver'])['chamPos'].sum().rename("count").reset_index()
+    #print(live_results)
+    live_results['perc'] = live_results['count'] / live_results['count'].sum()
     print(live_results)
 
 
-final_results.to_csv("4_19_2021_champ.csv")
+final_results.to_csv("2021_07_04_champ.csv")
 

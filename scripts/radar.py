@@ -35,15 +35,15 @@ plt.ylim(0, 36)
 # I don't do a loop, because plotting more than 3 groups makes the chart unreadable
 
 # Ind1
-values = df.loc[11].drop('driver').values.flatten().tolist()
+values = df.loc[8].drop('driver').values.flatten().tolist()
 values += values[:1]
-ax.plot(angles, values, linewidth=1, linestyle='solid', label=df.iloc[11,0])
+ax.plot(angles, values, linewidth=1, linestyle='solid', label=df.iloc[8,0])
 ax.fill(angles, values, 'b', alpha=0.1)
 
 # Ind2
-values = df.loc[18].drop('driver').values.flatten().tolist()
+values = df.loc[19].drop('driver').values.flatten().tolist()
 values += values[:1]
-ax.plot(angles, values, linewidth=1, linestyle='solid', label=df.iloc[18,0])
+ax.plot(angles, values, linewidth=1, linestyle='solid', label=df.iloc[19,0])
 ax.fill(angles, values, 'r', alpha=0.1)
 
 # Add legend
