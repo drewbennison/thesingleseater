@@ -6,8 +6,8 @@ library(lubridate)
 source("C:/Users/drewb/Desktop/thesingleseater/scripts/thesingleseater_theme.R")
 
 #Read in data and driver results for that session
-data<-fread("C:/Users/drewb/Desktop/thesingleseater/datasets/sector_times/2019_indygp_race.csv")
-drivers<-fread("C:/Users/drewb/Desktop/thesingleseater/datasets/sector_times/drivers.csv")
+data<-fread("C:/Users/drewb/Downloads/indycar-topsectiontimes-p2.csv")
+#drivers<-fread("C:/Users/drewb/Desktop/thesingleseater/datasets/sector_times/drivers.csv")
 
 #Clean the driver's names to remove anything after the comma in IndyCar data
 data$Driver<-gsub(",.*", "", data$Driver)
@@ -28,17 +28,17 @@ data<-merge(data, avg_per_section)
 data$percRelativeSection<-((data$Speed-data$avgSecSpeed)/data$avgSecSpeed)*100
 
 #Merge in driver results for that session (last names only)
-setkey(drivers, "Driver")
+#setkey(drivers, "Driver")
 setkey(data, "Driver")
-data<-merge(data, drivers, all.x = TRUE)
+#data<-merge(data, drivers, all.x = TRUE)
 
-sectors<-c("SF to I1","I1 to I2", "I2 to I3", "I3 to I4","I4 to I5", "I5 to I6", "I6 to I7", "I7 to I8", "I8 to I9", "I9 to SF", "Full Lap")
+sectors<-c("SF to T1", "T1 to SS1", "SS1 to T2", "T2 to BS","BS to T3", "T3 to SS2", "SS2 to T4", "T4 to FS", "FS to SF", "Full Lap")
 
 #Tile plot. Adjust limits depending on the number of sectors at that track
-plot<-ggplot(data=data, aes(x=Section, y=reorder(Driver, -Fin))) + 
+plot<-ggplot(data=data, aes(x=Section, y=reorder(Driver, -Car))) + 
   geom_tile(aes(fill=percRelativeSection)) + 
-  scale_fill_gradient2(low = "red", mid = "white", high = "blue", midpoint = 0, limits=c(-6,6)) +
-  labs(fill = "% Faster\nThan Average\nSector Speed", title="2020 Genesys 300",
+  scale_fill_gradient2(low = "red", mid = "white", high = "blue", midpoint = 0, limits=c(-3,3)) +
+  labs(fill = "% Faster\nThan Average\nSector Speed", title="2020 Indianapolis 500 Practice 2",
        subtitle = "Drivers' top sector times: Above average (purple) means faster",
        caption = "thesingleseater.com") + ylab("Driver") + xlab("Sector") + 
   scale_x_discrete(limits=sectors) +

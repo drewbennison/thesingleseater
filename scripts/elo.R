@@ -3,7 +3,7 @@ library(tidyverse)
 library(lubridate)
 
 dt <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
-sp_elo <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/starting_position_elo.csv")
+sp_elo <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/4_1_2020_start_pos_elo_ratings.csv")
 
 
 #Initialize elo ratings, k
@@ -11,17 +11,17 @@ elo_ratings_initial <- dt %>% select(driver) %>% unique() %>% mutate(EloRating=1
 k <- 2.5
 
 elo_ratings <- elo_ratings_initial
-tracker <- tibble(driver=elo_ratings_initial$driver, date=ymd("2021-01-01"), year=2000, EloRating=1500)
-k_optimization <- tibble(errorXWin=0, errorXWin2=0) 
+tracker <- tibble(driver=elo_ratings_initial$driver, date=ymd("2021-01-01"), year=2000, EloRating=1500, PreviousEloRating=1500)
+k_optimization <- tibble(errorXWin=0, errorXWin2=0, season=year("2000-01-01"), type="None")
 
 #Select variables we want
-dt <- dt %>% select(year, raceNumber, driver, fin, st, date) %>% 
+dt <- dt %>% select(year, raceNumber, driver, fin, st, date, type) %>% 
   mutate(date=mdy(date))
 
 #Starting and ending year range
-yr <- c(2008:2020)
-for(a in c(2008:2020)) {
-  current_year <- dt %>% filter(year==a) %>% select(raceNumber, driver, fin, st, date)
+yr <- c(2008:2021)
+for(a in c(2008:2021)) {
+  current_year <- dt %>% filter(year==a) %>% select(raceNumber, driver, fin, st, date, type)
   
 for(i in 1:max(current_year$raceNumber)) {
   current_race <- current_year %>% filter(raceNumber==i, )
@@ -45,26 +45,72 @@ for(i in 1:max(current_year$raceNumber)) {
               "actualScore" = sum(xWin),
               "expectedScore" = sum(XexpectedWin),
               "newRating"= oldRating+k*(actualScore-expectedScore),
-              "date" = max(ymd(date.x)))
+              "date" = max(ymd(date.x)),
+              "type" = max(type.x))
   
   for(j in 1:nrow(elo)) {
     elo_ratings[elo_ratings$driver==elo$x[j],2] <- elo$newRating[j]
-    tracker <- add_row(tracker, driver=elo$x[j], date=elo$date[j], year=a, EloRating=elo$newRating[j])
+    tracker <- add_row(tracker, driver=elo$x[j], date=elo$date[j], year=a, EloRating=elo$newRating[j], PreviousEloRating=elo$oldRating[j])
   }
   
-  #k_optimization <- add_row(k_optimization, errorXWin = current_race_cross$xWin, errorXWin2=current_race_cross$XexpectedWin)
+  k_optimization <- add_row(k_optimization, errorXWin = current_race_cross$xWin, errorXWin2=current_race_cross$XexpectedWin, season=year(current_race_cross$date.x), type=current_race_cross$type.x)
   }
 }
 
-#Calculates the brier score
-#k_optimization %>% mutate(error=(errorXWin-errorXWin2)^2) %>% 
-#  summarise(e=mean(error))
+fwrite(tracker,"C:/Users/drewb/Desktop/elo_tracker.csv")
+
+#Calculates the brier score by season
+k_optimization %>% mutate(error=(errorXWin-errorXWin2)^2) %>% 
+  group_by(season) %>% 
+  summarise(e=mean(error)) %>% 
+  filter(season!=2000) %>% 
+  arrange(-e) %>% 
+  ggplot() +
+  geom_point(aes(x=season, y=e))
+
+#percent of matchups called correctly
+k_optimization %>% 
+  mutate(xPredicted = ifelse(errorXWin2>=.5,1,0),
+         correctCalled = ifelse(xPredicted==errorXWin,1,0)) %>% 
+  #filter(errorXWin2>.35, errorXWin2<.65) %>% 
+  #filter(season>=2012) %>% 
+  group_by(season) %>% 
+  summarise(percMatchupCorrect = mean(correctCalled)) %>% 
+  arrange(-percMatchupCorrect)
+
+
+
+##### calibration plot #############
+k_optimization$bins <- cut(k_optimization$errorXWin2, breaks = c(0,.05,.1,.15,.2,.25,.3,.35,.4,.45,.5,.55,.6,.65,.7,.75,.8,.85,.9,.95,1))
+
+k_optimization %>% filter(season==2020) %>% 
+  group_by(bins) %>% 
+  summarise(prob = mean(errorXWin)) %>% 
+  ggplot() + geom_point(aes(x=bins, y=prob)) +
+  geom_abline(intercept = 0, slope = .05) +
+  labs(x="Predicted matchup win probability", y="Actual matchup win probability",
+       title = "How Well Calibrated Are The Single Seater's Predictions?") +
+  coord_flip() +
+  ylim(0,1) +
+  theme_bw()
+  
+ggsave("C:/Users/drewb/Desktop/calibration_plot.png", height = 4, width = 6)
+
+k_optimization
+
+fwrite(tracker, "elo_tracker.csv")
+
+
+
+
+
+
+
 
 #############################  GRAPHS  ##########################################
 
 #  elo rating by date since 2008  #
-tracker %>% filter(date!="2021-01-01", driver %in% c("Scott Dixon", "Dario Franchitti", "Simon Pagenaud", "Josef Newgarden",
-                                                      "Alexander Rossi")) %>%
+tracker %>% filter(date!="2021-01-01", date>"2019-01-01", driver %in% c("Colton Herta", "Marco Andretti")) %>%
   ggplot(aes(x=date, y=EloRating, color=driver)) + geom_line() +
   labs(x="Date", title = "Elo Rating Over Time", subtitle = "Minimum 10 starts",
        color="Driver", y="EloRating") +
@@ -75,8 +121,7 @@ tracker %>%
   filter(date!="2021-01-01") %>% 
   group_by(driver) %>%
   mutate(my_ranks = order(order(date, decreasing=FALSE))) %>% 
-  filter(driver %in% c("Scott Dixon", "Dario Franchitti", "Simon Pagenaud", "Josef Newgarden",
-                       "Alexander Rossi")) %>%
+  filter(driver %in% c("Colton Herta", "Marco Andretti")) %>%
   ggplot(aes(x=my_ranks, y=EloRating, color=driver)) + geom_line() +
   labs(x="Race number in career",
        title = "Elo Rating by Race Number in Career", subtitle = "Minimum 10 starts, starting in 2008",
@@ -99,4 +144,10 @@ article_max_elo_ratings <- tracker %>% left_join(num_races) %>% filter(n>10) %>%
   top_n(wt=EloRating,n=1)
 fwrite(article_max_elo_ratings, "article_max_elo_ratings.csv")
 
+
+
+now <- tracker %>% filter(year== 2020) %>% 
+  group_by(driver) %>%
+  slice(which.max(as.Date(date, '%m/%d/%Y')))
+  
 

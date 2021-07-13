@@ -32,7 +32,7 @@ data <- data %>%
   mutate(AdjPassEff = passEff-avgPE)
 
 working <- data %>%
-  filter(year==2019) %>%
+  filter(year==2020) %>%
   group_by(driver) %>% 
   mutate(percFavorablePass = 100*(sum(passesFor)/(sum(passesFor)+sum(passesAgainst))),
          favorableStart = ifelse(lapOneChange>=0, 1,
@@ -66,16 +66,18 @@ working <- data %>%
 working$Pts = working$Pts/working$Races
 working$xPoints = working$xPoints/working$Races
 
+#set num to 1 more than length of working
+num <- 36
 #Get ranks
-working$ATP_Rank=37-(rank(working$ATP))
-working$ATP25_Rank=37-(rank(working$ATP25))
-working$ASP_Rank = 37-(rank(working$ASP))
+working$ATP_Rank=num-(rank(working$ATP))
+working$ATP25_Rank=num-(rank(working$ATP25))
+working$ASP_Rank = num-(rank(working$ASP))
 working$PassEff_Rank=rank(working$PassEff)
 working$Top_5_Perc_Rank=rank(working$Top5Perc)
 working$Pts_Rank=rank(working$Pts)
 working$xPts_Rank=rank(working$xPoints)
 working$AEP_Rank=rank(working$AEP)
-working$AFS_Rank=37-(rank(working$AFS))
+working$AFS_Rank=num-(rank(working$AFS))
 working$AdjPassEff_Rank <- rank(working$AdjPassEff)
 
 
