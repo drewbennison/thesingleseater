@@ -42,8 +42,8 @@ full <- full[,-1]
 
 round(cor(full), 2)
 
-
-
+library("Hmisc")
+rcorr(as.matrix(full), type = "pearson")
 
 
 
