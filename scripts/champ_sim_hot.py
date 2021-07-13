@@ -25,7 +25,7 @@ drivers_and_races = drivers_and_races.merge(season_drivers_file, how='left', lef
 drivers_and_races = drivers_and_races.fillna(0)
 drivers_and_races['driver'] = drivers_and_races['Driver']
 drivers_and_races = drivers_and_races[['driver', 'round_1', 'round_2', 'round_3', 'round_4', 'round_5', 'round_6', 'round_7', 'round_8',
-                                       'round_9', 'round_10', 'round_11', 'round_12', 'round_13', 'round_14', 'round_15', 'round_16', 'round_7','points']]
+                                       'round_9', 'round_10', 'round_11', 'round_12', 'round_13', 'round_14', 'round_15', 'round_16', 'round_17','points']]
 
 # elo ratings table file
 elo_ratings_file = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv")
