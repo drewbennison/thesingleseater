@@ -3,12 +3,11 @@ library(tidyverse)
 library(lubridate)
 
 #read in entrants and starting positions
-race <- fread("C:/Users/drewb/desktop/elo_drivers.csv")
-draftkings <- fread("C:/Users/drewb/desktop/draftkings_odds.csv")
-matchups <- fread("C:/Users/drewb/desktop/draftkings_matchup.csv")
+race <- fread("C:/Users/drewb/desktop/thesingleseater/datasets/fantasy_betting/elo_drivers.csv")
+draftkings <- fread("C:/Users/drewb/desktop/thesingleseater/datasets/fantasy_betting/draftkings_odds.csv")
+matchups <- fread("C:/Users/drewb/desktop/thesingleseater/datasets/fantasy_betting/draftkings_matchup.csv")
 elo_ratings <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv")
 sp_elo <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/4_1_2020_start_pos_elo_ratings.csv")
-
 
 matchups <- matchups %>% left_join(race, by=c("Driver1"="driver")) %>% 
   left_join(race, by=c("Driver2" = "driver"))
@@ -79,6 +78,8 @@ if(race[1,2] == 0){
   # matchups
   matchups <- matchups %>% left_join(elo, by=c("Driver1"="driver")) %>% 
     left_join(elo, by=c("Driver2"="driver")) %>% 
+    mutate(EloRating.x = ifelse(is.na(EloRating.x),1400,EloRating.x)) %>% 
+    mutate(EloRating.y = ifelse(is.na(EloRating.y),1400,EloRating.y)) %>%
     left_join(sp_elo, by=c("start.x"="st")) %>% 
     left_join(sp_elo, by=c("start.y"="st")) %>% 
     mutate(Driver1CombinedElo = .5*EloRating.x+.5*EloRating.x.x,
@@ -102,4 +103,4 @@ y <- matchups %>% mutate(Driver1DKProb = ifelse(Driver1DK<0, (Driver1DK*-1/(Driv
                     EV10DollarBetOnDriver1 =  Driver1TSSProb*10*(ifelse(Driver1DK>0, Driver1DK/100, 100/(-1*Driver1DK))) + (1-Driver1TSSProb)*-10,
                     EV10DollarBetOnDriver2 = Driver2TSSProb*10*(ifelse(Driver2DK>0,Driver2DK/100,100/(-1*Driver2DK)))+ (1-Driver2TSSProb)*-10)
 
-
+  
