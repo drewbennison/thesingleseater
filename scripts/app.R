@@ -17,7 +17,7 @@ library(scales)
 library(reshape2)
 library(shinythemes)
 
-ui <- fluidPage(theme = shinytheme("sandstone"),
+ui <- fluidPage(theme = shinytheme("simplex"),
     
     tags$head(
         tags$style(HTML("
@@ -60,7 +60,8 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
                            "Road and Street" = "road and street")),
             
             selectInput("selectyear", "Select a season:",
-                        c("2020" = "2020",
+                        c("2021"= "2021",
+                          "2020" = "2020",
                           "2019" = "2019")),
             tags$h5(tags$em(tags$a(href="https://thesingleseater.com/glossary/", "View the stat glossary")))
             ))),
@@ -70,7 +71,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
         fluidRow(column(
             width = 10,
             offset = 0,
-            h4("Track historical results (2008-2020)"),
+            h4("Track historical results (2008-2021)"),
             selectInput("selecttrack", "Select a track:", 
                         choices = NULL, 
                         selected = 1),
@@ -101,7 +102,7 @@ ui <- fluidPage(theme = shinytheme("sandstone"),
             width = 10,
             offset = 0,
             h4("Championship Projections"),
-            h5("Last updated: 7/22/2020"),
+            h5("Last updated: July 4, 2021"),
             selectInput("selectchampdriver", "Select a driver to view their championship projection:", 
                         choices = NULL, 
                         selected = 1),))),
@@ -127,7 +128,7 @@ server <- function(input, output,session) {
     elo_ratings <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv") %>% 
         mutate(date=ymd(date))
     
-    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/7_22_2020_champ.csv")
+    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/2021_07_04_champ.csv")
     
     champ_projections <- champ_projections %>% 
         filter(season!=0) %>% 
@@ -356,8 +357,8 @@ server <- function(input, output,session) {
             scale_y_continuous(breaks=c(0,25,50,75,100), limits = c(0,100)) +
             labs(y="% probability of finishing the season in this position",
                  x="Championship finishing position",
-                 title=paste0("2020 IndyCar Championship Projection for ", input$selectchampdriver),
-                 subtitle = "After simulating the remaining races 10,000 times",
+                 title=paste0("2021 IndyCar Championship Projection for ", input$selectchampdriver),
+                 subtitle = "After simulating the remaining races 1,000 times",
                  caption = "www.thesingleseater.com")
     }, width = 800, height = 800)
 }
