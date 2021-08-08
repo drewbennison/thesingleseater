@@ -3,12 +3,12 @@ library(tidyverse)
 library(lubridate)
 
 dt <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
-sp_elo <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/4_1_2020_start_pos_elo_ratings.csv")
-
 
 #Initialize elo ratings, k
 elo_ratings_initial <- dt %>% select(driver) %>% unique() %>% mutate(EloRating=1500)
-k <- 2.5
+k <- 2
+w <- 1 #season retention
+q < -7.5 #elo points per place difference
 
 elo_ratings <- elo_ratings_initial
 tracker <- tibble(driver=elo_ratings_initial$driver, date=ymd("2021-01-01"), year=2000, EloRating=1500, PreviousEloRating=1500)
@@ -19,7 +19,6 @@ dt <- dt %>% select(year, raceNumber, driver, fin, st, date, type) %>%
   mutate(date=mdy(date))
 
 #Starting and ending year range
-yr <- c(2008:2021)
 for(a in c(2008:2021)) {
   current_year <- dt %>% filter(year==a) %>% select(raceNumber, driver, fin, st, date, type)
   
@@ -29,15 +28,16 @@ for(i in 1:max(current_year$raceNumber)) {
   x <- current_race$driver
   y <- current_race$driver
   
+  if(i == 1){
+    elo_ratings$EloRating <- w*elo_ratings$EloRating + (w-1)*1500
+  }
+  
   current_race_cross <- crossing(x, y) %>% left_join(current_race, by=c("x"="driver")) %>% 
     left_join(current_race, by=c("y"="driver")) %>% select(-raceNumber.y) %>% filter(x!=y) %>% 
     left_join(elo_ratings, by=c("x"="driver")) %>% 
     left_join(elo_ratings, by=c("y"="driver")) %>% 
-    #bring in starting position adjustment
-    left_join(sp_elo, by=c("st.x"="st")) %>% 
-    left_join(sp_elo, by=c("st.y"="st")) %>% 
     mutate("xWin" = ifelse(fin.x<fin.y,1,0),
-           "XexpectedWin" = (1/(1+10^(( (.5*EloRating.y+.5*EloRating.y.y) - (.5*EloRating.x+.5*EloRating.x.x) )/400))))
+           "XexpectedWin" = (1/(1+10^((EloRating.y - (EloRating.x + q*(st.y-st.x)))/400))))
   
   #Update elo ratings for race
   elo <- current_race_cross %>% group_by(x) %>% 
@@ -57,7 +57,14 @@ for(i in 1:max(current_year$raceNumber)) {
   }
 }
 
-fwrite(tracker,"C:/Users/drewb/Desktop/elo_tracker.csv")
+fwrite(tracker,"C:/Users/drewb/Desktop/elo_tracker_new_test.csv")
+
+
+#
+error_calc <- k_optimization %>% mutate(error=(errorXWin-errorXWin2)^2) %>% 
+  filter(season>2015)
+
+e <- mean(error_calc$error)
 
 #Calculates the brier score by season
 k_optimization %>% mutate(error=(errorXWin-errorXWin2)^2) %>% 

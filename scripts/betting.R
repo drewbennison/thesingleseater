@@ -3,11 +3,10 @@ library(tidyverse)
 library(lubridate)
 
 #read in entrants and starting positions
-race <- fread("C:/Users/drewb/desktop/thesingleseater/datasets/fantasy_betting/elo_drivers.csv")
-draftkings <- fread("C:/Users/drewb/desktop/thesingleseater/datasets/fantasy_betting/draftkings_odds.csv")
-matchups <- fread("C:/Users/drewb/desktop/thesingleseater/datasets/fantasy_betting/draftkings_matchup.csv")
-elo_ratings <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv")
-sp_elo <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/4_1_2020_start_pos_elo_ratings.csv")
+race <- fread("C:/Users/drewb/desktop/projects/thesingleseater/bet/elo_drivers.csv")
+draftkings <- fread("C:/Users/drewb/desktop/projects/thesingleseater/bet/draftkings_odds.csv")
+matchups <- fread("C:/Users/drewb/desktop/projects/thesingleseater/bet/draftkings_matchup.csv")
+elo_ratings <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker_new_test.csv")
 
 matchups <- matchups %>% left_join(race, by=c("Driver1"="driver")) %>% 
   left_join(race, by=c("Driver2" = "driver"))
@@ -54,25 +53,32 @@ if(race[1,2] == 0){
   print("Post qualifying")
   
   race_temp <- race %>% left_join(elo) %>% 
-    mutate(EloRating = ifelse(is.na(EloRating),1400,EloRating)) %>% 
-    left_join(sp_elo, by=c("start"="st"))
+    mutate(EloRating = ifelse(is.na(EloRating),1400,EloRating))
   
   r <- tibble(driver="test", WinTSSProb = 0)
   print(race_temp)
   
   for(i in c(1:nrow(race_temp))){
     current_driver <- race_temp[i,1]
-    current_q <- 10^(( .5*race_temp[i,5]+.5*race_temp[i,6] )/400)
+    current_q <- 10^((race_temp[i,5])/400)
     sum_opponents_q <- 0
+    
+    current_driver_qualified <- race_temp[i,2] %>% pull()
     
     for(j in c(1:nrow(race_temp))){
       if(race_temp[j,1] != current_driver){
-        opponents_q <- 10^(( .5*race_temp[j,5]+.5*race_temp[j,6] )/400)
-        sum_opponents_q = sum_opponents_q + opponents_q 
+        opponents_q <- 10^((race_temp[j,5])/400)
+        
+        opponent_driver_qualified <- race_temp[j, 2] %>% pull()
+        
+        #qualifying modifier
+        qual_modifier <- (opponent_driver_qualified - current_driver_qualified)*7.5
+        
+        sum_opponents_q = sum_opponents_q + (opponents_q - qual_modifier)
       }
     }
     
-    r <- r %>% add_row(driver=current_driver$driver, WinTSSProb=(current_q$EloRating.x/(current_q$EloRating.x+sum_opponents_q$EloRating.x)))
+    r <- r %>% add_row(driver=current_driver$driver, WinTSSProb=(current_q$EloRating/(current_q$EloRating+sum_opponents_q$EloRating)))
   }
   
   # matchups
@@ -80,11 +86,9 @@ if(race[1,2] == 0){
     left_join(elo, by=c("Driver2"="driver")) %>% 
     mutate(EloRating.x = ifelse(is.na(EloRating.x),1400,EloRating.x)) %>% 
     mutate(EloRating.y = ifelse(is.na(EloRating.y),1400,EloRating.y)) %>%
-    left_join(sp_elo, by=c("start.x"="st")) %>% 
-    left_join(sp_elo, by=c("start.y"="st")) %>% 
-    mutate(Driver1CombinedElo = .5*EloRating.x+.5*EloRating.x.x,
-           Driver2CombinedElo = .5*EloRating.y+.5*EloRating.y.y,
-           Driver1TSSProb = (10^(Driver1CombinedElo/400)) / ((10^(Driver1CombinedElo/400))+(10^(Driver2CombinedElo/400))),
+    left_join(race, by=c("Driver1" = "driver")) %>% 
+    left_join(race, by=c("Driver2"="driver")) %>% 
+    mutate(Driver1TSSProb = (1/(1+10^((EloRating.y - (EloRating.x + 7.5*(start.y-start.x)))/400))),
            Driver2TSSProb = 1-Driver1TSSProb)
 
   }
