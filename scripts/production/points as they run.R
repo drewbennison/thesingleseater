@@ -1,11 +1,11 @@
 library(gt)
+
+
+#load in data sets
 current_data <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
-
-
-
 dt <- fread("C:/Users/drewb/Desktop/mid_ohio_2021.csv")
-
 type <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/points_table.csv")
+
 dt2 <- dt %>% select(rank, diff, gap, overallRank, startPosition, bestLapTime, lastLapTime, laps, totalTime,
                      status, pitStops, sincePitLap, flagStatus, no, firstName, lastName, LastSpeed, 
                      time_stamp, BestSpeed, Passes, Passed, NTBestSpeed) %>% 
@@ -101,6 +101,10 @@ final <- drivers %>% left_join(led_most_points) %>% left_join(pole) %>%
   left_join(fast_lap) %>% 
   mutate(driver_name = paste0(firstName, " ", lastName)) %>% 
   left_join(race_results)
+
+
+
+
 
 final2 <- final %>% left_join(type, by=c("overallRank" = "fin")) %>% 
   mutate(TotalPoints = points+ledLapPoints+ledMostPoints+polePoints) %>% 

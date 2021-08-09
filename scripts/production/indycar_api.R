@@ -11,7 +11,7 @@ master_dt <- tibble()
 #Sys.sleep(800)
 
 #two hours
-for(i in c(1:300)) {
+for(i in c(1:350)) {
   message(i)
 tmp <- "C:/Users/drewb/Desktop/temp_test"
 url <- "http://racecontrol.indycar.com/xml/timingscoring.json"
@@ -29,7 +29,7 @@ current_time <- Sys.time()
 new_dt$time_stamp <- current_time
 
 master_dt <- rbindlist(list(master_dt, new_dt), use.names = TRUE, fill = TRUE)
-fwrite(master_dt, "C:/Users/drewb/Desktop/mid_ohio_2021.csv")
+fwrite(master_dt, "C:/Users/drewb/Desktop/nashville_2021.csv")
 Sys.sleep(35)
 }
 
