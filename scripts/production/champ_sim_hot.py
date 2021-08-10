@@ -25,14 +25,17 @@ drivers_and_races = drivers_and_races.merge(season_drivers_file, how='left', lef
 drivers_and_races = drivers_and_races.fillna(0)
 drivers_and_races['driver'] = drivers_and_races['Driver']
 drivers_and_races = drivers_and_races[['driver', 'round_1', 'round_2', 'round_3', 'round_4', 'round_5', 'round_6', 'round_7', 'round_8',
-                                       'round_9', 'round_10', 'round_11', 'round_12', 'round_13', 'round_14', 'round_15', 'round_16', 'round_17','points']]
+                                       'round_9', 'round_10', 'round_11', 'round_12', 'round_13', 'round_14', 'round_15', 'round_16','points']]
+
+
+print(drivers_and_races)
 
 # elo ratings table file
 elo_ratings_file = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv")
 
 
 # for each season, create a season race results table
-for season in range(1, 501):
+for season in range(1, 1001):
     print(season)
 
     startTime = datetime.now()
@@ -47,7 +50,7 @@ for season in range(1, 501):
     elo_ratings_table = elo_ratings_table[['driver', 'EloRating']]
 
     # for each race of that season
-    for race in range(11, 17):
+    for race in range(12, 17):
         # season_drivers_file keep rows where race is in their list of races they will compete in
         season_drivers = drivers_and_races
 
@@ -135,7 +138,8 @@ for season in range(1, 501):
     season_results = season_results.merge(points_table, on='fin', how='left')
     season_results['points'] = [x*2 if y == 6 else x for x,y in zip(season_results['points'], season_results['race'])]
     season_results = season_results.groupby('driver').agg({'points': 'sum'})
-    season_results = season_results.merge(drivers_and_races, on='driver', how='left')
+    season_results = season_results.merge(drivers_and_races, on='driver', how='outer')
+    season_results = season_results.fillna(0)
     season_results['totalPoints'] = season_results['points_x']+season_results['points_y']
     season_results['chamPos'] = season_results['totalPoints'].rank(method='first', ascending=False)
     season_results['season'] = season
@@ -151,5 +155,5 @@ for season in range(1, 501):
     print(live_results)
 
 
-final_results.to_csv("2021_07_04_champ.csv")
+final_results.to_csv("2021_08_09_champ.csv")
 
