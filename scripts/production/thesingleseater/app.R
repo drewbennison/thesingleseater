@@ -128,7 +128,7 @@ server <- function(input, output,session) {
     elo_ratings <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv") %>% 
         mutate(date=ymd(date))
     
-    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/2021_08_08_champ.csv")
+    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/2021_08_09_champ.csv")
     
     champ_projections <- champ_projections %>% 
         filter(season!=0) %>% 
