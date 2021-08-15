@@ -49,5 +49,5 @@ driver_names <- driver_names %>% select(name, number)
 
 
 #### Save clean lapchart and driver names ####
-fwrite(x, "2021_r3_texas_lapchart.csv")
-fwrite(driver_names, "2021_r3_texas_driver_names.csv")
+fwrite(x, "C:/Users/drewb/Desktop/Projects/thesingleseater/datasets/lap_charts/2021_r12_indy_lapchart.csv")
+fwrite(driver_names, "C:/Users/drewb/Desktop/Projects/thesingleseater/datasets/lap_charts/2021_r12_indy_driver_names.csv")

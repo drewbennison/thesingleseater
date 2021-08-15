@@ -57,7 +57,7 @@ for(i in 1:max(current_year$raceNumber)) {
   }
 }
 
-fwrite(tracker,"C:/Users/drewb/Desktop/elo_tracker_new_test.csv")
+fwrite(tracker,"C:/Users/drewb/Desktop/projects/thesingleseater/datasets/elo_ratings/elo_tracker.csv")
 
 
 #
