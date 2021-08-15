@@ -8,7 +8,7 @@ dt <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/mast
 elo_ratings_initial <- dt %>% select(driver) %>% unique() %>% mutate(EloRating=1500)
 k <- 2
 w <- 1 #season retention
-q < -7.5 #elo points per place difference
+q <- 7.5 #elo points per place difference
 
 elo_ratings <- elo_ratings_initial
 tracker <- tibble(driver=elo_ratings_initial$driver, date=ymd("2021-01-01"), year=2000, EloRating=1500, PreviousEloRating=1500)

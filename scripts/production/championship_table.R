@@ -2,7 +2,7 @@ library(tidyverse)
 library(ggplot2)
 library(gt)
 
-dt <- read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/2021_08_09_champ.csv")
+dt <- read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/2021_08_15_champ.csv")
 
 champ_projections <- dt %>% 
   filter(season!=0) %>% 

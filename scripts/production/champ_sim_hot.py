@@ -50,7 +50,7 @@ for season in range(1, 1001):
     elo_ratings_table = elo_ratings_table[['driver', 'EloRating']]
 
     # for each race of that season
-    for race in range(12, 17):
+    for race in range(13, 17):
         # season_drivers_file keep rows where race is in their list of races they will compete in
         season_drivers = drivers_and_races
 
