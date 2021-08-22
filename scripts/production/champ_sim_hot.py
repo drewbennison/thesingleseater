@@ -50,7 +50,7 @@ for season in range(1, 1001):
     elo_ratings_table = elo_ratings_table[['driver', 'EloRating']]
 
     # for each race of that season
-    for race in range(13, 17):
+    for race in range(14, 17):
         # season_drivers_file keep rows where race is in their list of races they will compete in
         season_drivers = drivers_and_races
 
@@ -155,5 +155,5 @@ for season in range(1, 1001):
     print(live_results)
 
 
-final_results.to_csv("2021_08_09_champ.csv")
+final_results.to_csv("C:/Users/drewb/Desktop/projects/thesingleseater/datasets/champPredictions/2021_08_22_champ.csv")
 
