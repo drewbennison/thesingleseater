@@ -102,7 +102,7 @@ ui <- fluidPage(theme = shinytheme("simplex"),
             width = 10,
             offset = 0,
             h4("Championship Projections"),
-            h5("Last updated: August 15, 2021"),
+            h5("Last updated: August 22, 2021"),
             selectInput("selectchampdriver", "Select a driver to view their championship projection:", 
                         choices = NULL, 
                         selected = 1),))),
@@ -128,7 +128,7 @@ server <- function(input, output,session) {
     elo_ratings <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv") %>% 
         mutate(date=ymd(date))
     
-    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/2021_08_15_champ.csv")
+    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/2021_08_22_champ.csv")
     
     champ_projections <- champ_projections %>% 
         filter(season!=0) %>% 
