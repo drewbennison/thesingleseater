@@ -17,7 +17,7 @@ library(scales)
 library(reshape2)
 library(shinythemes)
 
-ui <- fluidPage(theme = shinytheme("simplex"),
+ui <- fluidPage(theme = shinytheme("lumen"),
     
     tags$head(
         tags$style(HTML("
@@ -71,7 +71,7 @@ ui <- fluidPage(theme = shinytheme("simplex"),
         fluidRow(column(
             width = 10,
             offset = 0,
-            h4("Track historical results (2008-2021)"),
+            h4("Track historical results (2008-Present)"),
             selectInput("selecttrack", "Select a track:", 
                         choices = NULL, 
                         selected = 1),
