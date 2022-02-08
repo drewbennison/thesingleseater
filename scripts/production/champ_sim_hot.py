@@ -1,31 +1,28 @@
 import pandas as pd
 import random
 from datetime import datetime
+from datetime import date
 import numpy as np
 pd.options.mode.chained_assignment = None
 pd.set_option('display.max_columns', 500)
 
-'''
-Needed updates:
-- update number of races left each time and double points races
-'''
 points_table = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/points_table.csv")
 
 final_results = pd.DataFrame(data={'driver': ['test'], 'totalPoints': [0], 'chamPos': [0], 'season': [0]})
 
 # read in master stats for driver points
 season_drivers_file = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv", encoding = "ISO-8859-1")
-season_drivers_file = season_drivers_file[season_drivers_file.year == 2021]
+season_drivers_file = season_drivers_file[season_drivers_file.year == 2022]
 season_drivers_file = season_drivers_file.groupby('driver')['pts'].agg(points='sum')
 season_drivers_file = season_drivers_file.reset_index(level=['driver'])
 
 # read in drivers and the races they are competing in this season
-drivers_and_races = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/indycar_2021_drivers_races.csv", encoding = "ISO-8859-1")
+drivers_and_races = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/indycar_2022_drivers_races.csv", encoding = "ISO-8859-1")
 drivers_and_races = drivers_and_races.merge(season_drivers_file, how='left', left_on="Driver", right_on="driver")
 drivers_and_races = drivers_and_races.fillna(0)
 drivers_and_races['driver'] = drivers_and_races['Driver']
 drivers_and_races = drivers_and_races[['driver', 'round_1', 'round_2', 'round_3', 'round_4', 'round_5', 'round_6', 'round_7', 'round_8',
-                                       'round_9', 'round_10', 'round_11', 'round_12', 'round_13', 'round_14', 'round_15', 'round_16','points']]
+                                       'round_9', 'round_10', 'round_11', 'round_12', 'round_13', 'round_14', 'round_15', 'round_16', 'round_17','points']]
 
 
 print(drivers_and_races)
@@ -50,7 +47,7 @@ for season in range(1, 1001):
     elo_ratings_table = elo_ratings_table[['driver', 'EloRating']]
 
     # for each race of that season
-    for race in range(14, 17):
+    for race in range(1, 18):
         # season_drivers_file keep rows where race is in their list of races they will compete in
         season_drivers = drivers_and_races
 
@@ -60,6 +57,8 @@ for season in range(1, 1001):
 
         race_drivers_elo = season_drivers.merge(elo_ratings_table, on='driver', how='left')
         race_drivers_elo = race_drivers_elo.fillna(1500)
+
+        #print(race_drivers_elo)
 
         drivers_who_won = []
         # simulate that actual race
@@ -155,5 +154,10 @@ for season in range(1, 1001):
     print(live_results)
 
 
-final_results.to_csv("C:/Users/drewb/Desktop/projects/thesingleseater/datasets/champPredictions/2021_08_22_champ.csv")
+today = date.today()
+today2 = today.strftime("%B %d, %Y")
+
+final_results['current_date'] = today2
+
+final_results.to_csv("C:/Users/drewb/Desktop/projects/thesingleseater/datasets/champPredictions/current_champ.csv")
 
