@@ -102,7 +102,7 @@ ui <- fluidPage(theme = shinytheme("lumen"),
             width = 10,
             offset = 0,
             h4("Championship Projections"),
-            h5("Last updated: September 20, 2021"),
+            h5(textOutput("date_text")),
             selectInput("selectchampdriver", "Select a driver to view their championship projection:", 
                         choices = NULL, 
                         selected = 1),))),
@@ -128,29 +128,36 @@ server <- function(input, output,session) {
     elo_ratings <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv") %>% 
         mutate(date=ymd(date))
     
-    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/2021_09_20_champ.csv")
+    champ_projections <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/current_champ.csv")
+    
+    champ_projections_date <- champ_projections %>% pull(current_date) %>% 
+        unique()
+    
+    champ_projections_date <- paste("Last updated: ",champ_projections_date)
     
     champ_projections <- champ_projections %>% 
         filter(season!=0) %>% 
-        select(driver, totalPoints, chamPos, season) %>% 
+        select(driver, totalPoints, chamPos, season) %>%
         group_by(driver, chamPos) %>% 
         add_count() %>% 
         mutate(prob = 100*(round((n/1000),3)),
                exp = round(chamPos*.01*prob,2)) %>% 
         select(driver, chamPos, n, prob, exp) %>% 
-        distinct()
+        distinct() %>%
+        rename("Driver" = "driver")
+        
     
     champ_projections_exp <- champ_projections %>% 
-        group_by(driver) %>% summarise(x=sum(exp))
+        group_by(Driver) %>% summarise(x=sum(exp))
     
     champ_projections <- champ_projections %>% select(-exp)
     
     choices_champ_projections <- champ_projections %>% 
-        select(driver) %>% 
+        select(Driver) %>% 
         distinct()
     
     #### dynamically populate selections ####
-    updateSelectInput(session=session, inputId="selectchampdriver", choices=choices_champ_projections$driver)
+    updateSelectInput(session=session, inputId="selectchampdriver", choices=choices_champ_projections$Driver)
     
     #dynamically populate choices for track selection
     choices_tracks <- data %>%
@@ -340,24 +347,28 @@ server <- function(input, output,session) {
     output$champTable <- DT::renderDataTable({
         
         
-        champ_projections_final <-reshape2::dcast(champ_projections, driver~chamPos, sum, value.var = "prob")
+        champ_projections_final <-reshape2::dcast(champ_projections, Driver~chamPos, sum, value.var = "prob")
         champ_projections_final <- champ_projections_final %>% left_join(champ_projections_exp) %>% 
             rename("Expected Champ Pos" = "x") %>% arrange(`Expected Champ Pos`)
         #champ_projections_final <- champ_projections_final %>% arrange_at(2:33, desc)
         
-    }, options=list(pageLength=50, scrollX = TRUE))   
+    }, options=list(pageLength=50, scrollX = TRUE)) 
+    
+    output$date_text <- renderText({
+        champ_projections_date
+    })
     
     #### championship projections graph
     output$champGraph <- renderPlot({
         champ_projections %>%
-            filter(driver == input$selectchampdriver) %>% 
-            ggplot() + geom_col(aes(x=chamPos, y=prob, fill=driver)) + 
+            filter(Driver == input$selectchampdriver) %>% 
+            ggplot() + geom_col(aes(x=chamPos, y=prob, fill=Driver)) + 
             theme(legend.position = "none")+
             #scale_x_discrete(limits = c(1, 5, 10, 15, 20, 25, 33)) +
             scale_y_continuous(breaks=c(0,25,50,75,100), limits = c(0,100)) +
             labs(y="% probability of finishing the season in this position",
                  x="Championship finishing position",
-                 title=paste0("2021 IndyCar Championship Projection for ", input$selectchampdriver),
+                 title=paste0("2022 IndyCar Championship Projection for ", input$selectchampdriver),
                  subtitle = "After simulating the remaining races 1,000 times",
                  caption = "www.thesingleseater.com")
     }, width = 800, height = 800)
