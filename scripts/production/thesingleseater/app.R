@@ -18,7 +18,7 @@ library(reshape2)
 library(shinythemes)
 
 ui <- fluidPage(theme = shinytheme("lumen"),
-    
+                
     tags$head(
         tags$style(HTML("
 
@@ -38,10 +38,6 @@ ui <- fluidPage(theme = shinytheme("lumen"),
         singleton(tags$head(tags$script(src='//cdn.datatables.net/fixedheader/2.1.2/js/dataTables.fixedHeader.min.js',type='text/javascript'))),
         singleton(tags$head(tags$link(href='//cdn.datatables.net/fixedheader/2.1.2/css/dataTables.fixedHeader.css',rel='stylesheet',type='text/css')))
     ),
-    
-    
-    
-    
     
     title = "The Single Seater: IndyCar Stats",
     # Application title
@@ -369,7 +365,7 @@ server <- function(input, output,session) {
             labs(y="% probability of finishing the season in this position",
                  x="Championship finishing position",
                  title=paste0("2022 IndyCar Championship Projection for ", input$selectchampdriver),
-                 subtitle = "After simulating the remaining races 1,000 times",
+                 subtitle = "After simulating the remaining races 10,000 times",
                  caption = "www.thesingleseater.com")
     }, width = 800, height = 800)
 }
