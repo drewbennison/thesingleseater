@@ -136,7 +136,7 @@ server <- function(input, output,session) {
         select(driver, totalPoints, chamPos, season) %>%
         group_by(driver, chamPos) %>% 
         add_count() %>% 
-        mutate(prob = 100*(round((n/1000),3)),
+        mutate(prob = 100*(round((n/10000),3)),
                exp = round(chamPos*.01*prob,2)) %>% 
         select(driver, chamPos, n, prob, exp) %>% 
         distinct() %>%

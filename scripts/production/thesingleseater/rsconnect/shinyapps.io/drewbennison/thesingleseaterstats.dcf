@@ -5,8 +5,8 @@ account: drewbennison
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2372426
-bundleId: 5554807
+bundleId: 5589358
 url: https://drewbennison.shinyapps.io/thesingleseaterstats/
-when: 1644288642.19739
+when: 1645097886.56405
 asMultiple: FALSE
 asStatic: FALSE
