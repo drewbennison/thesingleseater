@@ -1,12 +1,3 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 library(DT)
 library(data.table)
@@ -17,106 +8,88 @@ library(scales)
 library(reshape2)
 library(shinythemes)
 
-ui <- fluidPage(theme = shinytheme("lumen"),
-                
-    tags$head(
-        tags$style(HTML("
-
-     .multicol {
-
-       -webkit-column-count: 5; /* Chrome, Safari, Opera */
-
-       -moz-column-count: 5; /* Firefox */
-
-       column-count: 5;
-
-     }
-
-   "))),
-    
-    tagList(
-        singleton(tags$head(tags$script(src='//cdn.datatables.net/fixedheader/2.1.2/js/dataTables.fixedHeader.min.js',type='text/javascript'))),
-        singleton(tags$head(tags$link(href='//cdn.datatables.net/fixedheader/2.1.2/css/dataTables.fixedHeader.css',rel='stylesheet',type='text/css')))
-    ),
-    
-    title = "The Single Seater: IndyCar Stats",
-    # Application title
-    titlePanel("The Single Seater: IndyCar Stats"),
-    tags$h3(tags$a(href="https://thesingleseater.com/", "Visit the blog")),
-    
-    conditionalPanel(
-        condition = "input.tabpan == 'Season Stats'",
-        fluidRow(column(
-            width = 10,
-            offset = 0,
-            tags$h4("Driver season stats"),
-            radioButtons("trackb", "Sort by track type:",
-                         c("All Tracks" = "all",
-                           "Oval" = "oval",
-                           "Road and Street" = "road and street")),
-            
-            selectInput("selectyear", "Select a season:",
-                        c("2021"= "2021",
-                          "2020" = "2020",
-                          "2019" = "2019")),
-            tags$h5(tags$em(tags$a(href="https://thesingleseater.com/glossary/", "View the stat glossary")))
-            ))),
-    
-    conditionalPanel(
-        condition = "input.tabpan == 'Track Stats'",
-        fluidRow(column(
-            width = 10,
-            offset = 0,
-            h4("Track historical results (2008-Present)"),
-            selectInput("selecttrack", "Select a track:", 
-                        choices = NULL, 
-                        selected = 1),
-            tags$h5(tags$em(tags$a(href="https://thesingleseater.com/glossary/", "View the stat glossary")))
-            ))),
-    
-    conditionalPanel(
-        condition = "input.tabpan == 'Current Elo Ratings'",
-        fluidRow(column(
-            width = 10,
-            offset = 0,
-            h4("Current Elo Ratings")))),
-    
-    conditionalPanel(
-        condition = "input.tabpan == 'Historical Elo Ratings'",
-        fluidRow(column(
-            width = 10,
-            offset = 0,
-            h4("Historical Elo Ratings"),
-            wellPanel(
-                selectInput("selectedDrivers", choices = NULL, label = "Drivers to view:", selected = NULL,
-                            multiple = TRUE))
-            ))),
-    
-    conditionalPanel(
-        condition = "input.tabpan == 'Championship Projections'",
-        fluidRow(column(
-            width = 10,
-            offset = 0,
-            h4("Championship Projections"),
-            h5(textOutput("date_text")),
-            selectInput("selectchampdriver", "Select a driver to view their championship projection:", 
-                        choices = NULL, 
-                        selected = 1),))),
-    
-    mainPanel(
-            tabsetPanel(id="tabpan", type="tabs",
-                    tabPanel("Season Stats", DT::dataTableOutput("seasonTable")),
-                    tabPanel("Track Stats", DT::dataTableOutput("trackTable")),
-                    tabPanel("Current Elo Ratings", DT::dataTableOutput("eloTable")),
-                    tabPanel("Historical Elo Ratings", plotlyOutput("eloGraph")),
-                    tabPanel("Championship Projections", DT::dataTableOutput("champTable"), plotOutput("champGraph"))),
-    )
-)
+ui <- navbarPage(title="The Single Seater",
+                 navbarMenu(title = "Statistics",
+                            tabPanel(title = "Season Statistics",
+                                     fluidRow(column(
+                                         width = 10,
+                                         offset = 0,
+                                         tags$h4("Season Statistics"),
+                                         radioButtons("trackb", "Track Type:",
+                                                      c("All Tracks" = "all",
+                                                        "Oval" = "oval",
+                                                        "Road and Street" = "road and street")),
+                                         
+                                         selectInput("selectyear", "Season:",
+                                                     c("2021"= "2021",
+                                                       "2020" = "2020",
+                                                       "2019" = "2019")),
+                                         DT::dataTableOutput("seasonTable")
+                                     ))),
+                            
+                            tabPanel(title = "Track Statistics",
+                                     fluidRow(column(
+                                         width = 10,
+                                         offset = 0,
+                                         h4("Track Statistics (2008-Present)"),
+                                         selectInput("selecttrack", "Track:", 
+                                                     choices = NULL, 
+                                                     selected = 1),
+                                         DT::dataTableOutput("trackTable"))
+                                     ))),
+                 
+                 navbarMenu(title = "Elo Ratings",
+                            tabPanel(title = "Current Elo Ratings",
+                                     fluidRow(column(
+                                                    width = 10,
+                                                    offset = 0,
+                                                    h4("Current Elo Ratings"))),
+                                     DT::dataTableOutput("eloTable")),
+                            
+                            tabPanel(title = "Historical Elo Ratings",
+                                     fluidRow(column(
+                                                      width = 10,
+                                                      offset = 0,
+                                                      h4("Historical Elo Ratings"),
+                                                      #wellPanel(
+                                                          selectInput("selectedDrivers", choices = NULL, label = "Drivers:", selected = NULL,
+                                                                      multiple = TRUE)
+                                                      #)
+                                                      ,
+                                                      plotlyOutput("eloGraph")
+                                    )))),
+                 
+                 navbarMenu(title = "Championship Projections",
+                            tabPanel(title = "2022 Championship Projections",
+                                     fluidRow(column(
+                                         width = 6,
+                                         offset = 0,
+                                         h4("Championship Projections"),
+                                         h5(textOutput("date_text")),
+                                         selectInput("selectchampdriver", "Select a driver to view their championship projection:", choices = NULL, selected = 1),
+                                         DT::dataTableOutput("champTable")),
+                                         
+                                         column(
+                                             width = 6,
+                                             offset = 0,
+                                             plotOutput("champGraph"))
+                                         ))),
+                 
+                 navbarMenu(title= "More",
+                            tabPanel(title = "Links",
+                                     fluidRow(column(
+                                         width = 10,
+                                         offset = 0,
+                                         tags$ul(
+                                             tags$li(h4(HTML("<a href=\"https://thesingleseater.com/\">thesingleseater.com</a>"))),
+                                             tags$li(h4(HTML("<a href=\"https://thesingleseater.com/glossary//\">Statistic glossary</a>")))
+                                              )))
+                            ))
+                 )
 
 server <- function(input, output,session) {
     
-    #### load in data sources ####
-    #global data sources
+    #### load in data sources ####W
     data<- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
     
     elo_ratings <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv") %>% 
@@ -361,7 +334,7 @@ server <- function(input, output,session) {
                  title=paste0("2022 IndyCar Championship Projection for ", input$selectchampdriver),
                  subtitle = paste0("After simulating the remaining races ",champ_projections_season," times"),
                  caption = "www.thesingleseater.com")
-    }, width = 800, height = 500)
+    }, width = 600, height = 500)
 }
 
 shinyApp(ui, server)
