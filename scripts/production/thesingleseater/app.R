@@ -116,10 +116,8 @@ ui <- fluidPage(theme = shinytheme("lumen"),
 server <- function(input, output,session) {
     
     #### load in data sources ####
-    #global data source
+    #global data sources
     data<- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
-    
-    caution_stats <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/restartdata.csv")
     
     elo_ratings <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv") %>% 
         mutate(date=ymd(date))
@@ -159,11 +157,12 @@ server <- function(input, output,session) {
     #dynamically populate choices for track selection
     choices_tracks <- data %>%
         select(track) %>% 
-        distinct()
+        distinct() %>% 
+        arrange(track)
     
     updateSelectInput(session = session, inputId = "selecttrack", choices = choices_tracks$track)
     
-    
+    #dynamically populate choices for driver selection
     choices_drivers <- elo_ratings %>% 
         group_by(driver) %>% 
         filter(n()>10) %>% 
@@ -177,7 +176,6 @@ server <- function(input, output,session) {
     output$seasonTable = DT::renderDataTable({
         
         #Calculate adjusted pass effeciency
-        
         avgPE <- data %>% filter(!is.na(passesFor)) %>% 
             select(driver, st, passesFor, passesAgainst) %>% 
             mutate(passEff = passesFor/(passesFor+passesAgainst),
@@ -253,7 +251,6 @@ server <- function(input, output,session) {
             arrange(-Pts) %>% 
             rename("Driver" = "Driver...Driver")
         
-        
     }, options=list(pageLength=50, scrollX = TRUE))
     
     #### track history table ####
@@ -315,7 +312,7 @@ server <- function(input, output,session) {
     
     #### current elo ratings table ####
     output$eloTable <- DT::renderDataTable({
-        elo_ratings %>% filter(year>2019) %>% 
+        elo_ratings %>% filter(year>2020) %>% 
            group_by(driver) %>%
             slice(which.max(as.Date(date, '%m/%d/%Y'))) %>% 
             mutate(EloRating = round(EloRating),
@@ -343,7 +340,6 @@ server <- function(input, output,session) {
     #### championship projections table ####
     output$champTable <- DT::renderDataTable({
         
-        
         champ_projections_final <-reshape2::dcast(champ_projections, Driver~chamPos, sum, value.var = "prob")
         champ_projections_final <- champ_projections_final %>% left_join(champ_projections_exp) %>% 
             rename("Expected Champ Pos" = "x") %>% arrange(`Expected Champ Pos`)
@@ -359,8 +355,7 @@ server <- function(input, output,session) {
         champ_projections %>%
             filter(Driver == input$selectchampdriver) %>% 
             ggplot() + geom_col(aes(x=chamPos, y=prob, fill=Driver)) + 
-            theme(legend.position = "none")+
-            #scale_x_discrete(limits = c(1, 5, 10, 15, 20, 25, 33)) +
+            theme(legend.position = "none") +
             scale_y_continuous(breaks=c(0,25,50,75,100), limits = c(0,100)) +
             labs(y="% probability of finishing the season in this position",
                  x="Championship finishing position",

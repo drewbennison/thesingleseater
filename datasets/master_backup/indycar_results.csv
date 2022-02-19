@@ -1,28 +1,28 @@
 track,raceNumber,year,type,fin,st,num,driver,sponsor,C/E/T,laps,money,status,led,pts,ledPts,ledMostPts,polePoints,atp,atp25,xPtsATP,xPtsATP25,xPts,passesFor,passesAgainst,lapOneChange,inTopFive,fastLapRank,date
-St. Pete,1,2018,street,1,14,18,Sebastien Bourdais,SealMaster   (Dale Coyne w/Vasser-Sullivan),D/H/F,110,,running,30,51,1,0,0,6.432432432,3,28,35,29,43,30,-7,70,,3/11/2018
-St. Pete,1,2018,street,2,24,15,Graham Rahal,United Rentals / Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,110,,running,0,40,0,0,0,8.711711712,4,22,32,22,47,25,6,47,,3/11/2018
-St. Pete,1,2018,street,3,12,27,Alexander Rossi,NAPA Auto Parts   (Andretti Autosport),D/H/F,110,,running,5,36,1,0,0,3.063063063,2.068965517,35,40,36,24,15,5,100,,3/11/2018
-St. Pete,1,2018,street,4,7,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,110,,running,0,32,0,0,0,5.864864865,5.034482759,28,30,28,22,19,3,77,,3/11/2018
-St. Pete,1,2018,street,5,6,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,,running,1,31,1,0,0,9.702702703,5.379310345,20,30,21,39,38,-17,27,,3/11/2018
-St. Pete,1,2018,street,6,9,9,Scott Dixon,PNC Bank   (Chip Ganassi),D/H/F,110,,running,0,28,0,0,0,9.900900901,7.793103448,20,24,20,36,33,3,0,,3/11/2018
-St. Pete,1,2018,street,7,13,1,Josef Newgarden,Hitachi   (Roger Penske),D/C/F,110,,running,0,26,0,0,0,11.64864865,8.724137931,18,22,18,38,32,1,0,,3/11/2018
-St. Pete,1,2018,street,8,17,10,Ed Jones,NTT Data   (Chip Ganassi),D/H/F,110,,running,0,24,0,0,0,10.30630631,7.517241379,20,24,20,36,27,7,6,,3/11/2018
-St. Pete,1,2018,street,9,18,98,Marco Andretti,Ruoff Home Mortgage / Curb   (AHA with Curb-Agajanian),D/H/F,110,,running,0,22,0,0,0,10.44144144,11,20,19,20,45,36,2,13,,3/11/2018
-St. Pete,1,2018,street,10,2,12,Will Power,Verizon   (Roger Penske),D/C/F,110,,running,0,20,0,0,0,12.21621622,10.13793103,18,20,18,37,45,-9,0,,3/11/2018
-St. Pete,1,2018,street,11,10,14,Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,110,,running,0,19,0,0,0,12.5045045,11.89655172,17,18,17,40,41,-12,0,,3/11/2018
-St. Pete,1,2018,street,12,5,30,Takuma Sato,Mi-Jack / Panasonic   (Rahal Letterman Lanigan Racing),D/H/F,110,,running,0,18,0,0,0,12.91891892,15.10344828,17,15,17,31,38,0,12,,3/11/2018
-St. Pete,1,2018,street,13,11,22,Simon Pagenaud,Menards   (Roger Penske),D/C/F,110,,running,0,17,0,0,0,13.32432432,14.20689655,17,16,17,30,32,3,0,,3/11/2018
-St. Pete,1,2018,street,14,8,88,Gabby Chaves,Harding Group   (Harding Racing),D/C/F,110,,running,0,16,0,0,0,12.46846847,13.37931034,18,17,18,30,36,-1,1,,3/11/2018
-St. Pete,1,2018,street,15,16,21,Spencer Pigot,Autogeek   (Ed Carpenter Racing),D/C/F,109,,running,0,15,0,0,0,12.5,15.21428571,18,15,18,47,46,2,19,,3/11/2018
-St. Pete,1,2018,street,16,15,26,Zach Veach,Group One Thousand One   (Andretti Autosport),D/H/F,109,,running,0,14,0,0,0,16.11818182,17.53571429,14,12,14,39,40,2,0,,3/11/2018
-St. Pete,1,2018,street,17,22,19,Zachary Claman De Melo,Paysafe   (Dale Coyne),D/H/F,109,,running,0,13,0,0,0,13.10909091,16.71428571,17,13,17,42,37,5,17,,3/11/2018
-St. Pete,1,2018,street,18,1,6,Robert Wickens,Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,108,,crash,69,16,1,2,1,1.532110092,1.185185185,40,50,44,8,8,0,108,,3/11/2018
-St. Pete,1,2018,street,19,20,59,Max Chilton,Gallagher   (Trevor Carlin),D/C/F,108,,running,0,11,0,0,0,18.90825688,19.66666667,11,10,11,27,26,1,0,,3/11/2018
-St. Pete,1,2018,street,20,21,23,Charlie Kimball,Tresiba   (Trevor Carlin),D/C/F,107,,running,0,10,0,0,0,21.67592593,20.73076923,8,9,8,7,6,-3,0,,3/11/2018
-St. Pete,1,2018,street,21,4,20,Jordan King,Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,107,,running,5,10,1,0,0,16.30555556,21.73076923,14,8,15,8,25,2,24,,3/11/2018
-St. Pete,1,2018,street,22,23,32,Rene Binder,Binderholz Tiptop Timber   (Juncos Racing),D/C/F,100,,crash,0,8,0,0,0,19.01980198,19.05263158,11,11,11,29,26,3,0,,3/11/2018
-St. Pete,1,2018,street,23,19,60,Jack Harvey,AutoNation / SiriusXM   (Michael Shank with SPM),D/H/F,38,,off course,0,7,0,0,0,12.76923077,,17,,17,25,12,4,4,,3/11/2018
-St. Pete,1,2018,street,24,3,4,Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,16,,crash,0,6,0,0,0,5.823529412,,28,,28,2,23,0,14,,3/11/2018
+St. Petersburg,1,2018,street,1,14,18,Sebastien Bourdais,SealMaster   (Dale Coyne w/Vasser-Sullivan),D/H/F,110,,running,30,51,1,0,0,6.432432432,3,28,35,29,43,30,-7,70,,3/11/2018
+St. Petersburg,1,2018,street,2,24,15,Graham Rahal,United Rentals / Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,110,,running,0,40,0,0,0,8.711711712,4,22,32,22,47,25,6,47,,3/11/2018
+St. Petersburg,1,2018,street,3,12,27,Alexander Rossi,NAPA Auto Parts   (Andretti Autosport),D/H/F,110,,running,5,36,1,0,0,3.063063063,2.068965517,35,40,36,24,15,5,100,,3/11/2018
+St. Petersburg,1,2018,street,4,7,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,110,,running,0,32,0,0,0,5.864864865,5.034482759,28,30,28,22,19,3,77,,3/11/2018
+St. Petersburg,1,2018,street,5,6,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,,running,1,31,1,0,0,9.702702703,5.379310345,20,30,21,39,38,-17,27,,3/11/2018
+St. Petersburg,1,2018,street,6,9,9,Scott Dixon,PNC Bank   (Chip Ganassi),D/H/F,110,,running,0,28,0,0,0,9.900900901,7.793103448,20,24,20,36,33,3,0,,3/11/2018
+St. Petersburg,1,2018,street,7,13,1,Josef Newgarden,Hitachi   (Roger Penske),D/C/F,110,,running,0,26,0,0,0,11.64864865,8.724137931,18,22,18,38,32,1,0,,3/11/2018
+St. Petersburg,1,2018,street,8,17,10,Ed Jones,NTT Data   (Chip Ganassi),D/H/F,110,,running,0,24,0,0,0,10.30630631,7.517241379,20,24,20,36,27,7,6,,3/11/2018
+St. Petersburg,1,2018,street,9,18,98,Marco Andretti,Ruoff Home Mortgage / Curb   (AHA with Curb-Agajanian),D/H/F,110,,running,0,22,0,0,0,10.44144144,11,20,19,20,45,36,2,13,,3/11/2018
+St. Petersburg,1,2018,street,10,2,12,Will Power,Verizon   (Roger Penske),D/C/F,110,,running,0,20,0,0,0,12.21621622,10.13793103,18,20,18,37,45,-9,0,,3/11/2018
+St. Petersburg,1,2018,street,11,10,14,Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,110,,running,0,19,0,0,0,12.5045045,11.89655172,17,18,17,40,41,-12,0,,3/11/2018
+St. Petersburg,1,2018,street,12,5,30,Takuma Sato,Mi-Jack / Panasonic   (Rahal Letterman Lanigan Racing),D/H/F,110,,running,0,18,0,0,0,12.91891892,15.10344828,17,15,17,31,38,0,12,,3/11/2018
+St. Petersburg,1,2018,street,13,11,22,Simon Pagenaud,Menards   (Roger Penske),D/C/F,110,,running,0,17,0,0,0,13.32432432,14.20689655,17,16,17,30,32,3,0,,3/11/2018
+St. Petersburg,1,2018,street,14,8,88,Gabby Chaves,Harding Group   (Harding Racing),D/C/F,110,,running,0,16,0,0,0,12.46846847,13.37931034,18,17,18,30,36,-1,1,,3/11/2018
+St. Petersburg,1,2018,street,15,16,21,Spencer Pigot,Autogeek   (Ed Carpenter Racing),D/C/F,109,,running,0,15,0,0,0,12.5,15.21428571,18,15,18,47,46,2,19,,3/11/2018
+St. Petersburg,1,2018,street,16,15,26,Zach Veach,Group One Thousand One   (Andretti Autosport),D/H/F,109,,running,0,14,0,0,0,16.11818182,17.53571429,14,12,14,39,40,2,0,,3/11/2018
+St. Petersburg,1,2018,street,17,22,19,Zachary Claman De Melo,Paysafe   (Dale Coyne),D/H/F,109,,running,0,13,0,0,0,13.10909091,16.71428571,17,13,17,42,37,5,17,,3/11/2018
+St. Petersburg,1,2018,street,18,1,6,Robert Wickens,Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,108,,crash,69,16,1,2,1,1.532110092,1.185185185,40,50,44,8,8,0,108,,3/11/2018
+St. Petersburg,1,2018,street,19,20,59,Max Chilton,Gallagher   (Trevor Carlin),D/C/F,108,,running,0,11,0,0,0,18.90825688,19.66666667,11,10,11,27,26,1,0,,3/11/2018
+St. Petersburg,1,2018,street,20,21,23,Charlie Kimball,Tresiba   (Trevor Carlin),D/C/F,107,,running,0,10,0,0,0,21.67592593,20.73076923,8,9,8,7,6,-3,0,,3/11/2018
+St. Petersburg,1,2018,street,21,4,20,Jordan King,Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,107,,running,5,10,1,0,0,16.30555556,21.73076923,14,8,15,8,25,2,24,,3/11/2018
+St. Petersburg,1,2018,street,22,23,32,Rene Binder,Binderholz Tiptop Timber   (Juncos Racing),D/C/F,100,,crash,0,8,0,0,0,19.01980198,19.05263158,11,11,11,29,26,3,0,,3/11/2018
+St. Petersburg,1,2018,street,23,19,60,Jack Harvey,AutoNation / SiriusXM   (Michael Shank with SPM),D/H/F,38,,off course,0,7,0,0,0,12.76923077,,17,,17,25,12,4,4,,3/11/2018
+St. Petersburg,1,2018,street,24,3,4,Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,16,,crash,0,6,0,0,0,5.823529412,,28,,28,2,23,0,14,,3/11/2018
 Phoenix,2,2018,oval,1,7,1,Josef Newgarden,Verizon   (Roger Penske),D/C/F,250,,running,30,51,1,0,0,4.035856574,1.952380952,32,40,33,31,25,0,165,,4/7/2018
 Phoenix,2,2018,oval,2,6,6,Robert Wickens,Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,250,,running,44,41,1,0,0,3.406374502,2.73015873,35,35,36,27,23,1,229,,4/7/2018
 Phoenix,2,2018,oval,3,4,27,Alexander Rossi,MilitaryToMotorsports.com   (Andretti Autosport),D/H/F,250,,running,1,36,1,0,0,11.84462151,6.317460317,18,28,19,49,48,1,75,,4/7/2018
@@ -403,27 +403,27 @@ Sonoma,17,2018,road,22,24,23,Charlie Kimball,Tresiba   (Trevor Carlin),D/C/F,76,
 Sonoma,17,2018,road,23,9,15,Graham Rahal,Total / United Rentals   (Rahal Letterman Lanigan Racing),D/H/F,66,,battery,0,14,0,,,,,,,,,,,,,9/16/2018
 Sonoma,17,2018,road,24,17,21,Spencer Pigot,Fuzzy's Vodka / Direct Supply   (Ed Carpenter Racing),D/C/F,38,,gearbox,0,12,0,,,,,,,,,,,,,9/16/2018
 Sonoma,17,2018,road,25,12,30,Takuma Sato,Mi-Jack / Panasonic   (Rahal Letterman Lanigan Racing),D/H/F,15,,engine,0,10,0,,,,,,,,,,,,,9/16/2018
-St. Pete,1,2017,street,1,21,18,Sebastien Bourdais,Sonny's BBQ   (Dale Coyne),D/H/F,110,,running,69,53,1,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,2,14,1,Simon Pagenaud,PPG Automotive Refinish   (Roger Penske),D/C/F,110,,running,13,41,1,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,3,2,9,Scott Dixon,GE LED Lighting   (Chip Ganassi),D/H/F,110,,running,0,35,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,4,12,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,,running,0,32,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,5,5,26,Takuma Sato,Panasonic   (Andretti Autosport),D/H/F,110,,running,2,31,1,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,6,16,3,Helio Castroneves,Hitachi   (Roger Penske),D/C/F,110,,running,0,28,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,7,15,27,Marco Andretti,hhgregg   (Andretti Autosport),D/H/F,110,,running,0,26,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,8,4,2,Josef Newgarden,Verizon   (Roger Penske),D/C/F,110,,running,0,24,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,9,3,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,110,,running,21,23,1,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,10,18,19,Ed Jones,Boy Scouts of America   (Dale Coyne),D/H/F,110,,running,0,20,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,11,8,98,Alexander Rossi,NAPA Auto Parts / Curb   (AHA with Curb-Agajanian),D/H/F,109,,running,0,19,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,12,6,10,Tony Kanaan,NTT Data   (Chip Ganassi),D/H/F,109,,running,0,18,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,13,19,21,J.R. Hildebrand,Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,109,,running,0,17,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,14,17,7,Mikhail Aleshin,SMP Racing   (Schmidt Peterson Motorsports),D/H/F,109,,running,0,16,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,15,20,4,Conor Daly,ABC Supply Co.   (A.J. Foyt),D/C/F,109,,running,0,15,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,16,7,8,Max Chilton,Gallagher   (Chip Ganassi),D/H/F,109,,running,0,14,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,17,10,15,Graham Rahal,Steak 'n Shake / Penn Grade Motor Oil   (Rahal Letterman Lanigan Racing),D/H/F,108,,running,0,13,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,18,9,83,Charlie Kimball,Tresiba   (Chip Ganassi),D/H/F,105,,running,0,12,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,19,1,12,Will Power,Verizon   (Roger Penske),D/C/F,99,,too slow,5,13,1,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,20,13,20,Spencer Pigot,Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,71,,withdrew,0,10,0,,,,,,,,,,,,,3/12/2017
-St. Pete,1,2017,street,21,11,14,Carlos Munoz,ABC Supply Co.   (A.J. Foyt),D/C/F,32,,wishbone,0,9,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,1,21,18,Sebastien Bourdais,Sonny's BBQ   (Dale Coyne),D/H/F,110,,running,69,53,1,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,2,14,1,Simon Pagenaud,PPG Automotive Refinish   (Roger Penske),D/C/F,110,,running,13,41,1,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,3,2,9,Scott Dixon,GE LED Lighting   (Chip Ganassi),D/H/F,110,,running,0,35,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,4,12,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,,running,0,32,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,5,5,26,Takuma Sato,Panasonic   (Andretti Autosport),D/H/F,110,,running,2,31,1,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,6,16,3,Helio Castroneves,Hitachi   (Roger Penske),D/C/F,110,,running,0,28,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,7,15,27,Marco Andretti,hhgregg   (Andretti Autosport),D/H/F,110,,running,0,26,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,8,4,2,Josef Newgarden,Verizon   (Roger Penske),D/C/F,110,,running,0,24,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,9,3,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,110,,running,21,23,1,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,10,18,19,Ed Jones,Boy Scouts of America   (Dale Coyne),D/H/F,110,,running,0,20,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,11,8,98,Alexander Rossi,NAPA Auto Parts / Curb   (AHA with Curb-Agajanian),D/H/F,109,,running,0,19,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,12,6,10,Tony Kanaan,NTT Data   (Chip Ganassi),D/H/F,109,,running,0,18,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,13,19,21,J.R. Hildebrand,Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,109,,running,0,17,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,14,17,7,Mikhail Aleshin,SMP Racing   (Schmidt Peterson Motorsports),D/H/F,109,,running,0,16,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,15,20,4,Conor Daly,ABC Supply Co.   (A.J. Foyt),D/C/F,109,,running,0,15,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,16,7,8,Max Chilton,Gallagher   (Chip Ganassi),D/H/F,109,,running,0,14,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,17,10,15,Graham Rahal,Steak 'n Shake / Penn Grade Motor Oil   (Rahal Letterman Lanigan Racing),D/H/F,108,,running,0,13,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,18,9,83,Charlie Kimball,Tresiba   (Chip Ganassi),D/H/F,105,,running,0,12,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,19,1,12,Will Power,Verizon   (Roger Penske),D/C/F,99,,too slow,5,13,1,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,20,13,20,Spencer Pigot,Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,71,,withdrew,0,10,0,,,,,,,,,,,,,3/12/2017
+St. Petersburg,1,2017,street,21,11,14,Carlos Munoz,ABC Supply Co.   (A.J. Foyt),D/C/F,32,,wishbone,0,9,0,,,,,,,,,,,,,3/12/2017
 Long Beach,2,2017,street,1,4,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,85,,running,25,51,1,,,,,,,,,,,,,4/9/2017
 Long Beach,2,2017,street,2,12,18,Sebastien Bourdais,Trench Shoring / GEICO   (Dale Coyne),D/H/F,85,,running,0,40,0,,,,,,,,,,,,,4/9/2017
 Long Beach,2,2017,street,3,8,2,Josef Newgarden,hum by Verizon   (Roger Penske),D/C/F,85,,running,0,35,0,,,,,,,,,,,,,4/9/2017
@@ -778,28 +778,28 @@ Sonoma,17,2017,road,19,18,19,Ed Jones,Boy Scouts of America   (Dale Coyne),D/H/F
 Sonoma,17,2017,road,20,5,26,Takuma Sato,Panasonic / Dickinson Fleet Services   (Andretti Autosport),D/H/F,62,,engine,0,20,0,,,,,,,,,,,,,9/17/2017
 Sonoma,17,2017,road,21,8,98,Alexander Rossi,NAPA Auto Parts / Curb   (AHA with Curb-Agajanian),D/H/F,60,,running,0,18,0,,,,,,,,,,,,,9/17/2017
 Sonoma,17,2017,road,22,16,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,52,,electrical,0,16,0,,,,,,,,,,,,,9/17/2017
-St. Pete,1,2016,street,1,3,2,Juan Pablo Montoya,Verizon   (Roger Penske),D/C/F,110,80000,running,44,51,1,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,2,1,22,Simon Pagenaud,Hewlett Packard / Verizon   (Roger Penske),D/C/F,110,70000,running,48,43,1,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,3,5,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,65000,running,3,36,1,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,4,2,3,Helio Castroneves,Hitachi / Verizon   (Roger Penske),D/C/F,110,61000,running,0,32,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,5,17,7,Mikhail Aleshin,SMP Racing   (Schmidt Peterson Motorsports),D/H/F,110,60000,running,0,30,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,6,10,14,Takuma Sato,ABC Supply Co. / Panasonic   (A.J. Foyt),D/H/F,110,59000,running,0,28,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,7,4,9,Scott Dixon,Target   (Chip Ganassi),D/C/F,110,58000,running,0,26,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,8,12,26,Carlos Munoz,Pint Pharma   (Andretti Autosport),D/H/F,110,56000,running,0,24,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,9,19,10,Tony Kanaan,NTT Data   (Chip Ganassi),D/C/F,110,55000,running,0,22,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,10,13,83,Charlie Kimball,RaceWithInsulin.com   (Chip Ganassi),D/C/F,109,54000,crash,0,20,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,11,9,41,Jack Hawksworth,ABC Supply Co.   (A.J. Foyt),D/H/F,109,53000,running,0,19,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,12,18,98,Alexander Rossi,Castrol Edge   (AHA with Curb-Agajanian),D/H/F,109,52000,running,0,18,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,13,20,18,Conor Daly,Jonathan Byrd's Hospitality   (Dale Coyne),D/H/F,109,50000,running,15,18,1,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,14,21,16,Spencer Pigot,Andersen Interior Contracting / Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,109,20000,running,0,16,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,15,14,27,Marco Andretti,Snapple / Mutual of Omaha   (Andretti Autosport),D/H/F,109,50000,running,0,15,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,16,6,15,Graham Rahal,Steak 'n Shake / Maxim / Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,109,50000,running,0,14,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,17,16,8,Max Chilton,Gallagher   (Chip Ganassi),D/C/F,109,50000,running,0,13,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,18,22,12,Oriol Servia,Verizon   (Roger Penske),D/C/F,109,50000,running,0,12,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,19,8,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,109,50000,running,0,11,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,20,15,19,Luca Filippi,Sonny's Bar-B-Q   (Dale Coyne),D/H/F,108,50000,running,0,10,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,21,7,11,Sebastien Bourdais,Hydroxycut   (KVSH Racing),D/C/F,87,50000,crash,0,9,0,,,,,,,,,,,,,3/13/2016
-St. Pete,1,2016,street,22,11,21,Josef Newgarden,Fuzzy's Vodka / Direct Supply   (Ed Carpenter Racing),D/C/F,47,50000,electrical,0,8,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,1,3,2,Juan Pablo Montoya,Verizon   (Roger Penske),D/C/F,110,80000,running,44,51,1,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,2,1,22,Simon Pagenaud,Hewlett Packard / Verizon   (Roger Penske),D/C/F,110,70000,running,48,43,1,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,3,5,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,65000,running,3,36,1,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,4,2,3,Helio Castroneves,Hitachi / Verizon   (Roger Penske),D/C/F,110,61000,running,0,32,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,5,17,7,Mikhail Aleshin,SMP Racing   (Schmidt Peterson Motorsports),D/H/F,110,60000,running,0,30,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,6,10,14,Takuma Sato,ABC Supply Co. / Panasonic   (A.J. Foyt),D/H/F,110,59000,running,0,28,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,7,4,9,Scott Dixon,Target   (Chip Ganassi),D/C/F,110,58000,running,0,26,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,8,12,26,Carlos Munoz,Pint Pharma   (Andretti Autosport),D/H/F,110,56000,running,0,24,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,9,19,10,Tony Kanaan,NTT Data   (Chip Ganassi),D/C/F,110,55000,running,0,22,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,10,13,83,Charlie Kimball,RaceWithInsulin.com   (Chip Ganassi),D/C/F,109,54000,crash,0,20,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,11,9,41,Jack Hawksworth,ABC Supply Co.   (A.J. Foyt),D/H/F,109,53000,running,0,19,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,12,18,98,Alexander Rossi,Castrol Edge   (AHA with Curb-Agajanian),D/H/F,109,52000,running,0,18,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,13,20,18,Conor Daly,Jonathan Byrd's Hospitality   (Dale Coyne),D/H/F,109,50000,running,15,18,1,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,14,21,16,Spencer Pigot,Andersen Interior Contracting / Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,109,20000,running,0,16,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,15,14,27,Marco Andretti,Snapple / Mutual of Omaha   (Andretti Autosport),D/H/F,109,50000,running,0,15,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,16,6,15,Graham Rahal,Steak 'n Shake / Maxim / Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,109,50000,running,0,14,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,17,16,8,Max Chilton,Gallagher   (Chip Ganassi),D/C/F,109,50000,running,0,13,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,18,22,12,Oriol Servia,Verizon   (Roger Penske),D/C/F,109,50000,running,0,12,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,19,8,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,109,50000,running,0,11,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,20,15,19,Luca Filippi,Sonny's Bar-B-Q   (Dale Coyne),D/H/F,108,50000,running,0,10,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,21,7,11,Sebastien Bourdais,Hydroxycut   (KVSH Racing),D/C/F,87,50000,crash,0,9,0,,,,,,,,,,,,,3/13/2016
+St. Petersburg,1,2016,street,22,11,21,Josef Newgarden,Fuzzy's Vodka / Direct Supply   (Ed Carpenter Racing),D/C/F,47,50000,electrical,0,8,0,,,,,,,,,,,,,3/13/2016
 Phoenix,2,2016,oval,1,6,9,Scott Dixon,Target   (Chip Ganassi),D/C/F,250,80000,running,155,53,1,,,,,,,,,,,,,4/2/2016
 Phoenix,2,2016,oval,2,10,22,Simon Pagenaud,Devilbiss / Verizon   (Roger Penske),D/C/F,250,80000,running,0,40,0,,,,,,,,,,,,,4/2/2016
 Phoenix,2,2016,oval,3,9,12,Will Power,Verizon   (Roger Penske),D/C/F,250,65000,running,0,35,0,,,,,,,,,,,,,4/2/2016
@@ -1142,54 +1142,54 @@ Sonoma,16,2016,road,19,22,19,R.C. Enerson,Boy Scouts of America   (Dale Coyne),D
 Sonoma,16,2016,road,20,4,12,Will Power,Verizon   (Roger Penske),D/C/F,77,44667,running,0,20,0,,,,,,,,,,,,,9/18/2016
 Sonoma,16,2016,road,21,21,18,Conor Daly,Jonathan Byrd's Hospitality   (Dale Coyne),D/H/F,36,44667,exhaust,0,18,0,,,,,,,,,,,,,9/18/2016
 Sonoma,16,2016,road,22,19,20,Spencer Pigot,Samsung / Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,35,20000,gearbox,0,16,0,,,,,,,,,,,,,9/18/2016
-St. Pete,1,2015,street,1,4,2,Juan Pablo Montoya,Verizon   (Roger Penske),D/C/F,110,89375,running,27,51,1,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,2,1,1,Will Power,Verizon   (Roger Penske),D/C/F,110,89375,running,75,44,1,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,3,7,10,Tony Kanaan,NTT Data   (Chip Ganassi),D/C/F,110,74375,running,0,35,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,4,3,3,Helio Castroneves,Hitachi   (Roger Penske),D/C/F,110,70375,running,1,33,1,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,5,2,22,Simon Pagenaud,Penske Truck Rental   (Roger Penske),D/C/F,110,30000,running,2,31,1,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,6,6,11,Sebastien Bourdais,Hydroxycut   (KVSH Racing),D/C/F,110,68375,running,0,28,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,7,8,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,67375,running,0,26,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,8,21,41,Jack Hawksworth,ABC Supply Co.   (A.J. Foyt),D/H/F,110,21000,running,5,25,1,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,9,19,20,Luca Filippi,Fuzzy's Vodka   (CFH Racing),D/C/F,110,64375,running,0,22,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,10,12,27,Marco Andretti,Snapple   (Andretti Autosport),D/H/F,110,63375,running,0,20,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,11,15,15,Graham Rahal,Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,110,62375,running,0,19,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,12,10,67,Josef Newgarden,Hartman Oil   (CFH Racing),D/C/F,110,61375,running,0,18,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,13,5,14,Takuma Sato,ABC Supply Co.   (A.J. Foyt),D/H/F,110,59375,running,0,17,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,14,14,26,Carlos Munoz,AndrettiTV.com   (Andretti Autosport),D/H/F,110,59375,running,0,16,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,15,9,9,Scott Dixon,Target   (Chip Ganassi),D/C/F,110,59375,running,0,15,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,16,16,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,110,59375,running,0,14,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,17,22,98,Gabby Chaves,Bowers & Wilkins / Curb   (BHA with Curb-Agajanian),D/H/F,110,59375,running,0,13,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,18,11,25,Simona de Silvestro,Duke Energy   (Andretti Autosport),D/H/F,110,10000,running,0,12,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,19,18,8,Sage Karam,GE LED   (Chip Ganassi),D/C/F,109,59375,running,0,11,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,20,17,4,Stefano Coletti,knm   (KV Racing Technology),D/C/F,109,59375,running,0,10,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,21,13,83,Charlie Kimball,NovoLog FlexPen   (Chip Ganassi),D/C/F,109,59375,running,0,9,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,22,20,7,James Jakes,MediaTech   (Schmidt Peterson Motorsports),D/H/F,100,59375,running,0,8,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,23,23,19,Francesco Dracone,Lapasta   (Dale Coyne),D/H/F,70,59375,engine,0,7,0,,,,,,,,,,,,,3/29/2015
-St. Pete,1,2015,street,24,24,18,Carlos Huertas,Sonny's Real Pit BBQ   (Dale Coyne),D/H/F,19,59375,steering,0,6,0,,,,,,,,,,,,,3/29/2015
-NOLA,2,2015,road,1,16,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,47,99375,running,15,51,1,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,2,4,3,Helio Castroneves,Hitachi   (Roger Penske),D/C/F,47,79375,running,1,41,1,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,3,22,7,James Jakes,MediaTech / Florida Hospital Carrollwood   (Schmidt Peterson Motorsports),D/H/F,47,74375,running,0,35,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,4,18,25,Simona de Silvestro,Ochsner Health System   (Andretti Autosport),D/H/F,47,31000,running,0,32,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,5,1,2,Juan Pablo Montoya,Verizon   (Roger Penske),D/C/F,47,79375,running,31,33,1,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,6,3,10,Tony Kanaan,NTT Data   (Chip Ganassi),D/C/F,47,68375,running,0,28,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,7,2,1,Will Power,Verizon   (Roger Penske),D/C/F,47,67375,running,0,26,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,8,11,15,Graham Rahal,D-A Lubricant Company   (Rahal Letterman Lanigan Racing),D/H/F,47,65375,running,0,24,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,9,12,67,Josef Newgarden,Hartman Oil   (CFH Racing),D/C/F,47,64375,running,0,22,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,10,9,20,Luca Filippi,Fuzzy's Vodka   (CFH Racing),D/C/F,47,63375,running,0,20,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,11,15,9,Scott Dixon,Brita   (Chip Ganassi),D/C/F,47,62375,running,0,19,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,12,14,26,Carlos Munoz,AndrettiTV.com   (Andretti Autosport),D/H/F,47,61375,running,0,18,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,13,10,27,Marco Andretti,Merchant First / Snapple   (Andretti Autosport),D/H/F,47,59375,running,0,17,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,14,21,83,Charlie Kimball,NovoLog FlexPen   (Chip Ganassi),D/C/F,47,59375,running,0,16,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,15,17,98,Gabby Chaves,Bowers & Wilkins / Curb   (BHA with Curb-Agajanian),D/H/F,46,59375,running,0,15,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,16,24,18,Carlos Huertas,Dale Coyne,D/H/F,46,59375,running,0,14,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,17,20,4,Stefano Coletti,Variable Bore Rams   (KV Racing Technology),D/C/F,44,59375,running,0,13,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,18,19,8,Sage Karam,Comfort Revolution / Big Machine Records   (Chip Ganassi),D/C/F,44,59375,running,0,12,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,19,7,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,43,59375,crash,0,8,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,20,5,22,Simon Pagenaud,Penske Truck Rental   (Roger Penske),D/C/F,43,15000,crash,0,10,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,21,6,11,Sebastien Bourdais,Mistic E-Cigs   (KVSH Racing),D/C/F,43,59375,crash,0,9,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,22,13,14,Takuma Sato,ABC Supply Co.   (A.J. Foyt),D/H/F,39,59375,crash,0,8,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,23,23,19,Francesco Dracone,Dale Coyne,D/H/F,23,59375,crash,0,7,0,,,,,,,,,,,,,4/12/2015
-NOLA,2,2015,road,24,8,41,Jack Hawksworth,ABC Supply Co.   (A.J. Foyt),D/H/F,19,10000,crash,0,6,0,,,,,,,,,,,,,4/12/2015
+St. Petersburg,1,2015,street,1,4,2,Juan Pablo Montoya,Verizon   (Roger Penske),D/C/F,110,89375,running,27,51,1,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,2,1,1,Will Power,Verizon   (Roger Penske),D/C/F,110,89375,running,75,44,1,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,3,7,10,Tony Kanaan,NTT Data   (Chip Ganassi),D/C/F,110,74375,running,0,35,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,4,3,3,Helio Castroneves,Hitachi   (Roger Penske),D/C/F,110,70375,running,1,33,1,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,5,2,22,Simon Pagenaud,Penske Truck Rental   (Roger Penske),D/C/F,110,30000,running,2,31,1,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,6,6,11,Sebastien Bourdais,Hydroxycut   (KVSH Racing),D/C/F,110,68375,running,0,28,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,7,8,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,67375,running,0,26,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,8,21,41,Jack Hawksworth,ABC Supply Co.   (A.J. Foyt),D/H/F,110,21000,running,5,25,1,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,9,19,20,Luca Filippi,Fuzzy's Vodka   (CFH Racing),D/C/F,110,64375,running,0,22,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,10,12,27,Marco Andretti,Snapple   (Andretti Autosport),D/H/F,110,63375,running,0,20,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,11,15,15,Graham Rahal,Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,110,62375,running,0,19,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,12,10,67,Josef Newgarden,Hartman Oil   (CFH Racing),D/C/F,110,61375,running,0,18,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,13,5,14,Takuma Sato,ABC Supply Co.   (A.J. Foyt),D/H/F,110,59375,running,0,17,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,14,14,26,Carlos Munoz,AndrettiTV.com   (Andretti Autosport),D/H/F,110,59375,running,0,16,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,15,9,9,Scott Dixon,Target   (Chip Ganassi),D/C/F,110,59375,running,0,15,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,16,16,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,110,59375,running,0,14,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,17,22,98,Gabby Chaves,Bowers & Wilkins / Curb   (BHA with Curb-Agajanian),D/H/F,110,59375,running,0,13,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,18,11,25,Simona de Silvestro,Duke Energy   (Andretti Autosport),D/H/F,110,10000,running,0,12,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,19,18,8,Sage Karam,GE LED   (Chip Ganassi),D/C/F,109,59375,running,0,11,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,20,17,4,Stefano Coletti,knm   (KV Racing Technology),D/C/F,109,59375,running,0,10,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,21,13,83,Charlie Kimball,NovoLog FlexPen   (Chip Ganassi),D/C/F,109,59375,running,0,9,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,22,20,7,James Jakes,MediaTech   (Schmidt Peterson Motorsports),D/H/F,100,59375,running,0,8,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,23,23,19,Francesco Dracone,Lapasta   (Dale Coyne),D/H/F,70,59375,engine,0,7,0,,,,,,,,,,,,,3/29/2015
+St. Petersburg,1,2015,street,24,24,18,Carlos Huertas,Sonny's Real Pit BBQ   (Dale Coyne),D/H/F,19,59375,steering,0,6,0,,,,,,,,,,,,,3/29/2015
+NOLA Motorsports Park,2,2015,road,1,16,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,47,99375,running,15,51,1,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,2,4,3,Helio Castroneves,Hitachi   (Roger Penske),D/C/F,47,79375,running,1,41,1,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,3,22,7,James Jakes,MediaTech / Florida Hospital Carrollwood   (Schmidt Peterson Motorsports),D/H/F,47,74375,running,0,35,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,4,18,25,Simona de Silvestro,Ochsner Health System   (Andretti Autosport),D/H/F,47,31000,running,0,32,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,5,1,2,Juan Pablo Montoya,Verizon   (Roger Penske),D/C/F,47,79375,running,31,33,1,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,6,3,10,Tony Kanaan,NTT Data   (Chip Ganassi),D/C/F,47,68375,running,0,28,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,7,2,1,Will Power,Verizon   (Roger Penske),D/C/F,47,67375,running,0,26,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,8,11,15,Graham Rahal,D-A Lubricant Company   (Rahal Letterman Lanigan Racing),D/H/F,47,65375,running,0,24,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,9,12,67,Josef Newgarden,Hartman Oil   (CFH Racing),D/C/F,47,64375,running,0,22,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,10,9,20,Luca Filippi,Fuzzy's Vodka   (CFH Racing),D/C/F,47,63375,running,0,20,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,11,15,9,Scott Dixon,Brita   (Chip Ganassi),D/C/F,47,62375,running,0,19,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,12,14,26,Carlos Munoz,AndrettiTV.com   (Andretti Autosport),D/H/F,47,61375,running,0,18,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,13,10,27,Marco Andretti,Merchant First / Snapple   (Andretti Autosport),D/H/F,47,59375,running,0,17,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,14,21,83,Charlie Kimball,NovoLog FlexPen   (Chip Ganassi),D/C/F,47,59375,running,0,16,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,15,17,98,Gabby Chaves,Bowers & Wilkins / Curb   (BHA with Curb-Agajanian),D/H/F,46,59375,running,0,15,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,16,24,18,Carlos Huertas,Dale Coyne,D/H/F,46,59375,running,0,14,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,17,20,4,Stefano Coletti,Variable Bore Rams   (KV Racing Technology),D/C/F,44,59375,running,0,13,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,18,19,8,Sage Karam,Comfort Revolution / Big Machine Records   (Chip Ganassi),D/C/F,44,59375,running,0,12,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,19,7,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,43,59375,crash,0,8,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,20,5,22,Simon Pagenaud,Penske Truck Rental   (Roger Penske),D/C/F,43,15000,crash,0,10,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,21,6,11,Sebastien Bourdais,Mistic E-Cigs   (KVSH Racing),D/C/F,43,59375,crash,0,9,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,22,13,14,Takuma Sato,ABC Supply Co.   (A.J. Foyt),D/H/F,39,59375,crash,0,8,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,23,23,19,Francesco Dracone,Dale Coyne,D/H/F,23,59375,crash,0,7,0,,,,,,,,,,,,,4/12/2015
+NOLA Motorsports Park,2,2015,road,24,8,41,Jack Hawksworth,ABC Supply Co.   (A.J. Foyt),D/H/F,19,10000,crash,0,6,0,,,,,,,,,,,,,4/12/2015
 Long Beach,3,2015,street,1,3,9,Scott Dixon,Target   (Chip Ganassi),D/C/F,80,89375,running,44,53,1,,,,,,,,,,,,,4/19/2015
 Long Beach,3,2015,street,2,1,3,Helio Castroneves,Auto Club of Southern California   (Roger Penske),D/C/F,80,89375,running,31,42,1,,,,,,,,,,,,,4/19/2015
 Long Beach,3,2015,street,3,2,2,Juan Pablo Montoya,Verizon   (Roger Penske),D/C/F,80,74375,running,0,35,0,,,,,,,,,,,,,4/19/2015
@@ -1530,28 +1530,28 @@ Sonoma,16,2015,road,22,12,26,Carlos Munoz,AndrettiTV.com   (Andretti Autosport),
 Sonoma,16,2015,road,23,23,19,Tristan Vautier,"Justin Wilson """"Godspeed Dear Friend""""   (Dale Coyne)",D/H/F,82,60417,running,0,14,0,,,,,,,,,,,,,8/30/2015
 Sonoma,16,2015,road,24,13,20,Luca Filippi,Fuzzy's Vodka   (CFH Racing),D/C/F,80,60417,running,0,12,0,,,,,,,,,,,,,8/30/2015
 Sonoma,16,2015,road,25,22,7,James Jakes,Oculus Transportation / MediaTech   (Schmidt Peterson Motorsports),D/H/F,63,60417,crash,0,10,0,,,,,,,,,,,,,8/30/2015
-St. Pete,1,2014,street,1,4,12,Will Power,Verizon   (Roger Penske),D/C/F,110,74118,running,74,53,1,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,2,3,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,64118,running,0,40,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,3,10,3,Helio Castroneves,Hitachi   (Roger Penske),D/C/F,110,59118,running,2,36,1,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,4,5,9,Scott Dixon,Target   (Chip Ganassi),D/C/F,110,64118,running,0,32,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,5,14,77,Simon Pagenaud,Environmental Rail Solutions   (Schmidt Peterson Hamilton),D/H/F,110,53118,running,0,30,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,6,2,10,Tony Kanaan,Target   (Chip Ganassi),D/C/F,110,52118,running,0,28,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,7,1,14,Takuma Sato,ABC Supply Co.   (A.J. Foyt),D/H/F,110,61118,running,33,28,1,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,8,16,19,Justin Wilson,Boy Scouts of America   (Dale Coyne),D/H/F,110,49118,running,0,24,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,9,22,67,Josef Newgarden,Florida Lottery   (Sarah Fisher Hartman Racing),D/H/F,110,48118,running,0,22,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,10,9,8,Ryan Briscoe,NTT Data   (Chip Ganassi),D/C/F,110,32000,running,0,20,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,11,11,17,Sebastian Saavedra,Automatic Fire Sprinklers   (KVAFS Racing),D/C/F,110,44118,running,0,19,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,12,15,7,Mikhail Aleshin,SMP Bank   (Schmidt Peterson Motorsports),D/H/F,110,44118,running,0,18,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,13,13,11,Sebastien Bourdais,Hydroxycut   (KVSH Racing),D/C/F,110,44118,running,0,17,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,14,21,15,Graham Rahal,National Guard   (Rahal Letterman Lanigan Racing),D/H/F,110,44118,running,0,16,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,15,18,2,Juan Pablo Montoya,Verizon   (Roger Penske),D/C/F,110,44118,running,0,15,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,16,12,20,Mike Conway,Fuzzy's Vodka   (Ed Carpenter),D/C/F,110,44118,running,1,15,1,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,17,7,34,Carlos Munoz,Cinsay / AndrettiTV.com   (Andretti-HVM),D/H/F,110,44118,running,0,13,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,18,17,18,Carlos Huertas,Cafe de Colombia   (Dale Coyne),D/H/F,110,44118,running,0,12,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,19,19,27,James Hinchcliffe,United Fiber & Data   (Andretti Autosport),D/H/F,109,44118,running,0,11,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,20,20,83,Charlie Kimball,Novo Nordisk   (Chip Ganassi),D/C/F,108,44118,running,0,10,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,21,8,98,Jack Hawksworth,Charter Communications / Castrol Edge   (BHA/BBM with Curb-Agajanian),D/H/F,83,44118,crash,0,9,0,,,,,,,,,,,,,3/30/2014
-St. Pete,1,2014,street,22,6,25,Marco Andretti,Snapple   (Andretti Autosport),D/H/F,82,44118,crash,0,8,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,1,4,12,Will Power,Verizon   (Roger Penske),D/C/F,110,74118,running,74,53,1,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,2,3,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,64118,running,0,40,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,3,10,3,Helio Castroneves,Hitachi   (Roger Penske),D/C/F,110,59118,running,2,36,1,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,4,5,9,Scott Dixon,Target   (Chip Ganassi),D/C/F,110,64118,running,0,32,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,5,14,77,Simon Pagenaud,Environmental Rail Solutions   (Schmidt Peterson Hamilton),D/H/F,110,53118,running,0,30,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,6,2,10,Tony Kanaan,Target   (Chip Ganassi),D/C/F,110,52118,running,0,28,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,7,1,14,Takuma Sato,ABC Supply Co.   (A.J. Foyt),D/H/F,110,61118,running,33,28,1,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,8,16,19,Justin Wilson,Boy Scouts of America   (Dale Coyne),D/H/F,110,49118,running,0,24,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,9,22,67,Josef Newgarden,Florida Lottery   (Sarah Fisher Hartman Racing),D/H/F,110,48118,running,0,22,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,10,9,8,Ryan Briscoe,NTT Data   (Chip Ganassi),D/C/F,110,32000,running,0,20,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,11,11,17,Sebastian Saavedra,Automatic Fire Sprinklers   (KVAFS Racing),D/C/F,110,44118,running,0,19,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,12,15,7,Mikhail Aleshin,SMP Bank   (Schmidt Peterson Motorsports),D/H/F,110,44118,running,0,18,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,13,13,11,Sebastien Bourdais,Hydroxycut   (KVSH Racing),D/C/F,110,44118,running,0,17,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,14,21,15,Graham Rahal,National Guard   (Rahal Letterman Lanigan Racing),D/H/F,110,44118,running,0,16,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,15,18,2,Juan Pablo Montoya,Verizon   (Roger Penske),D/C/F,110,44118,running,0,15,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,16,12,20,Mike Conway,Fuzzy's Vodka   (Ed Carpenter),D/C/F,110,44118,running,1,15,1,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,17,7,34,Carlos Munoz,Cinsay / AndrettiTV.com   (Andretti-HVM),D/H/F,110,44118,running,0,13,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,18,17,18,Carlos Huertas,Cafe de Colombia   (Dale Coyne),D/H/F,110,44118,running,0,12,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,19,19,27,James Hinchcliffe,United Fiber & Data   (Andretti Autosport),D/H/F,109,44118,running,0,11,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,20,20,83,Charlie Kimball,Novo Nordisk   (Chip Ganassi),D/C/F,108,44118,running,0,10,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,21,8,98,Jack Hawksworth,Charter Communications / Castrol Edge   (BHA/BBM with Curb-Agajanian),D/H/F,83,44118,crash,0,9,0,,,,,,,,,,,,,3/30/2014
+St. Petersburg,1,2014,street,22,6,25,Marco Andretti,Snapple   (Andretti Autosport),D/H/F,82,44118,crash,0,8,0,,,,,,,,,,,,,3/30/2014
 Long Beach,2,2014,street,1,17,20,Mike Conway,Fuzzy's Vodka   (Ed Carpenter),D/C/F,80,74118,running,3,51,1,,,,,,,,,,,,,4/13/2014
 Long Beach,2,2014,street,2,14,12,Will Power,Verizon   (Roger Penske),D/C/F,80,64118,running,0,40,0,,,,,,,,,,,,,4/13/2014
 Long Beach,2,2014,street,3,11,34,Carlos Munoz,Cinsay / AndrettiTV.com   (Andretti-HVM),D/H/F,80,59118,running,0,35,0,,,,,,,,,,,,,4/13/2014
@@ -1946,31 +1946,31 @@ Fontana,18,2014,oval,19,10,15,Graham Rahal,National Guard   (Rahal Letterman Lan
 Fontana,18,2014,oval,20,13,77,Simon Pagenaud,MAV TV   (Schmidt Peterson Hamilton),D/H/F,243,113889,running,0,20,0,,,,,,,,,,,,,8/30/2014
 Fontana,18,2014,oval,21,22,18,Carlos Huertas,Cafe de Colombia   (Dale Coyne),D/H/F,21,38889,driver illness,0,18,0,,,,,,,,,,,,,8/30/2014
 Fontana,18,2014,oval,22,8,7,Mikhail Aleshin,SMP Bank   (Schmidt Peterson Motorsports),D/H/F,0,38889,did not start,0,8,0,,,,,,,,,,,,,8/30/2014
-St. Pete,1,2013,street,1,4,27,James Hinchcliffe,GoDaddy   (Andretti Autosport),D/C/F,110,78194,running,26,51,1,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,2,5,3,Helio Castroneves,Hitachi   (Roger Penske),D/C/F,110,68194,running,42,43,1,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,3,7,25,Marco Andretti,RC Cola   (Andretti Autosport),D/C/F,110,63194,running,0,35,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,4,11,11,Tony Kanaan,Hydroxycut   (KV Racing Technology),D/C/F,110,58194,running,0,32,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,5,20,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,110,53194,running,0,30,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,6,3,78,Simona de Silvestro,Nuclear Clean Air Energy   (KV Racing Technology),D/C/F,110,43194,running,0,28,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,7,22,5,E.J. Viso,PDVSA / CITGO   (Andretti Autosport),D/C/F,110,43194,running,0,26,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,8,2,14,Takuma Sato,ABC Supply Co.   (A.J. Foyt),D/H/F,110,43194,running,0,24,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,9,13,19,Justin Wilson,Sonny's Real Pit BBQ   (Dale Coyne),D/H/F,110,43194,running,0,22,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,10,17,98,Alex Tagliani,Barracuda Networks   (BHA/Curb-Agajanian),D/H/F,110,43194,running,0,20,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,11,21,7,Sebastien Bourdais,McAfee / Variety   (Dragon Racing),D/C/F,110,43194,running,0,19,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,12,14,83,Charlie Kimball,NovoLog FlexPen   (Chip Ganassi),D/H/F,110,43194,running,0,18,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,13,15,15,Graham Rahal,Midas / Big O Tires   (Rahal Letterman Lanigan Racing),D/H/F,110,43194,running,0,17,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,14,23,20,Ed Carpenter,Fuzzy's Vodka   (Ed Carpenter),D/C/F,110,43194,running,0,16,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,15,18,16,James Jakes,Acorn Stairlifts   (Rahal Letterman Lanigan Racing),D/H/F,110,40000,running,0,15,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,16,1,12,Will Power,Verizon   (Roger Penske),D/C/F,107,53194,running,26,16,1,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,17,12,22,Oriol Servia,Mecum Auctions   (Panther DRR),D/C/F,104,43194,running,16,14,1,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,18,8,1,Ryan Hunter-Reay,DHL / Sun Drop Citrus Soda   (Andretti Autosport),D/C/F,79,43194,throttle,0,12,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,19,24,4,J.R. Hildebrand,National Guard   (Panther Racing),D/C/F,78,43194,crash,0,11,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,20,9,6,Sebastian Saavedra,TrueCar   (Dragon Racing),D/C/F,72,35000,crash,0,10,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,21,6,55,Tristan Vautier,Florida Lottery   (Schmidt Peterson Motorsports),D/H/F,69,30000,exhaust,0,9,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,22,25,18,Ana Beatriz,Ipiranga   (Dale Coyne),D/H/F,55,43194,exhaust,0,8,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,23,16,67,Josef Newgarden,Hartmoor Polo Water   (Sarah Fisher Hartman Racing),D/H/F,50,43194,gearbox,0,7,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,24,19,77,Simon Pagenaud,HP   (Schmidt Hamilton Motorsports),D/H/F,26,43194,exhaust,0,6,0,,,,,,,,,,,,,3/24/2013
-St. Pete,1,2013,street,25,10,10,Dario Franchitti,Target   (Chip Ganassi),D/H/F,18,43194,crash,0,5,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,1,4,27,James Hinchcliffe,GoDaddy   (Andretti Autosport),D/C/F,110,78194,running,26,51,1,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,2,5,3,Helio Castroneves,Hitachi   (Roger Penske),D/C/F,110,68194,running,42,43,1,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,3,7,25,Marco Andretti,RC Cola   (Andretti Autosport),D/C/F,110,63194,running,0,35,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,4,11,11,Tony Kanaan,Hydroxycut   (KV Racing Technology),D/C/F,110,58194,running,0,32,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,5,20,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,110,53194,running,0,30,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,6,3,78,Simona de Silvestro,Nuclear Clean Air Energy   (KV Racing Technology),D/C/F,110,43194,running,0,28,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,7,22,5,E.J. Viso,PDVSA / CITGO   (Andretti Autosport),D/C/F,110,43194,running,0,26,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,8,2,14,Takuma Sato,ABC Supply Co.   (A.J. Foyt),D/H/F,110,43194,running,0,24,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,9,13,19,Justin Wilson,Sonny's Real Pit BBQ   (Dale Coyne),D/H/F,110,43194,running,0,22,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,10,17,98,Alex Tagliani,Barracuda Networks   (BHA/Curb-Agajanian),D/H/F,110,43194,running,0,20,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,11,21,7,Sebastien Bourdais,McAfee / Variety   (Dragon Racing),D/C/F,110,43194,running,0,19,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,12,14,83,Charlie Kimball,NovoLog FlexPen   (Chip Ganassi),D/H/F,110,43194,running,0,18,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,13,15,15,Graham Rahal,Midas / Big O Tires   (Rahal Letterman Lanigan Racing),D/H/F,110,43194,running,0,17,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,14,23,20,Ed Carpenter,Fuzzy's Vodka   (Ed Carpenter),D/C/F,110,43194,running,0,16,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,15,18,16,James Jakes,Acorn Stairlifts   (Rahal Letterman Lanigan Racing),D/H/F,110,40000,running,0,15,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,16,1,12,Will Power,Verizon   (Roger Penske),D/C/F,107,53194,running,26,16,1,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,17,12,22,Oriol Servia,Mecum Auctions   (Panther DRR),D/C/F,104,43194,running,16,14,1,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,18,8,1,Ryan Hunter-Reay,DHL / Sun Drop Citrus Soda   (Andretti Autosport),D/C/F,79,43194,throttle,0,12,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,19,24,4,J.R. Hildebrand,National Guard   (Panther Racing),D/C/F,78,43194,crash,0,11,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,20,9,6,Sebastian Saavedra,TrueCar   (Dragon Racing),D/C/F,72,35000,crash,0,10,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,21,6,55,Tristan Vautier,Florida Lottery   (Schmidt Peterson Motorsports),D/H/F,69,30000,exhaust,0,9,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,22,25,18,Ana Beatriz,Ipiranga   (Dale Coyne),D/H/F,55,43194,exhaust,0,8,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,23,16,67,Josef Newgarden,Hartmoor Polo Water   (Sarah Fisher Hartman Racing),D/H/F,50,43194,gearbox,0,7,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,24,19,77,Simon Pagenaud,HP   (Schmidt Hamilton Motorsports),D/H/F,26,43194,exhaust,0,6,0,,,,,,,,,,,,,3/24/2013
+St. Petersburg,1,2013,street,25,10,10,Dario Franchitti,Target   (Chip Ganassi),D/H/F,18,43194,crash,0,5,0,,,,,,,,,,,,,3/24/2013
 Barber,2,2013,road,1,1,1,Ryan Hunter-Reay,DHL / Sun Drop Citrus Soda   (Andretti Autosport),D/C/F,90,88194,running,53,54,1,,,,,,,,,,,,,4/7/2013
 Barber,2,2013,road,2,4,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,90,68194,running,0,40,0,,,,,,,,,,,,,4/7/2013
 Barber,2,2013,road,3,6,3,Helio Castroneves,AAA Insurance   (Roger Penske),D/C/F,90,63194,running,25,36,1,,,,,,,,,,,,,4/7/2013
@@ -2422,32 +2422,32 @@ Fontana,19,2013,oval,22,5,16,James Jakes,Acorn Stairlifts   (Rahal Letterman Lan
 Fontana,19,2013,oval,23,10,5,Carlos Munoz,PDVSA / CITGO   (Andretti Autosport),D/C/F,100,43194,crash,0,7,0,,,,,,,,,,,,,10/19/2013
 Fontana,19,2013,oval,24,24,6,Sebastian Saavedra,TrueCar / ClearBook   (Dragon Racing),D/C/F,69,,crash,0,6,0,,,,,,,,,,,,,10/19/2013
 Fontana,19,2013,oval,25,19,18,Pippa Mann,CyclopsGear.com   (Dale Coyne),D/H/F,68,43194,crash,0,5,0,,,,,,,,,,,,,10/19/2013
-St. Pete,1,2012,street,1,5,3,Helio Castroneves,Shell V-Power / Pennzoil Ultra   (Roger Penske),D/C/F,100,35000,running,28,50,1,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,2,6,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,100,25000,running,37,42,1,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,3,3,28,Ryan Hunter-Reay,DHL / Sun Drop Citrus Soda   (Andretti Autosport),D/C/F,100,20000,running,0,35,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,4,4,27,James Hinchcliffe,GoDaddy.com   (Andretti Autosport),D/C/F,100,15000,running,0,32,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,5,2,2,Ryan Briscoe,IZOD   (Roger Penske),D/C/F,100,10000,running,9,30,1,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,6,16,77,Simon Pagenaud,HP   (Schmidt-Hamilton Motorsports),D/H/F,100,,running,0,28,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,7,1,12,Will Power,Verizon   (Roger Penske),D/C/F,100,,running,11,27,1,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,8,12,5,E.J. Viso,PDVSA / CITGO   (KV Racing Technology),D/C/F,100,,running,0,24,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,9,22,83,Charlie Kimball,NovoLog FlexPen   (Chip Ganassi),D/H/F,100,,running,0,22,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,10,15,18,Justin Wilson,Sonny's Real Pit BBQ   (Dale Coyne),D/H/F,100,,running,0,20,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,11,19,67,Josef Newgarden,Direct Supply   (Sarah Fisher Hartman Racing),D/H/F,100,,running,0,19,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,12,10,38,Graham Rahal,NTB / Service Central / Tire Kingdom   (Chip Ganassi),D/H/F,100,,running,0,18,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,13,9,10,Dario Franchitti,Target   (Chip Ganassi),D/H/F,100,,running,1,17,1,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,14,7,26,Marco Andretti,RC Cola   (Andretti Autosport),D/C/F,99,,running,0,16,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,15,17,98,Alex Tagliani,Barracuda Networks   (BHA / Curb-Agajanian),D/L/F,99,,running,0,15,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,16,23,22,Oriol Servia,TranSystems   (Dreyer & Reinbold Racing),D/L/F,99,,running,0,14,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,17,13,8,Rubens Barrichello,BMC / Embrase / Hyundai Brazil   (KV Racing Technology),D/C/F,98,,running,0,13,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,18,24,20,Ed Carpenter,Fuzzy's Vodka   (Ed Carpenter),D/C/F,98,,running,0,12,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,19,18,4,J.R. Hildebrand,National Guard   (Panther Racing),D/C/F,96,,fuel pressure,3,12,1,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,20,11,14,Mike Conway,ABC Supply Co.   (A.J. Foyt),D/H/F,75,,gearbox,0,12,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,21,26,7,Sebastien Bourdais,Bing / McAfee   (Lotus Dragon Racing),D/L/F,73,,engine,0,12,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,22,14,15,Takuma Sato,Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,73,,gearbox,11,12,1,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,23,25,6,Katherine Legge,TrueCar   (Lotus Dragon Racing),D/L/F,59,,overheating,0,12,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,24,21,78,Simona de Silvestro,Nuclear Clean Air Energy   (Keith Wiggins),D/L/F,22,,fuel pressure,0,12,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,25,8,11,Tony Kanaan,GEICO / Mouser Electronics   (KV Racing Technology),D/C/F,21,,battery voltage,0,10,0,,,,,,,,,,,,,3/25/2012
-St. Pete,1,2012,street,26,20,19,James Jakes,Boy Scouts of America   (Dale Coyne),D/H/F,19,,crash,0,10,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,1,5,3,Helio Castroneves,Shell V-Power / Pennzoil Ultra   (Roger Penske),D/C/F,100,35000,running,28,50,1,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,2,6,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,100,25000,running,37,42,1,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,3,3,28,Ryan Hunter-Reay,DHL / Sun Drop Citrus Soda   (Andretti Autosport),D/C/F,100,20000,running,0,35,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,4,4,27,James Hinchcliffe,GoDaddy.com   (Andretti Autosport),D/C/F,100,15000,running,0,32,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,5,2,2,Ryan Briscoe,IZOD   (Roger Penske),D/C/F,100,10000,running,9,30,1,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,6,16,77,Simon Pagenaud,HP   (Schmidt-Hamilton Motorsports),D/H/F,100,,running,0,28,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,7,1,12,Will Power,Verizon   (Roger Penske),D/C/F,100,,running,11,27,1,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,8,12,5,E.J. Viso,PDVSA / CITGO   (KV Racing Technology),D/C/F,100,,running,0,24,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,9,22,83,Charlie Kimball,NovoLog FlexPen   (Chip Ganassi),D/H/F,100,,running,0,22,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,10,15,18,Justin Wilson,Sonny's Real Pit BBQ   (Dale Coyne),D/H/F,100,,running,0,20,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,11,19,67,Josef Newgarden,Direct Supply   (Sarah Fisher Hartman Racing),D/H/F,100,,running,0,19,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,12,10,38,Graham Rahal,NTB / Service Central / Tire Kingdom   (Chip Ganassi),D/H/F,100,,running,0,18,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,13,9,10,Dario Franchitti,Target   (Chip Ganassi),D/H/F,100,,running,1,17,1,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,14,7,26,Marco Andretti,RC Cola   (Andretti Autosport),D/C/F,99,,running,0,16,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,15,17,98,Alex Tagliani,Barracuda Networks   (BHA / Curb-Agajanian),D/L/F,99,,running,0,15,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,16,23,22,Oriol Servia,TranSystems   (Dreyer & Reinbold Racing),D/L/F,99,,running,0,14,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,17,13,8,Rubens Barrichello,BMC / Embrase / Hyundai Brazil   (KV Racing Technology),D/C/F,98,,running,0,13,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,18,24,20,Ed Carpenter,Fuzzy's Vodka   (Ed Carpenter),D/C/F,98,,running,0,12,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,19,18,4,J.R. Hildebrand,National Guard   (Panther Racing),D/C/F,96,,fuel pressure,3,12,1,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,20,11,14,Mike Conway,ABC Supply Co.   (A.J. Foyt),D/H/F,75,,gearbox,0,12,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,21,26,7,Sebastien Bourdais,Bing / McAfee   (Lotus Dragon Racing),D/L/F,73,,engine,0,12,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,22,14,15,Takuma Sato,Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,73,,gearbox,11,12,1,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,23,25,6,Katherine Legge,TrueCar   (Lotus Dragon Racing),D/L/F,59,,overheating,0,12,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,24,21,78,Simona de Silvestro,Nuclear Clean Air Energy   (Keith Wiggins),D/L/F,22,,fuel pressure,0,12,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,25,8,11,Tony Kanaan,GEICO / Mouser Electronics   (KV Racing Technology),D/C/F,21,,battery voltage,0,10,0,,,,,,,,,,,,,3/25/2012
+St. Petersburg,1,2012,street,26,20,19,James Jakes,Boy Scouts of America   (Dale Coyne),D/H/F,19,,crash,0,10,0,,,,,,,,,,,,,3/25/2012
 Barber,2,2012,road,1,9,12,Will Power,Verizon   (Roger Penske),D/C/F,90,35000,running,22,50,1,,,,,,,,,,,,,4/1/2012
 Barber,2,2012,road,2,3,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,90,25000,running,38,42,1,,,,,,,,,,,,,4/1/2012
 Barber,2,2012,road,3,1,3,Helio Castroneves,AAA / Verizon   (Roger Penske),D/C/F,90,20000,running,28,36,1,,,,,,,,,,,,,4/1/2012
@@ -2812,31 +2812,31 @@ Fontana,15,2012,oval,23,25,18,Justin Wilson,Sonny's Real Pit BBQ   (Dale Coyne),
 Fontana,15,2012,oval,24,13,12,Will Power,Verizon   (Roger Penske),D/C/F,66,,crash,0,12,0,,,,,,,,,,,,,9/15/2012
 Fontana,15,2012,oval,25,11,5,E.J. Viso,PDVSA / CITGO   (KV Racing Technology),D/C/F,65,,handling,0,10,0,,,,,,,,,,,,,9/15/2012
 Fontana,15,2012,oval,26,26,78,Simona de Silvestro,Nuclear Clean Air Energy   (Keith Wiggins),D/L/F,16,,handling,0,10,0,,,,,,,,,,,,,9/15/2012
-St. Pete,1,2011,street,1,2,10,Dario Franchitti,Target   (Chip Ganassi),D/H/F,100,35000,running,94,52,1,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,2,1,12,Will Power,Verizon   (Roger Penske),D/H/F,100,25000,running,6,41,1,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,3,8,82,Tony Kanaan,GEICO / Lotus   (KV Racing Technology),D/H/F,100,20000,running,0,35,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,4,17,78,Simona de Silvestro,Nuclear Clean Air Energy   (Keith Wiggins),D/H/F,100,15000,running,0,32,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,5,11,5,Takuma Sato,With You Japan / Lotus / Panasonic   (KV Racing Technology),D/H/F,100,10000,running,0,30,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,6,10,77,Alex Tagliani,Bowers & Wilkins at Magnolia   (Sam Schmidt),D/H/F,100,,running,0,28,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,7,16,17,Raphael Matos,Automatic Fire Sprinklers   (AFS Racing),D/H/F,100,,running,0,26,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,8,13,14,Vitor Meira,ABC Supply Co.   (A.J. Foyt),D/H/F,100,,running,0,24,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,9,15,2,Oriol Servia,Telemundo   (Newman-Haas Racing),D/H/F,100,,running,0,22,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,10,6,22,Justin Wilson,TranSystems   (Dreyer & Reinbold Racing),D/H/F,100,,running,0,20,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,11,24,4,J.R. Hildebrand,National Guard   (Panther Racing),D/H/F,100,,running,0,19,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,12,19,7,Danica Patrick,GoDaddy.com   (Andretti Autosport),D/H/F,100,,running,0,18,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,13,25,34,Sebastian Saavedra,Bogota Es Mundial   (Eric Bachelart),D/H/F,98,,running,0,17,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,14,20,24,Ana Beatriz,Ipiranga   (Dreyer & Reinbold Racing),D/H/F,98,,running,0,16,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,15,22,18,James Jakes,Acorn Stairlifts   (Dale Coyne),D/H/F,97,,running,0,15,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,16,3,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,96,,running,0,14,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,17,12,38,Graham Rahal,Service Central   (Chip Ganassi),D/H/F,96,,running,0,13,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,18,5,6,Ryan Briscoe,IZOD   (Roger Penske),D/H/F,95,,running,0,12,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,19,21,59,E.J. Viso,PDVSA / Lotus   (KV Racing Technology),D/H/F,94,,running,0,12,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,20,9,3,Helio Castroneves,Guidepoint Systems   (Roger Penske),D/H/F,85,,running,0,12,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,21,14,28,Ryan Hunter-Reay,Sun Drop Citrus Soda / DHL   (Andretti Autosport),D/H/F,58,,handling,0,12,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,22,23,83,Charlie Kimball,Levemir & NovoLog FlexPen   (Chip Ganassi),D/H/F,38,,crash,0,12,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,23,4,27,Mike Conway,GoDaddy.com   (Andretti Autosport),D/H/F,1,,crash,0,12,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,24,7,26,Marco Andretti,Venom Energy   (Andretti Autosport),D/H/F,0,,crash,0,12,0,,,,,,,,,,,,,3/27/2011
-St. Pete,1,2011,street,25,18,19,Sebastien Bourdais,Boy Scouts of America / Be A Scout   (Dale Coyne),D/H/F,0,,did not start,0,5,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,1,2,10,Dario Franchitti,Target   (Chip Ganassi),D/H/F,100,35000,running,94,52,1,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,2,1,12,Will Power,Verizon   (Roger Penske),D/H/F,100,25000,running,6,41,1,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,3,8,82,Tony Kanaan,GEICO / Lotus   (KV Racing Technology),D/H/F,100,20000,running,0,35,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,4,17,78,Simona de Silvestro,Nuclear Clean Air Energy   (Keith Wiggins),D/H/F,100,15000,running,0,32,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,5,11,5,Takuma Sato,With You Japan / Lotus / Panasonic   (KV Racing Technology),D/H/F,100,10000,running,0,30,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,6,10,77,Alex Tagliani,Bowers & Wilkins at Magnolia   (Sam Schmidt),D/H/F,100,,running,0,28,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,7,16,17,Raphael Matos,Automatic Fire Sprinklers   (AFS Racing),D/H/F,100,,running,0,26,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,8,13,14,Vitor Meira,ABC Supply Co.   (A.J. Foyt),D/H/F,100,,running,0,24,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,9,15,2,Oriol Servia,Telemundo   (Newman-Haas Racing),D/H/F,100,,running,0,22,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,10,6,22,Justin Wilson,TranSystems   (Dreyer & Reinbold Racing),D/H/F,100,,running,0,20,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,11,24,4,J.R. Hildebrand,National Guard   (Panther Racing),D/H/F,100,,running,0,19,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,12,19,7,Danica Patrick,GoDaddy.com   (Andretti Autosport),D/H/F,100,,running,0,18,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,13,25,34,Sebastian Saavedra,Bogota Es Mundial   (Eric Bachelart),D/H/F,98,,running,0,17,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,14,20,24,Ana Beatriz,Ipiranga   (Dreyer & Reinbold Racing),D/H/F,98,,running,0,16,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,15,22,18,James Jakes,Acorn Stairlifts   (Dale Coyne),D/H/F,97,,running,0,15,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,16,3,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,96,,running,0,14,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,17,12,38,Graham Rahal,Service Central   (Chip Ganassi),D/H/F,96,,running,0,13,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,18,5,6,Ryan Briscoe,IZOD   (Roger Penske),D/H/F,95,,running,0,12,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,19,21,59,E.J. Viso,PDVSA / Lotus   (KV Racing Technology),D/H/F,94,,running,0,12,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,20,9,3,Helio Castroneves,Guidepoint Systems   (Roger Penske),D/H/F,85,,running,0,12,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,21,14,28,Ryan Hunter-Reay,Sun Drop Citrus Soda / DHL   (Andretti Autosport),D/H/F,58,,handling,0,12,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,22,23,83,Charlie Kimball,Levemir & NovoLog FlexPen   (Chip Ganassi),D/H/F,38,,crash,0,12,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,23,4,27,Mike Conway,GoDaddy.com   (Andretti Autosport),D/H/F,1,,crash,0,12,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,24,7,26,Marco Andretti,Venom Energy   (Andretti Autosport),D/H/F,0,,crash,0,12,0,,,,,,,,,,,,,3/27/2011
+St. Petersburg,1,2011,street,25,18,19,Sebastien Bourdais,Boy Scouts of America / Be A Scout   (Dale Coyne),D/H/F,0,,did not start,0,5,0,,,,,,,,,,,,,3/27/2011
 Barber,2,2011,road,1,1,12,Will Power,Verizon / Meijer   (Roger Penske),D/H/F,90,35000,running,90,53,1,,,,,,,,,,,,,4/10/2011
 Barber,2,2011,road,2,3,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,90,25000,running,0,40,0,,,,,,,,,,,,,4/10/2011
 Barber,2,2011,road,3,7,10,Dario Franchitti,Clorox / Target   (Chip Ganassi),D/H/F,90,20000,running,0,35,0,,,,,,,,,,,,,4/10/2011
@@ -3302,30 +3302,30 @@ Brazil,1,2010,street,21,24,18,Milka Duno,CITGO   (Dale Coyne),D/H/F,20,62500,cra
 Brazil,1,2010,street,22,10,5,Takuma Sato,KV Racing Technology,D/H/F,0,62500,crash,0,12,0,,,,,,,,,,,,,3/14/2010
 Brazil,1,2010,street,23,21,26,Marco Andretti,Venom Energy   (Andretti Autosport),D/H/F,0,62500,crash,0,12,0,,,,,,,,,,,,,3/14/2010
 Brazil,1,2010,street,24,23,32,Mario Moraes,PanAmericano   (KV Racing Technology),D/H/F,0,62500,crash,0,12,0,,,,,,,,,,,,,3/14/2010
-St. Pete,2,2010,street,1,1,12,Will Power,Verizon   (Roger Penske),D/H/F,100,107500,running,50,53,1,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,2,4,22,Justin Wilson,Z-Line Designs   (Dreyer & Reinbold Racing),D/H/F,100,87500,running,0,40,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,3,19,6,Ryan Briscoe,Team Penske   (Roger Penske),D/H/F,100,82500,running,9,35,1,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,4,5,3,Helio Castroneves,Team Penske   (Roger Penske),D/H/F,100,77500,running,0,32,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,5,13,10,Dario Franchitti,Cottonelle   (Chip Ganassi),D/H/F,100,72500,running,3,30,1,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,6,8,77,Alex Tagliani,Bowers & Wilkins   (FAZZT Race Team),D/H/F,100,72500,running,0,28,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,7,21,7,Danica Patrick,GoDaddy.com   (Andretti Autosport),D/H/F,100,62500,running,0,26,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,8,23,2,Raphael Matos,HP   (De Ferran-Luczo-Dragon Racing),D/H/F,100,62500,running,3,24,1,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,9,16,67,Graham Rahal,Dollar General   (Sarah Fisher),D/H/F,100,35000,running,0,22,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,10,2,11,Tony Kanaan,7-Eleven   (Andretti Autosport),D/H/F,100,62500,running,0,20,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,11,7,37,Ryan Hunter-Reay,IZOD   (Andretti Autosport),D/H/F,100,62500,running,0,19,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,12,6,26,Marco Andretti,Venom Energy   (Andretti Autosport),D/H/F,100,62500,running,1,18,1,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,13,18,34,Mario Romancini,H2GO Ronn Motors   (Eric Bachelart),D/H/F,100,62500,running,0,17,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,14,12,6,Hideki Mutoh,Formula Dream / Panasonic   (Newman-Haas-Lanigan Racing),D/H/F,100,62500,running,0,16,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,15,17,14,Vitor Meira,ABC Supply Co.   (A.J. Foyt),D/H/F,100,62500,running,12,15,1,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,16,14,78,Simona de Silvestro,Stargate Worlds   (Keith Wiggins),D/H/F,99,62500,running,0,14,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,17,9,8,E.J. Viso,PDVSA / Jet Aviation   (KV Racing Technology),D/H/F,97,62500,running,1,13,1,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,18,3,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,73,62500,crash,21,12,1,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,19,10,24,Mike Conway,Dad's Root Beer   (Dreyer & Reinbold Racing),D/H/F,64,62500,crash,0,12,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,20,15,4,Dan Wheldon,National Guard   (Panther Racing),D/H/F,46,62500,crash,0,12,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,21,20,32,Mario Moraes,KV Racing Technology,D/H/F,45,62500,crash,0,12,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,22,11,5,Takuma Sato,Lotus   (KV Racing Technology),D/H/F,24,62500,crash,0,12,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,23,22,19,Alex Lloyd,Boy Scouts of America   (Dale Coyne),D/H/F,14,62500,crash,0,12,0,,,,,,,,,,,,,3/29/2010
-St. Pete,2,2010,street,24,24,18,Milka Duno,CITGO   (Dale Coyne),D/H/F,7,62500,handling,0,12,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,1,1,12,Will Power,Verizon   (Roger Penske),D/H/F,100,107500,running,50,53,1,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,2,4,22,Justin Wilson,Z-Line Designs   (Dreyer & Reinbold Racing),D/H/F,100,87500,running,0,40,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,3,19,6,Ryan Briscoe,Team Penske   (Roger Penske),D/H/F,100,82500,running,9,35,1,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,4,5,3,Helio Castroneves,Team Penske   (Roger Penske),D/H/F,100,77500,running,0,32,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,5,13,10,Dario Franchitti,Cottonelle   (Chip Ganassi),D/H/F,100,72500,running,3,30,1,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,6,8,77,Alex Tagliani,Bowers & Wilkins   (FAZZT Race Team),D/H/F,100,72500,running,0,28,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,7,21,7,Danica Patrick,GoDaddy.com   (Andretti Autosport),D/H/F,100,62500,running,0,26,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,8,23,2,Raphael Matos,HP   (De Ferran-Luczo-Dragon Racing),D/H/F,100,62500,running,3,24,1,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,9,16,67,Graham Rahal,Dollar General   (Sarah Fisher),D/H/F,100,35000,running,0,22,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,10,2,11,Tony Kanaan,7-Eleven   (Andretti Autosport),D/H/F,100,62500,running,0,20,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,11,7,37,Ryan Hunter-Reay,IZOD   (Andretti Autosport),D/H/F,100,62500,running,0,19,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,12,6,26,Marco Andretti,Venom Energy   (Andretti Autosport),D/H/F,100,62500,running,1,18,1,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,13,18,34,Mario Romancini,H2GO Ronn Motors   (Eric Bachelart),D/H/F,100,62500,running,0,17,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,14,12,6,Hideki Mutoh,Formula Dream / Panasonic   (Newman-Haas-Lanigan Racing),D/H/F,100,62500,running,0,16,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,15,17,14,Vitor Meira,ABC Supply Co.   (A.J. Foyt),D/H/F,100,62500,running,12,15,1,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,16,14,78,Simona de Silvestro,Stargate Worlds   (Keith Wiggins),D/H/F,99,62500,running,0,14,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,17,9,8,E.J. Viso,PDVSA / Jet Aviation   (KV Racing Technology),D/H/F,97,62500,running,1,13,1,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,18,3,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,73,62500,crash,21,12,1,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,19,10,24,Mike Conway,Dad's Root Beer   (Dreyer & Reinbold Racing),D/H/F,64,62500,crash,0,12,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,20,15,4,Dan Wheldon,National Guard   (Panther Racing),D/H/F,46,62500,crash,0,12,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,21,20,32,Mario Moraes,KV Racing Technology,D/H/F,45,62500,crash,0,12,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,22,11,5,Takuma Sato,Lotus   (KV Racing Technology),D/H/F,24,62500,crash,0,12,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,23,22,19,Alex Lloyd,Boy Scouts of America   (Dale Coyne),D/H/F,14,62500,crash,0,12,0,,,,,,,,,,,,,3/29/2010
+St. Petersburg,2,2010,street,24,24,18,Milka Duno,CITGO   (Dale Coyne),D/H/F,7,62500,handling,0,12,0,,,,,,,,,,,,,3/29/2010
 Barber,3,2010,road,1,3,3,Helio Castroneves,Team Penske   (Roger Penske),D/H/F,90,97500,running,20,50,1,,,,,,,,,,,,,4/11/2010
 Barber,3,2010,road,2,5,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,90,87500,running,0,40,0,,,,,,,,,,,,,4/11/2010
 Barber,3,2010,road,3,7,10,Dario Franchitti,Suave   (Chip Ganassi),D/H/F,90,82500,running,0,35,0,,,,,,,,,,,,,4/11/2010
@@ -3723,28 +3723,28 @@ Homestead,17,2010,oval,24,27,18,Milka Duno,CITGO   (Dale Coyne),D/H/F,170,62500,
 Homestead,17,2010,oval,25,3,12,Will Power,Verizon   (Roger Penske),D/H/F,143,312500,crash,0,10,0,,,,,,,,,,,,,10/2/2010
 Homestead,17,2010,oval,26,15,24,Ana Beatriz,Roll Coater   (Dreyer & Reinbold Racing),D/H/F,42,62500,crash,0,10,0,,,,,,,,,,,,,10/2/2010
 Homestead,17,2010,oval,27,13,32,Mario Moraes,KV Racing Technology,D/H/F,25,62500,gearbox,0,10,0,,,,,,,,,,,,,10/2/2010
-St. Pete,1,2009,street,1,4,6,Ryan Briscoe,Team Penske   (Roger Penske),D/H/F,100,95750,running,46,50,1,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,2,14,21,Ryan Hunter-Reay,Vision Racing   (Tony George),D/H/F,100,70000,running,0,40,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,3,2,19,Justin Wilson,Sonny's Bar-B-Q   (Dale Coyne),D/H/F,100,78750,running,52,37,1,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,4,5,10,Dario Franchitti,Air Wick   (Chip Ganassi),D/H/F,100,73750,running,0,32,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,5,3,11,Tony Kanaan,7-Eleven   (Andretti Green Racing),D/H/F,100,68750,running,0,30,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,6,6,3,Will Power,Team Penske   (Roger Penske),D/H/F,100,58750,running,0,28,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,7,1,2,Graham Rahal,McDonald's   (Newman-Haas-Lanigan Racing),D/H/F,100,68750,running,0,27,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,8,10,23,Darren Manning,Charter Communications   (Dreyer & Reinbold Racing),D/H/F,100,58750,running,0,24,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,9,17,14,Vitor Meira,ABC Supply Co.   (A.J. Foyt),D/H/F,100,58750,running,0,22,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,10,7,34,Alex Tagliani,Rexall Edmonton Indy   (Eric Bachelart),D/H/F,99,35000,running,0,20,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,11,13,6,Robert Doornbos,Newman-Haas-Lanigan Racing,D/H/F,96,58750,running,0,19,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,12,21,98,Stanton Barrett,Curb-Agajanian   (3G Racing),D/H/F,96,58750,running,0,18,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,13,18,26,Marco Andretti,Andretti Green   (Andretti Green Racing),D/H/F,94,58750,crash,2,17,1,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,14,11,4,Dan Wheldon,National Guard   (Panther Racing),D/H/F,86,58750,crash,0,16,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,15,19,27,Hideki Mutoh,Formula Dream   (Andretti Green Racing),D/H/F,86,58750,crash,0,15,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,16,8,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,80,58750,crash,0,14,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,17,16,13,E.J. Viso,PDVSA   (Keith Wiggins),D/H/F,75,58750,steering,0,13,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,18,22,20,Ed Carpenter,Menards   (Tony George),D/H/F,71,58750,crash,0,12,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,19,15,7,Danica Patrick,Motorola   (Andretti Green Racing),D/H/F,31,58750,crash,0,12,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,20,9,2,Raphael Matos,Marines   (Stephen Luczo / Jay Penske),D/H/F,31,58750,crash,0,12,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,21,20,5,Mario Moraes,Votorantim   (KV Racing Technology),D/H/F,31,58750,crash,0,12,0,,,,,,,,,,,,,4/5/2009
-St. Pete,1,2009,street,22,12,24,Mike Conway,Dad's Root Beer   (Dreyer & Reinbold Racing),D/H/F,1,58750,crash,0,12,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,1,4,6,Ryan Briscoe,Team Penske   (Roger Penske),D/H/F,100,95750,running,46,50,1,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,2,14,21,Ryan Hunter-Reay,Vision Racing   (Tony George),D/H/F,100,70000,running,0,40,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,3,2,19,Justin Wilson,Sonny's Bar-B-Q   (Dale Coyne),D/H/F,100,78750,running,52,37,1,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,4,5,10,Dario Franchitti,Air Wick   (Chip Ganassi),D/H/F,100,73750,running,0,32,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,5,3,11,Tony Kanaan,7-Eleven   (Andretti Green Racing),D/H/F,100,68750,running,0,30,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,6,6,3,Will Power,Team Penske   (Roger Penske),D/H/F,100,58750,running,0,28,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,7,1,2,Graham Rahal,McDonald's   (Newman-Haas-Lanigan Racing),D/H/F,100,68750,running,0,27,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,8,10,23,Darren Manning,Charter Communications   (Dreyer & Reinbold Racing),D/H/F,100,58750,running,0,24,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,9,17,14,Vitor Meira,ABC Supply Co.   (A.J. Foyt),D/H/F,100,58750,running,0,22,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,10,7,34,Alex Tagliani,Rexall Edmonton Indy   (Eric Bachelart),D/H/F,99,35000,running,0,20,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,11,13,6,Robert Doornbos,Newman-Haas-Lanigan Racing,D/H/F,96,58750,running,0,19,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,12,21,98,Stanton Barrett,Curb-Agajanian   (3G Racing),D/H/F,96,58750,running,0,18,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,13,18,26,Marco Andretti,Andretti Green   (Andretti Green Racing),D/H/F,94,58750,crash,2,17,1,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,14,11,4,Dan Wheldon,National Guard   (Panther Racing),D/H/F,86,58750,crash,0,16,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,15,19,27,Hideki Mutoh,Formula Dream   (Andretti Green Racing),D/H/F,86,58750,crash,0,15,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,16,8,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,80,58750,crash,0,14,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,17,16,13,E.J. Viso,PDVSA   (Keith Wiggins),D/H/F,75,58750,steering,0,13,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,18,22,20,Ed Carpenter,Menards   (Tony George),D/H/F,71,58750,crash,0,12,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,19,15,7,Danica Patrick,Motorola   (Andretti Green Racing),D/H/F,31,58750,crash,0,12,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,20,9,2,Raphael Matos,Marines   (Stephen Luczo / Jay Penske),D/H/F,31,58750,crash,0,12,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,21,20,5,Mario Moraes,Votorantim   (KV Racing Technology),D/H/F,31,58750,crash,0,12,0,,,,,,,,,,,,,4/5/2009
+St. Petersburg,1,2009,street,22,12,24,Mike Conway,Dad's Root Beer   (Dreyer & Reinbold Racing),D/H/F,1,58750,crash,0,12,0,,,,,,,,,,,,,4/5/2009
 Long Beach,2,2009,street,1,2,10,Dario Franchitti,Target   (Chip Ganassi),D/H/F,85,95750,running,51,52,1,,,,,,,,,,,,,4/19/2009
 Long Beach,2,2009,street,2,1,12,Will Power,Verizon Wireless   (Roger Penske),D/H/F,85,70000,running,16,41,1,,,,,,,,,,,,,4/19/2009
 Long Beach,2,2009,street,3,11,11,Tony Kanaan,7-Eleven / Dr. Pepper   (Andretti Green Racing),D/H/F,85,78750,running,7,35,1,,,,,,,,,,,,,4/19/2009
@@ -4137,32 +4137,32 @@ Homestead,1,2008,oval,22,23,24,Jay Howard,All Sport   (Marty Roth),D/H/F,50,6000
 Homestead,1,2008,oval,23,20,18,Bruno Junqueira,Z-Line Designs   (Dale Coyne),D/H/F,40,60000,handling,0,12,0,,,,,,,,,,,,,3/29/2008
 Homestead,1,2008,oval,24,7,27,Hideki Mutoh,Formula Dream   (Andretti Green Racing),D/H/F,32,60000,suspension,0,12,0,,,,,,,,,,,,,3/29/2008
 Homestead,1,2008,oval,25,19,8,Will Power,Aussie Vinyards / Team Australia   (KV Racing Technology),D/H/F,24,60000,suspension,0,10,0,,,,,,,,,,,,,3/29/2008
-St. Pete,2,2008,street,1,9,6,Graham Rahal,Hole in the Wall Camps   (Newman-Haas-Lanigan Racing),D/H/F,83,95000,running,19,53,1,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,2,4,3,Helio Castroneves,Team Penske   (Roger Penske),D/H/F,83,85000,running,0,40,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,3,1,11,Tony Kanaan,Team 7-Eleven   (Andretti Green Racing),D/H/F,83,80000,running,15,35,1,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,4,15,33,E.J. Viso,PDVSA / HVM Racing   (Keith Wiggins),D/H/F,83,75000,running,12,32,1,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,5,18,36,Enrique Bernoldi,Sangari / Opes Prime   (Eric Bachelart),D/H/F,83,70000,running,3,30,1,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,6,14,27,Hideki Mutoh,Formula Dream   (Andretti Green Racing),D/H/F,83,60000,running,0,28,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,7,7,5,Oriol Servia,Plantronics   (KV Racing Technology),D/H/F,83,60000,running,0,26,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,8,2,8,Will Power,Aussie Vinyards / Team Australia   (KV Racing Technology),D/H/F,83,60000,running,0,24,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,9,3,2,Justin Wilson,McDonald's Racing Team   (Newman-Haas-Lanigan Racing),D/H/F,83,60000,running,18,22,1,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,10,19,7,Danica Patrick,Motorola   (Andretti Green Racing),D/H/F,83,60000,running,0,20,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,11,24,2,A.J. Foyt IV,Vision Racing   (Tony George),D/H/F,83,60000,running,0,19,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,12,8,10,Dan Wheldon,Target   (Chip Ganassi),D/H/F,83,60000,running,0,18,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,13,11,14,Darren Manning,ABC Supply Co.   (A.J. Foyt),D/H/F,83,60000,running,0,17,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,14,20,24,Jay Howard,Cirrus Aircraft   (Marty Roth),D/H/F,82,60000,running,0,16,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,15,16,15,Buddy Rice,Dreyer & Reinbold Racing   (Dreyer & Reinbold Racing),D/H/F,82,60000,running,0,15,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,16,22,19,Mario Moraes,Sonny's Bar-B-Q   (Dale Coyne),D/H/F,82,60000,running,0,14,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,17,6,17,Ryan Hunter-Reay,Team Ethanol   (Bobby Rahal / David Letterman),D/H/F,81,60000,running,4,13,1,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,18,21,20,Ed Carpenter,Menards / Vision Racing   (Tony George),D/H/F,80,60000,spun,0,12,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,19,17,4,Vitor Meira,National Guard / Delphi   (Panther Racing),D/H/F,75,60000,crash,1,12,1,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,20,10,34,Franck Perera,Ares / Opes Prime / Conquest Racing   (Eric Bachelart),D/H/F,75,60000,crash,0,12,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,21,23,23,Townsend Bell,William Rast   (Dreyer & Reinbold Racing),D/H/F,75,60000,crash,0,12,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,22,13,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,74,60000,suspension,0,12,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,23,5,6,Ryan Briscoe,Team Penske   (Roger Penske),D/H/F,56,60000,crash,11,12,1,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,24,25,18,Bruno Junqueira,Z-Line Designs   (Dale Coyne),D/H/F,44,60000,clutch,0,12,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,25,12,26,Marco Andretti,Gillette Fusion   (Andretti Green Racing),D/H/F,41,60000,half shaft,0,10,0,,,,,,,,,,,,,4/6/2008
-St. Pete,2,2008,street,26,26,25,Marty Roth,Cirrus Aircraft   (Marty Roth),D/H/F,0,60000,did not start,0,5,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,1,9,6,Graham Rahal,Hole in the Wall Camps   (Newman-Haas-Lanigan Racing),D/H/F,83,95000,running,19,53,1,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,2,4,3,Helio Castroneves,Team Penske   (Roger Penske),D/H/F,83,85000,running,0,40,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,3,1,11,Tony Kanaan,Team 7-Eleven   (Andretti Green Racing),D/H/F,83,80000,running,15,35,1,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,4,15,33,E.J. Viso,PDVSA / HVM Racing   (Keith Wiggins),D/H/F,83,75000,running,12,32,1,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,5,18,36,Enrique Bernoldi,Sangari / Opes Prime   (Eric Bachelart),D/H/F,83,70000,running,3,30,1,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,6,14,27,Hideki Mutoh,Formula Dream   (Andretti Green Racing),D/H/F,83,60000,running,0,28,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,7,7,5,Oriol Servia,Plantronics   (KV Racing Technology),D/H/F,83,60000,running,0,26,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,8,2,8,Will Power,Aussie Vinyards / Team Australia   (KV Racing Technology),D/H/F,83,60000,running,0,24,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,9,3,2,Justin Wilson,McDonald's Racing Team   (Newman-Haas-Lanigan Racing),D/H/F,83,60000,running,18,22,1,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,10,19,7,Danica Patrick,Motorola   (Andretti Green Racing),D/H/F,83,60000,running,0,20,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,11,24,2,A.J. Foyt IV,Vision Racing   (Tony George),D/H/F,83,60000,running,0,19,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,12,8,10,Dan Wheldon,Target   (Chip Ganassi),D/H/F,83,60000,running,0,18,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,13,11,14,Darren Manning,ABC Supply Co.   (A.J. Foyt),D/H/F,83,60000,running,0,17,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,14,20,24,Jay Howard,Cirrus Aircraft   (Marty Roth),D/H/F,82,60000,running,0,16,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,15,16,15,Buddy Rice,Dreyer & Reinbold Racing   (Dreyer & Reinbold Racing),D/H/F,82,60000,running,0,15,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,16,22,19,Mario Moraes,Sonny's Bar-B-Q   (Dale Coyne),D/H/F,82,60000,running,0,14,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,17,6,17,Ryan Hunter-Reay,Team Ethanol   (Bobby Rahal / David Letterman),D/H/F,81,60000,running,4,13,1,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,18,21,20,Ed Carpenter,Menards / Vision Racing   (Tony George),D/H/F,80,60000,spun,0,12,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,19,17,4,Vitor Meira,National Guard / Delphi   (Panther Racing),D/H/F,75,60000,crash,1,12,1,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,20,10,34,Franck Perera,Ares / Opes Prime / Conquest Racing   (Eric Bachelart),D/H/F,75,60000,crash,0,12,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,21,23,23,Townsend Bell,William Rast   (Dreyer & Reinbold Racing),D/H/F,75,60000,crash,0,12,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,22,13,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,74,60000,suspension,0,12,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,23,5,6,Ryan Briscoe,Team Penske   (Roger Penske),D/H/F,56,60000,crash,11,12,1,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,24,25,18,Bruno Junqueira,Z-Line Designs   (Dale Coyne),D/H/F,44,60000,clutch,0,12,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,25,12,26,Marco Andretti,Gillette Fusion   (Andretti Green Racing),D/H/F,41,60000,half shaft,0,10,0,,,,,,,,,,,,,4/6/2008
+St. Petersburg,2,2008,street,26,26,25,Marty Roth,Cirrus Aircraft   (Marty Roth),D/H/F,0,60000,did not start,0,5,0,,,,,,,,,,,,,4/6/2008
 Motegi,3,2008,oval,1,6,7,Danica Patrick,Motorola   (Andretti Green Racing),D/H/F,200,95000,running,3,50,1,,,,,,,,,,,,,4/20/2008
 Motegi,3,2008,oval,2,1,3,Helio Castroneves,Team Penske   (Roger Penske),D/H/F,200,85000,running,94,40,1,,,,,,,,,,,,,4/20/2008
 Motegi,3,2008,oval,3,2,9,Scott Dixon,Target   (Chip Ganassi),D/H/F,200,80000,running,101,38,1,,,,,,,,,,,,,4/20/2008
@@ -4578,30 +4578,30 @@ Chicago,18,2008,oval,25,22,15,Buddy Rice,Dad's Root Beer   (Dreyer & Reinbold Ra
 Chicago,18,2008,oval,26,7,12,Tomas Scheckter,Symantec / Luczo-Dragon Racing   (Stephen Luczo / Jay Penske),D/H/F,87,60000,vibration,0,10,0,,,,,,,,,,,,,9/7/2008
 Chicago,18,2008,oval,27,8,4,Vitor Meira,National Guard / Delphi   (Panther Racing),D/H/F,74,60000,crash,0,10,0,,,,,,,,,,,,,9/7/2008
 Chicago,18,2008,oval,28,13,20,Ed Carpenter,Menards / Vision Racing   (Tony George),D/H/F,36,60000,crash,0,10,0,,,,,,,,,,,,,9/7/2008
-St. Pete,1,2019,street,1,2,2,Josef Newgarden,Hitachi / Verizon   (Roger Penske),D/C/F,110,,running,60,53,1,2,,1.88,1.1,40,50,46,8,7,-1,110,1,3/10/2019
-St. Pete,1,2019,street,2,4,9,Scott Dixon,PNC Bank   (Chip Ganassi),D/H/F,110,,running,0,40,0,0,,2.94,2,35,40,36.5,7,5,0,110,3,3/10/2019
-St. Pete,1,2019,street,3,1,12,Will Power,Verizon   (Roger Penske),D/C/F,110,,running,17,37,1,0,,2.7,3.03,35,35,36,11,13,0,105,4,3/10/2019
-St. Pete,1,2019,street,4,3,10,Felix Rosenqvist,NTT Data   (Chip Ganassi),D/H/F,110,,running,31,33,1,0,,2.95,3.87,35,32,35.1,12,13,1,106,9,3/10/2019
-St. Pete,1,2019,street,5,6,27,Alexander Rossi,NAPA Auto Parts   (Andretti Autosport),D/H/F,110,,running,2,31,1,0,,5.07,5,30,30,31,9,8,1,97,7,3/10/2019
-St. Pete,1,2019,street,6,9,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,110,,running,0,28,0,0,,7.69,6.03,24,28,25.2,17,14,-1,0,10,3/10/2019
-St. Pete,1,2019,street,7,13,22,Simon Pagenaud,Menards / Verizon   (Roger Penske),D/C/F,110,,running,0,26,0,0,,8.64,6.97,22,26,23.2,17,11,2,0,2,3/10/2019
-St. Pete,1,2019,street,8,11,88,Colton Herta,Harding Steinbrenner Racing,D/H/F,110,,running,0,24,0,0,,11.9,8.19,18,24,19.8,24,21,-2,0,5,3/10/2019
-St. Pete,1,2019,street,9,23,19,Santino Ferrucci,David Yurman   (Dale Coyne),D/H/F,110,,running,0,22,0,0,,14.88,9.71,15,20,16.5,27,13,0,0,8,3/10/2019
-St. Pete,1,2019,street,10,7,60,Jack Harvey,AutoNation / SiriusXM   (Meyer Shank Racing / Arrow SPM),D/H/F,110,,running,0,20,0,0,,9.44,10.77,22,19,21.1,26,32,0,0,19,3/10/2019
-St. Pete,1,2019,street,11,16,21,Spencer Pigot,Autogeek / Direct Supply   (Ed Carpenter Racing),D/C/F,110,,running,0,19,0,0,,14.45,12,16,18,16.6,35,30,-1,3,12,3/10/2019
-St. Pete,1,2019,street,12,10,15,Graham Rahal,United Rentals   (Rahal Letterman Lanigan Racing),D/H/F,109,,running,0,18,0,0,,10.33,9.7,20,20,20,31,33,1,0,15,3/10/2019
-St. Pete,1,2019,street,13,17,98,Marco Andretti,U.S. Concrete / Curb   (AHA / Marco & Curb-Agajanian),D/H/F,109,,running,0,17,0,0,,12.04,12.6,18,17,17.7,32,28,3,9,14,3/10/2019
-St. Pete,1,2019,street,14,14,26,Zach Veach,Gainbridge   (Andretti Autosport),D/H/F,109,,running,0,16,0,0,,13.93,13.93,16,16,16,24,24,-1,0,20,3/10/2019
-St. Pete,1,2019,street,15,21,14,Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,109,,running,0,15,0,0,,14.7,15,15,15,15,39,33,2,1,23,3/10/2019
-St. Pete,1,2019,street,16,24,59,Max Chilton,Gallagher Insurance   (Trevor Carlin),D/C/F,109,,running,0,14,0,0,,17.31,16,13,14,13.3,21,13,0,0,22,3/10/2019
-St. Pete,1,2019,street,17,8,23,Charlie Kimball,Tresiba   (Trevor Carlin),D/C/F,109,,running,0,13,0,0,,15.48,17,15,13,14.4,24,24,0,0,11,3/10/2019
-St. Pete,1,2019,street,18,12,81,Ben Hanley,10 Star   (DragonSpeed),D/C/F,108,,running,0,12,0,0,,17.28,18,13,12,12.7,12,6,-6,0,24,3/10/2019
-St. Pete,1,2019,street,19,20,30,Takuma Sato,Panasonic / Seeman Holtz   (Rahal Letterman Lanigan Racing),D/H/F,75,,mechanical,0,11,0,0,,12.93,20,17,10,14.9,26,25,4,0,16,3/10/2019
-St. Pete,1,2019,street,20,18,7,Marcus Ericsson,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,54,,mechanical,0,10,0,0,,15.5,20,14,10,12.8,19,18,-3,0,6,3/10/2019
-St. Pete,1,2019,street,21,15,20,Ed Jones,Autogeek / Flex Box   (Ed Carpenter Racing),D/C/F,25,,crash,0,9,0,0,,10.48,21,20,9,16.7,8,17,3,0,13,3/10/2019
-St. Pete,1,2019,street,22,22,4,Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,25,,crash,0,8,0,0,,20.32,22,10,8,9.4,8,2,0,0,17,3/10/2019
-St. Pete,1,2019,street,23,5,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,19,,mechanical,0,7,0,0,,5.74,23,28,7,21.7,2,4,-1,5,21,3/10/2019
-St. Pete,1,2019,street,24,19,18,Sebastien Bourdais,SealMaster / Sport Clips   (Dale Coyne w/Vasser-Sullivan),D/H/F,11,,mechanical,0,6,0,0,,18.64,24,11,6,9.5,4,3,-1,0,18,3/10/2019
+St. Petersburg,1,2019,street,1,2,2,Josef Newgarden,Hitachi / Verizon   (Roger Penske),D/C/F,110,,running,60,53,1,2,,1.88,1.1,40,50,46,8,7,-1,110,1,3/10/2019
+St. Petersburg,1,2019,street,2,4,9,Scott Dixon,PNC Bank   (Chip Ganassi),D/H/F,110,,running,0,40,0,0,,2.94,2,35,40,36.5,7,5,0,110,3,3/10/2019
+St. Petersburg,1,2019,street,3,1,12,Will Power,Verizon   (Roger Penske),D/C/F,110,,running,17,37,1,0,,2.7,3.03,35,35,36,11,13,0,105,4,3/10/2019
+St. Petersburg,1,2019,street,4,3,10,Felix Rosenqvist,NTT Data   (Chip Ganassi),D/H/F,110,,running,31,33,1,0,,2.95,3.87,35,32,35.1,12,13,1,106,9,3/10/2019
+St. Petersburg,1,2019,street,5,6,27,Alexander Rossi,NAPA Auto Parts   (Andretti Autosport),D/H/F,110,,running,2,31,1,0,,5.07,5,30,30,31,9,8,1,97,7,3/10/2019
+St. Petersburg,1,2019,street,6,9,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,110,,running,0,28,0,0,,7.69,6.03,24,28,25.2,17,14,-1,0,10,3/10/2019
+St. Petersburg,1,2019,street,7,13,22,Simon Pagenaud,Menards / Verizon   (Roger Penske),D/C/F,110,,running,0,26,0,0,,8.64,6.97,22,26,23.2,17,11,2,0,2,3/10/2019
+St. Petersburg,1,2019,street,8,11,88,Colton Herta,Harding Steinbrenner Racing,D/H/F,110,,running,0,24,0,0,,11.9,8.19,18,24,19.8,24,21,-2,0,5,3/10/2019
+St. Petersburg,1,2019,street,9,23,19,Santino Ferrucci,David Yurman   (Dale Coyne),D/H/F,110,,running,0,22,0,0,,14.88,9.71,15,20,16.5,27,13,0,0,8,3/10/2019
+St. Petersburg,1,2019,street,10,7,60,Jack Harvey,AutoNation / SiriusXM   (Meyer Shank Racing / Arrow SPM),D/H/F,110,,running,0,20,0,0,,9.44,10.77,22,19,21.1,26,32,0,0,19,3/10/2019
+St. Petersburg,1,2019,street,11,16,21,Spencer Pigot,Autogeek / Direct Supply   (Ed Carpenter Racing),D/C/F,110,,running,0,19,0,0,,14.45,12,16,18,16.6,35,30,-1,3,12,3/10/2019
+St. Petersburg,1,2019,street,12,10,15,Graham Rahal,United Rentals   (Rahal Letterman Lanigan Racing),D/H/F,109,,running,0,18,0,0,,10.33,9.7,20,20,20,31,33,1,0,15,3/10/2019
+St. Petersburg,1,2019,street,13,17,98,Marco Andretti,U.S. Concrete / Curb   (AHA / Marco & Curb-Agajanian),D/H/F,109,,running,0,17,0,0,,12.04,12.6,18,17,17.7,32,28,3,9,14,3/10/2019
+St. Petersburg,1,2019,street,14,14,26,Zach Veach,Gainbridge   (Andretti Autosport),D/H/F,109,,running,0,16,0,0,,13.93,13.93,16,16,16,24,24,-1,0,20,3/10/2019
+St. Petersburg,1,2019,street,15,21,14,Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,109,,running,0,15,0,0,,14.7,15,15,15,15,39,33,2,1,23,3/10/2019
+St. Petersburg,1,2019,street,16,24,59,Max Chilton,Gallagher Insurance   (Trevor Carlin),D/C/F,109,,running,0,14,0,0,,17.31,16,13,14,13.3,21,13,0,0,22,3/10/2019
+St. Petersburg,1,2019,street,17,8,23,Charlie Kimball,Tresiba   (Trevor Carlin),D/C/F,109,,running,0,13,0,0,,15.48,17,15,13,14.4,24,24,0,0,11,3/10/2019
+St. Petersburg,1,2019,street,18,12,81,Ben Hanley,10 Star   (DragonSpeed),D/C/F,108,,running,0,12,0,0,,17.28,18,13,12,12.7,12,6,-6,0,24,3/10/2019
+St. Petersburg,1,2019,street,19,20,30,Takuma Sato,Panasonic / Seeman Holtz   (Rahal Letterman Lanigan Racing),D/H/F,75,,mechanical,0,11,0,0,,12.93,20,17,10,14.9,26,25,4,0,16,3/10/2019
+St. Petersburg,1,2019,street,20,18,7,Marcus Ericsson,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,54,,mechanical,0,10,0,0,,15.5,20,14,10,12.8,19,18,-3,0,6,3/10/2019
+St. Petersburg,1,2019,street,21,15,20,Ed Jones,Autogeek / Flex Box   (Ed Carpenter Racing),D/C/F,25,,crash,0,9,0,0,,10.48,21,20,9,16.7,8,17,3,0,13,3/10/2019
+St. Petersburg,1,2019,street,22,22,4,Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,25,,crash,0,8,0,0,,20.32,22,10,8,9.4,8,2,0,0,17,3/10/2019
+St. Petersburg,1,2019,street,23,5,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,19,,mechanical,0,7,0,0,,5.74,23,28,7,21.7,2,4,-1,5,21,3/10/2019
+St. Petersburg,1,2019,street,24,19,18,Sebastien Bourdais,SealMaster / Sport Clips   (Dale Coyne w/Vasser-Sullivan),D/H/F,11,,mechanical,0,6,0,0,,18.64,24,11,6,9.5,4,3,-1,0,18,3/10/2019
 COTA,2,2019,road,1,4,88,Colton Herta,Harding Steinbrenner Racing,D/H/F,60,,running,15,51,1,0,,2.52,1.19,35,50,40.5,8,5,1,60,1,3/24/2019
 COTA,2,2019,road,2,7,2,Josef Newgarden,PPG Paints / Verizon   (Roger Penske),D/C/F,60,,running,0,40,0,0,,4.43,2.25,32,40,34.4,12,7,0,46,3,3/24/2019
 COTA,2,2019,road,3,3,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,60,,running,0,35,0,0,,4.67,3.25,30,35,31.5,10,10,-1,47,4,3/24/2019
