@@ -88,8 +88,8 @@ ui <- fluidPage(theme = shinytheme("lumen"),
             offset = 0,
             h4("Historical Elo Ratings"),
             wellPanel(
-                
-                tags$div(class = "multicol", checkboxGroupInput("selectedDrivers", choices = NULL, label = "Select drivers to show", selected = NULL)))
+                selectInput("selectedDrivers", choices = NULL, label = "Drivers to view:", selected = NULL,
+                            multiple = TRUE))
             ))),
     
     conditionalPanel(
@@ -170,8 +170,7 @@ server <- function(input, output,session) {
         distinct() %>% 
         arrange(driver)
     
-    updateCheckboxGroupInput(session = session, inputId = "selectedDrivers", choices=choices_drivers$driver, selected = "Josef Newgarden")
-    
+    updateSelectInput(session = session, inputId = "selectedDrivers", choices=choices_drivers$driver, selected = "Josef Newgarden")
     #### season table ####
     output$seasonTable = DT::renderDataTable({
         
