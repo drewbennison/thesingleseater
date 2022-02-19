@@ -131,18 +131,19 @@ server <- function(input, output,session) {
     
     champ_projections_date <- paste("Last updated: ",champ_projections_date)
     
+    champ_projections_season <- max(champ_projections$season)
+    
     champ_projections <- champ_projections %>% 
         filter(season!=0) %>% 
         select(driver, totalPoints, chamPos, season) %>%
         group_by(driver, chamPos) %>% 
         add_count() %>% 
-        mutate(prob = 100*(round((n/10000),3)),
+        mutate(prob = 100*(round((n/champ_projections_season),3)),
                exp = round(chamPos*.01*prob,2)) %>% 
         select(driver, chamPos, n, prob, exp) %>% 
         distinct() %>%
         rename("Driver" = "driver")
         
-    
     champ_projections_exp <- champ_projections %>% 
         group_by(Driver) %>% summarise(x=sum(exp))
     
@@ -346,7 +347,6 @@ server <- function(input, output,session) {
         champ_projections_final <-reshape2::dcast(champ_projections, Driver~chamPos, sum, value.var = "prob")
         champ_projections_final <- champ_projections_final %>% left_join(champ_projections_exp) %>% 
             rename("Expected Champ Pos" = "x") %>% arrange(`Expected Champ Pos`)
-        #champ_projections_final <- champ_projections_final %>% arrange_at(2:33, desc)
         
     }, options=list(pageLength=50, scrollX = TRUE)) 
     
@@ -365,9 +365,9 @@ server <- function(input, output,session) {
             labs(y="% probability of finishing the season in this position",
                  x="Championship finishing position",
                  title=paste0("2022 IndyCar Championship Projection for ", input$selectchampdriver),
-                 subtitle = "After simulating the remaining races 10,000 times",
+                 subtitle = paste0("After simulating the remaining races ",champ_projections_season," times"),
                  caption = "www.thesingleseater.com")
-    }, width = 800, height = 800)
+    }, width = 800, height = 500)
 }
 
 shinyApp(ui, server)
