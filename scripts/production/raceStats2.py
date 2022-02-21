@@ -205,7 +205,6 @@ def racePosition(start=0, finish=1, driver_input_data="test", data="test"):
 		names.append(driver_input_data.iloc[i,0])
 	
 	driver_dict = {k:[] for k in names}
-	print(driver_dict)
 
 	#Driver numbers in order they are listed above
 	nums = []
@@ -240,7 +239,6 @@ def racePosition(start=0, finish=1, driver_input_data="test", data="test"):
 	            #Find it's index in the list, and append it to the correct driver
 	            driver = drivers[count]
 	            place = place_list.index(num)
-	            print(driver, place)
 	            driver_dict[driver].append(place+1)
 	        else:
 	            pass
