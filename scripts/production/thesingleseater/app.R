@@ -1,6 +1,6 @@
 library(shiny)
 library(DT)
-library(data.table)
+#library(data.table)
 library(tidyverse)
 library(lubridate)
 library(plotly)
@@ -10,6 +10,8 @@ library(shinythemes)
 
 ui <- navbarPage(title="The Single Seater",
                  navbarMenu(title = "Statistics",
+                            
+                                         #width = 10,
                             tabPanel(title = "Season Statistics",
                                      fluidRow(column(
                                          width = 10,
@@ -35,8 +37,39 @@ ui <- navbarPage(title="The Single Seater",
                                          selectInput("selecttrack", "Track:", 
                                                      choices = NULL, 
                                                      selected = 1),
-                                         DT::dataTableOutput("trackTable"))
-                                     ))),
+                                         DT::dataTableOutput("trackTable")
+                                         ))),
+                 
+                             tabPanel(title = "Race Statistics",
+                                      fluidRow(column(
+                                          width = 10,
+                                          offset = 0,
+                                          tags$h4("Race Statistics"),
+                                          selectInput("selectrace", "Round Number:",
+                                                      c("1"= "1",
+                                                        "2" = "2",
+                                                        "3" = "3",
+                                                        "4" = "4",
+                                                        "5" = "5",
+                                                        "6" = "6",
+                                                        "7" = "7",
+                                                        "8" = "8",
+                                                        "9" = "9",
+                                                        "10" = "10",
+                                                        "11" = "11",
+                                                        "12" = "12",
+                                                        "13" = "13",
+                                                        "14" = "14",
+                                                        "15" = "15",
+                                                        "16" = "16",
+                                                        "17" = "17")),
+                                          
+                                          selectInput("selectyear2", "Season:",
+                                                      c("2021"= "2021",
+                                                        "2020" = "2020",
+                                                        "2019" = "2019")),
+                                          DT::dataTableOutput("raceTable")
+                                      )))),
                  
                  navbarMenu(title = "Elo Ratings",
                             tabPanel(title = "Current Elo Ratings",
@@ -147,10 +180,11 @@ server <- function(input, output,session) {
     #### season table ####
     output$seasonTable = DT::renderDataTable({
         
-        #Calculate adjusted pass effeciency
+        #Calculate averages for adjusted pass efficiency
         avgPE <- data %>% filter(!is.na(passesFor)) %>% 
             select(driver, st, passesFor, passesAgainst) %>% 
             mutate(passEff = passesFor/(passesFor+passesAgainst),
+                   #check if they have no passes for or against
                    passEff = ifelse(is.na(passEff),.5,passEff)) %>% 
             group_by(st) %>% 
             summarise(avgPE = mean(passEff)) %>% 
@@ -167,6 +201,7 @@ server <- function(input, output,session) {
             left_join(afp, by=c("st" = "st")) %>% 
             mutate(xFPDifference=xFP-fin)
         
+        #calculate adjusted passing efficiency using averages from above
         data <- data %>% 
             mutate(passEff = passesFor/(passesFor+passesAgainst),
                    passEff = ifelse(is.na(passEff), .5, passEff)) %>% 
@@ -217,11 +252,10 @@ server <- function(input, output,session) {
         season1<- driver_season_stats %>%
             mutate(Difference = Pts-xPoints) %>% 
             select(driver, Races, Pts, xPoints, Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, AFS, StartRetention, StartPM, PMperStart) %>% 
-            rename(Driver=c("Driver"="driver")) %>% 
+            rename("Driver"="driver") %>% 
             mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart, AFS), list(~ round(.,1))) %>% 
             mutate_at(vars(xPoints, Difference), list(~ round(.,0))) %>% 
-            arrange(-Pts) %>% 
-            rename("Driver" = "Driver...Driver")
+            arrange(-Pts)
         
     }, options=list(pageLength=50, scrollX = TRUE))
     
@@ -274,10 +308,76 @@ server <- function(input, output,session) {
         season1<- driver_season_stats %>%
             mutate(Difference = Pts-xPoints) %>% 
             select(driver, Races, Wins, Poles, TopFives, Pts, AFP, DevFP, ASP, DevSP, RunPerc,AEP, LapsLed) %>% 
-            rename(Driver=c("Driver"="driver")) %>% 
+            rename("Driver"="driver") %>% 
             mutate_at(vars(AFP, DevFP, ASP, DevSP, RunPerc,AEP), list(~ round(.,1))) %>% 
-            arrange(-Pts)  %>% 
-            rename("Driver" = "Driver...Driver")
+            arrange(-Pts)
+        
+    }, options=list(pageLength=50, scrollX = TRUE))
+    
+    
+    #### race stats table ####
+    output$raceTable = DT::renderDataTable({
+        
+        #Calculate averages for adjusted pass efficiency
+        avgPE <- data %>% filter(!is.na(passesFor)) %>% 
+            select(driver, st, passesFor, passesAgainst) %>% 
+            mutate(passEff = passesFor/(passesFor+passesAgainst),
+                   #check if they have no passes for or against
+                   passEff = ifelse(is.na(passEff),.5,passEff)) %>% 
+            group_by(st) %>% 
+            summarise(avgPE = mean(passEff)) %>% 
+            select(st, avgPE)
+        
+        #Calculate AFP from every starting position
+        afp <- data %>%
+            group_by(st) %>% 
+            summarise(xFP = mean(fin))
+        
+        #Left join data with xFP for every driver's results
+        data <- data %>%
+            filter(year==input$selectyear2) %>% 
+            left_join(afp, by=c("st" = "st")) %>% 
+            mutate(xFPDifference=xFP-fin)
+        
+        #calculate adjusted passing efficiency using averages from above
+        data <- data %>% 
+            mutate(passEff = passesFor/(passesFor+passesAgainst),
+                   passEff = ifelse(is.na(passEff), .5, passEff)) %>% 
+            left_join(avgPE, by="st") %>% 
+            mutate(AdjPassEff = passEff-avgPE)
+        
+            driver_season_stats <- data %>%
+                filter(year==input$selectyear2, 
+                       raceNumber==input$selectrace) 
+        
+        driver_season_stats <- driver_season_stats %>% 
+            group_by(driver) %>% 
+            mutate(favorableStart = ifelse(lapOneChange>=0, 1, ifelse(lapOneChange<0, 0, NA)),
+                   StartRetention = 100*mean(favorableStart),
+                   StartPM = sum(lapOneChange),
+                   Pts=sum(pts),
+                   xPoints = sum(xPts),
+                   ATP = mean(atp),
+                   ATP25 = mean(atp25, na.rm = TRUE),
+                   PassEff = 100*mean(passEff),
+                   AdjPassEff = 100*mean(AdjPassEff),
+                   RunningCheck = ifelse(status=="running",1,0),
+                   FLS = mean(fastLapRank),
+                   Top5Perc = 100*(sum(inTopFive)/sum(laps)),
+                   #Average Surplus Position
+                   AEP = mean(xFPDifference)) %>% 
+            #SELECT DRIVER AND ANY VARIBLES BEFORE YOU SELECT DISTINCT
+            distinct(driver, st, fin, StartRetention, StartPM, Pts, xPoints, ATP, ATP25, PassEff, AdjPassEff, Top5Perc, AEP, FLS)
+        
+        season1<- driver_season_stats %>%
+            mutate(Difference = Pts-xPoints) %>% 
+            select(driver, st, fin, Pts, xPoints, Difference, ATP, ATP25, PassEff, AdjPassEff, Top5Perc, AEP, FLS, StartRetention, StartPM) %>% 
+            rename("Driver"="driver",
+                            "Start"="st",
+                   "Finish"="fin") %>% 
+            mutate_at(vars(Difference, ATP, ATP25, PassEff, AdjPassEff, Top5Perc, AEP, StartRetention, FLS), list(~ round(.,1))) %>% 
+            mutate_at(vars(xPoints, Difference), list(~ round(.,0))) %>% 
+            arrange(-Pts)
         
     }, options=list(pageLength=50, scrollX = TRUE))
         
