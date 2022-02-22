@@ -4,6 +4,7 @@ import numpy as np
 import os
 import tabula
 import requests
+#from tabula import read_pdf
 
 #intro to script
 print("Function raceStats(race_length=integer, lapchart_pdf=stringURL, racing_reference_url=stringURL, points_system='single' OR 'double')")
@@ -39,8 +40,10 @@ def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="sin
 	lap_zero = lap_zero.sort_values(by=['St'])[['#']].rename(columns={"#": "0"}).reset_index(drop=True)
 	df3 = pd.concat([lap_zero, df2], axis=1)
 
+	#return df3
+
 	#check if the number of drivers in each dataset match - if not, throw error
-	if len(df2) != len(df_want):
+	if len(df3) != len(df_want):
 		return "Data sets do not match. There are a different number of drivers."
 
 	#select just driver names and numbers
