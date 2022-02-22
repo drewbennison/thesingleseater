@@ -301,13 +301,14 @@ server <- function(input, output,session) {
                    Wins = sum(ifelse(fin==1,1,0)),
                    Poles = sum(ifelse(st==1,1,0)),
                    TopFives = sum(ifelse(fin<6,1,0)),
+                   Podiums = sum(ifelse(fin<4,1,0)),
                    LapsLed = sum(led)) %>% 
             #SELECT DRIVER AND ANY VARIBLES BEFORE YOU SELECT DISTINCT
-            distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, AEP, Wins, Poles, TopFives, LapsLed)
+            distinct(driver, StartRetention, StartPM, Races, PMperStart, Pts, xPoints, AFP, DevFP, ASP, DevSP, ATP, ATP25, PassEff, RunPerc, Top5Perc, AEP, Wins, Poles, TopFives, Podiums, LapsLed)
         
         season1<- driver_season_stats %>%
             mutate(Difference = Pts-xPoints) %>% 
-            select(driver, Races, Wins, Poles, TopFives, Pts, AFP, DevFP, ASP, DevSP, RunPerc,AEP, LapsLed) %>% 
+            select(driver, Races, Wins, Poles, Podiums, TopFives, Pts, AFP, DevFP, ASP, DevSP, RunPerc,AEP, LapsLed) %>% 
             rename("Driver"="driver") %>% 
             mutate_at(vars(AFP, DevFP, ASP, DevSP, RunPerc,AEP), list(~ round(.,1))) %>% 
             arrange(-Pts)

@@ -198,7 +198,7 @@ def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="sin
 #################################################################################################
 #Helper function - finds every drivers' position on every lap in the given interval with given driver names and data set
 def racePosition(start=0, finish=1, driver_input_data="test", data="test"):
-
+	#I am not sure if all of the below is needed anymore
 	names = []
 
 	for i in range(0,len(driver_input_data)):
