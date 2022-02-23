@@ -243,9 +243,14 @@ server <- function(input, output,session) {
                       RunPerc = 100*mean(RunningCheck),
                       AFS = mean(fastLapRank),
                       Top5Perc = 100*(sum(inTopFive)/sum(laps)),
-                      AEP = mean(xFPDifference)) %>% 
+                      AEP = mean(xFPDifference),
+                      Wins = sum(ifelse(fin==1,1,0)),
+                      Poles = sum(ifelse(st==1,1,0)),
+                      TopFives = sum(ifelse(fin<6,1,0)),
+                      Podiums = sum(ifelse(fin<4,1,0)),
+                      LapsLed = sum(led)) %>% 
             mutate(Difference = Pts-xPoints) %>% 
-            select(driver, Races, Pts, xPoints, Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, AFS, StartRetention, StartPM, PMperStart) %>%
+            select(driver, Races, Pts, xPoints, Difference, Wins, Poles, Podiums, TopFives, LapsLed, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, AFS, StartRetention, StartPM, PMperStart) %>%
             rename("Driver"="driver") %>% 
             #round
             mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart, AFS), list(~ round(.,1))) %>% 
@@ -315,7 +320,7 @@ server <- function(input, output,session) {
                       Podiums = sum(ifelse(fin<4,1,0)),
                       LapsLed = sum(led)) %>% 
             mutate(Difference = Pts-xPoints) %>% 
-            select(driver, Races, Pts, LapsLed, Wins, Poles, Podiums,xPoints, Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, AFS, StartRetention, StartPM, PMperStart) %>%
+            select(driver, Races, Pts,xPoints, Difference, Wins, Poles, Podiums, TopFives, LapsLed, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, AFS, StartRetention, StartPM, PMperStart) %>%
             rename("Driver"="driver") %>% 
             #round
             mutate_at(vars(Difference, AFP, DevFP, ASP, DevSP, ATP, DevATP, ATP25, DevATP25, PassEff, AdjPassEff, RunPerc, Top5Perc, AEP, StartRetention, PMperStart, AFS), list(~ round(.,1))) %>% 
