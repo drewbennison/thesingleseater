@@ -1,0 +1,35 @@
+# Predict Finishing Position in Race
+Author: Kyle Bennison
+Created: 2022-02-22
+
+Test regression models using available inputs:
+- Avg. SP
+- Avg. FP
+- Years Experience
+- Team Name
+- Manufacturer
+- Track Type
+
+```{r, setup, include=FALSE}
+knitr::opts_knit$set(root.dir = 'C:/Users/Kyle/Documents/Kyle/Personal/Data/thesingleseater')
+```
+
+
+## Read in Data
+```{r}
+library(data.table)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+
+elo <- fread("datasets/elo_ratings/elo_tracker.csv")
+```
+
+## Create Tables
+```{r}
+driver_experience <- elo %>% 
+  filter(year != 2000) %>% 
+  group_by(driver) %>% distinct(year) %>% count() %>% 
+  rename(years_experience = n)
+```
+
