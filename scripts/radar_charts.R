@@ -32,7 +32,7 @@ data <- data %>%
   mutate(AdjPassEff = passEff-avgPE)
 
 working <- data %>%
-  filter(year==2020) %>%
+  filter(year==2021) %>%
   group_by(driver) %>% 
   mutate(percFavorablePass = 100*(sum(passesFor)/(sum(passesFor)+sum(passesAgainst))),
          favorableStart = ifelse(lapOneChange>=0, 1,
@@ -67,7 +67,7 @@ working$Pts = working$Pts/working$Races
 working$xPoints = working$xPoints/working$Races
 
 #set num to 1 more than length of working
-num <- 36
+num <- nrow(working)+1
 #Get ranks
 working$ATP_Rank=num-(rank(working$ATP))
 working$ATP25_Rank=num-(rank(working$ATP25))
@@ -87,4 +87,4 @@ working <- working %>%
 setnames(working, c("ATP_Rank", "AEP_Rank", "AdjPassEff_Rank", "Top_5_Perc_Rank", "Pts_Rank", "xPts_Rank", "ASP_Rank", "AFS_Rank"),
          c("ATP", "AEP", "Adj. Pass Eff.", "Top5 %", "Points/Race", "xPts/Race", "ASP", "AFS"))
 
-fwrite(working, "working.csv")
+fwrite(working, "C:/Users/drewb/Downloads/working.csv")
