@@ -7,14 +7,12 @@ master_dt <- tibble()
 
 # difftime(now(), lubridate::as_datetime("2021-04-26 12:42:00 EDT", tz = "US/Eastern"), units = "secs")
 
-#wait until race time
-#Sys.sleep(800)
-
 #two hours
 for(i in c(1:350)) {
   message(i)
 tmp <- "C:/Users/drewb/Desktop/temp_test"
-url <- "http://racecontrol.indycar.com/xml/timingscoring.json"
+#url <- "http://racecontrol.indycar.com/xml/timingscoring.json"
+url <- "https://indycarsso.blob.core.windows.net/racecontrol/timingscoring.json"
 download.file(url, destfile = tmp,quiet = FALSE, mode = "wb")
 
 line = readLines(tmp)
@@ -29,7 +27,7 @@ current_time <- Sys.time()
 new_dt$time_stamp <- current_time
 
 master_dt <- rbindlist(list(master_dt, new_dt), use.names = TRUE, fill = TRUE)
-fwrite(master_dt, "C:/Users/drewb/Desktop/nashville_2021.csv")
+fwrite(master_dt, "C:/Users/drewb/Desktop/2022_02_25_p1.csv")
 Sys.sleep(35)
 }
 
