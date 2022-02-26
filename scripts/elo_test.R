@@ -11,66 +11,76 @@ dt <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/mast
 dt <- dt %>% select(year, raceNumber, driver, fin, st, date, type) %>% 
   mutate(date=mdy(date))
 
-error_check <- tibble(k_factor=0, error=100000, qual_modifier=0)
+error_check <- tibble(k_factor=0, error=100000, qual_modifier=0, skill_kept=0)
+
+#for(i in c(.5,1.0,1.5,2,2.5,3,3.5)) {
+#  for q in c(5,10,15,20) {
 
 for(z in c(0.5,1,1.5,2)) {
   for(q in c(1,2.5,5,7.5)) {
+    for(w in c(1,.95,.9,.8,.5)) {
+
+message(paste0(z, "-", q, "-",w))
+#Initialize elo ratings, k
+elo_ratings_initial <- dt %>% select(driver) %>% unique() %>% mutate(EloRating=1500)
+
+elo_ratings <- elo_ratings_initial
+tracker <- tibble(driver=elo_ratings_initial$driver, date=ymd("2021-01-01"), year=2000, EloRating=1500, PreviousEloRating=1500)
+k_optimization <- tibble(errorXWin=0, errorXWin2=0, season=year("2000-01-01"), type="None")
+
+#Starting and ending year range
+for(a in c(2008:2021)) {
+  current_year <- dt %>% filter(year==a) %>% select(raceNumber, driver, fin, st, date, type)
+  
+  for(i in 1:max(current_year$raceNumber)) {
+    current_race <- current_year %>% filter(raceNumber==i, )
     
-    message(paste0(z, "-", q))
-    #Initialize elo ratings, k
-    elo_ratings_initial <- dt %>% select(driver) %>% unique() %>% mutate(EloRating=1500)
+    x <- current_race$driver
+    y <- current_race$driver
     
-    elo_ratings <- elo_ratings_initial
-    tracker <- tibble(driver=elo_ratings_initial$driver, date=ymd("2021-01-01"), year=2000, EloRating=1500, PreviousEloRating=1500)
-    k_optimization <- tibble(errorXWin=0, errorXWin2=0, season=year("2000-01-01"), type="None")
-    
-    #Starting and ending year range
-    for(a in c(2008:2021)) {
-      current_year <- dt %>% filter(year==a) %>% select(raceNumber, driver, fin, st, date, type)
-      
-      for(i in 1:max(current_year$raceNumber)) {
-        current_race <- current_year %>% filter(raceNumber==i, )
-        
-        x <- current_race$driver
-        y <- current_race$driver
-        
-        current_race_cross <- crossing(x, y) %>% left_join(current_race, by=c("x"="driver")) %>% 
-          left_join(current_race, by=c("y"="driver")) %>% select(-raceNumber.y) %>% filter(x!=y) %>% 
-          left_join(elo_ratings, by=c("x"="driver")) %>% 
-          left_join(elo_ratings, by=c("y"="driver")) %>% 
-          mutate("xWin" = ifelse(fin.x<fin.y,1,0),
-                 "XexpectedWin" = (1/(1+10^((EloRating.y - (EloRating.x + q*(st.y-st.x)))/400))))
-        
-        #Update elo ratings for race
-        elo <- current_race_cross %>% group_by(x) %>% 
-          summarise("oldRating" = mean(EloRating.x),
-                    "actualScore" = sum(xWin),
-                    "expectedScore" = sum(XexpectedWin),
-                    "newRating"= oldRating+z*(actualScore-expectedScore),
-                    "date" = max(ymd(date.x)),
-                    "type" = max(type.x))
-        
-        for(j in 1:nrow(elo)) {
-          elo_ratings[elo_ratings$driver==elo$x[j],2] <- elo$newRating[j]
-          tracker <- add_row(tracker, driver=elo$x[j], date=elo$date[j], year=a, EloRating=elo$newRating[j], PreviousEloRating=elo$oldRating[j])
-        }
-        
-        k_optimization <- add_row(k_optimization, errorXWin = current_race_cross$xWin, errorXWin2=current_race_cross$XexpectedWin, season=year(current_race_cross$date.x), type=current_race_cross$type.x)
-      }
+    if(i == 1){
+      elo_ratings$EloRating <- w*elo_ratings$EloRating + (w-1)*1500
     }
     
+    current_race_cross <- crossing(x, y) %>% left_join(current_race, by=c("x"="driver")) %>% 
+      left_join(current_race, by=c("y"="driver")) %>% select(-raceNumber.y) %>% filter(x!=y) %>% 
+      left_join(elo_ratings, by=c("x"="driver")) %>% 
+      left_join(elo_ratings, by=c("y"="driver")) %>% 
+      mutate("xWin" = ifelse(fin.x<fin.y,1,0),
+             "XexpectedWin" = (1/(1+10^((EloRating.y - (EloRating.x + q*(st.y-st.x)))/400))))
     
-    error_calc <- k_optimization %>% mutate(error=(errorXWin-errorXWin2)^2) %>% 
-      filter(season>2015)
+    #Update elo ratings for race
+    elo <- current_race_cross %>% group_by(x) %>% 
+      summarise("oldRating" = mean(EloRating.x),
+                "actualScore" = sum(xWin),
+                "expectedScore" = sum(XexpectedWin),
+                "newRating"= oldRating+z*(actualScore-expectedScore),
+                "date" = max(ymd(date.x)),
+                "type" = max(type.x))
     
-    e <- mean(error_calc$error)
+    for(j in 1:nrow(elo)) {
+      elo_ratings[elo_ratings$driver==elo$x[j],2] <- elo$newRating[j]
+      tracker <- add_row(tracker, driver=elo$x[j], date=elo$date[j], year=a, EloRating=elo$newRating[j], PreviousEloRating=elo$oldRating[j])
+    }
     
-    error_check <- add_row(error_check, k_factor=z, error=e, qual_modifier=q)
+    k_optimization <- add_row(k_optimization, errorXWin = current_race_cross$xWin, errorXWin2=current_race_cross$XexpectedWin, season=year(current_race_cross$date.x), type=current_race_cross$type.x)
   }
-  
-  
 }
 
+
+error_calc <- k_optimization %>% mutate(error=(errorXWin-errorXWin2)^2) %>% 
+  filter(season>2015)
+
+e <- mean(error_calc$error)
+
+error_check <- add_row(error_check, k_factor=z, error=e, qual_modifier=q, skill_kept=w)
+print(error_check)
+  }
+  
+
+}
+
+}
 
 
 #fwrite(tracker,"C:/Users/drewb/Desktop/elo_tracker.csv")
