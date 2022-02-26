@@ -2,9 +2,8 @@ library(tidyverse)
 library(data.table)
 library(lubridate)
 library(ggthemes)
-library(png)
 
-dt <- fread("C:/Users/drewb/Desktop/2022_02_25_p1.csv")
+dt <- fread("C:/Users/drewb/Desktop/2022_02_26_p2.csv")
 
 dt2 <- dt %>% select(rank, diff, gap, overallRank, startPosition, bestLapTime, lastLapTime, laps, totalTime,
                      status, pitStops, sincePitLap, flagStatus, no, firstName, lastName, LastSpeed, 
@@ -26,7 +25,7 @@ dt2 %>%
      #          position=position_dodge(1))
   #geom_dotplot(binaxis='y', stackdir='center', dotsize=.5) +
   coord_flip() +
-  labs(x="", title = "Full speed laps, IndyCar St. Petersburg Practice 1",
+  labs(x="", title = "Full speed laps, IndyCar St. Petersburg Practice 2",
        y="Speed (mph)",
        caption = "@thesingleseater") +
   theme_solarized()

@@ -6,7 +6,7 @@ library(lubridate)
 race <- fread("C:/Users/drewb/desktop/projects/thesingleseater/bet/elo_drivers.csv")
 draftkings <- fread("C:/Users/drewb/desktop/projects/thesingleseater/bet/draftkings_odds.csv")
 matchups <- fread("C:/Users/drewb/desktop/projects/thesingleseater/bet/draftkings_matchup.csv")
-elo_ratings <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker_new_test.csv")
+elo_ratings <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv")
 
 matchups <- matchups %>% left_join(race, by=c("Driver1"="driver")) %>% 
   left_join(race, by=c("Driver2" = "driver"))
