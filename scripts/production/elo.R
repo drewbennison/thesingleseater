@@ -19,7 +19,7 @@ dt <- dt %>% select(year, raceNumber, driver, fin, st, date, type) %>%
   mutate(date=mdy(date))
 
 #Starting and ending year range
-for(a in c(2008:2021)) {
+for(a in c(2008:2022)) {
   current_year <- dt %>% filter(year==a) %>% select(raceNumber, driver, fin, st, date, type)
   
 for(i in 1:max(current_year$raceNumber)) {

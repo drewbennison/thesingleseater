@@ -23,7 +23,8 @@ ui <- navbarPage(title="The Single Seater",
                                                         "Road and Street" = "road and street")),
                                          
                                          selectInput("selectyear", "Season:",
-                                                     c("2021"= "2021",
+                                                     c("2022"="2022",
+                                                         "2021"= "2021",
                                                        "2020" = "2020",
                                                        "2019" = "2019")),
                                          DT::dataTableOutput("seasonTable")
@@ -65,7 +66,8 @@ ui <- navbarPage(title="The Single Seater",
                                                         "17" = "17")),
                                           
                                           selectInput("selectyear2", "Season:",
-                                                      c("2021"= "2021",
+                                                      c("2022"="2022",
+                                                          "2021"= "2021",
                                                         "2020" = "2020",
                                                         "2019" = "2019")),
                                           DT::dataTableOutput("raceTable")
@@ -364,13 +366,12 @@ server <- function(input, output,session) {
                        raceNumber==input$selectrace) 
             
             driver_season_stats <- driver_season_stats %>% 
-                mutate(RunningCheck = ifelse(status=="running",1,0)) %>% 
                 mutate(xPoints = round(xPts),
                        PassEff = 100*passEff,
                        AdjPassEff = 100*AdjPassEff,
                        AEP = xFPDifference,
                        LapsLed = led,
-                       Top5Perc = 100*(sum(inTopFive)/sum(laps)),
+                       Top5Perc = 100*(inTopFive/laps),
                        Pts = pts,
                        StartPM = lapOneChange,
                        ATP = atp,
