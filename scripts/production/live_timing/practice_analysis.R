@@ -12,13 +12,22 @@ dt2 <- dt %>% select(rank, diff, gap, overallRank, startPosition, bestLapTime, l
   group_by(lastName, laps) %>% 
   top_n(1, time_stamp) %>% 
   ungroup()
-  
 
-dt2 %>% 
+dt3 <- dt2 %>% group_by(lastName) %>% 
+  top_n(1, BestSpeed) %>% 
+  select(lastName, BestSpeed) %>% 
+  unique() %>% 
+  ungroup() %>% 
+  mutate(sessionRank = rank(BestSpeed))
+
+dt3 <- dt2 %>% 
+  left_join(dt3, by="lastName")
+  
+dt3 %>% 
   filter(LastSpeed >=100) %>% 
   rename("Driver" = "lastName",
          "Speed" = "LastSpeed") %>% 
-  ggplot(aes(x=reorder(Driver,BestSpeed), y=Speed)) + 
+  ggplot(aes(x=reorder(Driver,sessionRank), y=Speed)) + 
   geom_boxplot() +
   geom_point() +
   #geom_dotplot(binaxis='y', stackdir='center',
@@ -30,7 +39,7 @@ dt2 %>%
        caption = "@thesingleseater") +
   theme_solarized()
   
-ggsave("C:/users/drewb/Desktop/plot.png", width = 6, height = 5)
+ggsave("C:/users/drewb/Desktop/plot2.png", width = 6, height = 5)
 
 #diff = total time - leaders total time at same lap
 #one lap for each driver

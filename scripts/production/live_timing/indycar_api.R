@@ -8,7 +8,7 @@ master_dt <- tibble()
 # difftime(now(), lubridate::as_datetime("2021-04-26 12:42:00 EDT", tz = "US/Eastern"), units = "secs")
 
 #two hours
- for(i in c(1:350)) {
+ for(i in c(1:500)) {
   message(i)
 tmp <- "C:/Users/drewb/Desktop/temp_test"
 #url <- "http://racecontrol.indycar.com/xml/timingscoring.json"
@@ -27,7 +27,7 @@ current_time <- Sys.time()
 new_dt$time_stamp <- current_time
 
 master_dt <- rbindlist(list(master_dt, new_dt), use.names = TRUE, fill = TRUE)
-fwrite(master_dt, "C:/Users/drewb/Desktop/2022_02_26_p2.csv")
+fwrite(master_dt, "C:/Users/drewb/Desktop/2022_02_27_r2.csv")
 Sys.sleep(35)
 }
 
