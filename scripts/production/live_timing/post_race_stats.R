@@ -2,7 +2,7 @@ library(tidyverse)
 library(data.table)
 library(lubridate)
 
-dt <- fread("C:/Users/drewb/Desktop/mid_ohio_2021.csv")
+dt <- fread("C:/Users/drewb/Desktop/2022_02_27_r.csv")
 
 
 #type <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/double_points_table.csv")

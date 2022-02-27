@@ -5,7 +5,7 @@ library(stringr)
 library(ggraph)
 library(tidygraph)
 
-dt <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/race_control/mid_ohio_2021.csv")
+dt <- fread("C:/Users/drewb/Desktop/2022_02_27_r.csv")
 
 
 dt2 <- dt %>% select(rank, diff, gap, overallRank, startPosition, bestLapTime, lastLapTime, laps, totalTime,
