@@ -21,8 +21,16 @@ library(data.table)
 library(dplyr)
 library(ggplot2)
 library(tidyr)
+library(stringr)
+library(lubridate)
 
 elo <- fread("datasets/elo_ratings/elo_tracker.csv")
+
+drivers_2022 <- fread("datasets/indycar_2022_drivers_races.csv")
+
+team_history <- fread("datasets/drivers_teams_2016-2022.csv")
+
+results_history <- fread("datasets/master_backup/indycar_results.csv")
 ```
 
 ## Create Tables
@@ -31,5 +39,90 @@ driver_experience <- elo %>%
   filter(year != 2000) %>% 
   group_by(driver) %>% distinct(year) %>% count() %>% 
   rename(years_experience = n)
+
+driver_elo_current <- elo %>% 
+  filter(year != 2000) %>% 
+  group_by(driver) %>% 
+  slice_max(order_by = date, n = 1)
+
+team_history <- team_history %>% 
+  mutate(owner = case_when(str_detect(Team, "Rahal|Letterman|Lanigan") ~ "RLL",
+                           str_detect(Team, "Andretti") ~ "Andretti",
+                           str_detect(Team, "Foyt") ~ "Foyt",
+                           str_detect(Team, "Ganassi") ~ "Ganassi",
+                           str_detect(Team, "Coyne") ~ "Coyne",
+                           str_detect(Team, "Penske") ~ "Penske",
+                           str_detect(Team, "Arrow|McLaren") ~ "Arrow McLaren",
+                           str_detect(Team, "Carpenter") ~ "Carpenter",
+                           str_detect(Team, "Carlin") ~ "Carlin",
+                           str_detect(Team, "Schmidt Peterson") ~ "Schmidt Peterson",
+                           TRUE ~ "Small Team"))
+
+results_history <- results_history %>% 
+  mutate(date = as_date(date, format = "%m/%d/%Y"))
+
+elo <- elo %>% 
+  mutate(date = as_date(date))
+
+years_experience <- elo %>% 
+  filter(year != 2000) %>% 
+  group_by(driver, year) %>% 
+  slice_max(order_by = date, n = 1) %>% 
+  group_by(driver) %>% 
+  mutate(first_year = min(year),
+         experience = year - first_year + 1) %>% 
+  select(driver, year, experience)
+```
+
+## Create dataset for predictions by joins
+```{r}
+df_start <- results_history %>% 
+  left_join(elo, by = c("driver", "date", "year")) %>% 
+  left_join(years_experience, by = c("driver", "year")) %>% 
+  left_join(team_history, by = c("driver" = "Driver", "year" = "year"))
+
+df_start <- results_history %>% 
+  left_join(elo, by = c("driver", "date", "year")) %>% 
+  left_join(years_experience, by = c("driver", "year")) %>% 
+  left_join(team_history, by = c("driver" = "Driver", "year" = "year")) %>% 
+  group_by(driver, raceNumber, year) %>% 
+  mutate(count = n()) %>% 
+  filter(count == 1)
+
+# Use previouselo as prerace elo for predictions
+```
+
+## Explore data
+```{r}
+plot(df_start$fin, df_start$st)
+
+plot(as.factor(df_start$owner), df_start$fin)
+
+plot(as.factor(df_start$Engine), df_start$fin)
+
+# Convert all non-numeric columns to factors for plotting
+# df_start[,!sapply(df_start, is.numeric)] <- lapply(df_start[,!sapply(df_start, is.numeric)], as.factor)
+
+df_start %>% 
+  ungroup() %>% 
+  select(type, fin, st, driver, PreviousEloRating, experience, Engine, Rounds, owner) %>% 
+  mutate(across(.cols = !(where(is.numeric)), .fns = as.factor)) %>% 
+  plot()
+
+```
+
+## Build CV Models
+```{r}
+library(glmnet)
+
+x <- model.matrix(fin ~ type + st + driver + PreviousEloRating + experience + owner + Engine + Rounds, df_start)
+
+y <- df_start %>% select(fin) %>% as.matrix()
+
+cv.out <- cv.glmnet(x = x, y = y, alpha = 0)
+
+plot(cv.out)
+
+best_lam <- cv.out$lambda.min
 ```
 
