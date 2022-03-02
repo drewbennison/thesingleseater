@@ -11,7 +11,7 @@ Test regression models using available inputs:
 - Track Type
 
 ```{r, setup, include=FALSE}
-knitr::opts_knit$set(root.dir = 'C:/Users/Kyle/Documents/Kyle/Personal/Data/thesingleseater')
+knitr::opts_knit$set(root.dir = 'C:/Users/kbennison/OneDrive - Nutrisystem, Inc/Personal/thesingleseater')
 ```
 
 
@@ -72,6 +72,13 @@ years_experience <- elo %>%
   mutate(first_year = min(year),
          experience = year - first_year + 1) %>% 
   select(driver, year, experience)
+
+races_experience <- elo %>% 
+  filter(year != 2000) %>% 
+  mutate(id = 1) %>% 
+  group_by(driver) %>% 
+  mutate(n_races = cumsum(id)) %>% 
+  select(driver, date, year, n_races)
 ```
 
 ## Create dataset for predictions by joins
@@ -79,12 +86,8 @@ years_experience <- elo %>%
 df_start <- results_history %>% 
   left_join(elo, by = c("driver", "date", "year")) %>% 
   left_join(years_experience, by = c("driver", "year")) %>% 
-  left_join(team_history, by = c("driver" = "Driver", "year" = "year"))
-
-df_start <- results_history %>% 
-  left_join(elo, by = c("driver", "date", "year")) %>% 
-  left_join(years_experience, by = c("driver", "year")) %>% 
   left_join(team_history, by = c("driver" = "Driver", "year" = "year")) %>% 
+  left_join(races_experience, by = c('driver' = 'driver', 'date' = 'date', "year" = "year")) %>% 
   group_by(driver, raceNumber, year) %>% 
   mutate(count = n()) %>% 
   filter(count == 1)
@@ -100,6 +103,8 @@ plot(as.factor(df_start$owner), df_start$fin)
 
 plot(as.factor(df_start$Engine), df_start$fin)
 
+plot(df_start$n_races, df_start$fin)
+
 # Convert all non-numeric columns to factors for plotting
 # df_start[,!sapply(df_start, is.numeric)] <- lapply(df_start[,!sapply(df_start, is.numeric)], as.factor)
 
@@ -109,15 +114,25 @@ df_start %>%
   mutate(across(.cols = !(where(is.numeric)), .fns = as.factor)) %>% 
   plot()
 
+# Clean up options for rounds
+df_start <- df_start %>% 
+  select(type, st, driver, PreviousEloRating, experience, owner, Engine, Rounds, fin, n_races) %>% 
+  mutate(Rounds = case_when(Rounds %in% c("Full Season", "Full Season.") ~ "Full",
+                            is.na(Rounds) ~ "Full",
+                            Rounds == "Ovals" ~ "Ovals",
+                            TRUE ~ "Partial"))
+
 ```
 
 ## Build CV Models
 ```{r}
 library(glmnet)
 
-x <- model.matrix(fin ~ type + st + driver + PreviousEloRating + experience + owner + Engine + Rounds, df_start)
+df_clean <- na.omit(df_start)
 
-y <- df_start %>% select(fin) %>% as.matrix()
+x <- model.matrix(fin ~ type + st + driver + PreviousEloRating + experience + owner + Engine + Rounds + n_races, df_clean)
+
+y <- df_clean %>% select(fin) %>% as.matrix()
 
 cv.out <- cv.glmnet(x = x, y = y, alpha = 0)
 
