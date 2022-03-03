@@ -11,12 +11,12 @@ Test regression models using available inputs:
 - Track Type
 
 ```{r, setup, include=FALSE}
-knitr::opts_knit$set(root.dir = 'C:/Users/kbennison/OneDrive - Nutrisystem, Inc/Personal/thesingleseater')
+knitr::opts_knit$set(root.dir = "C:/Users/Kyle/Documents/Kyle/Personal/Data/thesingleseater")
 ```
 
 
 ## Read in Data
-```{r}
+```{r, warning=FALSE, message=FALSE}
 library(data.table)
 library(dplyr)
 library(ggplot2)
@@ -24,27 +24,34 @@ library(tidyr)
 library(stringr)
 library(lubridate)
 
-elo <- fread("datasets/elo_ratings/elo_tracker.csv")
+# Get Elo
+elo <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/elo_ratings/elo_tracker.csv")
 
-drivers_2022 <- fread("datasets/indycar_2022_drivers_races.csv")
+# Get drivers and races they'll be in this year
+drivers_2022 <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/indycar_2022_drivers_races.csv")
 
-team_history <- fread("datasets/drivers_teams_2016-2022.csv")
+# Get team history from 2016 to 2022
+team_history <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/drivers_teams_2016-2022.csv")
 
-results_history <- fread("datasets/master_backup/indycar_results.csv")
+# Get Results since 2008
+results_history <- fread("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
 ```
 
 ## Create Tables
 ```{r}
+# Calculate years of experience
 driver_experience <- elo %>% 
   filter(year != 2000) %>% 
   group_by(driver) %>% distinct(year) %>% count() %>% 
   rename(years_experience = n)
 
+# Get drivers current elo rating
 driver_elo_current <- elo %>% 
   filter(year != 2000) %>% 
   group_by(driver) %>% 
   slice_max(order_by = date, n = 1)
 
+# Simplifiy team names over the years
 team_history <- team_history %>% 
   mutate(owner = case_when(str_detect(Team, "Rahal|Letterman|Lanigan") ~ "RLL",
                            str_detect(Team, "Andretti") ~ "Andretti",
@@ -58,12 +65,15 @@ team_history <- team_history %>%
                            str_detect(Team, "Schmidt Peterson") ~ "Schmidt Peterson",
                            TRUE ~ "Small Team"))
 
+# Format dates as dates
 results_history <- results_history %>% 
   mutate(date = as_date(date, format = "%m/%d/%Y"))
 
+# Format elo dates as dates
 elo <- elo %>% 
   mutate(date = as_date(date))
 
+# Calculate years of experience for each driver each year (starting in 2008)
 years_experience <- elo %>% 
   filter(year != 2000) %>% 
   group_by(driver, year) %>% 
@@ -73,6 +83,7 @@ years_experience <- elo %>%
          experience = year - first_year + 1) %>% 
   select(driver, year, experience)
 
+# Calculate total races experience each race per driver
 races_experience <- elo %>% 
   filter(year != 2000) %>% 
   mutate(id = 1) %>% 
@@ -83,6 +94,7 @@ races_experience <- elo %>%
 
 ## Create dataset for predictions by joins
 ```{r}
+# Join all data together with race results history
 df_start <- results_history %>% 
   left_join(elo, by = c("driver", "date", "year")) %>% 
   left_join(years_experience, by = c("driver", "year")) %>% 
@@ -125,19 +137,62 @@ df_start <- df_start %>%
 ```
 
 ## Build CV Models
+### Ridge
 ```{r}
 library(glmnet)
 
 df_clean <- na.omit(df_start)
 
-x <- model.matrix(fin ~ type + st + driver + PreviousEloRating + experience + owner + Engine + Rounds + n_races, df_clean)
+x <- model.matrix(fin ~ type + st + driver + PreviousEloRating + experience + owner + Engine + Rounds + n_races, df_clean)[,-1]
 
-y <- df_clean %>% select(fin) %>% as.matrix()
+y <- df_clean %>% ungroup() %>% select(fin) %>% as.matrix()
+
+set.seed(1)
 
 cv.out <- cv.glmnet(x = x, y = y, alpha = 0)
 
 plot(cv.out)
 
 best_lam <- cv.out$lambda.min
+
+cv.out
+
+# predict(cv.out, "coefficients", s = best_lam)
+```
+### Lasso
+```{r}
+set.seed(1)
+
+cv.out <- cv.glmnet(x = x, y = y, alpha = 1)
+
+plot(cv.out)
+
+best_lam <- cv.out$lambda.min
+
+cv.out
 ```
 
+There's no significant difference between Lasso and Ridge models, but the Lasso model is simpler with 76 variables at the min. lambda value so would be preferable.
+
+```{r}
+coef(cv.out, s = best_lam)
+```
+Let's try with less variables and see the impact.
+```{r}
+x <- model.matrix(fin ~ type + st + PreviousEloRating + experience + owner + Engine + Rounds + n_races, df_clean)[,-1]
+
+y <- df_clean %>% ungroup() %>% select(fin) %>% as.matrix()
+
+set.seed(1)
+
+cv.out <- cv.glmnet(x = x, y = y, alpha = 0)
+
+plot(cv.out)
+
+best_lam <- cv.out$lambda.min
+
+cv.out
+
+coef(cv.out, s = best_lam)
+```
+There's fairly minimal impact to the predictive power by removing driver, which may help with overfitting, especially when you consider that most of the drivers which turn into dummy variables don't drive and haven't driven in years.
