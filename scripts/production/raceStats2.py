@@ -7,11 +7,11 @@ import requests
 #from tabula import read_pdf
 
 #intro to script
-print("Function raceStats(race_length=integer, lapchart_pdf=stringURL, racing_reference_url=stringURL, points_system='single' OR 'double')")
+print("Function raceStats(race_length=integer, lapchart_pdf=stringURL, racing_reference_url=stringURL, point_system='single' OR 'double', date='lapchart_YYYY_r00_r')")
 
 ##################################################################################################
 #Calculates all of the race stats for a given race
-def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="single", ):
+def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="single", date="lapchart_0000_r0_r"):
 	#read in IndyCar lapchart
 	df = tabula.read_pdf(lapchart_pdf, pages="all", multiple_tables = True, lattice=True)
 
@@ -40,8 +40,6 @@ def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="sin
 	lap_zero = lap_zero.sort_values(by=['St'])[['#']].rename(columns={"#": "0"}).reset_index(drop=True)
 	df3 = pd.concat([lap_zero, df2], axis=1)
 
-	#return df3
-
 	#check if the number of drivers in each dataset match - if not, throw error
 	if len(df3) != len(df_want):
 		return "Data sets do not match. There are a different number of drivers."
@@ -55,6 +53,8 @@ def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="sin
 	#check number of laps in data is correct
 	if race_length != len(data.columns)-1:
 		return "Length of race is not equal to lapchart size."
+
+	data.to_csv("C:/Users/drewb/Desktop/Projects/thesingleseater/datasets/indycar_lapcharts/" + date + ".csv")
 
 	#bring in correct points table
 	if point_system=="single":
