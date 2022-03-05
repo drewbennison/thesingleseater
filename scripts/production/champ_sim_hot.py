@@ -16,6 +16,8 @@ season_drivers_file = season_drivers_file[season_drivers_file.year == 2022]
 season_drivers_file = season_drivers_file.groupby('driver')['pts'].agg(points='sum')
 season_drivers_file = season_drivers_file.reset_index(level=['driver'])
 
+print(season_drivers_file)
+
 # read in drivers and the races they are competing in this season
 drivers_and_races = pd.read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/indycar_2022_drivers_races.csv", encoding = "ISO-8859-1")
 drivers_and_races = drivers_and_races.merge(season_drivers_file, how='left', left_on="Driver", right_on="driver")
@@ -32,7 +34,7 @@ elo_ratings_file = pd.read_csv("https://raw.githubusercontent.com/drewbennison/t
 
 
 # for each season, create a season race results table
-for season in range(1, 1001):
+for season in range(1, 5001):
     print(season)
 
     startTime = datetime.now()
@@ -47,7 +49,7 @@ for season in range(1, 1001):
     elo_ratings_table = elo_ratings_table[['driver', 'EloRating']]
 
     # for each race of that season
-    for race in range(1, 18):
+    for race in range(2, 18):
         # season_drivers_file keep rows where race is in their list of races they will compete in
         season_drivers = drivers_and_races
 
@@ -160,4 +162,5 @@ today2 = today.strftime("%B %d, %Y")
 final_results['current_date'] = today2
 
 final_results.to_csv("C:/Users/drewb/Desktop/projects/thesingleseater/datasets/champPredictions/current_champ.csv")
+final_results.to_csv("C:/Users/drewb/Desktop/projects/thesingleseater/datasets/champPredictions/2022_02_27_champ.csv")
 
