@@ -1,6 +1,6 @@
-Driver1,Driver1DK,Driver2,Driver2DK
-Helio Castroneves,-115,Takuma Sato,-115
-Romain Grosjean,-115,Rinus VeeKay,-115
-Patricio O'Ward,-110,Alex Palou,-120
-Alexander Rossi,-115,Marcus Ericsson,-115
-Simon Pagenaud,-120,Josef Newgarden,-110
+year,raceNumber,Driver1,Driver1DK,Driver2,Driver2DK
+2022,1,Helio Castroneves,-115,Takuma Sato,-115
+2022,1,Romain Grosjean,-115,Rinus VeeKay,-115
+2022,1,Patricio O'Ward,-110,Alex Palou,-120
+2022,1,Alexander Rossi,-115,Marcus Ericsson,-115
+2022,1,Simon Pagenaud,-120,Josef Newgarden,-110
