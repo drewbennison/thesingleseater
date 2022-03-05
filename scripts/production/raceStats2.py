@@ -206,6 +206,7 @@ def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="sin
 	
 	#merge in racing reference data with stats, remove duplicate columns
 	final = df_want.merge(final_stats, how="left", left_on="Driver", right_on="driver")
+	final.lapOneChange.fillna(final.St-final.Pos, inplace=True)
 	del final['driver']
 	final = final.sort_values(by=['Pos'])
 

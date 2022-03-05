@@ -1,75 +1,75 @@
 track,raceNumber,year,type,fin,st,num,driver,sponsor,C/E/T,laps,status,led,pts,ledPts,ledMostPts,polePoints,atp,atp25,xPtsATP,xPtsATP25,xPts,passesFor,passesAgainst,lapOneChange,inTopFive,atp_deviation,fastLapRank,date
-St. Petersburg,1,2018,street,1,14,18,Sebastien Bourdais,SealMaster   (Dale Coyne w/Vasser-Sullivan),D/H/F,110,running,30,51,1,0,0,6.432432432,3,28,35,29,43,30,-7,70,,,3/11/2018
-St. Petersburg,1,2018,street,2,24,15,Graham Rahal,United Rentals / Mi-Jack   (Rahal Letterman Lanigan Racing),D/H/F,110,running,0,40,0,0,0,8.711711712,4,22,32,22,47,25,6,47,,,3/11/2018
-St. Petersburg,1,2018,street,3,12,27,Alexander Rossi,NAPA Auto Parts   (Andretti Autosport),D/H/F,110,running,5,36,1,0,0,3.063063063,2.068965517,35,40,36,24,15,5,100,,,3/11/2018
-St. Petersburg,1,2018,street,4,7,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,110,running,0,32,0,0,0,5.864864865,5.034482759,28,30,28,22,19,3,77,,,3/11/2018
-St. Petersburg,1,2018,street,5,6,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,110,running,1,31,1,0,0,9.702702703,5.379310345,20,30,21,39,38,-17,27,,,3/11/2018
-St. Petersburg,1,2018,street,6,9,9,Scott Dixon,PNC Bank   (Chip Ganassi),D/H/F,110,running,0,28,0,0,0,9.900900901,7.793103448,20,24,20,36,33,3,0,,,3/11/2018
-St. Petersburg,1,2018,street,7,13,1,Josef Newgarden,Hitachi   (Roger Penske),D/C/F,110,running,0,26,0,0,0,11.64864865,8.724137931,18,22,18,38,32,1,0,,,3/11/2018
-St. Petersburg,1,2018,street,8,17,10,Ed Jones,NTT Data   (Chip Ganassi),D/H/F,110,running,0,24,0,0,0,10.30630631,7.517241379,20,24,20,36,27,7,6,,,3/11/2018
-St. Petersburg,1,2018,street,9,18,98,Marco Andretti,Ruoff Home Mortgage / Curb   (AHA with Curb-Agajanian),D/H/F,110,running,0,22,0,0,0,10.44144144,11,20,19,20,45,36,2,13,,,3/11/2018
-St. Petersburg,1,2018,street,10,2,12,Will Power,Verizon   (Roger Penske),D/C/F,110,running,0,20,0,0,0,12.21621622,10.13793103,18,20,18,37,45,-9,0,,,3/11/2018
-St. Petersburg,1,2018,street,11,10,14,Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,110,running,0,19,0,0,0,12.5045045,11.89655172,17,18,17,40,41,-12,0,,,3/11/2018
-St. Petersburg,1,2018,street,12,5,30,Takuma Sato,Mi-Jack / Panasonic   (Rahal Letterman Lanigan Racing),D/H/F,110,running,0,18,0,0,0,12.91891892,15.10344828,17,15,17,31,38,0,12,,,3/11/2018
-St. Petersburg,1,2018,street,13,11,22,Simon Pagenaud,Menards   (Roger Penske),D/C/F,110,running,0,17,0,0,0,13.32432432,14.20689655,17,16,17,30,32,3,0,,,3/11/2018
-St. Petersburg,1,2018,street,14,8,88,Gabby Chaves,Harding Group   (Harding Racing),D/C/F,110,running,0,16,0,0,0,12.46846847,13.37931034,18,17,18,30,36,-1,1,,,3/11/2018
-St. Petersburg,1,2018,street,15,16,21,Spencer Pigot,Autogeek   (Ed Carpenter Racing),D/C/F,109,running,0,15,0,0,0,12.5,15.21428571,18,15,18,47,46,2,19,,,3/11/2018
-St. Petersburg,1,2018,street,16,15,26,Zach Veach,Group One Thousand One   (Andretti Autosport),D/H/F,109,running,0,14,0,0,0,16.11818182,17.53571429,14,12,14,39,40,2,0,,,3/11/2018
-St. Petersburg,1,2018,street,17,22,19,Zachary Claman De Melo,Paysafe   (Dale Coyne),D/H/F,109,running,0,13,0,0,0,13.10909091,16.71428571,17,13,17,42,37,5,17,,,3/11/2018
-St. Petersburg,1,2018,street,18,1,6,Robert Wickens,Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,108,crash,69,16,1,2,1,1.532110092,1.185185185,40,50,44,8,8,0,108,,,3/11/2018
-St. Petersburg,1,2018,street,19,20,59,Max Chilton,Gallagher   (Trevor Carlin),D/C/F,108,running,0,11,0,0,0,18.90825688,19.66666667,11,10,11,27,26,1,0,,,3/11/2018
-St. Petersburg,1,2018,street,20,21,23,Charlie Kimball,Tresiba   (Trevor Carlin),D/C/F,107,running,0,10,0,0,0,21.67592593,20.73076923,8,9,8,7,6,-3,0,,,3/11/2018
-St. Petersburg,1,2018,street,21,4,20,Jordan King,Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,107,running,5,10,1,0,0,16.30555556,21.73076923,14,8,15,8,25,2,24,,,3/11/2018
-St. Petersburg,1,2018,street,22,23,32,Rene Binder,Binderholz Tiptop Timber   (Juncos Racing),D/C/F,100,crash,0,8,0,0,0,19.01980198,19.05263158,11,11,11,29,26,3,0,,,3/11/2018
-St. Petersburg,1,2018,street,23,19,60,Jack Harvey,AutoNation / SiriusXM   (Michael Shank with SPM),D/H/F,38,off course,0,7,0,0,0,12.76923077,,17,,17,25,12,4,4,,,3/11/2018
-St. Petersburg,1,2018,street,24,3,4,Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,16,crash,0,6,0,0,0,5.823529412,,28,,28,2,23,0,14,,,3/11/2018
-Phoenix,2,2018,oval,1,7,1,Josef Newgarden,Verizon   (Roger Penske),D/C/F,250,running,30,51,1,0,0,4.035856574,1.952380952,32,40,33,31,25,0,165,,,4/7/2018
-Phoenix,2,2018,oval,2,6,6,Robert Wickens,Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,250,running,44,41,1,0,0,3.406374502,2.73015873,35,35,36,27,23,1,229,,,4/7/2018
-Phoenix,2,2018,oval,3,4,27,Alexander Rossi,MilitaryToMotorsports.com   (Andretti Autosport),D/H/F,250,running,1,36,1,0,0,11.84462151,6.317460317,18,28,19,49,48,1,75,,,4/7/2018
-Phoenix,2,2018,oval,4,17,9,Scott Dixon,PNC Bank   (Chip Ganassi),D/H/F,250,running,0,32,0,0,0,10.03187251,5.158730159,20,30,20,39,26,-1,45,,,4/7/2018
-Phoenix,2,2018,oval,5,8,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,250,running,5,31,1,0,0,5.326693227,6.555555556,30,26,31,31,28,2,125,,,4/7/2018
-Phoenix,2,2018,oval,6,5,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,250,running,20,29,1,0,0,4.912350598,4.063492063,30,32,31,34,35,-3,183,,,4/7/2018
-Phoenix,2,2018,oval,7,18,20,Ed Carpenter,Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,250,running,0,26,0,0,0,10.09163347,8.412698413,20,24,20,34,23,1,5,,,4/7/2018
-Phoenix,2,2018,oval,8,9,14,Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,250,running,0,24,0,0,0,8.199203187,7.968253968,24,24,24,24,23,0,4,,,4/7/2018
-Phoenix,2,2018,oval,9,12,15,Graham Rahal,One Cure / United Rentals   (Rahal Letterman Lanigan Racing),D/H/F,250,running,7,23,1,0,0,9.314741036,10.44444444,22,20,23,33,30,-1,25,,,4/7/2018
-Phoenix,2,2018,oval,10,2,22,Simon Pagenaud,Menards   (Roger Penske),D/C/F,250,running,3,21,1,0,0,9.22310757,11.87301587,22,18,23,24,32,0,58,,,4/7/2018
-Phoenix,2,2018,oval,11,13,30,Takuma Sato,Mi-Jack / Panasonic   (Rahal Letterman Lanigan Racing),D/H/F,250,running,0,19,0,0,0,10.4063745,10.14285714,20,20,20,26,24,-1,10,,,4/7/2018
-Phoenix,2,2018,oval,12,20,98,Marco Andretti,Oberto / Circle K / Curb   (AHA with Curb-Agajanian),D/H/F,249,running,0,18,0,0,0,13.748,13.62903226,16,16,16,29,21,4,0,,,4/7/2018
-Phoenix,2,2018,oval,13,1,18,Sebastien Bourdais,SealMaster   (Dale Coyne w/Vasser-Sullivan),D/H/F,249,running,60,19,1,0,1,12.844,9.774193548,17,20,19,38,50,0,68,,,4/7/2018
-Phoenix,2,2018,oval,14,15,21,Spencer Pigot,Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,249,running,0,16,0,0,0,17.624,16.48387097,12,14,12,24,23,-5,0,,,4/7/2018
-Phoenix,2,2018,oval,15,19,88,Gabby Chaves,Harding Group   (Harding Racing),D/C/F,249,running,0,15,0,0,0,16.352,15.33870968,14,15,14,22,18,0,0,,,4/7/2018
-Phoenix,2,2018,oval,16,23,26,Zach Veach,Group One Thousand One   (Andretti Autosport),D/H/F,249,running,0,14,0,0,0,15.348,14.59677419,15,15,15,27,20,0,0,,,4/7/2018
-Phoenix,2,2018,oval,17,22,23,Charlie Kimball,Tresiba   (Trevor Carlin),D/C/F,248,running,0,13,0,0,0,19.05220884,17.67213115,11,12,11,16,11,0,0,,,4/7/2018
-Phoenix,2,2018,oval,18,21,59,Max Chilton,Gallagher   (Trevor Carlin),D/C/F,247,running,0,12,0,0,0,20.12903226,18.68333333,10,11,10,19,16,0,0,,,4/7/2018
-Phoenix,2,2018,oval,19,16,4,Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,241,running,0,11,0,0,0,18.31818182,19.75925926,12,10,12,20,23,1,0,,,4/7/2018
-Phoenix,2,2018,oval,20,11,10,Ed Jones,NTT Data   (Chip Ganassi),D/H/F,228,crash,0,10,0,0,0,5.96069869,2.487804878,28,40,28,33,24,1,101,,,4/7/2018
-Phoenix,2,2018,oval,21,14,32,Kyle Kaiser,Juncos Racing   (Juncos Racing),D/C/F,174,crash,0,9,0,0,0,15.89142857,,14,,14,16,23,2,0,,,4/7/2018
-Phoenix,2,2018,oval,22,3,12,Will Power,Verizon   (Roger Penske),D/C/F,153,crash,80,11,1,2,0,2.707792208,,35,,38,6,19,-1,148,,,4/7/2018
-Phoenix,2,2018,oval,23,10,19,Pietro Fittipaldi,Paysafe / Embratel   (Dale Coyne),D/H/F,40,crash,0,7,0,0,0,11,,19,,19,0,3,-1,0,,,4/7/2018
-Long Beach,3,2018,street,1,1,27,Alexander Rossi,NAPA Auto Parts   (Andretti Autosport),D/H/F,85,running,71,54,1,2,1,1.76744186,1,40,50,44,15,15,0,78,,,4/15/2018
-Long Beach,3,2018,street,2,2,12,Will Power,Verizon   (Roger Penske),D/C/F,85,running,6,41,1,0,0,2.872093023,2.181818182,35,40,36,10,10,0,82,,,4/15/2018
-Long Beach,3,2018,street,3,13,10,Ed Jones,NTT Data   (Chip Ganassi),D/H/F,85,running,0,35,0,0,0,9.546511628,3.181818182,20,35,20,29,19,1,22,,,4/15/2018
-Long Beach,3,2018,street,4,16,26,Zach Veach,Group One Thousand One   (Andretti Autosport),D/H/F,85,running,0,32,0,0,0,9,4.181818182,22,32,22,29,17,1,22,,,4/15/2018
-Long Beach,3,2018,street,5,5,15,Graham Rahal,Total / United Rentals   (Rahal Letterman Lanigan Racing),D/H/F,85,running,0,30,0,0,0,13.39534884,5.5,17,28,17,31,31,2,19,,,4/15/2018
-Long Beach,3,2018,street,6,20,98,Marco Andretti,U.S. Concrete / Curb   (AHA with Curb-Agajanian),D/H/F,85,running,0,28,0,0,0,12.25581395,5.863636364,18,28,18,30,16,2,2,,,4/15/2018
-Long Beach,3,2018,street,7,6,1,Josef Newgarden,Verizon   (Roger Penske),D/C/F,85,running,3,27,1,0,0,6.860465116,7.5,26,24,27,27,28,1,36,,,4/15/2018
-Long Beach,3,2018,street,8,11,14,Tony Kanaan,ABC Supply Co.   (A.J. Foyt),D/C/F,85,running,0,24,0,0,0,8.244186047,8.227272727,24,24,24,28,25,1,8,,,4/15/2018
-Long Beach,3,2018,street,9,8,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,85,running,0,22,0,0,0,11.95348837,10.22727273,18,20,18,30,31,1,6,,,4/15/2018
-Long Beach,3,2018,street,10,23,23,Charlie Kimball,Tresiba   (Trevor Carlin),D/C/F,85,running,0,20,0,0,0,13.34883721,9.090909091,17,22,17,36,23,0,0,,,4/15/2018
-Long Beach,3,2018,street,11,4,9,Scott Dixon,PNC Bank / NTT Data   (Chip Ganassi),D/H/F,85,running,0,19,0,0,0,4.930232558,11.09090909,30,19,30,15,22,0,66,,,4/15/2018
-Long Beach,3,2018,street,12,17,60,Jack Harvey,AutoNation / SiriusXM   (Michael Shank with SPM),D/H/F,85,running,0,18,0,0,0,13.09302326,11.72727273,17,18,17,34,29,-4,1,,,4/15/2018
-Long Beach,3,2018,street,13,9,18,Sebastien Bourdais,SealMaster / Sport Clips   (Dale Coyne w/Vasser-Sullivan),D/H/F,85,running,4,18,1,0,0,6.372093023,13.22727273,28,17,29,15,20,1,50,,,4/15/2018
-Long Beach,3,2018,street,14,14,4,Matheus Leist,ABC Supply Co.   (A.J. Foyt),D/C/F,85,running,0,16,0,0,0,15.27906977,13.13636364,15,17,15,22,21,1,0,,,4/15/2018
-Long Beach,3,2018,street,15,18,21,Spencer Pigot,Preferred Freezer Service / Direct Supply   (Ed Carpenter Racing),D/C/F,84,running,0,15,0,0,0,16.31764706,15.71428571,14,14,14,22,19,2,0,,,4/15/2018
-Long Beach,3,2018,street,16,24,32,Kyle Kaiser,Juncos Racing   (Juncos Racing),D/C/F,84,running,0,14,0,0,0,19.36470588,17.61904762,11,12,11,20,12,2,0,,,4/15/2018
-Long Beach,3,2018,street,17,15,59,Max Chilton,Gallagher   (Trevor Carlin),D/C/F,84,running,0,13,0,0,0,16.12941176,17.95238095,14,12,14,19,21,1,0,,,4/15/2018
-Long Beach,3,2018,street,18,12,20,Jordan King,Fuzzy's Vodka   (Ed Carpenter Racing),D/C/F,84,running,0,12,0,0,0,10.22352941,17.57142857,20,12,20,17,23,1,5,,,4/15/2018
-Long Beach,3,2018,street,19,19,88,Gabby Chaves,Harding Group   (Harding Racing),D/C/F,83,running,0,11,0,0,0,19.72619048,19.75,10,10,10,16,16,2,0,,,4/15/2018
-Long Beach,3,2018,street,20,7,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,81,running,1,11,1,0,0,11.7804878,14.44444444,18,16,19,31,44,1,11,,,4/15/2018
-Long Beach,3,2018,street,21,22,30,Takuma Sato,Mi-Jack / Panasonic   (Rahal Letterman Lanigan Racing),D/H/F,74,running,0,9,0,0,0,15.53333333,21,14,9,14,28,27,2,0,,,4/15/2018
-Long Beach,3,2018,street,22,10,6,Robert Wickens,Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,73,running,0,8,0,0,0,17.31081081,22,13,8,13,9,21,1,6,,,4/15/2018
-Long Beach,3,2018,street,23,21,19,Zachary Claman De Melo,Paysafe / Embratel   (Dale Coyne),D/H/F,58,crash,0,7,0,0,0,17.42372881,,13,,13,19,13,2,0,,,4/15/2018
-Long Beach,3,2018,street,24,3,22,Simon Pagenaud,DXC Technology / Verizon   (Roger Penske),D/C/F,0,crash,0,6,0,0,0,3,,35,,35,0,0,,0,,,4/15/2018
+St. Petersburg,1,2018,street,1,14,18,Sebastien Bourdais,SealMaster (Dale Coyne w/Vasser-Sullivan),D/H/F,110,running,30,51,1,0,0,6.432432432,3,28,35,29,43,30,-7,71,6.038348354,,3/11/2018
+St. Petersburg,1,2018,street,2,24,15,Graham Rahal,United Rentals / Mi-Jack (Rahal Letterman Lanigan Racing),D/H/F,110,running,0,40,0,0,0,8.711711712,4,22,32,22,47,25,6,48,6.119511532,,3/11/2018
+St. Petersburg,1,2018,street,3,12,27,Alexander Rossi,NAPA Auto Parts (Andretti Autosport),D/H/F,110,running,5,36,1,0,0,3.063063063,2.068965517,35,40,36,24,15,5,101,1.766960434,,3/11/2018
+St. Petersburg,1,2018,street,4,7,5,James Hinchcliffe,Arrow / Lucas Oil (Schmidt Peterson Motorsports),D/H/F,110,running,0,32,0,0,0,5.864864865,5.034482759,28,30,28,22,19,3,78,2.92391964,,3/11/2018
+St. Petersburg,1,2018,street,5,6,28,Ryan Hunter-Reay,DHL (Andretti Autosport),D/H/F,110,running,1,31,1,0,0,9.702702703,5.379310345,20,30,21,39,38,-17,28,5.479847756,,3/11/2018
+St. Petersburg,1,2018,street,6,9,9,Scott Dixon,PNC Bank (Chip Ganassi),D/H/F,110,running,0,28,0,0,0,9.900900901,7.793103448,20,24,20,36,33,3,0,4.110971817,,3/11/2018
+St. Petersburg,1,2018,street,7,13,1,Josef Newgarden,Hitachi (Roger Penske),D/C/F,110,running,0,26,0,0,0,11.64864865,8.724137931,18,22,18,38,32,1,0,3.658012675,,3/11/2018
+St. Petersburg,1,2018,street,8,17,10,Ed Jones,NTT Data (Chip Ganassi),D/H/F,110,running,0,24,0,0,0,10.30630631,7.517241379,20,24,20,36,27,7,7,3.878312981,,3/11/2018
+St. Petersburg,1,2018,street,9,18,98,Marco Andretti,Ruoff Home Mortgage / Curb (AHA with Curb-Agajanian),D/H/F,110,running,0,22,0,0,0,10.44144144,11,20,19,20,45,36,2,14,3.660563351,,3/11/2018
+St. Petersburg,1,2018,street,10,2,12,Will Power,Verizon (Roger Penske),D/C/F,110,running,0,20,0,0,0,12.21621622,10.13793103,18,20,18,37,45,-9,0,4.056815876,,3/11/2018
+St. Petersburg,1,2018,street,11,10,14,Tony Kanaan,ABC Supply Co. (A.J. Foyt),D/C/F,110,running,0,19,0,0,0,12.5045045,11.89655172,17,18,17,40,41,-12,0,3.601485864,,3/11/2018
+St. Petersburg,1,2018,street,12,5,30,Takuma Sato,Mi-Jack / Panasonic (Rahal Letterman Lanigan Racing),D/H/F,110,running,0,18,0,0,0,12.91891892,15.10344828,17,15,17,31,38,0,12,4.59756131,,3/11/2018
+St. Petersburg,1,2018,street,13,11,22,Simon Pagenaud,Menards (Roger Penske),D/C/F,110,running,0,17,0,0,0,13.32432432,14.20689655,17,16,17,30,32,3,0,3.751665485,,3/11/2018
+St. Petersburg,1,2018,street,14,8,88,Gabby Chaves,Harding Group (Harding Racing),D/C/F,110,running,0,16,0,0,0,12.46846847,13.37931034,18,17,18,30,36,-1,2,4.210283036,,3/11/2018
+St. Petersburg,1,2018,street,15,16,21,Spencer Pigot,Autogeek (Ed Carpenter Racing),D/C/F,109,running,0,15,0,0,0,12.5,15.21428571,18,15,18,47,46,2,20,5.701275774,,3/11/2018
+St. Petersburg,1,2018,street,16,15,26,Zach Veach,Group One Thousand One (Andretti Autosport),D/H/F,109,running,0,14,0,0,0,16.11818182,17.53571429,14,12,14,39,40,2,0,3.642506176,,3/11/2018
+St. Petersburg,1,2018,street,17,22,19,Zachary Claman DeMelo,Paysafe (Dale Coyne),D/H/F,109,running,0,13,0,0,0,13.10909091,16.71428571,17,13,17,42,37,5,18,5.040464363,,3/11/2018
+St. Petersburg,1,2018,street,18,1,6,Robert Wickens,Lucas Oil (Schmidt Peterson Motorsports),D/H/F,108,crash,69,16,1,2,1,1.532110092,1.185185185,40,50,44,8,8,0,108,0.796423281,,3/11/2018
+St. Petersburg,1,2018,street,19,20,59,Max Chilton,Gallagher (Trevor Carlin),D/C/F,108,running,0,11,0,0,0,18.90825688,19.66666667,11,10,11,27,26,1,0,1.974801276,,3/11/2018
+St. Petersburg,1,2018,street,20,21,23,Charlie Kimball,Tresiba (Trevor Carlin),D/C/F,107,running,0,10,0,0,0,21.67592593,20.73076923,8,9,8,7,6,-3,0,1.245946789,,3/11/2018
+St. Petersburg,1,2018,street,21,4,20,Jordan King,Fuzzy's Vodka (Ed Carpenter Racing),D/C/F,107,running,5,10,1,0,0,16.30555556,21.73076923,14,8,15,8,25,2,24,8.50539952,,3/11/2018
+St. Petersburg,1,2018,street,22,23,32,Rene Binder,Binderholz Tiptop Timber (Juncos Racing),D/C/F,100,crash,0,8,0,0,0,19.01980198,19.05263158,11,11,11,29,26,3,0,2.485523225,,3/11/2018
+St. Petersburg,1,2018,street,23,19,60,Jack Harvey,AutoNation / SiriusXM (Michael Shank with SPM),D/H/F,38,off course,0,7,0,0,0,12.76923077,,17,,17,25,12,4,5,6.390945271,,3/11/2018
+St. Petersburg,1,2018,street,24,3,4,Matheus Leist,ABC Supply Co. (A.J. Foyt),D/C/F,16,crash,0,6,0,0,0,5.823529412,,28,,28,2,23,0,14,6.661878327,,3/11/2018
+Phoenix,2,2018,oval,1,7,1,Josef Newgarden,Verizon (Roger Penske),D/C/F,250,running,30,51,1,0,0,4.035856574,1.952380952,32,40,33,31,25,0,166,2.573754517,,4/7/2018
+Phoenix,2,2018,oval,2,6,6,Robert Wickens,Lucas Oil (Schmidt Peterson Motorsports),D/H/F,250,running,44,41,1,0,0,3.406374502,2.73015873,35,35,36,27,23,1,230,2.072923336,,4/7/2018
+Phoenix,2,2018,oval,3,4,27,Alexander Rossi,MilitaryToMotorsports.com (Andretti Autosport),D/H/F,250,running,1,36,1,0,0,11.84462151,6.317460317,18,28,19,49,48,1,75,7.30576922,,4/7/2018
+Phoenix,2,2018,oval,4,17,9,Scott Dixon,PNC Bank (Chip Ganassi),D/H/F,250,running,0,32,0,0,0,10.03187251,5.158730159,20,30,20,39,26,-1,46,4.386571786,,4/7/2018
+Phoenix,2,2018,oval,5,8,28,Ryan Hunter-Reay,DHL (Andretti Autosport),D/H/F,250,running,5,31,1,0,0,5.326693227,6.555555556,30,26,31,31,28,2,126,2.660925127,,4/7/2018
+Phoenix,2,2018,oval,6,5,5,James Hinchcliffe,Arrow / Lucas Oil (Schmidt Peterson Motorsports),D/H/F,250,running,20,29,1,0,0,4.912350598,4.063492063,30,32,31,34,35,-3,183,2.663065748,,4/7/2018
+Phoenix,2,2018,oval,7,18,20,Ed Carpenter,Fuzzy's Vodka (Ed Carpenter Racing),D/C/F,250,running,0,26,0,0,0,10.09163347,8.412698413,20,24,20,34,23,1,6,3.431104749,,4/7/2018
+Phoenix,2,2018,oval,8,9,14,Tony Kanaan,ABC Supply Co. (A.J. Foyt),D/C/F,250,running,0,24,0,0,0,8.199203187,7.968253968,24,24,24,24,23,0,5,1.584335472,,4/7/2018
+Phoenix,2,2018,oval,9,12,15,Graham Rahal,One Cure / United Rentals (Rahal Letterman Lanigan Racing),D/H/F,250,running,7,23,1,0,0,9.314741036,10.44444444,22,20,23,33,30,-1,26,2.994108064,,4/7/2018
+Phoenix,2,2018,oval,10,2,22,Simon Pagenaud,Menards (Roger Penske),D/C/F,250,running,3,21,1,0,0,9.22310757,11.87301587,22,18,23,24,32,0,58,4.090366671,,4/7/2018
+Phoenix,2,2018,oval,11,13,30,Takuma Sato,Mi-Jack / Panasonic (Rahal Letterman Lanigan Racing),D/H/F,250,running,0,19,0,0,0,10.4063745,10.14285714,20,20,20,26,24,-1,11,2.431982944,,4/7/2018
+Phoenix,2,2018,oval,12,20,98,Marco Andretti,Oberto / Circle K / Curb (AHA with Curb-Agajanian),D/H/F,249,running,0,18,0,0,0,13.748,13.62903226,16,16,16,29,21,4,0,1.87096125,,4/7/2018
+Phoenix,2,2018,oval,13,1,18,Sebastien Bourdais,SealMaster (Dale Coyne w/Vasser-Sullivan),D/H/F,249,running,60,19,1,0,1,12.844,9.774193548,17,20,19,38,50,0,68,7.9771965,,4/7/2018
+Phoenix,2,2018,oval,14,15,21,Spencer Pigot,Fuzzy's Vodka (Ed Carpenter Racing),D/C/F,249,running,0,16,0,0,0,17.624,16.48387097,12,14,12,24,23,-5,0,1.732808126,,4/7/2018
+Phoenix,2,2018,oval,15,19,88,Gabby Chaves,Harding Group (Harding Racing),D/C/F,249,running,0,15,0,0,0,16.352,15.33870968,14,15,14,22,18,0,0,1.633430745,,4/7/2018
+Phoenix,2,2018,oval,16,23,26,Zach Veach,Group One Thousand One (Andretti Autosport),D/H/F,249,running,0,14,0,0,0,15.348,14.59677419,15,15,15,27,20,0,0,2.592854797,,4/7/2018
+Phoenix,2,2018,oval,17,22,23,Charlie Kimball,Tresiba (Trevor Carlin),D/C/F,248,running,0,13,0,0,0,19.05220884,17.67213115,11,12,11,16,11,0,0,1.608612969,,4/7/2018
+Phoenix,2,2018,oval,18,21,59,Max Chilton,Gallagher (Trevor Carlin),D/C/F,247,running,0,12,0,0,0,20.12903226,18.68333333,10,11,10,19,16,0,0,1.738871259,,4/7/2018
+Phoenix,2,2018,oval,19,16,4,Matheus Leist,ABC Supply Co. (A.J. Foyt),D/C/F,241,running,0,11,0,0,0,18.31818182,19.75925926,12,10,12,20,23,1,0,2.783139912,,4/7/2018
+Phoenix,2,2018,oval,20,11,10,Ed Jones,NTT Data (Chip Ganassi),D/H/F,228,crash,0,10,0,0,0,5.96069869,2.487804878,28,40,28,33,24,1,102,2.879415188,,4/7/2018
+Phoenix,2,2018,oval,21,14,32,Kyle Kaiser,Juncos Racing (Juncos Racing),D/C/F,174,crash,0,9,0,0,0,15.89142857,,14,,14,16,23,2,0,3.06774663,,4/7/2018
+Phoenix,2,2018,oval,22,3,12,Will Power,Verizon (Roger Penske),D/C/F,153,crash,80,11,1,2,0,2.707792208,,35,,38,6,19,-1,148,2.066823036,,4/7/2018
+Phoenix,2,2018,oval,23,10,19,Pietro Fittipaldi,Paysafe / Embratel (Dale Coyne),D/H/F,40,crash,0,7,0,0,0,11,,19,,19,0,3,-1,0,0.382546028,,4/7/2018
+Long Beach,3,2018,street,1,1,27,Alexander Rossi,NAPA Auto Parts (Andretti Autosport),D/H/F,85,running,71,54,1,2,1,1.76744186,1,40,50,44,15,15,0,78,1.986433163,,4/15/2018
+Long Beach,3,2018,street,2,2,12,Will Power,Verizon (Roger Penske),D/C/F,85,running,6,41,1,0,0,2.872093023,2.181818182,35,40,36,10,10,0,82,1.379218785,,4/15/2018
+Long Beach,3,2018,street,3,13,10,Ed Jones,NTT Data (Chip Ganassi),D/H/F,85,running,0,35,0,0,0,9.546511628,3.181818182,20,35,20,29,19,1,23,5.003851951,,4/15/2018
+Long Beach,3,2018,street,4,16,26,Zach Veach,Group One Thousand One (Andretti Autosport),D/H/F,85,running,0,32,0,0,0,9,4.181818182,22,32,22,29,17,1,23,3.778765641,,4/15/2018
+Long Beach,3,2018,street,5,5,15,Graham Rahal,Total / United Rentals (Rahal Letterman Lanigan Racing),D/H/F,85,running,0,30,0,0,0,13.39534884,5.5,17,28,17,31,31,2,19,6.472264745,,4/15/2018
+Long Beach,3,2018,street,6,20,98,Marco Andretti,U.S. Concrete / Curb (AHA with Curb-Agajanian),D/H/F,85,running,0,28,0,0,0,12.25581395,5.863636364,18,28,18,30,16,2,3,4.908905165,,4/15/2018
+Long Beach,3,2018,street,7,6,1,Josef Newgarden,Verizon (Roger Penske),D/C/F,85,running,3,27,1,0,0,6.860465116,7.5,26,24,27,27,28,1,37,3.504690514,,4/15/2018
+Long Beach,3,2018,street,8,11,14,Tony Kanaan,ABC Supply Co. (A.J. Foyt),D/C/F,85,running,0,24,0,0,0,8.244186047,8.227272727,24,24,24,28,25,1,9,3.045912421,,4/15/2018
+Long Beach,3,2018,street,9,8,5,James Hinchcliffe,Arrow / Lucas Oil (Schmidt Peterson Motorsports),D/H/F,85,running,0,22,0,0,0,11.95348837,10.22727273,18,20,18,30,31,1,7,4.291438141,,4/15/2018
+Long Beach,3,2018,street,10,23,23,Charlie Kimball,Tresiba (Trevor Carlin),D/C/F,85,running,0,20,0,0,0,13.34883721,9.090909091,17,22,17,36,23,0,0,4.331516309,,4/15/2018
+Long Beach,3,2018,street,11,4,9,Scott Dixon,PNC Bank / NTT Data (Chip Ganassi),D/H/F,85,running,0,19,0,0,0,4.930232558,11.09090909,30,19,30,15,22,0,66,4.323517887,,4/15/2018
+Long Beach,3,2018,street,12,17,60,Jack Harvey,AutoNation / SiriusXM (Michael Shank with SPM),D/H/F,85,running,0,18,0,0,0,13.09302326,11.72727273,17,18,17,34,29,-4,2,3.978511779,,4/15/2018
+Long Beach,3,2018,street,13,9,18,Sebastien Bourdais,SealMaster / Sport Clips (Dale Coyne w/Vasser-Sullivan),D/H/F,85,running,4,18,1,0,0,6.372093023,13.22727273,28,17,29,15,20,1,51,4.467053843,,4/15/2018
+Long Beach,3,2018,street,14,14,4,Matheus Leist,ABC Supply Co. (A.J. Foyt),D/C/F,85,running,0,16,0,0,0,15.27906977,13.13636364,15,17,15,22,21,1,0,3.193930155,,4/15/2018
+Long Beach,3,2018,street,15,18,21,Spencer Pigot,Preferred Freezer Service / Direct Supply (Ed Carpenter Racing),D/C/F,84,running,0,15,0,0,0,16.31764706,15.71428571,14,14,14,22,19,2,0,2.963351698,,4/15/2018
+Long Beach,3,2018,street,16,24,32,Kyle Kaiser,Juncos Racing (Juncos Racing),D/C/F,84,running,0,14,0,0,0,19.36470588,17.61904762,11,12,11,20,12,2,0,2.237893226,,4/15/2018
+Long Beach,3,2018,street,17,15,59,Max Chilton,Gallagher (Trevor Carlin),D/C/F,84,running,0,13,0,0,0,16.12941176,17.95238095,14,12,14,19,21,1,0,3.131578197,,4/15/2018
+Long Beach,3,2018,street,18,12,20,Jordan King,Fuzzy's Vodka (Ed Carpenter Racing),D/C/F,84,running,0,12,0,0,0,10.22352941,17.57142857,20,12,20,17,23,1,6,4.61296503,,4/15/2018
+Long Beach,3,2018,street,19,19,88,Gabby Chaves,Harding Group (Harding Racing),D/C/F,83,running,0,11,0,0,0,19.72619048,19.75,10,10,10,16,16,2,0,2.205788869,,4/15/2018
+Long Beach,3,2018,street,20,7,28,Ryan Hunter-Reay,DHL (Andretti Autosport),D/H/F,81,running,1,11,1,0,0,11.7804878,14.44444444,18,16,19,31,44,1,12,5.28694755,,4/15/2018
+Long Beach,3,2018,street,21,22,30,Takuma Sato,Mi-Jack / Panasonic (Rahal Letterman Lanigan Racing),D/H/F,74,running,0,9,0,0,0,15.53333333,21,14,9,14,28,27,2,0,5.96284794,,4/15/2018
+Long Beach,3,2018,street,22,10,6,Robert Wickens,Lucas Oil (Schmidt Peterson Motorsports),D/H/F,73,running,0,8,0,0,0,17.31081081,22,13,8,13,9,21,1,7,7.457855781,,4/15/2018
+Long Beach,3,2018,street,23,21,19,Zachary Claman DeMelo,Paysafe / Embratel (Dale Coyne),D/H/F,58,crash,0,7,0,0,0,17.42372881,,13,,13,19,13,2,0,3.706171627,,4/15/2018
+Long Beach,3,2018,street,24,3,22,Simon Pagenaud,DXC Technology / Verizon (Roger Penske),D/C/F,0,crash,0,6,0,0,0,3,,35,,35,0,0,-21,0,0,,4/15/2018
 Alabama,4,2018,road,1,1,1,Josef Newgarden,Hitachi / Verizon   (Roger Penske),D/C/F,82,running,73,54,1,,,,,,,,,,,,,,4/23/2018
 Alabama,4,2018,road,2,4,28,Ryan Hunter-Reay,DHL   (Andretti Autosport),D/H/F,82,running,0,40,0,,,,,,,,,,,,,,4/23/2018
 Alabama,4,2018,road,3,5,5,James Hinchcliffe,Arrow / Lucas Oil   (Schmidt Peterson Motorsports),D/H/F,82,running,0,35,0,,,,,,,,,,,,,,4/23/2018
