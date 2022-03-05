@@ -4,6 +4,7 @@ import numpy as np
 import os
 import tabula
 import requests
+import statistics
 #from tabula import read_pdf
 
 #intro to script
@@ -168,12 +169,27 @@ def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="sin
 	    count += 1
 
 	##################################################################################################
+
+	#ATP Deviation
+	drivers = racePosition(0,race_length+1, driver_input_data, data)
+
+	atp_deviation = pd.DataFrame({"driver":[], "atp_deviation":[]})
+
+	#count = 0
+	for key in drivers:
+	    if len(drivers[key]) != 0:
+	        df2 = pd.DataFrame({"driver":[key], "atp_deviation":[statistics.pstdev(drivers[key])]})
+	        atp_deviation = atp_deviation.append(df2, ignore_index=True)
+	    #count += 1
+
+	##################################################################################################
 	#Merge everything together
 	df = df.merge(atp_percentile, how="left", left_on="driver", right_on="driver")
 	df = df.merge(passes_df, how="left", left_on="driver", right_on="driver")
 	df = df.merge(start_df, how="left", left_on="driver", right_on="driver")
 	df = df.merge(in_top_five_df, how="left", left_on="driver", right_on="driver")
 	df = df.merge(laps_led, how="left", left_on="driver", right_on="driver")
+	df = df.merge(atp_deviation, how="left", left_on="driver", right_on="driver")
 
 	##################################################################################################
 	#Calculating xPoints
@@ -186,7 +202,7 @@ def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="sin
 
 	##################################################################################################
 	#Final output
-	final_stats = df[['driver', 'ledLapPoints', 'ledMostPoints','polePoints','atp', 'atp25', 'points_x','points_y','xPoints','passesFor','passesAgainst','lapOneChange','lapsT5']]
+	final_stats = df[['driver', 'ledLapPoints', 'ledMostPoints','polePoints','atp', 'atp25', 'points_x','points_y','xPoints','passesFor','passesAgainst','lapOneChange','lapsT5', 'atp_deviation']]
 	
 	#merge in racing reference data with stats, remove duplicate columns
 	final = df_want.merge(final_stats, how="left", left_on="Driver", right_on="driver")
