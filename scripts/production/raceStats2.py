@@ -41,6 +41,11 @@ def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="sin
 	lap_zero = lap_zero.sort_values(by=['St'])[['#']].rename(columns={"#": "0"}).reset_index(drop=True)
 	df3 = pd.concat([lap_zero, df2], axis=1)
 
+	#if lap chart goes on to extra pages, such as Indy 500, first uncomment line below. Run script. Comment line out,
+	#and then uncomment the next one and rerun the script. Then comment out both again.
+	#df3.to_csv("C:/Users/drewb/Desktop/Projects/thesingleseater/datasets/indycar_lapcharts/" + date + ".csv",, index=False)
+	#df3 = pd.read_csv("C:/Users/drewb/Desktop/Projects/thesingleseater/datasets/indycar_lapcharts/" + date + ".csv")
+
 	#check if the number of drivers in each dataset match - if not, throw error
 	if len(df3) != len(df_want):
 		return "Data sets do not match. There are a different number of drivers."
@@ -55,7 +60,7 @@ def raceStats(race_length, lapchart_pdf, racing_reference_url, point_system="sin
 	if race_length != len(data.columns)-1:
 		return "Length of race is not equal to lapchart size."
 
-	data.to_csv("C:/Users/drewb/Desktop/Projects/thesingleseater/datasets/indycar_lapcharts/" + date + ".csv")
+	data.to_csv("C:/Users/drewb/Desktop/Projects/thesingleseater/datasets/indycar_lapcharts/" + date + ".csv", index=False)
 
 	#bring in correct points table
 	if point_system=="single":

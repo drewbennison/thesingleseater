@@ -26,7 +26,8 @@ ui <- navbarPage(title="The Single Seater",
                                                      c("2022"="2022",
                                                          "2021"= "2021",
                                                        "2020" = "2020",
-                                                       "2019" = "2019")),
+                                                       "2019" = "2019",
+                                                       "2018" = "2018")),
                                          DT::dataTableOutput("seasonTable")
                                      ))),
                             
@@ -34,7 +35,7 @@ ui <- navbarPage(title="The Single Seater",
                                      fluidRow(column(
                                          width = 10,
                                          offset = 0,
-                                         h4("Track Statistics (2019-Present)"),
+                                         h4("Track Statistics (2018-Present)"),
                                          selectInput("selecttrack", "Track:", 
                                                      choices = NULL, 
                                                      selected = 1),
@@ -69,7 +70,8 @@ ui <- navbarPage(title="The Single Seater",
                                                       c("2022"="2022",
                                                           "2021"= "2021",
                                                         "2020" = "2020",
-                                                        "2019" = "2019")),
+                                                        "2019" = "2019",
+                                                        "2018" = "2018")),
                                           DT::dataTableOutput("raceTable")
                                       )))),
                  
@@ -243,7 +245,7 @@ server <- function(input, output,session) {
                       PassEff = 100*mean(passEff),
                       AdjPassEff = 100*mean(AdjPassEff),
                       RunPerc = 100*mean(RunningCheck),
-                      AFS = mean(fastLapRank),
+                      AFS = mean(fastLapRank, na.rm = TRUE),
                       Top5Perc = 100*(sum(inTopFive)/sum(laps)),
                       AEP = mean(xFPDifference),
                       Wins = sum(ifelse(fin==1,1,0)),
@@ -291,7 +293,7 @@ server <- function(input, output,session) {
         
         driver_season_stats <- data %>% 
             filter(track==input$selecttrack,
-                   year>=2019) %>% 
+                   year>=2018) %>% 
             mutate(favorableStart = ifelse(lapOneChange >= 0, 1,
                                            ifelse(lapOneChange < 0, 0, NA)),
                    RunningCheck = ifelse(status=="running",1,0)) %>% 
@@ -313,7 +315,7 @@ server <- function(input, output,session) {
                       PassEff = 100*mean(passEff),
                       AdjPassEff = 100*mean(AdjPassEff),
                       RunPerc = 100*mean(RunningCheck),
-                      AFS = mean(fastLapRank),
+                      AFS = mean(fastLapRank, na.rm = TRUE),
                       Top5Perc = 100*(sum(inTopFive)/sum(laps)),
                       AEP = mean(xFPDifference),
                       Wins = sum(ifelse(fin==1,1,0)),
