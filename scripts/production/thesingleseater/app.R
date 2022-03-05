@@ -378,11 +378,12 @@ server <- function(input, output,session) {
                        ATP25 = atp25) %>% 
                 rename("Driver"="driver",
                        "Start"="st",
-                       "Finish"="fin") %>% 
+                       "Finish"="fin",
+                       "DevATP"=atp_deviation) %>% 
                 mutate(Difference = Pts-xPoints) %>% 
-                select(Driver, Finish, Start, Pts, xPoints, Difference, LapsLed, ATP, ATP25, PassEff, AdjPassEff, Top5Perc, AEP, StartPM) %>%
+                select(Driver, Finish, Start, Pts, xPoints, Difference, LapsLed, ATP, DevATP, ATP25, PassEff, AdjPassEff, Top5Perc, AEP, StartPM) %>%
                 #round
-                mutate_at(vars(Difference, ATP, ATP25, PassEff, AdjPassEff, Top5Perc, AEP), list(~ round(.,1))) %>% 
+                mutate_at(vars(Difference, ATP, DevATP, ATP25, PassEff, AdjPassEff, Top5Perc, AEP), list(~ round(.,1))) %>% 
                 arrange(-Pts)
             
     }, options=list(pageLength=50, scrollX = TRUE))

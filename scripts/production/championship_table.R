@@ -1,15 +1,16 @@
 library(tidyverse)
 library(ggplot2)
 library(gt)
+library(lubridate)
 
-dt <- read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/2021_08_15_champ.csv")
+dt <- read_csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/champPredictions/current_champ.csv")
 
 champ_projections <- dt %>% 
   filter(season!=0) %>% 
   select(driver, totalPoints, chamPos, season) %>% 
   group_by(driver, chamPos) %>% 
   add_count() %>% 
-  mutate(prob = 100*(round((n/1000),3)),
+  mutate(prob = 100*(round((n/max(season)),3)),
          exp = round(chamPos*.01*prob,2)) %>% 
   select(driver, chamPos, prob, exp) %>% 
   distinct()
@@ -41,8 +42,8 @@ x <- new_dt2 %>% pivot_wider(names_from = place, values_from =prob) %>%
   rename("Expected Finish Position" = "x") %>% 
   arrange(`Expected Finish Position`) %>% 
   gt() %>% 
-  tab_header(title = md(paste0("**IndyCar 2021 Championship Simulation**")),
-             subtitle = paste0("Simulating the remaining races 1,000 times. Results as of ", today())) %>% 
+  tab_header(title = md(paste0("**IndyCar 2022 Championship Simulation**")),
+             subtitle = paste0("Simulating the remaining races ", max(dt$season), " times. Results as of ", today())) %>% 
   cols_label(driver = "Driver") %>% 
   tab_style(style = list(cell_borders(
     sides = "left",
@@ -64,28 +65,3 @@ x <- new_dt2 %>% pivot_wider(names_from = place, values_from =prob) %>%
 gtsave(data = x, 
        filename = paste0("indycar_sim", str_replace_all(now(), ":", "."), ".png"),
        path = "C:/Users/drewb/Desktop/")
-
-
-
-
-  cols_align(align = "auto") %>% 
-  cols_align(align = "left") %>% 
-  #fmt_number(vars(wins, losses, std_dev_wins), decimals = 1, use_seps = FALSE) %>% 
-  fmt_percent(vars(`Win Championship`), decimals = 1, use_seps = FALSE) %>% 
-  data_color(columns = vars("Win Championship"), # Use a color scale on win prob
-             colors = c("blue", "red"),
-             alpha = 0.7) %>% 
-  tab_style(style = list(cell_borders(
-    sides = "right",
-    color = "blue",
-    weight = px(3)
-  )
-  ),
-  locations = list(
-    cells_body(
-      columns = vars(games)
-    )
-  )
-  ) %>% 
-  tab_source_note("@kylebeni012 | @staturdays — Data: @cfb_data")
-
