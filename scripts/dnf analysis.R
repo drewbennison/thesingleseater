@@ -54,16 +54,17 @@ dt6 <- dt4 %>% left_join(dt5, by=c("year", "driver", "raceNumber")) %>%
 
 cor(dt6$did_not_finish.x, dt6$did_not_finish.y)
 
-dt6 %>% 
-  ggplot(aes(x=did_not_finish.x, y=did_not_finish.y)) + geom_jitter(width = .1, height = .1) +
-  geom_smooth(method = "lm", se = FALSE) +
-  annotate("text", x = .55, y = .3, label = "r = 0.32") +
-  labs(x="DNF in race X", 
-       y="DNF in race X+1",
-       title = "Race to race correlation of driver did not finish (DNF) status",
-       caption = "@thesingleseater | thesingleseater.com") +
-  theme_bw()
+#dt6 %>% 
+#  ggplot(aes(x=did_not_finish.x, y=did_not_finish.y)) + geom_jitter(width = .1, height = .1) +
+#  geom_smooth(method = "lm", se = FALSE) +
+#  annotate("text", x = .55, y = .3, label = "r = 0.32") +
+#  labs(x="DNF in race X", 
+#       y="DNF in race X+1",
+#       title = "Race to race correlation of driver did not finish (DNF) status",
+#       caption = "@thesingleseater | thesingleseater.com") +
+#  theme_bw()
 
+#at race level
 dt6 %>% group_by(did_not_finish.x) %>% 
   summarise(race_two_dnf_probability = mean(did_not_finish.y))
 
