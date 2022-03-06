@@ -2,7 +2,7 @@ library(tidyverse)
 library(gt)
 
 #### load in the data ####
-dt <- read_csv("C:/Users/drewb/Desktop/stpete.csv") %>% 
+dt <- read_csv("C:/Users/drewb/Desktop/Projects/thesingleseater/datasets/rtools_lapcharts/rtools_2022_r01_r.csv") %>% 
   group_by(`Driver Name`) %>% 
   arrange(Lap) %>% 
   #mutate(totalTime = cumsum(LapTime)) %>% 
@@ -30,7 +30,8 @@ pit_laps_summary <- pit_laps %>%
   select(Driver, `Time in Pits per Stop`, `Pit Stop Rank`,
          `Average In-Lap Time`, `In-Lap Rank`,
          `Average Out-Lap Time`, `Out-Lap Rank`) %>% 
-  arrange(`Time in Pits per Stop`)
+  arrange(`Time in Pits per Stop`) %>% 
+  mutate(x = (`Pit Stop Rank` + `In-Lap Rank` + `Out-Lap Rank`)/3)
 
 
 pit_laps_summary %>%
