@@ -18,6 +18,7 @@ dt <- read_csv("C:/Users/drewb/Desktop/Projects/thesingleseater/datasets/rtools_
 #### in/out laps analysis ####
 pit_laps <- dt %>% filter(Status %in% c("G", "K", "P"),
                           L2_PItoPO != 0 | L3_POtoSF != 0)
+
 pit_laps_summary <- pit_laps %>% 
   group_by(`Driver Name`) %>% 
   summarise("Time in Pits per Stop" = round(sum(L2_PItoPO)/n()*2, 3),
@@ -53,3 +54,37 @@ pit_laps_summary %>%
       domain = NULL
     )) %>% 
 gtsave("C:/Users/drewb/Desktop/pits.png")
+
+
+
+race_results <- read.csv("https://raw.githubusercontent.com/drewbennison/thesingleseater/master/datasets/master_backup/indycar_results.csv")
+race_results <- race_results %>% filter(year==2022, raceNumber==1) %>% 
+  select(driver, fin) %>% 
+  mutate(driver = sub(".* ", "", driver) )
+
+#tires used throughout the race
+dt$end_of_stint <- ifelse(dt$L2_PItoPO >0, 1, 0)
+dt$start_of_stint_notice <- ifelse(dt$L3_POtoSF > 0 | dt$Lap == 1 , 1, 0)
+dt$start_of_stint <- ifelse(dt$L3_POtoSF > 0 | dt$Lap == 1, dt$TIRE, NA)
+dt$current_tire <- dt$start_of_stint
+dt <- dt %>% fill(current_tire, .direction = "down")
+
+dt <- dt %>% left_join(race_results,  by=c("Driver Name" = "driver"))
+
+
+dt %>% 
+  ggplot(aes(x=Lap, y=reorder(`Driver Name`, -fin), color=current_tire,
+             fill = ifelse(start_of_stint_notice == 1, current_tire, NA))) +
+  geom_point(size=1,
+             shape=21,
+             stroke=1) +
+  scale_color_manual(values = c("red", "black")) +
+  scale_fill_manual(values=c("red", "black"),na.value = "transparent") +
+  guides(fill= FALSE) +
+  labs(y="",
+       color="Tire",
+       title = "Tire chart from the IndyCar Firestone GP at St. Petersburg",
+       subtitle = "Filled in circle = first lap on that stint",
+       caption = "Chart: @thesingleseater | thesingleseater.com -- Data: IndyCar")
+
+ggsave("C:/Users/drewb/Desktop/tire_chart.png", width = 9, height = 6, dpi = 1000)
