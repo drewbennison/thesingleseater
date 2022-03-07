@@ -87,4 +87,4 @@ dt %>%
        subtitle = "Filled in circle = first lap on that stint",
        caption = "Chart: @thesingleseater | thesingleseater.com -- Data: IndyCar")
 
-ggsave("C:/Users/drewb/Desktop/tire_chart.png", width = 9, height = 6, dpi = 1000)
+ggsave("C:/Users/drewb/Desktop/tire_chart.png", width = 9, height = 6, dpi = 900)
